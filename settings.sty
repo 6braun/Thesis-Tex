@@ -1,0 +1,150 @@
+% *************************************************************************
+% *    IWI Hamburg / Prof. Dr. Stefan Voß
+% *    Thesis / Dissertation Latex Template                                        
+% *    
+% *    Author: Leonard Heilig <leonard.heilig@uni-hamburg.de>
+% *   
+% *    Note: some parts of this template are based on the VSIS template
+% *              of Michael von Riegen <riegen@informatik.uni-hamburg.de>
+% *   
+% *************************************************************************
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{color} 
+\usepackage{xcolor} 
+\usepackage{setspace}
+\usepackage[pdftex]{graphicx}  
+\usepackage[final]{listings}  
+\usepackage{ae,aecompl}
+\usepackage[footnotesep=1cm]{geometry}
+\usepackage{blindtext}
+\usepackage[intoc]{nomencl}
+\setlength{\nomlabelwidth}{.40\hsize}
+\setlength{\nomitemsep}{-\parsep}
+
+\usepackage[normalem]{ulem}	
+\usepackage{amsfonts} 
+
+\usepackage{mathptmx}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+\setkomafont{sectioning}{\normalcolor\bfseries}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}} 
+\renewcommand*{\chapterheadendvskip}{\vspace*{15pt}} 
+
+\usepackage[
+    pdfstartview=FitH,   
+  	pdffitwindow=true,
+  	colorlinks,
+  	linkcolor=black,
+  	anchorcolor=black,
+  	citecolor=black,
+  	urlcolor=black
+]{hyperref}
+  
+% HEADER SEPERATION LINE
+\usepackage[headsepline]{scrpage2}
+\setheadsepline{0.5pt}	
+	
+% HEADER / FOOTER SETTINGS
+\pagestyle{scrheadings}
+\ohead[\pagemark]{\small{\pagemark}}
+\chead{}
+%\chead[\headmark]{\textnormal{\headmark}}
+%\ihead[\mytitle]{\small{\textnormal{\mytitle}}}
+\ihead[\myShortTitleForHeader]{\small{\textnormal{\myShortTitleForHeader}}}
+\ofoot{}
+\cfoot{}
+	
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\indexpagestyle}{scrheadings}
+	
+\KOMAoptions{cleardoublepage=scrheadings}
+    
+% LINE SPACING
+\setstretch{1.3}
+  
+% BORDER
+\setlength{\textwidth}{15cm}        % WIDTH
+\setlength{\textheight}{25cm}       % HEIGHT
+\setlength{\topmargin}{-12mm}       % TOP BORDER
+%\setlength{\parindent}{6pt}			% NO TEXT INDENT
+\setlength{\parskip}{5pt} 
+\setlength{\parindent}{0pt}
+  
+% PDF META INFORMATION
+\hypersetup {
+    pdftitle     = {\myTitle },
+  	pdfsubject   = {University of Hamburg - Institute of Information Systems - Prof. Dr. Stefan Vo{ss} - \thesisType},
+  	pdfauthor    = {\myName},
+  	pdfkeywords  = {\myKeywords },
+  	plainpages   = false
+}
+  
+\definecolor{lightgrey}{rgb}{0.90,0.90,0.90}
+\lstloadlanguages{XML}
+\lstset{
+    tabsize=2,
+    escapeinside={(*@}{@*)},
+    captionpos=t,
+    framerule=0pt,
+    backgroundcolor=\color{lightgrey},
+   	basicstyle=\small\ttfamily,
+    keywordstyle=\small\bfseries,
+    numbers=left,
+    fontadjust
+}
+  
+\usepackage{chngcntr}  % Counter für durchgängige Nummerierung 
+  
+\usepackage[titles]{tocloft}  %titles für seperate Seiten 
+	
+
+
+\setlength{\cftfignumwidth}{2cm}                     
+\setlength{\cfttabnumwidth}{2cm}                                           
+\setlength{\cftfigindent}{0cm}                                                     
+\setlength{\cfttabindent}{0cm} 
+    	
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter\quad}{1em}{}
+\titleformat{\section}[hang]{\large\bfseries}{\thesection\quad}{1.4em}{}
+\titleformat{\subsection}[hang]{\large\bfseries}{\thesubsection\quad}{0.6em}{}
+		
+\titlespacing{\chapter}{0pt}{-16pt}{16pt}
+\titlespacing{\section}{0pt}{1em}{1em}
+	
+\usepackage[hang]{footmisc}	% Fussnoten einrücken
+
+\usepackage[justification=RaggedRight, singlelinecheck=false]{caption} 
+	
+\usepackage[labelfont=bf]{caption}
+	
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{remreset}
+\usepackage{lipsum}
+
+\usepackage{paralist}
+\makeatletter
+\@removefromreset{footnote}{chapter}
+\makeatother
+
+\renewcommand{\cfttabpresnum}{Tab. } 
+\renewcommand{\cftfigpresnum}{Abb. } 
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+
+\usepackage[sort,comma]{natbib}
+
+\usepackage{tocloft}
+\setlength{\cftbeforechapskip}{0.2cm}
+
+
+\usepackage{soul}
+\definecolor{uhhred}{cmyk}{0,100,100,0}
+ 

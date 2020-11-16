@@ -1,0 +1,94 @@
+% *************************************************************************
+% *    Thesis / Dissertation Latex Template                                        
+% *    
+% *    Author: Leonard Heilig <leonard.heilig@uni-hamburg.de>
+% *   
+% *    Note: some parts of this template are based on the VSIS template
+% *              of Michael von Riegen <riegen@informatik.uni-hamburg.de>
+% *   
+% *************************************************************************
+
+\begin{titlepage}
+
+% START PAGE: -1
+\setcounter{page}{-1}    
+
+\begin{figure}[h]
+    
+    \begin{flushleft}
+   
+    \end{flushleft}
+    \hspace{-40px}
+    \noindent\begin{minipage}[t][0px][b]{0.3\textwidth}
+    	%\noindent\includegraphics[width=8cm,clip]{images/up-uhh-logo-u-2010-u-png}
+    	\noindent\includegraphics[scale=0.3]{images/UHH-Logo_2010_Farbe_CMYK.pdf}
+    \end{minipage}
+    \hspace{50px}
+    \begin{flushright}
+    	  
+    	 \begin{minipage}[t][-70px][b]{0.38\textwidth}
+    	 	\begin{flushright}
+    	 	\sffamily{
+    	 		%{\small \textbf{Institut für Wirtschaftsinformatik} } \\
+    	 		%\small Prof. Dr. Stefan Voß \\
+    	 	}
+    	 \end{flushright}
+    	 \end{minipage}
+    	 \hspace{5px}
+    	 \begin{minipage}[t][-47px][b]{0.14\textwidth}
+    	 	%\includegraphics[width=2cm,clip]{images/IWI_logo}
+    	 \end{minipage}
+    \end{flushright}
+    
+\end{figure}
+
+\vfill
+\vspace{10mm}
+
+\large
+\begin{center}
+	
+	% THESIS TYPE
+	\noindent { 
+		\color{uhhred}\textbf{\MakeUppercase \thesisType}
+	}
+	\vspace{2.0cm}\\
+	% THESIS TITLE
+	\textbf{\Large \myTitle} 
+	\vspace{2.0cm}\\ vorgelegt von
+	\vspace{0.4cm}\\
+	\myName
+	
+\end{center}
+
+\vfill
+
+\begin{tabbing}
+	\hspace{10em} \=  \kill
+	%Presented by: \> \textbf{\myName} \\
+	%\> \textrm{\myAddress} \\
+	%\> \textrm{\myEmail} \\ 
+	Fakultät: \>  \faculty \\
+	\> \fachbereich \\
+	Studiengang: \>  \courseOfStudies \\ %~(Semester \currentSemester)
+	Matrikelnummer: \>  \myMatNr \\ \\
+	Betreuer: \> \supervisor \\
+	Erstgutachter: \> \primaryReferee \\
+	\>	\primaryRefereeInst \\
+	Zweitgutachter: \> \secondaryReferee \\
+	\>	\secondaryRefereeInst \\
+	%Date of submission: \> \dateOfSubmission \\
+\end{tabbing}
+	
+
+% BLANK PAGE WITH A QUOTE (OPTIONAL)
+\newpage 
+	
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+~\\ \vfill \noindent 
+\optionalQuote
+
+\end{titlepage}
+

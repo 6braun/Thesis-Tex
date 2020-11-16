@@ -1,0 +1,105 @@
+% *************************************************************************
+% *    IWI Hamburg / Prof. Dr. Stefan Voß
+% *    Thesis / Dissertation Latex Template                                        
+% *    
+% *    Author: Leonard Heilig <leonard.heilig@uni-hamburg.de>
+% *   
+% *    Note: some parts of this template are based on the VSIS template
+% *              of Michael von Riegen <riegen@informatik.uni-hamburg.de>
+% *   
+% *************************************************************************
+
+\documentclass[
+      paper=a4,
+      12pt,
+      twoside=false,
+      openright,
+]{scrbook}
+
+
+
+% DEFINE THESIS SETTINGS
+% Bitte füllen Sie die folgenden Daten vollständig aus
+\newcommand\myName{Max Mustermann}
+\newcommand\myAddress{Musterstr. 7e, 22529 Hamburg}
+\newcommand\myEmail{max.mustermann@studium.uni-hamburg.de}
+\newcommand\myKeywords{<...>} % Optional
+\newcommand\myMatNr{<...>}
+\newcommand\myTitle{Titel}
+\newcommand\myShortTitleForHeader{Kurztitel}
+\newcommand\thesisType{<Expos\'{e} / Bachelorarbeit / Masterarbeit>}
+\newcommand\faculty{<...>} % z.B. MIN-Fakultät
+\newcommand\fachbereich{} % Optional: z.B. Fachbereich Informatik
+\newcommand\courseOfStudies{<...>}
+\newcommand\supervisor{<Name des Betreuers>}
+\newcommand\primaryReferee{<Name des Erstgutachters>}
+\newcommand\primaryRefereeInst{<Institute of Information Systems>}
+\newcommand\secondaryReferee{<Name des Zweitgutachters>}
+\newcommand\secondaryRefereeInst{<Name des Instituts>}
+\newcommand\optionalQuote{} % shown after title page
+
+\title{\mytitle}
+\author{\myName \\ \texttt{\myEmail}}
+
+% IMPORT PACKAGES AND SETTINGS
+\usepackage{settings}
+
+
+
+
+
+% ************ DOCUMENT BEGINS
+
+\begin{document}
+
+    % CHOOSE "ngerman" or "english"
+    \selectlanguage{ngerman}
+    
+    % Please change this part to _titlepage_en for the English version
+    \include{_titlepage_en}
+
+    \frontmatter  % ROMAN NUMBERING              
+    %\include{abstract}
+
+	
+    \tableofcontents
+    
+    \listoffigures
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    
+    \listoftables
+    \addcontentsline{toc}{chapter}{\listtablename}
+    
+
+    % LIST OF ABBREVIATIONS
+    \makenomenclature
+    \printnomenclature[9em]
+
+    \mainmatter % ARABIC NUMBERING            
+
+    % INCLUDE TEX CHAPTERS
+    \include{chapter01}
+    \include{chapter02}
+    \include{chapter03}
+    \include{chapter04}
+        \include{chapter05}
+    \include{appendix}
+    \cleardoublepage
+    
+    \urlstyle{same}
+    \bibliographystyle{chicagog}
+    \begingroup
+    \interlinepenalty=10000
+    \hyphenpenalty=105000
+    \exhyphenpenalty=105000
+   
+   \addcontentsline{toc}{chapter}{Bibliography}
+    \bibliography{thesis}
+    \endgroup
+    \cleardoublepage
+
+    % Please DO NOT change the declaration (even it is in German)
+    \input{_declaration_de}
+
+\end{document}
+

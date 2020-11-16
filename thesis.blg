@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: _titlepage_de.aux
+A level-1 auxiliary file: chapter01.aux
+A level-1 auxiliary file: chapter02.aux
+A level-1 auxiliary file: chapter03.aux
+A level-1 auxiliary file: chapter04.aux
+A level-1 auxiliary file: chapter05.aux
+A level-1 auxiliary file: appendix.aux
+The style file: chicagog.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for "Finkenzeller.2010"
+You've used 9 entries,
+            2911 wiz_defined-function locations,
+            686 strings with 6763 characters,
+and the built_in function-call counts, 7378 in all, are:
+= -- 598
+> -- 640
+< -- 5
++ -- 192
+- -- 210
+* -- 622
+:= -- 1320
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 72
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 201
+empty$ -- 395
+format.name$ -- 238
+if$ -- 1417
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 7
+newline$ -- 48
+num.names$ -- 92
+pop$ -- 95
+preamble$ -- 1
+purify$ -- 126
+quote$ -- 0
+skip$ -- 245
+stack$ -- 0
+substring$ -- 317
+swap$ -- 83
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 170
+warning$ -- 0
+while$ -- 94
+width$ -- 0
+write$ -- 128
+(There was 1 warning)

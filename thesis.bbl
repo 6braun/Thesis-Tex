@@ -1,0 +1,65 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Armbrust, Fox, Griffith, Joseph, Katz,
+  Konwinski, Lee, Patterson, Rabkin, Stoica et~al.}{Armbrust
+  et~al.}{2010}]{armbrust2010view}
+Armbrust, M., A.~Fox, R.~Griffith, A.~D. Joseph, R.~Katz, A.~Konwinski, G.~Lee,
+  D.~Patterson, A.~Rabkin, I.~Stoica et~al. (2010).
+\newblock A view of cloud computing.
+\newblock {\em Communications of the ACM\/}~{\em 53\/}(4),  50--58.
+
+\bibitem[\protect\citeauthoryear{B{\"o}se, Reiners, Steenken, Vo{\ss}}{B{\"o}se
+  et~al.}{2000}]{bose2000vehicle}
+B{\"o}se, J., T.~Reiners, D.~Steenken, S.~Vo{\ss} (2000).
+\newblock Vehicle dispatching at seaport container terminals using evolutionary
+  algorithms.
+\newblock In {\em Proceedings of the 33rd Annual Hawaii International
+  Conference on System Sciences (HICSS)}. IEEE, Maui, HI, USA,  1--10.
+
+\bibitem[\protect\citeauthoryear{Davenport, Patil}{Davenport und
+  Patil}{2012}]{davenport_data_2012}
+Davenport, T.~H., D.~J. Patil (2012).
+\newblock Data scientist: The sexiest job of the 21st century.
+\newblock
+  \url{https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/}.
+  Letzter Zugriff am 09.12.2015.
+
+\bibitem[\protect\citeauthoryear{Fink, Schneidereit, Vo{\ss}}{Fink
+  et~al.}{2005}]{fink2006grundlagen}
+Fink, A., G.~Schneidereit, S.~Vo{\ss} (2005).
+\newblock {\em {Grundlagen der Wirtschaftsinformatik}\/} (2. Aufl.).
+\newblock Physica, Heidelberg.
+
+\bibitem[\protect\citeauthoryear{Heilig, Vo{\ss}}{Heilig und
+  Vo{\ss}}{2014}]{heilig_scientometric_2014}
+Heilig, L., S.~Vo{\ss} (2014).
+\newblock A scientometric analysis of cloud computing literature.
+\newblock {\em IEEE Transactions on Cloud Computing\/}~{\em 2\/}(3),  266--278.
+
+\bibitem[\protect\citeauthoryear{Heilig, Vo{\ss}}{Heilig und
+  Vo{\ss}}{2015}]{heilig_voss_2015}
+Heilig, L., S.~Vo{\ss} (2015).
+\newblock Inter-terminal transportation: An annotated bibliography and research
+  agenda.
+\newblock Working paper, Institute of Information Systems, University of
+  Hamburg.
+
+\bibitem[\protect\citeauthoryear{Jacobs}{Jacobs}{2009}]{jacobs_pathologies_2009}
+Jacobs, A. (2009).
+\newblock The pathologies of big data.
+\newblock {\em Communications of the ACM\/}~{\em 52\/}(8),  36--44.
+
+\bibitem[\protect\citeauthoryear{Ropke}{Ropke}{2005}]{ropke_heuristic_2005}
+Ropke, S. (2005).
+\newblock {\em Heuristic and exact algorithms for vehicle routing problems}.
+\newblock Doktorarbeit, University of Copenhagen.
+
+\bibitem[\protect\citeauthoryear{Taillard, Vo{\ss}}{Taillard und
+  Vo{\ss}}{2002}]{voss_popmusic_2002}
+Taillard, E.~D., S.~Vo{\ss} (2002).
+\newblock {POPMUSIC} -- {Partial} {Optimization} {Metaheuristic} under
+  {Special} {Intensification} {Conditions}.
+\newblock In Celso~C. Ribeiro, Pierre Hansen (Hrsg.), {\em Essays and Surveys
+  in Metaheuristics},  613--629. Kluwer, New York, NY, USA.
+
+\end{thebibliography}
