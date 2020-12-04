@@ -1,18 +1,26 @@
-\select@language {english}
-\select@language {ngerman}
-\contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.3}
-\contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.4}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Kapitel}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Unterkapitel}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Unterunterkapitel}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Unterunterkapitel 2}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Unterkapitel 2}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Unterkapitel 3}{4}{section.2.3}
-\contentsline {chapter}{\numberline {3}Neues Kapitel}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Neues Unterkapitel}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Neues Unterkapitel 2}{5}{section.3.2}
-\contentsline {chapter}{\numberline {A}Anhang}{6}{appendix.A}
-\contentsline {section}{\numberline {A.1}Anhang A}{6}{section.A.1}
-\contentsline {chapter}{Bibliography}{8}{lstnumber.A.1.16}
-\contentsline {chapter}{Eidesstattliche Versicherung}{9}{appendix*.9}
+\babel@toc {english}{}
+\babel@toc {ngerman}{}
+\contentsline {chapter}{List of Figures}{ii}{chapter*.3}% 
+\contentsline {chapter}{List of Tables}{iii}{chapter*.4}% 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Funktionsweise einer klassischen Transaktion von Geld}{3}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Notwendigkeit f\IeC {\"u}r Blockchain-Technologie}{3}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Theorie der Blockchain-Technologie am Beispiel von Bitcoin}{3}{section.2.3}% 
+\contentsline {chapter}{\numberline {3}Blockchain 2.0}{4}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{4}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{4}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{5}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{5}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}M\IeC {\"o}gliche Verbesserungen mittels Blockchain-Technologie}{5}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{5}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{5}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle L\IeC {\"o}sungen}{5}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{6}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{6}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{6}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Ausblick}{6}{section.5.3}% 
+\contentsline {chapter}{\numberline {A}Anhang}{7}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Anhang A}{7}{section.A.1}% 
+\contentsline {chapter}{Bibliography}{9}{lstnumber.A.1.16}% 
+\contentsline {chapter}{Eidesstattliche Versicherung}{10}{chapter*.7}% 
