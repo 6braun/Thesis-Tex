@@ -1,26 +1,36 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
-\contentsline {chapter}{List of Figures}{ii}{chapter*.3}% 
-\contentsline {chapter}{List of Tables}{iii}{chapter*.4}% 
+\contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.3}% 
+\contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.4}% 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{3}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Funktionsweise einer klassischen Transaktion von Geld}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Notwendigkeit f\IeC {\"u}r Blockchain-Technologie}{3}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Theorie der Blockchain-Technologie am Beispiel von Bitcoin}{3}{section.2.3}% 
-\contentsline {chapter}{\numberline {3}Blockchain 2.0}{4}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{4}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{4}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{5}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{5}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}M\IeC {\"o}gliche Verbesserungen mittels Blockchain-Technologie}{5}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{5}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{5}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle L\IeC {\"o}sungen}{5}{section.4.5}% 
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{6}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{6}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{6}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Ausblick}{6}{section.5.3}% 
-\contentsline {chapter}{\numberline {A}Anhang}{7}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}Anhang A}{7}{section.A.1}% 
-\contentsline {chapter}{Bibliography}{9}{lstnumber.A.1.16}% 
-\contentsline {chapter}{Eidesstattliche Versicherung}{10}{chapter*.7}% 
+\contentsline {section}{\numberline {2.2}Notwendigkeit f\IeC {\"u}r Blockchain-Technologie}{4}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Theorie der Blockchain-Technologie am Beispiel von Bitcoin}{4}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Keys und Adressen}{5}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Transaktionen}{5}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Zeitstempel}{5}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Der Konsensalgorithmus Proof-of-Work}{5}{subsection.2.3.4}% 
+\contentsline {subsection}{\numberline {2.3.5}Netzwerk}{5}{subsection.2.3.5}% 
+\contentsline {subsection}{\numberline {2.3.6}Anreize}{5}{subsection.2.3.6}% 
+\contentsline {subsection}{\numberline {2.3.7}Freimachen von Speicherplatz mittels Hash-B\IeC {\"a}umen}{5}{subsection.2.3.7}% 
+\contentsline {subsection}{\numberline {2.3.8}Verifizierung von Transaktionen}{5}{subsection.2.3.8}% 
+\contentsline {subsection}{\numberline {2.3.9}Sicherheit und Privatsph\IeC {\"a}re}{5}{subsection.2.3.9}% 
+\contentsline {subsection}{\numberline {2.3.10}Angriff auf das Netzwerk}{5}{subsection.2.3.10}% 
+\contentsline {chapter}{\numberline {3}Blockchain 2.0}{6}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{6}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{6}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{7}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}M\IeC {\"o}gliche Verbesserungen mittels Blockchain-Technologie}{7}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{7}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{7}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle L\IeC {\"o}sungen}{7}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{8}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{8}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{8}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Ausblick}{8}{section.5.3}% 
+\contentsline {chapter}{\numberline {A}Anhang}{9}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Anhang A}{9}{section.A.1}% 
+\contentsline {chapter}{Bibliography}{11}{lstnumber.A.1.16}% 
+\contentsline {chapter}{Eidesstattliche Versicherung}{12}{chapter*.7}% 

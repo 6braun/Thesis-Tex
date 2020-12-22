@@ -1,19 +1,18 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: _titlepage_de.aux
-A level-1 auxiliary file: chapter01.aux
-A level-1 auxiliary file: chapter02.aux
-A level-1 auxiliary file: chapter03.aux
-A level-1 auxiliary file: chapter04.aux
-A level-1 auxiliary file: chapter05.aux
+A level-1 auxiliary file: _titlepage_en.aux
+A level-1 auxiliary file: einleitung.aux
+A level-1 auxiliary file: bitcoin.aux
+A level-1 auxiliary file: ethereum.aux
+A level-1 auxiliary file: digital_advertising.aux
+A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "Finkenzeller.2010"
 You've used 9 entries,
             2911 wiz_defined-function locations,
-            686 strings with 6763 characters,
+            684 strings with 6743 characters,
 and the built_in function-call counts, 7378 in all, are:
 = -- 598
 > -- 640
@@ -52,4 +51,3 @@ warning$ -- 0
 while$ -- 94
 width$ -- 0
 write$ -- 128
-(There was 1 warning)
