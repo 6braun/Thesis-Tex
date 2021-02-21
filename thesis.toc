@@ -1,7 +1,7 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
-\contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.3}%
-\contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.4}%
+\contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.3}%
+\contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funktionsweise von Geld}{3}{section.2.1}%
@@ -13,30 +13,24 @@
 \contentsline {subsubsection}{Bitcoin Adressen}{7}{figure.caption.7}%
 \contentsline {subsubsection}{SHA-256}{8}{figure.caption.7}%
 \contentsline {subsection}{\numberline {2.3.2}Wallet}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Transaktionen}{8}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Zeitstempel}{8}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Der Konsensalgorithmus Proof-of-Work}{8}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Netzwerk}{8}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Anreize}{8}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}Freimachen von Speicherplatz mittels Hash-Bäumen}{8}{subsection.2.3.8}%
-\contentsline {subsection}{\numberline {2.3.9}Verifizierung von Transaktionen}{8}{subsection.2.3.9}%
-\contentsline {subsection}{\numberline {2.3.10}Sicherheit und Privatsphäre}{8}{subsection.2.3.10}%
-\contentsline {subsection}{\numberline {2.3.11}Angriff auf das Netzwerk}{8}{subsection.2.3.11}%
-\contentsline {chapter}{\numberline {3}Blockchain 2.0}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{9}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{10}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{10}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{10}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{10}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{11}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{12}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{12}{section.A.1}%
-\contentsline {chapter}{Bibliography}{14}{lstnumber.A.1.16}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{15}{chapter*.9}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\contentsline {subsection}{\numberline {2.3.3}Transaktionen}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Netzwerk}{10}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Der Konsensalgorithmus Proof-of-Work}{10}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Angriff auf das Netzwerk}{10}{subsection.2.3.6}%
+\contentsline {chapter}{\numberline {3}Blockchain 2.0}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{12}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{12}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{13}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{14}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{14}{section.A.1}%
+\contentsline {chapter}{Bibliography}{16}{lstnumber.-2.8}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{17}{chapter*.11}%

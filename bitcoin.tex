@@ -69,15 +69,36 @@ Da Verschlüsselungsalgorithmen einen Grundbaustein für Blockchain-Technologie 
 \emph{Secure Hash Algorithm}, kurz SHA, ist eine von der \emph{NSA} und dem \emph{National Institute of Standards and Technology} entwickelte Sammlung von Verschlüsselungsalgorithmus, für welche die offiziellen Spezifikationen in der Publikation von \cite{dang_2015} festgesetzt wurden.\\
 
   
-
 \subsection{Wallet}
+Eine Wallet ist ein Programm, welches als Interface zwischen Bitcoin-Netzwerk und dem Nutzer dient. 
+Dessen Funktionen beinhalten die Verwaltung der Schlüssel, das Berechnen des Guthabens und das Signieren von Transaktionen.
+Eine Wallet ist, im Gegensatz zu einer physikalischen Geldbörse nicht für das Halten von Münzen, sondern zur Verwaltung der privaten Schlüssel zuständig. 
+Wie das Berechnen des "Guthabens" geschieht, wird im Unterkapitel \emph{Transaktionen erläutert}.\\
+Man unterscheidet zwischen nicht-deterministischen und deterministischen Wallets. Die erste Variante kann man sich als Korb vorstellen, in dem vorher zufällig generierte private Schlüssel in großer Anzahl gelagert sind. Dabei erzeugt ein Privater einen öffentlichen Schlüssel, der wiederum eine Adresse erzeugt (siehe Kapitel \emph{Keys und Adressen}).
+Um die eigene Pseudonymität zu schützen ist es empfehlenswert, einen Key nur ein Mal zu benutzen. Aufgrund der hohen Anzahl angesammelter Keys und der damit verbundenen Datensicherung ist diese Art Wallet heute nicht mehr der Standard.\\
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/non_det_wallet.png}
+	\caption{Nicht-deterministische Wallet}
+	\label{6braun:fig:non-deterministic_wallet}
+\end{figure}
+Die fortgeschrittenste Form einer Deterministischen ist die sogenannte BIP32-Wallet, welche 2 nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem).\\
+Diese werden in \cite{buterin_2013} als \emph{Master Public Key Property} und \emph{Hierarchy Property} bezeichnet.
+Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man den sogenannten Offsets, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
+$$offset = SHA256(index + masterPubKey)$$
+$$pubKey_{index} = offset + masterPubKey$$ Dies geht analog genauso mit dem Master Private Key. 
+Aufgrund dieser Eigenschaft ist es möglich, den Master Public Key ungeschützt zu lagern und sogar an dritte Parteien herauszugeben, ohne dass diese Zugriff auf das Guthaben erhalten.\\
+Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Ein Geschäftsführer könnte so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das Eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behält der Geschäftsführer die absolute Kontrolle über alle Schlüssel, da er im Besitz der Master Keys ist. 
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/bip32_wallet.png}
+	\caption{BIP32-Wallet}
+	\label{6braun:fig:non-deterministic_wallet}
+\end{figure}
+Anders als bei einer nicht-deterministischen Wallet müssen nicht mehr die Private Keys selbst, sondern lediglich der \emph{Seed} gesichert werden. Dieser ist seit dem BIP39/44 eine kurze Liste von für den Menschen leserlichen Worten. Diese können mithilfe eines speziellen Dictionaries in eine Hex-Zahl umgewandelt werden, aus der schließlich der Master Private Key erzeugt wird.
+
 \subsection{Transaktionen}
-\subsection{Zeitstempel}
-\subsection{Der Konsensalgorithmus Proof-of-Work}
 \subsection{Netzwerk}
-\subsection{Anreize}
-\subsection{Freimachen von Speicherplatz mittels Hash-Bäumen}
-\subsection{Verifizierung von Transaktionen}
-\subsection{Sicherheit und Privatsphäre}
+\subsection{Der Konsensalgorithmus Proof-of-Work}
 \subsection{Angriff auf das Netzwerk}
 

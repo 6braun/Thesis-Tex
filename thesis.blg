@@ -1,62 +1,53 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2020' - Flatpak')
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-Reallocating 'name_of_file' (item size: 1) to 18 items.
 A level-1 auxiliary file: _titlepage_de.aux
-Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: einleitung.aux
-Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: bitcoin.aux
-Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: ethereum.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: digital_advertising.aux
-Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: zusammenfassung.aux
-Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: appendix.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: chicagog.bst
-Reallocating 'name_of_file' (item size: 1) to 7 items.
 Database file #1: thesis.bib
-You've used 4 entries,
+You've used 5 entries,
             2911 wiz_defined-function locations,
-            651 strings with 5631 characters,
-and the built_in function-call counts, 3300 in all, are:
-= -- 243
-> -- 311
+            656 strings with 5853 characters,
+and the built_in function-call counts, 3774 in all, are:
+= -- 284
+> -- 337
 < -- 2
-+ -- 98
-- -- 106
-* -- 295
-:= -- 616
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 33
-chr.to.int$ -- 4
-cite$ -- 4
-duplicate$ -- 82
-empty$ -- 166
-format.name$ -- 114
-if$ -- 610
++ -- 104
+- -- 116
+* -- 323
+:= -- 711
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 39
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 97
+empty$ -- 198
+format.name$ -- 124
+if$ -- 693
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 4
-newline$ -- 23
-num.names$ -- 40
-pop$ -- 36
+newline$ -- 28
+num.names$ -- 50
+pop$ -- 40
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 70
 quote$ -- 0
-skip$ -- 101
+skip$ -- 118
 stack$ -- 0
-substring$ -- 132
-swap$ -- 35
+substring$ -- 152
+swap$ -- 40
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
+type$ -- 90
 warning$ -- 0
-while$ -- 42
+while$ -- 52
 width$ -- 0
-write$ -- 55
+write$ -- 68
