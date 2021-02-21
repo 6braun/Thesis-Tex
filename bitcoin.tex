@@ -1,12 +1,23 @@
 \chapter{Blockchain 1.0 - Wie Bitcoin funktioniert}
 Mit Fortschritt im Bereich Kryptographie begann auch das Interesse von Forschern an digitalen Währungen. 
-Das Problem dieser frühen Projekte bestand jedoch darin, dass sie, einen sogenannten \emph{Central Point of Failure}, also eine zentralisierte Schwachstelle besaßen. 
-Beispielsweise könnten die Konten von Nutzern zwar kryptografisch gesichert, jedoch von zentralen Stellen wie Banken verwaltet werden.\\
+Das Problem dieser frühen Projekte bestand jedoch darin, dass sie einen sogenannten \emph{Central Point of Failure}, also eine zentralisierte Schwachstelle besaßen. 
+Beispielsweise könnten die Konten von Nutzern zwar kryptografisch gesichert, jedoch von zentralen Stellen wie Banken verwaltet werden müssen.\\
 Ein wichtiges Problem, welches es mithilfe von Geld zu lösen gilt, ist das sogenannte \emph{Double Spending Problem}. Es muss durch gewisse Mechanismen verhindert werden, dass bösartige Akteure die selben Geldwerte für mehrere Transaktionen verwenden. Bei physischem Geld, also Geldscheinen, Münzen, etc. verhindern komplexe Drucktechniken die Verbreitung von Falschgeld und dadurch das ein Geldschein nur einmal existieren kann, ist dieser nur für eine Transaktion zu verwenden.\\
 Versucht man nun diese Geldwerte gänzlich digital zu verwalten, so liegt die Verantwortung für eine korrekte Beobachtung und Verwaltung bei einer zentralen Stelle wie einer Bank. Diese könnte als Angriffsstelle für Antagonisten dienen und stellt somit eine Gefahr für das System dar.\\
 Dieses Kapitel beschäftigt sich mit der traditionellen Funktionsweise von Geld und wie mithilfe eines dezentralen Systems ein zentraler Fehlerpunkt vermeidet werden kann. 
-\section{Funktionsweise einer klassischen Transaktion von Geld}
-Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat drei Probleme zu lösen:
+\section{Funktionsweise von Geld}
+\cite{mankiw_taylor_2018} bezeichnen Geld als ein Bündel von Aktiva, das die Menschen in einer Volkswirtschaft regemäßig dazu verwenden, Waren und Dienstleistungen von anderen Menschen zu erwerben.\\
+Es erlaubt den Parteien einem Tauschgeschäft, bei dem beide Seiten mit dem Gut des Tauschpartners zufrieden sein müssen, zu entgehen und ermöglicht stattdessen eine effiziente Allokation von Ressourcen. Zugleich stellt Geld sicher, dass das eigene Kapital den Wert auch in Zukunft behält.\\
+Damit ein Handelsgut als Geld angesehen werden kann, muss es drei Funktionen erfüllen können\\
+Fundamental ist, dass das Handelsgut generell als Tausch- bzw. Zahlungsmittel akzeptiert wird. Theoretisch könnte man versuchen sein Abendessen mit dem eigenen Fahrrad zu bezahlen, doch kommt man in der Praxis mit dieser Strategie nicht weit.\\
+Des Weiteren muss das Tauschgeschäft als Recheneinheit fungieren können. Dies ist notwendig, da anhand Dessen die relativen Preise anderer Waren in der Marktwirtschaft ermittelt werden müssen.\\
+Zuletzt muss sichergestellt sein, dass das Handelsgut wie bereits erwähnt in Zukunft auch seine Kaufkraft behält. Jemand, der es als Zahlungsmittel akzeptiert muss sich darauf verlassen können, dass es auch für zukünftige Geschäfte verwendet werden kann.\\
+Bei den Geldformen unterscheidet man zwischen Warengeld und Rechengeld. Diese unterscheiden sich in ihrem intrinsischen Wert, also darin, ob sie auch außerhalb von Tauschgeschäften einen Nutzen finden. Ein Beispiel für Warengeld ist Gold, welches neben Tauschgeschäften auch industriell verarbeitet werden kann.\\
+Papiergeld hingegen bietet abseits des Tauschgeschäftes keinen Nutzen für den Besitzer. Um trotzdem den Wert des Geldes gewährleisten zu können, wird es von Seiten des Staats als universelles Zahlungsmittel in der jeweiligen Marktwirtschaft bestimmt.\\
+Eine weitere wichtige Rolle im Finanzsystem nehmen Zentralbanken ein. Sie überwachen das Bankensystem und steuern über eine geeignete Geldpolitik das Geldangebot auf dem Markt.\\
+Durch das Drucken von Geld und den anschließenden Kauf von Wertpapieren können sie das Geldangebot erhöhen. Um es wiederum zu verringern, verkaufen sie Wertpapiere und nehmen das erhaltene Geld aus dem Umlauf.\\
+
+Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat drei technische Anforderungen zu erfüllen:
 \begin{enumerate}
 	\item Sicherstellung des Wertes, also die Authentizität
 	\item Garantie dafür, dass die selbe Währung nicht mehr als einmal verwendet werden kann (Double Spending)
@@ -15,8 +26,51 @@ Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat dr
 TODO
 \section{Notwendigkeit für Blockchain-Technologie}
 \section{Theorie der Blockchain-Technologie am Beispiel von Bitcoin}
-Auch wenn es andere Projekte für dezentrale Währungen wie B-Money und Hashcash gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers \emph{Bitcoin: A Peer to peer Electronic Cash System}. Diese Publikation wurde, von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien von seiner Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokols. Außerdem werden Vermögenswerte nicht durch klassischer Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger} impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
+Auch wenn es andere Projekte für dezentrale Währungen wie B-Money und Hashcash gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers \emph{Bitcoin: A Peer to peer Electronic Cash System}. Diese Publikation wurde, von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokols. Außerdem werden Vermögenswerte nicht durch klassischer Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger} impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
 \subsection{Keys und Adressen}
+Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Nazis im zweiten Weltkrieg genutzt wurden. 
+Mithilfe von Maschinen, den sogenannten \emph{ENIGMA}, verschlüsselten sie wichtige strategische Informationen wie die Aufenthaltsorte von Truppen oder taktische Befehle, die anschließend per Funk überbracht wurden.\\
+Kryptographische Verfahren folgten zu der Zeit dem Prinzip \emph{Security by Obscurity}, nach dem die Sicherheit eines Verschlüsselungsverfahrens davon abhängig ist, ob die Funktionsweise dieser bekannt ist. 
+Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code im Jahr 1941 vom englischen Mathematiker \emph{Alan Turing} und seinem Team gelöst werden konnte.\\
+Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt. 
+Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet.\\
+Für Bitcoin wird ein Paar aus Schlüsseln erzeugt. 
+Dieses Paar besteht aus dem privaten Schlüssel (private key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
+Aus diesem wird durch die Verwendung von Hashing-Verfahren ein öffentlicher Schlüssel (public key) abgeleitet, mit dem Bitcoins empfangen werden können.\\
+Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um Jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann.\\
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=\textwidth]{images/public_and_private_key.png}
+	\caption{Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger}
+	\label{6braun:fig:keys}
+\end{figure}
+\subsubsection{Private Keys}
+Ein privater Schlüssel besteht aus einer Zahl von 256 zufälligen Bits. Er wird zum Signieren von Transaktionen und für den Zugriff auf ein Guthaben benötigt. Ohne privaten Schlüssel verliert man als Besitzer von Bitcoin auch den Zugriff auf das eigene Guthaben.\\
+Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für "Zufälligkeit". In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokol gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$).
+
+\subsubsection{Public Keys}
+Um einen öffentlichen Schlüssel aus dem Privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
+Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptography} gennant und bedient sich an den Eigenschaften einer Ellipse.
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/elliptic_graph_cryptography.png}
+	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\TODO: Bessere Grafik}
+	\label{6braun:fig:ellipse}
+\end{figure}
+Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt, auf der Ellipse und Multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse, erhält 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
+
+\subsubsection{Bitcoin Adressen}
+Eine Adresse ist ein aus dem öffentlichen Schlüssel generierter String aus Buchstaben und Zahlen, der den Besitzer des Schlüssels zu einem potentiellen Empfänger einer Transaktion macht. Beim diesem muss es sich allerdings nicht zwangsläufig um eine Person handeln, denn auch Organisationen, geschriebene Skripte, etc. kommen als \emph{abstrakter} Empfänger in Frage.\\
+So wie der Öffentliche aus dem privaten Schlüssel erzeugt wird, wird die Bitcoin Adresse aus dem öffentlichen Schlüssel mithilfe von Hashing-Algorithmen erzeugt. 
+Die verwendeten Algorithmen, welche nacheinander auf den öffentlichen Schlüssel angewendet werden, heißen SHA-256 und RIPEMD160.\\
+Da Verschlüsselungsalgorithmen einen Grundbaustein für Blockchain-Technologie darstellen, wird ihre Funktionsweise im Folgenden beispielhaft anhand des SHA-256-Algorithmus erläutert. 
+
+\subsubsection{SHA-256}
+\emph{Secure Hash Algorithm}, kurz SHA, ist eine von der \emph{NSA} und dem \emph{National Institute of Standards and Technology} entwickelte Sammlung von Verschlüsselungsalgorithmus, für welche die offiziellen Spezifikationen in der Publikation von \cite{dang_2015} festgesetzt wurden.\\
+
+  
+
+\subsection{Wallet}
 \subsection{Transaktionen}
 \subsection{Zeitstempel}
 \subsection{Der Konsensalgorithmus Proof-of-Work}
