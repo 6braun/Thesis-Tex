@@ -16,25 +16,25 @@
 \contentsline {subsubsection}{Vorbereitung der Nachricht}{9}{lstnumber.2.2.8}%
 \contentsline {subsubsection}{Aufteilung der Nachricht in Blöcke}{10}{lstnumber.2.2.8}%
 \contentsline {subsubsection}{Algorithmus}{10}{lstnumber.2.2.8}%
-\contentsline {subsection}{\numberline {2.3.3}Wallet}{11}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Transaktionen}{13}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Netzwerk}{13}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Der Konsensalgorithmus Proof-of-Work}{13}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Angriff auf das Netzwerk}{13}{subsection.2.3.7}%
-\contentsline {chapter}{\numberline {3}Blockchain 2.0}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{14}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{15}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{15}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{16}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{16}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{17}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{17}{section.A.1}%
-\contentsline {chapter}{Bibliography}{19}{lstnumber.-3.8}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{20}{chapter*.10}%
+\contentsline {subsection}{\numberline {2.3.3}Wallet}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Transaktionen}{14}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Netzwerk}{14}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Der Konsensalgorithmus Proof-of-Work}{14}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Angriff auf das Netzwerk}{14}{subsection.2.3.7}%
+\contentsline {chapter}{\numberline {3}Blockchain 2.0}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{15}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{16}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{17}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{18}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{18}{section.A.1}%
+\contentsline {chapter}{Bibliography}{20}{lstnumber.-3.8}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{21}{chapter*.10}%

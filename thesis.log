@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  1 MAR 2021 07:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  1 MAR 2021 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1219,34 +1219,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
 [7] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-0.
+2.
  (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
  [10]
-<images/non_det_wallet.png, id=216, 321.2pt x 201.75375pt>
+<images/non_det_wallet.png, id=210, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
-Package pdftex.def Info: images/non_det_wallet.png  used on input line 184.
+Package pdftex.def Info: images/non_det_wallet.png  used on input line 197.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
- [11 <./images/non_det_wallet.png>]
-<images/bip32_wallet.png, id=229, 713.66624pt x 452.69125pt>
+ [11]
+[12 <./images/non_det_wallet.png>]
+<images/bip32_wallet.png, id=232, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
-Package pdftex.def Info: images/bip32_wallet.png  used on input line 197.
+Package pdftex.def Info: images/bip32_wallet.png  used on input line 210.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
-) [12 <./images/bip32_wallet.png>] [13]
+) [13 <./images/bip32_wallet.png>] [14]
 \openout2 = `ethereum.aux'.
 
- (./ethereum.tex
+
+(./ethereum.tex
 chapter 3.
-) [14
+) [15
 
 
 
@@ -1256,7 +1258,7 @@ chapter 3.
 
  (./digital_advertising.tex
 chapter 4.
-) [15
+) [16
 
 
 
@@ -1266,7 +1268,7 @@ chapter 4.
 
  (./zusammenfassung.tex
 chapter 5.
-) [16
+) [17
 
 
 
@@ -1277,7 +1279,7 @@ chapter 5.
  (./appendix.tex
 chapter A.
 
-LaTeX Warning: Reference `lst:soap' on page 17 undefined on input line 11.
+LaTeX Warning: Reference `lst:soap' on page 18 undefined on input line 11.
 
 
 Overfull \hbox (59.3926pt too wide) in paragraph at lines 15--16
@@ -1319,12 +1321,12 @@ Overfull \hbox (59.3926pt too wide) in paragraph at lines 22--23
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17
+[18
 
 
 
 
-]) [18] (./thesis.bbl
+]) [19] (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 12--17
 []\T1/ptm/m/n/12 Buterin, V. (2013).  De-ter-mi-ni-stic wal-lets, their ad-van-
 ta-ges and
@@ -1336,18 +1338,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 om / articles /
  []
 
-) [19
+) [20
 
 
 
 
 
-] (./_declaration_de.tex [20
+] (./_declaration_de.tex [21
 
 
 
 
-] [21
+] [22
 
 
 
@@ -1372,11 +1374,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 17935 strings out of 480608
- 325710 string characters out of 5905076
+ 17933 strings out of 480608
+ 325690 string characters out of 5905076
  912469 words of memory out of 5000000
  33246 multiletter control sequences out of 15000+600000
- 589911 words of font info for 120 fonts, out of 8000000 for 9000
+ 589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,22n,115p,10101b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
@@ -1387,10 +1389,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (26 pages, 231270 bytes).
+Output written on thesis.pdf (27 pages, 232872 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
+ 458 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
  141 named destinations out of 1000 (max. 500000)
  274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
