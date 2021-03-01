@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  21 FEB 2021 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  1 MAR 2021 07:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,7 +792,27 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen187
 \SOUL@uldp=\dimen188
 \SOUL@ulht=\dimen189
-)) (./thesis.aux
+))
+(/app/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip113
+\LTright=\skip114
+\LTpre=\skip115
+\LTpost=\skip116
+\LTchunksize=\count302
+\LTcapwidth=\dimen190
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@cols=\count303
+\LT@rows=\count304
+\c@LT@tables=\count305
+\c@LT@chunks=\count306
+\LT@p@ftn=\toks36
+)
+Class scrbook Info: longtable captions redefined on input line 48.
+ (./thesis.aux
 (./_titlepage_de.aux) (./einleitung.aux) (./bitcoin.aux
 
 LaTeX Warning: Label `6braun:fig:non-deterministic_wallet' multiply defined.
@@ -828,17 +848,17 @@ Package scrbase Info: activating english \listtablename on input line 55.
 
 (/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen190
-\scratchbox=\box58
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen191
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count307
+\scratchdimen=\dimen191
+\scratchbox=\box62
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen192
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks38
 ) (/app/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -848,7 +868,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count308
+\c@lstlisting=\count313
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -884,8 +904,8 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen192
-\AtBeginShipoutBox=\box59
+\big@size=\dimen193
+\AtBeginShipoutBox=\box63
 Package hyperref Info: Link coloring ON on input line 55.
 (/app/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -896,7 +916,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/app/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count314
 )
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
@@ -923,7 +943,7 @@ File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 168.
-\BKM@id=\count310
+\BKM@id=\count315
 ))
 
 Package scrlayer-scrpage Warning: Very small head height detected!
@@ -948,22 +968,27 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 126.
 )
-\CenteringLeftskip=\skip113
-\RaggedLeftLeftskip=\skip114
-\RaggedRightLeftskip=\skip115
-\CenteringRightskip=\skip116
-\RaggedLeftRightskip=\skip117
-\RaggedRightRightskip=\skip118
-\CenteringParfillskip=\skip119
-\RaggedLeftParfillskip=\skip120
-\RaggedRightParfillskip=\skip121
-\JustifyingParfillskip=\skip122
-\CenteringParindent=\skip123
-\RaggedLeftParindent=\skip124
-\RaggedRightParindent=\skip125
-\JustifyingParindent=\skip126
+\CenteringLeftskip=\skip117
+\RaggedLeftLeftskip=\skip118
+\RaggedRightLeftskip=\skip119
+\CenteringRightskip=\skip120
+\RaggedLeftRightskip=\skip121
+\RaggedRightRightskip=\skip122
+\CenteringParfillskip=\skip123
+\RaggedLeftParfillskip=\skip124
+\RaggedRightParfillskip=\skip125
+\JustifyingParfillskip=\skip126
+\CenteringParindent=\skip127
+\RaggedLeftParindent=\skip128
+\RaggedRightParindent=\skip129
+\JustifyingParindent=\skip130
 )
 Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/app/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `_titlepage_de.aux'.
 
@@ -1135,22 +1160,12 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/ptm/m/n/12 On-demand
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\T1/ptm/m/n/12 Elasticity
- []
-
 ) [1
 
 
 
 
-] [2]
+]
 \openout2 = `bitcoin.aux'.
 
  (./bitcoin.tex
@@ -1160,13 +1175,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--19
 
  []
 
-[3
+[2
 
 
 
 
-] [4]
-<images/public_and_private_key.png, id=139, 311.7246pt x 75.8835pt>
+] [3]
+<images/public_and_private_key.png, id=127, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
@@ -1178,42 +1193,60 @@ Overfull \hbox (2.34837pt too wide) in paragraph at lines 31--47
  Fal-le der Na-zis, de-ren ENIGMA-
  []
 
-[5]
-<images/elliptic_graph_cryptography.png, id=144, 580.1675pt x 581.17125pt>
+[4]
+<images/elliptic_graph_cryptography.png, id=132, 580.1675pt x 581.17125pt>
 File: images/elliptic_graph_cryptography.png Graphic file (type png)
 <use images/elliptic_graph_cryptography.png>
 Package pdftex.def Info: images/elliptic_graph_cryptography.png  used on input 
 line 56.
 (pdftex.def)             Requested size: 298.75262pt x 299.26663pt.
- [6 <./images/public_and_private_key.png>]
+ [5 <./images/public_and_private_key.png>]
 Overfull \hbox (24.51228pt too wide) in paragraph at lines 63--67
 \T1/ptm/m/n/12 stel-len, wird ih-re Funk-ti-ons-wei-se im Fol-gen-den bei-spiel
 -haft an-hand des SHA-256-Algorithmus
  []
 
+[6 <./images/elliptic_graph_cryptography.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
+1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+(/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-[7 <./images/elliptic_graph_cryptography.png (PNG copy)>]
-<images/non_det_wallet.png, id=158, 321.2pt x 201.75375pt>
+[7] [8]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+0.
+ (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [9]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+ [10]
+<images/non_det_wallet.png, id=216, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
-Package pdftex.def Info: images/non_det_wallet.png  used on input line 81.
+Package pdftex.def Info: images/non_det_wallet.png  used on input line 184.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
- [8 <./images/non_det_wallet.png>]
-<images/bip32_wallet.png, id=169, 713.66624pt x 452.69125pt>
+ [11 <./images/non_det_wallet.png>]
+<images/bip32_wallet.png, id=229, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
-Package pdftex.def Info: images/bip32_wallet.png  used on input line 94.
+Package pdftex.def Info: images/bip32_wallet.png  used on input line 197.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
-) [9 <./images/bip32_wallet.png>] [10]
+) [12 <./images/bip32_wallet.png>] [13]
 \openout2 = `ethereum.aux'.
 
  (./ethereum.tex
 chapter 3.
-) [11
+) [14
 
 
 
@@ -1223,7 +1256,7 @@ chapter 3.
 
  (./digital_advertising.tex
 chapter 4.
-) [12
+) [15
 
 
 
@@ -1233,7 +1266,7 @@ chapter 4.
 
  (./zusammenfassung.tex
 chapter 5.
-) [13
+) [16
 
 
 
@@ -1244,13 +1277,9 @@ chapter 5.
  (./appendix.tex
 chapter A.
 
-LaTeX Warning: Reference `lst:soap' on page 14 undefined on input line 11.
+LaTeX Warning: Reference `lst:soap' on page 17 undefined on input line 11.
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
-.
-(/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+
 Overfull \hbox (59.3926pt too wide) in paragraph at lines 15--16
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1290,12 +1319,12 @@ Overfull \hbox (59.3926pt too wide) in paragraph at lines 22--23
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14
+[17
 
 
 
 
-]) [15] (./thesis.bbl
+]) [18] (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 12--17
 []\T1/ptm/m/n/12 Buterin, V. (2013).  De-ter-mi-ni-stic wal-lets, their ad-van-
 ta-ges and
@@ -1307,18 +1336,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 om / articles /
  []
 
-) [16
+) [19
 
 
 
 
 
-] (./_declaration_de.tex [17
+] (./_declaration_de.tex [20
 
 
 
 
-] [18
+] [21
 
 
 
@@ -1343,24 +1372,25 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 17699 strings out of 480608
- 322442 string characters out of 5905076
- 1004446 words of memory out of 5000000
- 33083 multiletter control sequences out of 15000+600000
- 575297 words of font info for 84 fonts, out of 8000000 for 9000
+ 17935 strings out of 480608
+ 325710 string characters out of 5905076
+ 912469 words of memory out of 5000000
+ 33246 multiletter control sequences out of 15000+600000
+ 589911 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,21n,115p,10101b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,22n,115p,10101b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
-/app/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></app/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on thesis.pdf (23 pages, 214260 bytes).
+/app/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dis
+t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
+xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (26 pages, 231270 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 

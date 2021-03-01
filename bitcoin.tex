@@ -65,10 +65,113 @@ So wie der Öffentliche aus dem privaten Schlüssel erzeugt wird, wird die Bitco
 Die verwendeten Algorithmen, welche nacheinander auf den öffentlichen Schlüssel angewendet werden, heißen SHA-256 und RIPEMD160.\\
 Da Verschlüsselungsalgorithmen einen Grundbaustein für Blockchain-Technologie darstellen, wird ihre Funktionsweise im Folgenden beispielhaft anhand des SHA-256-Algorithmus erläutert. 
 
-\subsubsection{SHA-256}
-\emph{Secure Hash Algorithm}, kurz SHA, ist eine von der \emph{NSA} und dem \emph{National Institute of Standards and Technology} entwickelte Sammlung von Verschlüsselungsalgorithmus, für welche die offiziellen Spezifikationen in der Publikation von \cite{dang_2015} festgesetzt wurden.\\
+\subsection{Einschub: SHA-256}
+Ein Hashalgorithmus ist eine mathematische Funktion, die einen Input entgegennimmt und einen Output fester Größe, den sogenannten Hashwert erzeugt. Ein Algorithmus sollte idealerweise folgende Eigenschaften bieten:
+\begin{itemize}
+	\item Für einen gegebenen Input immer denselben Output generieren
+	\item Nur in eine Richtung berechenbar sein
+	\item Durch geringe Änderungen am Input einen völlig anderen Output generieren
+\end{itemize}
 
-  
+Hashfunktionen haben vielerlei Anwendungsmöglichkeiten im Bereich der Datensicherheit und eine verwendete Hashfunktion im Bitcoin-Protokoll ist die bereits erwähnte SHA256-Funktion, welche u.A. von der NSA entwickelt wurde. Die folgende Erläuterung des Algorithmus orientiert sich an \cite{dang_2015}, ist allerdings für das Verständnis nachfolgender Kapitel nicht zwingend erforderlich.\\
+
+\subsubsection{Definitionen}
+Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operationen, sowie benötigte Konstanten zu definieren. Die Operationen werden auf Zahlen in Binärform bitweise angewendet.
+\begin{longtable}{p{3.5cm}p{10.5cm}l}
+\caption{Benötigte Operationen}
+	
+		\\\toprule
+		XOR  & Vergleichender Operator $\oplus$. Ergebnis ist True(1), wenn genau einer der beiden Inputs True ist. Andernfalls wird False(0) ausgegeben. Beispiel: $$0 \oplus 1 = 1$$
+		\\\midrule
+		Rotation Right  & Verschiebung der Bits um n Stellen nach rechts. Bei Overflow werden Bits wieder vorne angefügt. Beispiel: $$ROTR_1(011) = 101$$
+		\\\midrule
+		Shift Right  & Ähnlich wie die Rotation, nur dass Bits an letzter Stelle wegfallen und eine Nullen vorne angefügt werden. Beispiel: $$SHR_1(011) = 001$$
+		\\\midrule
+		Choice  & Nimmt drei Zahlen gleicher Länge entgegen und entscheidet anhand der Bits des ersten Parameters, welches Bit der jeweils anderen Parameter übernommen werden soll. $$Ch(x,y,z) = (x \land y)\oplus(\lnot x \land z)$$
+		Beispiel: $Ch(110,001,101) = 001$
+		\\\midrule
+		Majority  & Nimmt drei Zahlen gleicher Länge entgegen und übernimmt an jedem Bit denjenigen Wert, der zwischen den Inputs am häufigsten auftaucht.
+		$$Maj(x,y,z) = (x \land y)\oplus(x \land z)\oplus(y \land z)$$
+		Beispiel $Maj(110,001,101) = 101$
+		\\\midrule
+		$\sigma_0$  & $\sigma_0$ und die folgenden Funktionen sind definierte Folgen der oben definierten Operationen.
+		$$\sigma_0(x) = ROTR_7(x) \oplus ROTR_{18}(x) \oplus SHR_3(x)$$ 
+		\\\midrule
+		$\sigma_1$  & $$\sigma_1(x) = ROTR_{17}(x) \oplus ROTR_{19}(x) \oplus SHR_10(x)$$
+		\\\midrule
+		$\Sigma_0$  & $$\Sigma_0(x) = ROTR_2(x) \oplus ROTR_{13}(x) \oplus ROTR_22(x)$$
+		\\\midrule
+		$\Sigma_1$  & $$\Sigma_1(x) = ROTR_6(x) \oplus ROTR_{11}(x) \oplus ROTR_{25}(x)$$
+		\\\bottomrule
+\end{longtable}
+Außerdem müssen noch zwei Listen mit Konstanten definiert werden. Die Liste K beinhaltet die ersten 32 Bit der Nachkommastellen der Kubikwurzeln der ersten 64 Primzahlen.
+H die ersten 32 Bit der Nachkommastellen der Quadratwurzeln der ersten 8 Primzahlen. 
+ Die genauen Werte haben keine sonderliche Bedeutung, sondern lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine mögliche Backdoor im Algorithmus.
+\begin{lstlisting}[caption={Liste K von Konstanten},captionpos=b]
+	428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 
+	ab1c5ed5 d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 
+	9bdc06a7 c19bf174 e49b69c1 efbe4786 0fc19dc6 240ca1cc 2de92c6f 
+	4a7484aa 5cb0a9dc 76f988da 983e5152 a831c66d b00327c8 bf597fc7
+	c6e00bf3 d5a79147 06ca6351 14292967 27b70a85 2e1b2138 4d2c6dfc
+	53380d13 650a7354 766a0abb 81c2c92e 92722c85 a2bfe8a1 a81a664b 
+	c24b8b70 c76c51a3 d192e819 d6990624 f40e3585 106aa070 19a4c116 
+	1e376c08 2748774c 34b0bcb5 391c0cb3 4ed8aa4a 5b9cca4f 682e6ff3 
+	748f82ee 78a5636f 84c87814 8cc70208 90befffa a4506ceb bef9a3f7 
+	c67178f2
+\end{lstlisting}
+\begin{lstlisting}[caption={Liste H mit den Arbeitsvariablen H0 - H7},captionpos=b]
+	H0 = 6a09e667
+	H1 = bb67ae85
+	H2 = 3c6ef372
+	H3 = a54ff53a
+	H4 = 510e527f
+	H5 = 9b05688c
+	H6 = 1f83d9ab
+	H7 = 5be0cd19
+\end{lstlisting}
+
+\subsubsection{Vorbereitung der Nachricht}
+Bevor eine Nachricht verarbeitet werden kann, muss sie in eine für den Algorithmus brauchbare Form gebracht werden. 
+Da der SHA-256 mit Zahlen in Binärform arbeitet, müssen Inputs in Stringformat über die ASCII-Tabelle in Binärzahlen umgewandelt werden. So wird z.B. aus dem String 'ab' die Zahl 01100001 01100010.
+Anschließend fügt man eine Eins und k-viele Nullen hinzu, dass ein Vielfaches von 512 abgezogen 64 herauskommt. \cite{dang_2015} definiert diese Voraussetzung durch
+$$l+1+k \equiv 448 Mod512$$
+mit l als Länge der Nachricht. Anschließend werden 64 Bits hinzugefügt, welche die Zahl l repräsentieren, im Fall 'ab' wäre das die 16 in 64-Bit Repräsentation. Die resultierende N*512-Bit Zahl stellt den Input für die eigentliche Verschlüsselung dar.
+
+\subsubsection{Aufteilung der Nachricht in Blöcke}
+Die resultierende Zahl wird anschließend in Nachrichtenblöcke $M_1$ - $M_N$ der Länge 512-Bit und diese wiederum in 16 32-Bit-Blöcke $M_{i0}$ - $M_{i15}$ aufgeteilt. Der String 'ab' resultiert in einer 512-Bit-Zahl, sodass an dieser Stelle nur eine Aufteilung in 16 32-Bit-Blöcke nötig wäre.
+
+\subsubsection{Algorithmus}
+\begin{lstlisting}[mathescape]
+	message = ''
+	For i=1 to N:
+		w = []
+		For t=0 to 63:
+			if t <= 15:
+				w[i].push(M[i][t])
+			else:
+				a = $\sigma_1 (w[t-2]) + w[t-7] + \sigma_0 (w[t-15]) + w[t-16]$
+		a = H0
+		b = H1
+		c = H2
+		...
+		h = H7
+		For j=0 to 63
+			T1 = h + $\Sigma_1$(e) + Ch(e,f,g) + k[j] + w[j]
+			T2 = $\Sigma_0$(a) + Maj(a,b,c)
+			h = g
+			g = f
+			e = d + T1
+			d = c
+			c = b
+			b = a
+			a = T1+T2
+		H0 = a + H0
+		H1 = b + H1
+		...
+		H7 = h + H7
+		result = ''.concat(H1).concat(H2). ... .concat(H7)
+		message = message.concat(result)
+\end{lstlisting} 
 \subsection{Wallet}
 Eine Wallet ist ein Programm, welches als Interface zwischen Bitcoin-Netzwerk und dem Nutzer dient. 
 Dessen Funktionen beinhalten die Verwaltung der Schlüssel, das Berechnen des Guthabens und das Signieren von Transaktionen.

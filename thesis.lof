@@ -2,10 +2,10 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger\relax }}{6}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ TODO: Bessere Grafik\relax }}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger\relax }}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ TODO: Bessere Grafik\relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet\relax }}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet\relax }}{12}{figure.caption.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
