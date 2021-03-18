@@ -6,6 +6,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ TODO: Bessere Grafik\relax }}{6}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet\relax }}{12}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet\relax }}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Transaktionen mit unteilbaren UTXO\relax }}{14}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

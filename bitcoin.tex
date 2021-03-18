@@ -73,7 +73,7 @@ Ein Hashalgorithmus ist eine mathematische Funktion, die einen Input entgegennim
 	\item Durch geringe Änderungen am Input einen völlig anderen Output generieren
 \end{itemize}
 
-Hashfunktionen haben vielerlei Anwendungsmöglichkeiten im Bereich der Datensicherheit und eine verwendete Hashfunktion im Bitcoin-Protokoll ist die bereits erwähnte SHA256-Funktion, welche u.A. von der NSA entwickelt wurde. Die folgende Erläuterung des Algorithmus orientiert sich an \cite{dang_2015}, ist allerdings für das Verständnis nachfolgender Kapitel nicht zwingend erforderlich.\\
+Hashfunktionen haben vielerlei Anwendungsmöglichkeiten im Bereich der Datensicherheit und eine verwendete Hashfunktion im Bitcoin-Protokoll ist die bereits erwähnte SHA256-Funktion, welche u.A. von der NSA entwickelt wurde. Das folgende Unterkapitel orientiert sich an \cite{dang_2015}, ist allerdings für das Verständnis nachfolgender Kapitel nicht zwingend erforderlich.\\
 
 \subsubsection{Definitionen}
 Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operationen, sowie benötigte Konstanten zu definieren. Die Operationen werden auf Zahlen in Binärform bitweise angewendet.
@@ -183,7 +183,8 @@ Die folgende Schleife ist die, in der die eigentliche Kompression stattfindet. S
 Mithilfe der vorher Definierten Funktionen und der Arbeitsvariablen werden die temporären Variablen T1 und T2 ermittelt. 
 Für T1 spielen zusätzlich die Listen k, welche die Kubikzahlen der ersten 64 Primzahlen enthält, und die Liste w, welche die in Zeile 4 bis 9 generierten Wörter enthält, eine Rolle [16-17].\\
 Anschließend werden die Arbeitsvariablen mithilfe der Temporären neu gesetzt, sodass man nach 64 Durchläufen scheinbar willkürliche Zahlen erhält [18-24].\\
-Man addiert schließlich die Arbeitsvariablen und ursprünglichen Variablen H0-H7 und kettet diese aneinander. Bei einer kleinen Nachricht wie dem 'ab', welche lediglich einen 512-Bit-Block benötigt, wäre dies bereits das Ergebnis des Algorithmus. Sollte der Input ein Vielfaches von 512-Bit benötigen, wird die äußerste Schleife mehrfach durchlaufen und die Variablen H0-H7 in den Zeilen 25-28 nicht mehr mithilfe der initial definierten H0-H7, sondern mit denen der vorangegangenen Iteration berechnet.
+Man addiert schließlich die Arbeitsvariablen und ursprünglichen Variablen H0-H7 und kettet diese aneinander. Bei einer kleinen Nachricht wie dem 'ab', welche lediglich einen 512-Bit-Block benötigt, wäre dies bereits das Ergebnis des Algorithmus. Sollte der Input ein Vielfaches von 512-Bit benötigen, wird die äußerste Schleife mehrfach durchlaufen und die Variablen H0-H7 in den Zeilen 25-28 nicht mehr mithilfe der initial definierten H0-H7, sondern mit denen der vorangegangenen Iteration berechnet.\\
+Unabhängig von der Länge des Inputs erhält man so immer einen Output von 256 Bits, da die Arbeitsvariablen jeweils eine Länge von 32 Bits haben.
 
 \subsection{Wallet}
 Eine Wallet ist ein Programm, welches als Interface zwischen Bitcoin-Netzwerk und dem Nutzer dient. 
@@ -211,10 +212,43 @@ Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen O
 	\caption{BIP32-Wallet}
 	\label{6braun:fig:non-deterministic_wallet}
 \end{figure}
-Anders als bei einer nicht-deterministischen Wallet müssen nicht mehr die Private Keys selbst, sondern lediglich der \emph{Seed} gesichert werden. Dieser ist seit dem BIP39/44 eine kurze Liste von für den Menschen leserlichen Worten. Diese können mithilfe eines speziellen Dictionaries in eine Hex-Zahl umgewandelt werden, aus der schließlich der Master Private Key erzeugt wird.
-
+Anders als bei einer nicht-deterministischen Wallet müssen nicht mehr die Private Keys selbst, sondern lediglich der \emph{Seed} gesichert werden. Dieser ist seit dem BIP39/44 eine kurze Liste von für den Menschen leserlichen Worten. Diese können mithilfe eines speziellen Dictionaries in Hex-Zahlen umgewandelt werden, aus denen schließlich der Master Private Key erzeugt wird.
 \subsection{Transaktionen}
-\subsection{Netzwerk}
+Damit Bitcoin die Funktion des Zahlungs- bzw. Tauschmittels erfüllen kann, müssen Transaktionen vom Netzwerk ermöglicht werden. In einem \emph{Distributed Ledger}, einer Art dezentraler Datenbank, werden alle Transaktionen im Netzwerk aufgezeichnet. Da es sich um ein gänzlich digitales und dezentrales Netzwerk handelt, sind spezielle Datenstrukturen und Mechanismen nötig.\\
+\subsubsection{Transaction Outputs}
+Das Guthaben einer Wallet befindet sich nicht an einem Ort, sondern wird aus \emph{Unspent Transaction Outputs}, kurz UTXO zusammengesetzt, welche alle verfügbaren Gutschriften aus vergangenen Transaktionen darstellen.
+Eine Wallet scannt die Blockchain nach allen Outputs, welche mit den Keys des Besitzers assoziiert sind und errechnet damit das gesamte verfügbare Guthaben. Außerdem speichert sie die nötigen Referenzen für den Zugriff auf die UTXO für den späteren Gebrauch in einer Datenbank ab.\\
+UTXO¸ sind diskrete, sowie unteilbare Einheiten und können demnach nur in ihrer Gesamtheit genutzt werden. Man betrachte die folgende Abbildungen:
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/UTXO.png}
+	\caption{Transaktionen mit unteilbaren UTXO}
+	\label{6braun:fig:Transaktionen}
+\end{figure}
+Für die gewünschte Transaktion von A nach B werden 20 BTC benötigt, die von der Wallet aus verfügbaren UTXO zusammengefügt werden. 
+Für das optimale Zusammensammeln von Outputs ist die Wallet zuständig.\\
+C hat für die gewünschte Transaktion von 1 BTC nur 3 BTC zur Verfügung, weshalb diese in ihrer Gesamtheit aufgebraucht werden müssen.
+Die übrigen 2 BTC gehen jedoch nicht verloren, sondern landen lediglich wieder als Wechselgeld bei C. 
+Die gewünschte Transaktion hat also 2 Outputs.\\
+Jeder Output besteht aus 2 Komponenten: Der Anzahl von BTC und einem sogenannten \emph{Locking Script}, welches nur mithilfe des assoziierten private Keys gelöst werden kann. 
+\subsubsection{Transaction Inputs}
+Das Gegenstück zu den Outputs sind Inputs, über welche die benötigten UTXO für eine Transaktion gesammelt werden. Sie bestehen aus:
+\begin{itemize}
+	\item Einer ID, über die eine bestimmte Transaktion referenziert wird
+	\item Vout, einem Index über den auf bestimmte UTXO der zuvor referenzierten Transaktion zugegriffen wird
+	\item Dem Unlocking Script, welches das Locking Script des ausgewählten UTXO löst und mithilfe des privaten Schlüssels erzeugt wird
+	\item Einer Sequence, einem optionalen Feld zur Sperrung der Outputs für eine bestimmte Zeit
+\end{itemize}
+Sowohl Input, als auch Output werden serialisiert und als Byte-Streams im Netzwerk propagiert.\\
+\subsubsection{Transaktionskosten}
+Abhängig von der Auslastung des Netzwerkes wird eine dadurch bestimmte Menge an Transaktionsgebühren nötig, die sowohl als Anreiz für Bitcoin-Miner, als auch Abschreckungsmechanismus gegen Angriffe durch hochfrequentes Senden von kleinen Transaktionen dienen.\\
+Diese sind zwar kein Muss, jedoch bevorzugen die Miner Transaktionen mit höheren Transaktionskosten. 
+Das berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wallet ausgeführt, jedoch können auch manuelle Transaktionen erstellt werden, die ohne Transaktionskosten langsamer oder gar nicht vom Netzwerk verarbeitet werden.
+Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Transaktionsgebühren ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionsgebühren angegeben kann, ist auch das versehentliche Angeben von zu hohen Gebühren möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte der Sender vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.\\
+
+Zusammenfassend lassen sich Transaktionen als Sammlungen von Inputs und Outputs definieren, deren Differenz die genutzten Transaktionskosten darstellen.
+ 
+\subsection{Die verschiedenen Akteure im Netzwerk}
 \subsection{Der Konsensalgorithmus Proof-of-Work}
 \subsection{Angriff auf das Netzwerk}
 
