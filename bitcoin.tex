@@ -144,7 +144,7 @@ Die resultierende Zahl wird anschließend in Nachrichtenblöcke $M_1$ - $M_N$ de
 
 \subsubsection{Algorithmus}
 Im folgenden soll der Algorithmus anhand eines Pseudo-Codes erläutert werden. Zu beachten ist, dass die Liste k, sowie die Variablen H0-H7 global definiert seien.
-\begin{lstlisting}[mathescape]
+\begin{lstlisting}[mathescape,caption={Pseudocode zu SHA256},captionpos=b]
 	For i=1 to N:
 		w = []
 		For t=0 to 63:
@@ -247,8 +247,78 @@ Das berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wal
 Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Transaktionsgebühren ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionsgebühren angegeben kann, ist auch das versehentliche Angeben von zu hohen Gebühren möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte der Sender vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.\\
 
 Zusammenfassend lassen sich Transaktionen als Sammlungen von Inputs und Outputs definieren, deren Differenz die genutzten Transaktionskosten darstellen.
- 
 \subsection{Die verschiedenen Akteure im Netzwerk}
-\subsection{Der Konsensalgorithmus Proof-of-Work}
+In \cite{nakamoto_2008} nennt Nakamoto das Propagieren von Transaktionen an alle Knoten als ersten Schritt, der zur Instandhaltung des Netzwerkes erforderlich ist. Dieses Kapitel steigt einen Schritt früher ein und befasst sich mit den verschiedenen Akteuren im dezentralen Netzwerk, ihren Rollen sowie den nötigen Schritten zum Eintritt neuer Teilnehmer.
+\subsubsection{Rollen}
+Trotz fehlender Hierarchien im Netzwerk nehmen die Teilnehmer abhängig von ihren Funktionalitäten verschiedene Rollen ein. Als \emph{Full Node} bezeichnet man Teilnehmer, die alle der folgenden Funktionalitäten erfüllen:
+\begin{itemize}
+	\item Routing Modul - Kommunikation mit dem Netzwerk
+	\item Wallet - Verwaltung von Guthaben
+	\item Miner - Finden neuer Blöcke
+	\item Full Blockchain - Besitz gesamter Blockchain
+\end{itemize}
+Diese können selbstständig Transaktionen prüfen, signieren und am Konsens-Algorithmus teilnehmen.\\
+Bis auf das Routing-Modul, ohne das die Kommunikation mit dem Netzwerk nicht möglich ist, können sich die Teilnehmer ein Subset der Funktionalitäten heraussuchen und diese erfüllen. 
+Beispielsweise benötigt eine Lightweight-Wallet kein Mining und auch keine volle Blockchain. 
+Stattdessen lässt sie Transaktionen von einer dritten Partei prüfen und könnte so aufgrund des geringen Speicherbedarfs in einem Internetbrowser laufen.
+\subsubsection{Bootstrapping neuen Teilnehmers}
+Nach dem Hochfahren muss ein neuer Teilnehmer zunächst mindestens einen Anderen im Netzwerk finden. Dabei stehen ihm sogenannte \emph{DNS Seeds} zur Verfügung, die nichts anderes sind als Server, die auf Abfrage Adressen von stabil laufenden Teilnehmern zurückgeben und deren Adressen im Bitcoin-Klienten enthalten sind. 
+Alternativ kann ein neuer Knoten auch eine manuelle Verbindung zu einem anderen Teilnehmer eingehen, wenn ihm dessen Adresse bekannt ist.\\
+Sobald ein anderer Teilnehmer gefunden wurde wird über TCP ein \emph{Handshake} ausgeführt: Der Neue sendet seine Informationen, wie die Version seines Bitcoin-Klienten an den gefundenen Teilnehmer und dieser geht bei Validität der Informationen eine Verbindung mit ihm ein.
+Anschließend können sie ihnen bekannte Adressen austauschen:
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
+	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus}
+	\label{6braun:fig:adress_query}
+\end{figure}
+
+Ebenso wie sie Adressen miteinander austauschen, werden auch Informationen über den Zustand der Blockchain ausgetauscht. Sollten dem neuen Teilnehmer Blöcke fehlen, versucht er diese von seinen neuen Nachbarn anzufordern, um seine eigene Blockchain zu synchronisieren. Dabei wird der Aufwand auf die verschiedenen Nachbarn aufgeteilt, um einzelne Teilnehmer nicht zu überlasten. Es ist dasselbe Prinzip, wie beim schon länger praktizierten File-Sharing.
+\subsection{Blockchain}
+Die Blockchain ist die Kerntechnologie des gesamten Protokolls und stellt im Kern eine Datenstruktur mit einer verketteten Liste von Blöcken dar, die wiederum Transaktionen enthalten. 
+Die Verkettung erfolgt dadurch, dass jeder Block einen vorher Erzeugten referenziert. 
+Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt.
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/chain.png}
+	\caption{Neuer Block referenziert alten Block}
+	\label{6braun:fig:chain}
+\end{figure}
+Der daraus entstehende Vorteil ist, dass ein Angreifer bei Veränderung eines vergangenen Blocks die Hashwerte aller Nachfolger neu berechnen muss. Wieso dies mit sehr hohem Rechenaufwand verbunden ist, wird später näher erläutert.
+
+\subsubsection{Datenstruktur}
+Die Datenstruktur des Blocks besteht aus mehr Komponenten als dem Vorgänger-Hash und den Transaktionen:
+\begin{lstlisting}[mathescape, caption={Datenstruktur des Blocks},captionpos=b]
+Block {
+	Block Size;
+	Block Header;
+	Transaction Counter;
+	Transactions;
+}
+
+Block Header {
+	Version;
+	Prev Block Hash;
+	Merkle Root;
+	Timestamp;
+	Difficulty Target;
+	Nonce;
+}
+\end{lstlisting}
+Der zuvor angesprochene Hashwert wird nicht aus dem gesamten Block, sondern dem \emph{Block Header} errechnet, der Meta-Daten zum Block enthält. Die Komponenten \emph{Merkle Root}, \emph{Difficulty Target} und \emph{Nonce} werden an geeigneter Stelle erläutert.\\
+Abgesehen vom Block-Hash lässt sich ein Block auch über die Block-Höhe, was lediglich dem Index des Blocks in der Liste entspricht, identifizieren. 
+Dafür folgt man vom Block aus über die Vorgänger der Blockchain, bis man beim sogenannten \emph{Genesis Block}, dem ersten Block, ankommt. 
+Anschließend zählt man den Abstand und erhält die Block-Höhe.
+Eine eindeutige Identifikation des Blocks ist hierüber allerdings nicht möglich, denn es kann im Falle von \emph{Forks}, die im Kapitel \emph{Proof-of-Work} erörtert werden, dazu kommen, dass ein Block von mehreren Blöcken als Parent referenziert wird.\\
+\subsubsection{Merkle-Tree}
+Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter.
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/merkle.png}
+	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus}
+	\label{6braun:fig:merkle}
+\end{figure}
+Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minimale Änderung an den Transaktionen die Wurzel, und somit den gesamten Block-Hash völlig verändern.
+\subsection{Proof-of-Work}
 \subsection{Angriff auf das Netzwerk}
 

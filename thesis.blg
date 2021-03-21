@@ -10,44 +10,48 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
-You've used 5 entries,
+Warning--no journal in nakamoto_2008
+Warning--no number and no volume in nakamoto_2008
+Warning--page numbers missing in nakamoto_2008
+You've used 4 entries,
             2911 wiz_defined-function locations,
-            656 strings with 5853 characters,
-and the built_in function-call counts, 3774 in all, are:
-= -- 284
-> -- 337
-< -- 2
-+ -- 104
-- -- 116
-* -- 323
-:= -- 711
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 39
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 97
-empty$ -- 198
-format.name$ -- 124
-if$ -- 693
+            646 strings with 5610 characters,
+and the built_in function-call counts, 2099 in all, are:
+= -- 170
+> -- 135
+< -- 0
++ -- 34
+- -- 50
+* -- 143
+:= -- 416
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 24
+chr.to.int$ -- 4
+cite$ -- 7
+duplicate$ -- 62
+empty$ -- 136
+format.name$ -- 54
+if$ -- 370
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 28
-num.names$ -- 50
-pop$ -- 40
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 40
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 49
 quote$ -- 0
-skip$ -- 118
+skip$ -- 75
 stack$ -- 0
-substring$ -- 152
-swap$ -- 40
-text.length$ -- 2
+substring$ -- 80
+swap$ -- 18
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 0
-while$ -- 52
+type$ -- 70
+warning$ -- 3
+while$ -- 40
 width$ -- 0
-write$ -- 68
+write$ -- 53
+(There were 3 warnings)

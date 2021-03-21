@@ -7,6 +7,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet\relax }}{12}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet\relax }}{13}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Transaktionen mit unteilbaren UTXO\relax }}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus\relax }}{17}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Neuer Block referenziert alten Block\relax }}{17}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus\relax }}{19}{figure.caption.12}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

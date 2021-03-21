@@ -1,13 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Armbrust, Fox, Griffith, Joseph, Katz,
-  Konwinski, Lee, Patterson, Rabkin, Stoica et~al.}{Armbrust
-  et~al.}{2010}]{armbrust2010view}
-Armbrust, M., A.~Fox, R.~Griffith, A.~D. Joseph, R.~Katz, A.~Konwinski, G.~Lee,
-  D.~Patterson, A.~Rabkin, I.~Stoica et~al. (2010).
-\newblock A view of cloud computing.
-\newblock {\em Communications of the ACM\/}~{\em 53\/}(4),  50--58.
-
 \bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013}]{buterin_2013}
 Buterin, V. (2013).
 \newblock Deterministic wallets, their advantages and their understated flaws.
@@ -21,15 +13,14 @@ Dang, Q.~H. (2015).
 \newblock \url{http://dx.doi.org/10.6028/NIST.FIPS.180-4 /}. Letzter Zugriff am
   14.02.2021.
 
-\bibitem[\protect\citeauthoryear{Jacobs}{Jacobs}{2009}]{jacobs_pathologies_2009}
-Jacobs, A. (2009).
-\newblock The pathologies of big data.
-\newblock {\em Communications of the ACM\/}~{\em 52\/}(8),  36--44.
-
 \bibitem[\protect\citeauthoryear{Mankiw, Taylor}{Mankiw und
   Taylor}{2018}]{mankiw_taylor_2018}
 Mankiw, N.~G., M.~P. Taylor (2018).
 \newblock {\em {Grundz{\"u}ge der Volkswirtschaftslehre}\/} (7. Aufl.).
 \newblock Sch{"a}ffer-Poeschel Verlag Stuttgart, Stuttgart.
+
+\bibitem[\protect\citeauthoryear{Nakamoto}{Nakamoto}{2008}]{nakamoto_2008}
+Nakamoto, S. (2008).
+\newblock Bitcoin: A peer-to-peer electronic cash system.
 
 \end{thebibliography}
