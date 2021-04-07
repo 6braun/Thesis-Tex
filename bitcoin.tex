@@ -309,7 +309,7 @@ Der zuvor angesprochene Hashwert wird nicht aus dem gesamten Block, sondern dem 
 Abgesehen vom Block-Hash lässt sich ein Block auch über die Block-Höhe, was lediglich dem Index des Blocks in der Liste entspricht, identifizieren. 
 Dafür folgt man vom Block aus über die Vorgänger der Blockchain, bis man beim sogenannten \emph{Genesis Block}, dem ersten Block, ankommt. 
 Anschließend zählt man den Abstand und erhält die Block-Höhe.
-Eine eindeutige Identifikation des Blocks ist hierüber allerdings nicht möglich, denn es kann im Falle von \emph{Forks}, die im Kapitel \emph{Proof-of-Work} erörtert werden, dazu kommen, dass ein Block von mehreren Blöcken als Parent referenziert wird.\\
+Eine eindeutige Identifikation des Blocks ist hierüber allerdings nicht möglich, denn es kann im Falle von \emph{Forks}, die im Kapitel \emph{Der Weg der Transaktion in die Blockchain} erörtert werden, dazu kommen, dass ein Block von mehreren Blöcken als Parent referenziert wird.\\
 \subsubsection{Merkle-Tree}
 Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter.
 \begin{figure}[htpb]
@@ -318,7 +318,61 @@ Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der 
 	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus}
 	\label{6braun:fig:merkle}
 \end{figure}
-Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minimale Änderung an den Transaktionen die Wurzel, und somit den gesamten Block-Hash völlig verändern.
-\subsection{Proof-of-Work}
+Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. 
+Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minimale Änderung an den Transaktionen die Wurzel, und somit den gesamten Block-Hash völlig verändern. 
+Zu beachten ist noch, dass bei einer ungeraden Zahl von Transaktionen die letzte Transaktion in der Liste doppelt im Merkle-Tree aufgeführt wird, um das paarweise Hashing zu ermöglichen.
+\subsection{Der Weg der Transaktion in die Blockchain}
+Als Folge der dezentralen Struktur des Bitcoin-Netzwerkes ist ein Mechanismus nötig, der Transaktionen ohne ein zentrales Clearinghaus validiert und freigibt. An dieser Stelle kommt das \emph{Mining} ins Spiel, über das zwar neue Bitcoin in Umlauf kommen, aber vor allem ein gemeinsamer Konsens im ganzen Netzwerk erreicht wird. \\
+Dieses Kapitel beschäftigt sich mit den nötigen Schritten für einzelne Transaktionen bis hin zum neuen Block und welche Rolle Miner dabei spielen.
+\subsubsection{Miner und ihre Entlohnung}
+Miner sind spezielle Teilnehmer im Netzwerk, die darin propagierte Transaktionen aggregieren, validieren und miteinander darum konkurrieren, den nächsten Block zur Blockchain hinzufügen zu dürfen. 
+Der Anreiz besteht darin, dass sie für ihren Aufwand, bei erfolgreicher Erweiterung der Blockchain, eine Entlohnung erhalten, die sich aus neuen Bitcoin und gesammelten Transaktionskosten ergibt.\\
+Eine Tatsache, mit der Miner leben müssen ist, dass ihre Entlohnung mit der Zeit sinkt. 
+Alle 210 000 Blöcke wird die Anzahl neuer Bitcoin halbiert, sodass die Gesamtzahl aller, sich im Umlauf befindenden Bitcoin, gegen 21 Millionen konvergiert. 
+Aus diesem Grund wird Bitcoin als \emph{Deflationäre Währung} bezeichnet, die mit der Zeit nicht an Wert verliert, sondern wertvoller wird.\\
+\subsubsection{Sammeln von Transaktionen}
+Genau wie alle anderen Teilnehmer sammeln Miner die im Netzwerk propagierten Transaktionen und überprüfen diese. Sollten Jene bestimmte Kriterien, wie z.B. eine korrekte Syntax und Korrektheit, nicht erfüllen, werden sie nicht weitergeleitet und verworfen.\\
+Bei Korrektheit sammeln die Teilnehmer validierte Transaktionen in einem Pool und entfernen sie erst dann, wenn ein neuer und valider Block eine der gesammelten Transaktionen beinhaltet. 
+Während alle anderen Teilnehmer bei Ankunft eines neuen Blocks lediglich die Transaktionen abgleichen und aus dem Pool entfernen, sammeln Miner übrig gebliebene Transaktionen und starten den Versuch, einen eigenen Block herzustellen.
+\subsubsection{Konstruktion des Blocks}
+Einen neuen Block zu erstellen ist für Miner aus zwei Gründen attraktiv:
+\begin{itemize}
+\item Sie erhalten alle Transaktionskosten aus den gesammelten Transaktionen
+\item Sie dürfen die sogenannte \emph{Coinbase Transaction} selbst an den Anfang der gelisteten Transaktionen einfügen
+\end{itemize}
+Das besondere an dieser Transaktion ist, dass sie keine UTXO konsumiert, sondern dem Empfänger neu-generierte Bitcoin ausstellt. Sie augmentiert also nicht das UTXO-Set, sondern erweitert es durch neue Outputs.\\ 
+Nachdem Miner eine Liste von Transaktionen inklusive Coinbase angelegt haben, konstruieren sie den Block Header bestehend aus Version, Hash des Vorgängerblocks, Wurzel aus dem Merkle-Tree, Zeitstempel, sowie Target und Nonce, die beim Mining eine Rolle spielen, erstellen.
+\subsubsection{Mining}
+Das Bitcoin-Protokoll ist so konzipiert, dass neue Blöcke in Intervallen von ca. 10 Minuten hinzugefügt werden. 
+Um dem Anstieg an Rechenleistung vorzubeugen (man denke an Moore's Law), besitzt das Protokoll die Variable 'Target' als einen eingebauten Schwierigkeitsregler, der je nach Bedarf angepasst werden kann.\\
+Beim Target handelt es sich lediglich um eine Zahl, für die ein darunter liegender Wert durch wiederholtes Hashing des Block Headers, der sich ebenfalls serialisieren lässt, von den Minern gefunden werden muss. 
+Falls der Miner keinen geeigneten Hash findet, bedient er sich an der Variable 'Nonce' die als Zählvariable dient und erhöht diese wiederholt, bis es zum Erfolg kommt.
+Alle 2016 Blocks wird die gesamte verstrichene Zeit mit der angestrebten Zeit von $2016 * 10 Min$ verglichen und abhängig davon das Target entweder einfacher oder schwerer gemacht. 
+Konkret bedeutet dies, den Wert anzupassen, um die Anzahl möglicher darunterliegender Hashwerte entweder zu reduzieren oder vergrößern.
+Dieses Verfahren funktioniert, weil ein Hashalgorithmus schon bei einem minimal veränderten Input einen gänzlich anderen Output zurückgibt. 
+Gleichzeitig macht es die Fertigung eines Blocks im Voraus unmöglich, da der Hashwert des Vorgängerblocks im neuen Block Header enthalten ist. 
+Im wesentlichen besteht das Verfahren also aus dem Konstruieren eines Blocks inklusive Block Header, dessen Hashwert, welcher das Target erfüllt, als 'Proof-of-Work' bezeichnet wird.\\
+Während das 'Finden' eines geeigneten Blocks aufwendig ist, müssen andere Teilnehmer den SHA256-Algorithmus nur einmal auf den Block Header anwenden, um den gesamten Block zu validieren. 
+Abgesehen vom Hash muss der Block allerdings noch andere Kriterien erfüllen, wie z.B. richtige Zeitstempel oder eine valide Liste von Transaktionen, inklusive valider Coinbase. 
+Bei Gutschreibung von zu viel neuen Bitcoin wird der gesamte Block invalide, was betrügerisches Verhalten für Miner unattraktiv macht. Der Block wird nur im Netzwerk propagiert, wenn er die Kriterien erfüllt.\\
+Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung zeigt:
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/chains.png}
+	\caption{Anordnung der Blöcke in einer Kette}
+	\label{6braun:fig:chains}
+\end{figure}
+Das erste Szenario ist das Erweitern der Mainchain, also der längsten Kette, und ist dann der Fall, wenn der neue Block (hier 202A) den Kopf dieser als Eltern-Block referenziert.
+Die zweite Möglichkeit besteht darin, dass der neue Block an einem inneren Block ansetzt und es dadurch zu einer Verzweigung, also einer neuen Sidechain kommt (hier 201B). Auch wenn dies im ersten Moment unnötig wirkt, werden die Sidechains angesammelt und bei jedem neuen Block mit der Mainchain verglichen, sodass sie, falls mehr Blöcke in diesen enthalten sind, zur neuen Mainchain werden.
+Die dritte und letzte Möglichkeit für neue Blöcke (abgesehen von invaliden Blöcken, die verworfen werden) sind sogenannte \emph{Orphans}, also verwaiste Blöcke. Diese referenzieren einen Eltern-Block, der unbekannt ist, weshalb sie bis zur Veröffentlichung dessen in einem Pool gehalten werden. Dies kann dann der Fall sein, wenn Eltern- und Kind-Block in kurzer Zeit hintereinander gefunden werden und als Folge dessen bei manchen Teilnehmern in umgekehrter Reihenfolge ankommen. Auch wenn es in Folge des Minings zu Verzweigungen kommt, finden die Teilnehmer im Netzwerk immer einen gemeinsamen Konsens, indem sie der längsten Validen Kette, die am meisten Proof-of-Work 'angesammelt' hat, folgen. Miner konzentrieren sich dann darauf, für diese Kette neue Blöcke zu finden.\\
+Wenn zwei Miner, die man auch als Kontrahenten in einem Wettkampf sehen kann, in relativ kurzer Zeit jeweils einen neuen Block finden, kann es zu einem sogenannten \emph{Fork} kommen. Beide propagieren ihren gefundenen Block als neuen Kopf der längsten Chain und nehmen den Block des Gegners in einer Sidechain auf. Abhängig davon, welchen Block sie zuerst erhalten, folgen die anderen Teilnehmer dem Sender des ersten Blocks und geben ihm ihr Stimmrecht. Selbst bei einer gleichmäßigen Verteilung des Stimmrechts findet sich nach weiteren Generationen schließlich die Wahre Mainchain, da das gleichzeitigen Blöcken relativ selten ist.
+Eine zweite Möglichkeit für Forks sind sogenannte \emph{Hard Forks}, bei denen man eine Sidechain in dem Wissen weiterführt, dass sie nie zur Mainchain wird. Dies kann beispielsweise der Fall sein, wenn eine Gruppe von Teilnehmern nicht mit der Funktionsweise des Protokolls zufrieden sind und eine erweiterte Blockgröße fordern, um mehr Transaktionen zuzulassen. Man schreibt also ein neues Protokoll, welches eine Sidechain fortführt und von den daran interessierten Nutzern genutzt wird. Dies war der Hintergrund zur Entstehung von \emph{Bitcoin Cash} 
 \subsection{Angriff auf das Netzwerk}
-
+Um einen bösartigen Angriff auf das dezentrale System ausüben zu können, muss man 51\% der dem Netzwerk zur Verfügung stehenden Rechenleistung besitzen. Ist dieser Umstand gegeben, haben Angreifer folgende Optionen:
+\begin{itemize}
+	\item Es kann ein 'Double Spending' ausführt werden
+	\item Es kann einzelnen Teilnehmern gezielt die Anteilnahme am Netzwerk untersagt werden
+\end{itemize}
+Unter normalen Umständen ist Double Spending nicht möglich, doch Angreifer könnten Bitcoin auf eine Handelsbörse überweisen und dort in einer gewünschte Währung auszahlen lassen. Anschließend setzen sie mit einer Sidechain dort an, wo sich das Guthaben noch beim Angreifer befindet, also die UTXO ungenutzt sind, und erweitern diese zur neuen Mainchain.
+Die zweite Möglichkeit des Angriffs besteht darin, dass einzelne Teilnehmer von der Anteilnahme ausgeschlossen werden, indem man beispielsweise ihre Transaktionen nicht in neue Blöcke aufnimmt. Das Gleiche gilt für bestimmte Miner, deren Blöcke man gezielt ablehnen kann.\\
+Aufgrund der immensen Rechenleistung, die dafür nötig wäre, wird ein Angriff in tieferen Schichten teurer und wäre ,abgesehen von einer staatlich finanzierten Attacke, unwahrscheinlich.´
