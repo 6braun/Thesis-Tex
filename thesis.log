@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  7 APR 2021 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  8 APR 2021 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,12 +813,8 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 )
 Class scrbook Info: longtable captions redefined on input line 48.
  (./thesis.aux
-(./_titlepage_de.aux) (./einleitung.aux) (./bitcoin.aux
-
-LaTeX Warning: Label `6braun:fig:non-deterministic_wallet' multiply defined.
-
-) (./ethereum.aux) (./digital_advertising.aux) (./zusammenfassung.aux)
-(./appendix.aux))
+(./_titlepage_de.aux) (./einleitung.aux) (./bitcoin.aux) (./ethereum.aux)
+(./digital_advertising.aux) (./zusammenfassung.aux) (./appendix.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -839,7 +835,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 55
 .
- (/app/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/app/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package scrbase Info: activating english \contentsname on input line 55.
@@ -1181,7 +1178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--19
 
 
 ] [3]
-<images/public_and_private_key.png, id=139, 311.7246pt x 75.8835pt>
+<images/public_and_private_key.png, id=142, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
@@ -1194,7 +1191,7 @@ Overfull \hbox (2.34837pt too wide) in paragraph at lines 31--47
  []
 
 [4]
-<images/elliptic_graph_cryptography.png, id=144, 580.1675pt x 581.17125pt>
+<images/elliptic_graph_cryptography.png, id=147, 580.1675pt x 581.17125pt>
 File: images/elliptic_graph_cryptography.png Graphic file (type png)
 <use images/elliptic_graph_cryptography.png>
 Package pdftex.def Info: images/elliptic_graph_cryptography.png  used on input 
@@ -1229,15 +1226,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
- [10]
-<images/non_det_wallet.png, id=222, 321.2pt x 201.75375pt>
+ [10] [11]
+<images/non_det_wallet.png, id=237, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
 Package pdftex.def Info: images/non_det_wallet.png  used on input line 198.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
- [11]
+
 [12 <./images/non_det_wallet.png>]
-<images/bip32_wallet.png, id=244, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=247, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
 Package pdftex.def Info: images/bip32_wallet.png  used on input line 211.
@@ -1248,7 +1245,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--218
  []
 
 [13 <./images/bip32_wallet.png>]
-<images/UTXO.png, id=250, 603.25375pt x 439.6425pt>
+<images/UTXO.png, id=253, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
 Package pdftex.def Info: images/UTXO.png  used on input line 224.
@@ -1269,13 +1266,13 @@ Overfull \hbox (0.88474pt too wide) in paragraph at lines 260--264
 ren und am Konsens-Algorithmus
  []
 
-<images/adress_query.png, id=264, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=267, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
 Package pdftex.def Info: images/adress_query.png  used on input line 271.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
 [16]
-<images/chain.png, id=270, 322.20375pt x 101.37875pt>
+<images/chain.png, id=272, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
 Package pdftex.def Info: images/chain.png  used on input line 283.
@@ -1285,7 +1282,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--313
 
  []
 
-<images/merkle.png, id=277, 348.3414pt x 173.2071pt>
+<images/merkle.png, id=280, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
 Package pdftex.def Info: images/merkle.png  used on input line 317.
@@ -1296,7 +1293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--333
  []
 
 [19 <./images/merkle.png>]
-<images/chains.png, id=303, 654.445pt x 302.12875pt>
+<images/chains.png, id=305, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
 Package pdftex.def Info: images/chains.png  used on input line 361.
@@ -1431,16 +1428,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18000 strings out of 480608
- 326741 string characters out of 5905076
- 912469 words of memory out of 5000000
- 33277 multiletter control sequences out of 15000+600000
+ 17996 strings out of 480608
+ 326689 string characters out of 5905076
+ 912453 words of memory out of 5000000
+ 33273 multiletter control sequences out of 15000+600000
  589826 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,22n,115p,10101b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1454,10 +1448,10 @@ onts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/symbol/
 usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></app/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (36 pages, 304476 bytes).
+Output written on thesis.pdf (36 pages, 304563 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
+ 550 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
  171 named destinations out of 1000 (max. 500000)
  307 words of extra memory for PDF output out of 10000 (max. 10000000)
 

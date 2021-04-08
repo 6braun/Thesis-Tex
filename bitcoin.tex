@@ -2,16 +2,16 @@
 Mit Fortschritt im Bereich Kryptographie begann auch das Interesse von Forschern an digitalen Währungen. 
 Das Problem dieser frühen Projekte bestand jedoch darin, dass sie einen sogenannten \emph{Central Point of Failure}, also eine zentralisierte Schwachstelle besaßen. 
 Beispielsweise könnten die Konten von Nutzern zwar kryptografisch gesichert, jedoch von zentralen Stellen wie Banken verwaltet werden müssen.\\
-Ein wichtiges Problem, welches es mithilfe von Geld zu lösen gilt, ist das sogenannte \emph{Double Spending Problem}. Es muss durch gewisse Mechanismen verhindert werden, dass bösartige Akteure die selben Geldwerte für mehrere Transaktionen verwenden. Bei physischem Geld, also Geldscheinen, Münzen, etc. verhindern komplexe Drucktechniken die Verbreitung von Falschgeld und dadurch das ein Geldschein nur einmal existieren kann, ist dieser nur für eine Transaktion zu verwenden.\\
+Ein wichtiges Problem, welches es mithilfe eines neuartigen Geldsystems zu lösen gilt, ist das sogenannte \emph{Double Spending Problem}. Es muss durch gewisse Mechanismen verhindert werden, dass bösartige Akteure die selben Geldwerte für mehrere Transaktionen verwenden. Bei physischem Geld, also Geldscheinen, Münzen, etc. verhindern komplexe Drucktechniken die Verbreitung von Falschgeld und dadurch dass ein Geldschein nur einmal existieren kann, ist dieser nur für eine Transaktion zu verwenden.\\
 Versucht man nun diese Geldwerte gänzlich digital zu verwalten, so liegt die Verantwortung für eine korrekte Beobachtung und Verwaltung bei einer zentralen Stelle wie einer Bank. Diese könnte als Angriffsstelle für Antagonisten dienen und stellt somit eine Gefahr für das System dar.\\
-Dieses Kapitel beschäftigt sich mit der traditionellen Funktionsweise von Geld und wie mithilfe eines dezentralen Systems ein zentraler Fehlerpunkt vermeidet werden kann. 
+Dieses Kapitel beschäftigt sich mit der traditionellen Funktionsweise von Geld und wie mithilfe eines dezentralen Systems ein zentraler Fehlerpunkt vermieden werden kann. 
 \section{Funktionsweise von Geld}
 \cite{mankiw_taylor_2018} bezeichnen Geld als ein Bündel von Aktiva, das die Menschen in einer Volkswirtschaft regemäßig dazu verwenden, Waren und Dienstleistungen von anderen Menschen zu erwerben.\\
 Es erlaubt den Parteien einem Tauschgeschäft, bei dem beide Seiten mit dem Gut des Tauschpartners zufrieden sein müssen, zu entgehen und ermöglicht stattdessen eine effiziente Allokation von Ressourcen. Zugleich stellt Geld sicher, dass das eigene Kapital den Wert auch in Zukunft behält.\\
-Damit ein Handelsgut als Geld angesehen werden kann, muss es drei Funktionen erfüllen können\\
-Fundamental ist, dass das Handelsgut generell als Tausch- bzw. Zahlungsmittel akzeptiert wird. Theoretisch könnte man versuchen sein Abendessen mit dem eigenen Fahrrad zu bezahlen, doch kommt man in der Praxis mit dieser Strategie nicht weit.\\
-Des Weiteren muss das Tauschgeschäft als Recheneinheit fungieren können. Dies ist notwendig, da anhand Dessen die relativen Preise anderer Waren in der Marktwirtschaft ermittelt werden müssen.\\
-Zuletzt muss sichergestellt sein, dass das Handelsgut wie bereits erwähnt in Zukunft auch seine Kaufkraft behält. Jemand, der es als Zahlungsmittel akzeptiert muss sich darauf verlassen können, dass es auch für zukünftige Geschäfte verwendet werden kann.\\
+Damit ein Handelsgut als Geld angesehen werden kann, muss es drei Funktionen erfüllen können.\\
+Fundamental ist, dass das Handelsgut generell als Tausch- bzw. Zahlungsmittel akzeptiert wird. Theoretisch könnte man versuchen, sein Abendessen mit dem eigenen Fahrrad zu bezahlen, doch kommt man in der Praxis mit dieser Strategie nicht weit.\\
+Des Weiteren muss das Tauschgeschäft als Recheneinheit fungieren können. Dies ist notwendig, da anhand dessen die relativen Preise anderer Waren in der Marktwirtschaft ermittelt werden müssen.\\
+Zuletzt muss sichergestellt sein, dass das Handelsgut wie bereits erwähnt in Zukunft auch seine Kaufkraft behält. Jemand, der es als Zahlungsmittel akzeptiert, muss sich darauf verlassen können, dass es auch für zukünftige Geschäfte verwendet werden kann.\\
 Bei den Geldformen unterscheidet man zwischen Warengeld und Rechengeld. Diese unterscheiden sich in ihrem intrinsischen Wert, also darin, ob sie auch außerhalb von Tauschgeschäften einen Nutzen finden. Ein Beispiel für Warengeld ist Gold, welches neben Tauschgeschäften auch industriell verarbeitet werden kann.\\
 Papiergeld hingegen bietet abseits des Tauschgeschäftes keinen Nutzen für den Besitzer. Um trotzdem den Wert des Geldes gewährleisten zu können, wird es von Seiten des Staats als universelles Zahlungsmittel in der jeweiligen Marktwirtschaft bestimmt.\\
 Eine weitere wichtige Rolle im Finanzsystem nehmen Zentralbanken ein. Sie überwachen das Bankensystem und steuern über eine geeignete Geldpolitik das Geldangebot auf dem Markt.\\
@@ -26,7 +26,7 @@ Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat dr
 TODO
 \section{Notwendigkeit für Blockchain-Technologie}
 \section{Theorie der Blockchain-Technologie am Beispiel von Bitcoin}
-Auch wenn es andere Projekte für dezentrale Währungen wie B-Money und Hashcash gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers \emph{Bitcoin: A Peer to peer Electronic Cash System}. Diese Publikation wurde, von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokols. Außerdem werden Vermögenswerte nicht durch klassischer Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger} impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
+Auch wenn es andere Projekte für dezentrale Währungen wie B-Money und Hashcash gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers  \cite{nakamoto_2008}. Diese Publikation trägt den Titel \emph{Bitcoin: A Peer to peer Electronic Cash System}, wurde von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokolls. Außerdem werden Vermögenswerte nicht durch klassische Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger}, impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
 \subsection{Keys und Adressen}
 Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Nazis im zweiten Weltkrieg genutzt wurden. 
 Mithilfe von Maschinen, den sogenannten \emph{ENIGMA}, verschlüsselten sie wichtige strategische Informationen wie die Aufenthaltsorte von Truppen oder taktische Befehle, die anschließend per Funk überbracht wurden.\\
@@ -35,9 +35,9 @@ Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code im Jahr 1941 vo
 Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt. 
 Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet.\\
 Für Bitcoin wird ein Paar aus Schlüsseln erzeugt. 
-Dieses Paar besteht aus dem privaten Schlüssel (private key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
+Dieses Paar besteht aus dem privaten Schlüssel (Private Key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
 Aus diesem wird durch die Verwendung von Hashing-Verfahren ein öffentlicher Schlüssel (public key) abgeleitet, mit dem Bitcoins empfangen werden können.\\
-Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um Jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann.\\
+Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann.\\
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/public_and_private_key.png}
@@ -46,10 +46,10 @@ Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüssel
 \end{figure}
 \subsubsection{Private Keys}
 Ein privater Schlüssel besteht aus einer Zahl von 256 zufälligen Bits. Er wird zum Signieren von Transaktionen und für den Zugriff auf ein Guthaben benötigt. Ohne privaten Schlüssel verliert man als Besitzer von Bitcoin auch den Zugriff auf das eigene Guthaben.\\
-Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für "Zufälligkeit". In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokol gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$).
+Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für Zufälligkeit. In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems, kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokol gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$).
 
 \subsubsection{Public Keys}
-Um einen öffentlichen Schlüssel aus dem Privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
+Um einen öffentlichen Schlüssel aus dem privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
 Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptography} gennant und bedient sich an den Eigenschaften einer Ellipse.
 \begin{figure}[htpb]
 	\centering
@@ -57,16 +57,16 @@ Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptogr
 	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\TODO: Bessere Grafik}
 	\label{6braun:fig:ellipse}
 \end{figure}
-Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt, auf der Ellipse und Multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse, erhält 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
+Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt, auf der Ellipse und multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse und erhält somit 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
 
 \subsubsection{Bitcoin Adressen}
 Eine Adresse ist ein aus dem öffentlichen Schlüssel generierter String aus Buchstaben und Zahlen, der den Besitzer des Schlüssels zu einem potentiellen Empfänger einer Transaktion macht. Beim diesem muss es sich allerdings nicht zwangsläufig um eine Person handeln, denn auch Organisationen, geschriebene Skripte, etc. kommen als \emph{abstrakter} Empfänger in Frage.\\
-So wie der Öffentliche aus dem privaten Schlüssel erzeugt wird, wird die Bitcoin Adresse aus dem öffentlichen Schlüssel mithilfe von Hashing-Algorithmen erzeugt. 
+So wie der öffentliche aus dem privaten Schlüssel erzeugt wird, wird die Bitcoin Adresse aus dem öffentlichen Schlüssel mithilfe von Hashing-Algorithmen erzeugt. 
 Die verwendeten Algorithmen, welche nacheinander auf den öffentlichen Schlüssel angewendet werden, heißen SHA-256 und RIPEMD160.\\
 Da Verschlüsselungsalgorithmen einen Grundbaustein für Blockchain-Technologie darstellen, wird ihre Funktionsweise im Folgenden beispielhaft anhand des SHA-256-Algorithmus erläutert. 
 
 \subsection{Einschub: SHA-256}
-Ein Hashalgorithmus ist eine mathematische Funktion, die einen Input entgegennimmt und einen Output fester Größe, den sogenannten Hashwert erzeugt. Ein Algorithmus sollte idealerweise folgende Eigenschaften bieten:
+Ein Hashalgorithmus ist eine mathematische Funktion, die einen Input entgegennimmt und einen Output fester Größe, den sogenannten Hashwert, erzeugt. Ein Hashalgorithmus sollte idealerweise folgende Eigenschaften bieten:
 \begin{itemize}
 	\item Für einen gegebenen Input immer denselben Output generieren
 	\item Nur in eine Richtung berechenbar sein
@@ -108,7 +108,7 @@ Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operatio
 \end{longtable}
 Außerdem müssen noch zwei Listen mit Konstanten definiert werden. Die Liste K beinhaltet die ersten 32 Bit der Nachkommastellen der Kubikwurzeln der ersten 64 Primzahlen.
 H die ersten 32 Bit der Nachkommastellen der Quadratwurzeln der ersten 8 Primzahlen. 
- Die genauen Werte haben keine sonderliche Bedeutung, sondern lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine mögliche Backdoor im Algorithmus.
+Die genauen Werte haben keine sonderliche Bedeutung, sondern lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine absichtlich platzierte Schwachstelle im Algorithmus.
 \begin{lstlisting}[caption={Liste K von Konstanten},captionpos=b]
 	428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 
 	ab1c5ed5 d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 
@@ -174,7 +174,7 @@ Im folgenden soll der Algorithmus anhand eines Pseudo-Codes erläutert werden. Z
 		H7 = h + H7
 	result = ''.concat(H1).concat(H2). ... .concat(H7)
 \end{lstlisting}
-Es wird zu Beginn ein leerer String initialisiert, der am Ende das Ergebnis des Algorithmus darstellt [1].\\
+Es wird zu Beginn ein leerer String initialisiert, der am Ende das Ergebnis des Algorithmus darstellt [siehe Zeile 1 im Code].\\
 Anschließend wird die erste Schleife gestartet, die für jeden der N 512-Bit-Blöcke durchlaufen wird. Zu Beginn jedes Schleifendurchlaufs wird eine leere Liste \emph{w} initialisiert, die während des Durchlaufs gefüllt wird [2-3].\\
 Für das Füllen der Liste wird eine weitere Schleife initialisiert, die von 0 bis 63 läuft und in den ersten 16 Durchgängen lediglich die 16 Wörter aus M[i] in die bisher leere Liste w einfügt [4-6]. \\
 Ab Schleifendurchgang 16 werden die übrigen Einträge mithilfe der vorher definierten Funktionen berechnet, sodass man am Ende eine Liste mit 64 Einträgen hat [7-9].\\
@@ -182,35 +182,35 @@ Anschließend werden die sogenannten Arbeitsvariablen a bis h mithilfe der vorhe
 Die folgende Schleife ist die, in der die eigentliche Kompression stattfindet. Sie läuft erneut von 0 bis 63 [15].\\
 Mithilfe der vorher Definierten Funktionen und der Arbeitsvariablen werden die temporären Variablen T1 und T2 ermittelt. 
 Für T1 spielen zusätzlich die Listen k, welche die Kubikzahlen der ersten 64 Primzahlen enthält, und die Liste w, welche die in Zeile 4 bis 9 generierten Wörter enthält, eine Rolle [16-17].\\
-Anschließend werden die Arbeitsvariablen mithilfe der Temporären neu gesetzt, sodass man nach 64 Durchläufen scheinbar willkürliche Zahlen erhält [18-24].\\
-Man addiert schließlich die Arbeitsvariablen und ursprünglichen Variablen H0-H7 und kettet diese aneinander. Bei einer kleinen Nachricht wie dem 'ab', welche lediglich einen 512-Bit-Block benötigt, wäre dies bereits das Ergebnis des Algorithmus. Sollte der Input ein Vielfaches von 512-Bit benötigen, wird die äußerste Schleife mehrfach durchlaufen und die Variablen H0-H7 in den Zeilen 25-28 nicht mehr mithilfe der initial definierten H0-H7, sondern mit denen der vorangegangenen Iteration berechnet.\\
+Anschließend werden die Arbeitsvariablen mithilfe der Temporären neu gesetzt, sodass man nach 64 Durchläufen scheinbar willkürliche Zahlen erhält [18-23].\\
+Man addiert schließlich die Arbeitsvariablen und ursprünglichen Variablen H0-H7 und kettet diese aneinander [24-28]. Bei einer kleinen Nachricht wie dem 'ab', welche lediglich einen 512-Bit-Block benötigt, wäre dies bereits das Ergebnis des Algorithmus. Sollte der Input ein Vielfaches von 512-Bit benötigen, wird die äußerste Schleife mehrfach durchlaufen und die Variablen H0-H7 in den Zeilen 24-28 nicht mehr mithilfe der initial definierten H0-H7, sondern mit denen der vorangegangenen Iteration berechnet.\\
 Unabhängig von der Länge des Inputs erhält man so immer einen Output von 256 Bits, da die Arbeitsvariablen jeweils eine Länge von 32 Bits haben.
 
 \subsection{Wallet}
 Eine Wallet ist ein Programm, welches als Interface zwischen Bitcoin-Netzwerk und dem Nutzer dient. 
 Dessen Funktionen beinhalten die Verwaltung der Schlüssel, das Berechnen des Guthabens und das Signieren von Transaktionen.
-Eine Wallet ist, im Gegensatz zu einer physikalischen Geldbörse nicht für das Halten von Münzen, sondern zur Verwaltung der privaten Schlüssel zuständig. 
-Wie das Berechnen des "Guthabens" geschieht, wird im Unterkapitel \emph{Transaktionen erläutert}.\\
-Man unterscheidet zwischen nicht-deterministischen und deterministischen Wallets. Die erste Variante kann man sich als Korb vorstellen, in dem vorher zufällig generierte private Schlüssel in großer Anzahl gelagert sind. Dabei erzeugt ein Privater einen öffentlichen Schlüssel, der wiederum eine Adresse erzeugt (siehe Kapitel \emph{Keys und Adressen}).
-Um die eigene Pseudonymität zu schützen ist es empfehlenswert, einen Key nur ein Mal zu benutzen. Aufgrund der hohen Anzahl angesammelter Keys und der damit verbundenen Datensicherung ist diese Art Wallet heute nicht mehr der Standard.\\
+Eine Wallet ist, im Gegensatz zu einer physikalischen Geldbörse, nicht für das Halten von Münzen, sondern zur Verwaltung der privaten Schlüssel zuständig. 
+Wie das Berechnen des 'Guthabens' geschieht, wird im Unterkapitel \emph{Transaktionen} erläutert.\\
+Man unterscheidet zwischen nicht-deterministischen und deterministischen Wallets. Die erste Variante kann man sich als Korb vorstellen, in dem vorher zufällig generierte private Schlüssel in großer Anzahl gelagert sind. Dabei erzeugt ein privater einen öffentlichen Schlüssel, der wiederum eine Adresse erzeugt (siehe Kapitel \emph{Keys und Adressen}).
+Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur ein Mal zu benutzen. Aufgrund der hohen Anzahl angesammelter Keys und der damit verbundenen Datensicherung ist diese Art Wallet heute nicht mehr der Standard.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/non_det_wallet.png}
 	\caption{Nicht-deterministische Wallet}
 	\label{6braun:fig:non-deterministic_wallet}
-\end{figure}
-Die fortgeschrittenste Form einer Deterministischen ist die sogenannte BIP32-Wallet, welche 2 nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem).\\
+\end{figure}\\
+Die fortgeschrittenste Form einer deterministischen ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem).\\
 Diese werden in \cite{buterin_2013} als \emph{Master Public Key Property} und \emph{Hierarchy Property} bezeichnet.
 Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man den sogenannten Offsets, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
 $$offset = SHA256(index + masterPubKey)$$
 $$pubKey_{index} = offset + masterPubKey$$ Dies geht analog genauso mit dem Master Private Key. 
 Aufgrund dieser Eigenschaft ist es möglich, den Master Public Key ungeschützt zu lagern und sogar an dritte Parteien herauszugeben, ohne dass diese Zugriff auf das Guthaben erhalten.\\
-Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Ein Geschäftsführer könnte so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das Eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behält der Geschäftsführer die absolute Kontrolle über alle Schlüssel, da er im Besitz der Master Keys ist. 
+Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Ein Geschäftsführer könnte so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behält der Geschäftsführer die absolute Kontrolle über alle Schlüssel, da er im Besitz der Master Keys ist. 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/bip32_wallet.png}
 	\caption{BIP32-Wallet}
-	\label{6braun:fig:non-deterministic_wallet}
+	\label{6braun:fig:_wallet}
 \end{figure}
 Anders als bei einer nicht-deterministischen Wallet müssen nicht mehr die Private Keys selbst, sondern lediglich der \emph{Seed} gesichert werden. Dieser ist seit dem BIP39/44 eine kurze Liste von für den Menschen leserlichen Worten. Diese können mithilfe eines speziellen Dictionaries in Hex-Zahlen umgewandelt werden, aus denen schließlich der Master Private Key erzeugt wird.
 \subsection{Transaktionen}
@@ -218,13 +218,13 @@ Damit Bitcoin die Funktion des Zahlungs- bzw. Tauschmittels erfüllen kann, müs
 \subsubsection{Transaction Outputs}
 Das Guthaben einer Wallet befindet sich nicht an einem Ort, sondern wird aus \emph{Unspent Transaction Outputs}, kurz UTXO zusammengesetzt, welche alle verfügbaren Gutschriften aus vergangenen Transaktionen darstellen.
 Eine Wallet scannt die Blockchain nach allen Outputs, welche mit den Keys des Besitzers assoziiert sind und errechnet damit das gesamte verfügbare Guthaben. Außerdem speichert sie die nötigen Referenzen für den Zugriff auf die UTXO für den späteren Gebrauch in einer Datenbank ab.\\
-UTXO¸ sind diskrete, sowie unteilbare Einheiten und können demnach nur in ihrer Gesamtheit genutzt werden. Man betrachte die folgende Abbildungen:
+UTXO¸ sind diskrete, sowie unteilbare Einheiten und können demnach nur in ihrer Gesamtheit genutzt werden. Man betrachte die folgende Abbildung 2.5:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/UTXO.png}
 	\caption{Transaktionen mit unteilbaren UTXO}
 	\label{6braun:fig:Transaktionen}
-\end{figure}
+\end{figure}\\
 Für die gewünschte Transaktion von A nach B werden 20 BTC benötigt, die von der Wallet aus verfügbaren UTXO zusammengefügt werden. 
 Für das optimale Zusammensammeln von Outputs ist die Wallet zuständig.\\
 C hat für die gewünschte Transaktion von 1 BTC nur 3 BTC zur Verfügung, weshalb diese in ihrer Gesamtheit aufgebraucht werden müssen.
@@ -243,7 +243,7 @@ Sowohl Input, als auch Output werden serialisiert und als Byte-Streams im Netzwe
 \subsubsection{Transaktionskosten}
 Abhängig von der Auslastung des Netzwerkes wird eine dadurch bestimmte Menge an Transaktionsgebühren nötig, die sowohl als Anreiz für Bitcoin-Miner, als auch Abschreckungsmechanismus gegen Angriffe durch hochfrequentes Senden von kleinen Transaktionen dienen.\\
 Diese sind zwar kein Muss, jedoch bevorzugen die Miner Transaktionen mit höheren Transaktionskosten. 
-Das berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wallet ausgeführt, jedoch können auch manuelle Transaktionen erstellt werden, die ohne Transaktionskosten langsamer oder gar nicht vom Netzwerk verarbeitet werden.
+Das Berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wallet ausgeführt, jedoch können auch manuelle Transaktionen erstellt werden, die ohne Transaktionskosten langsamer oder gar nicht vom Netzwerk verarbeitet werden.
 Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Transaktionsgebühren ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionsgebühren angegeben kann, ist auch das versehentliche Angeben von zu hohen Gebühren möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte der Sender vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.\\
 
 Zusammenfassend lassen sich Transaktionen als Sammlungen von Inputs und Outputs definieren, deren Differenz die genutzten Transaktionskosten darstellen.
@@ -262,10 +262,10 @@ Bis auf das Routing-Modul, ohne das die Kommunikation mit dem Netzwerk nicht mö
 Beispielsweise benötigt eine Lightweight-Wallet kein Mining und auch keine volle Blockchain. 
 Stattdessen lässt sie Transaktionen von einer dritten Partei prüfen und könnte so aufgrund des geringen Speicherbedarfs in einem Internetbrowser laufen.
 \subsubsection{Bootstrapping neuen Teilnehmers}
-Nach dem Hochfahren muss ein neuer Teilnehmer zunächst mindestens einen Anderen im Netzwerk finden. Dabei stehen ihm sogenannte \emph{DNS Seeds} zur Verfügung, die nichts anderes sind als Server, die auf Abfrage Adressen von stabil laufenden Teilnehmern zurückgeben und deren Adressen im Bitcoin-Klienten enthalten sind. 
+Nach dem Hochfahren muss ein neuer Teilnehmer zunächst mindestens einen anderen im Netzwerk finden. Dabei stehen ihm sogenannte \emph{DNS Seeds} zur Verfügung, die nichts anderes sind als Server, die auf Abfrage Adressen von stabil laufenden Teilnehmern zurückgeben und deren Adressen im Bitcoin-Klienten enthalten sind. 
 Alternativ kann ein neuer Knoten auch eine manuelle Verbindung zu einem anderen Teilnehmer eingehen, wenn ihm dessen Adresse bekannt ist.\\
-Sobald ein anderer Teilnehmer gefunden wurde wird über TCP ein \emph{Handshake} ausgeführt: Der Neue sendet seine Informationen, wie die Version seines Bitcoin-Klienten an den gefundenen Teilnehmer und dieser geht bei Validität der Informationen eine Verbindung mit ihm ein.
-Anschließend können sie ihnen bekannte Adressen austauschen:
+Sobald ein anderer Teilnehmer gefunden wurde, wird über TCP ein \emph{Handshake} ausgeführt: Der Neue sendet seine Informationen, wie die Version seines Bitcoin-Klienten an den gefundenen Teilnehmer und dieser geht bei Validität der Informationen eine Verbindung mit ihm ein.
+Anschließend können sie ihnen bekannte Adressen austauschen, dieser Vorgang wird in Abbildung 2.6 veranschaulicht:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
@@ -276,7 +276,7 @@ Anschließend können sie ihnen bekannte Adressen austauschen:
 Ebenso wie sie Adressen miteinander austauschen, werden auch Informationen über den Zustand der Blockchain ausgetauscht. Sollten dem neuen Teilnehmer Blöcke fehlen, versucht er diese von seinen neuen Nachbarn anzufordern, um seine eigene Blockchain zu synchronisieren. Dabei wird der Aufwand auf die verschiedenen Nachbarn aufgeteilt, um einzelne Teilnehmer nicht zu überlasten. Es ist dasselbe Prinzip, wie beim schon länger praktizierten File-Sharing.
 \subsection{Blockchain}
 Die Blockchain ist die Kerntechnologie des gesamten Protokolls und stellt im Kern eine Datenstruktur mit einer verketteten Liste von Blöcken dar, die wiederum Transaktionen enthalten. 
-Die Verkettung erfolgt dadurch, dass jeder Block einen vorher Erzeugten referenziert. 
+Die Verkettung erfolgt dadurch, dass jeder Block einen vorher erzeugten referenziert. 
 Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt.
 \begin{figure}[htpb]
 	\centering
