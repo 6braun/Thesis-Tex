@@ -1,7 +1,7 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
-\contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.3}%
-\contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.4}%
+\contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.3}%
+\contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funktionsweise von Geld}{2}{section.2.1}%
@@ -34,19 +34,26 @@
 \contentsline {subsubsection}{Mining}{20}{subsection.2.3.7}%
 \contentsline {subsection}{\numberline {2.3.8}Angriff auf das Netzwerk}{22}{subsection.2.3.8}%
 \contentsline {chapter}{\numberline {3}Blockchain 2.0}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Theoretische Grundlagen von Ethereum}{24}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{25}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{25}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{25}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{26}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{26}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{27}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{27}{section.A.1}%
-\contentsline {chapter}{Bibliography}{29}{lstnumber.-2.8}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{30}{chapter*.15}%
+\contentsline {section}{\numberline {3.1}Theoretische Grundlagen von Ethereum}{24}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Transaktionen}{25}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Ethereum Virtual Machine}{26}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Die Programmiersprache Solidity}{26}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Weitere Konzepte}{26}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Tokens}{26}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}DAO}{26}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}DApps}{26}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Deployment}{27}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{27}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{28}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{28}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{29}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{29}{section.A.1}%
+\contentsline {chapter}{Bibliography}{31}{lstnumber.-3.8}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{32}{chapter*.15}%

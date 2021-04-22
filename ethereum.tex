@@ -1,3 +1,42 @@
 \chapter{Blockchain 2.0}
-\section{Probleme von Bitcoin und Erweiterung der Konzepte durch Ethereum}
+Durch den Zusammenschluss verschiedenster Vorgängertechnologien gelang es Nakamoto, einen dezentralen Mechanismus zur Verarbeitung von Transaktionen vorzustellen, der mit den bereits bestehenden Institutionen in Punkten wie Sicherheit und Geschwindigkeit konkurrieren kann. Vor allem die Möglichkeit, auf eine dezentrale Art und Weise zu einem gemeinsamen Konsens kommen zu können, macht es zu einer disruptiven Technologie. Als Programmierer jedoch Konzepte, die über das Versenden von Guthaben hinausgehen, entwickeln wollten, wurde dies durch die Einschränkungen des Bitcoin-Protokolls, wie die Block-Dauer von 10 Minuten oder unzureichende Block-Struktur, erschwert. Man kann deshalb von Bitcoin als spezialisierte Blockchain reden, die ihre wenigen Funktionalitäten zufriedenstellend bereitstellt.\\
+Im Jahr 2013 veröffentlichte Vitalik Buterin das Whitepaper \cite{buterin_whitepaper_2013}, in dem er Konzepte für eine neue Blockchain namens Ethereum vorstellte. Dabei handelt es sich um den Entwurf für eine Art Welt-Computer, der sich von Bitcoin vor Allem in den folgenden Punkten unterscheidet:
+\begin{enumerate}
+	\item Es können beliebige Daten auf der Blockchain gespeichert werden
+	\item Es kann Code auf der Blockchain hinterlegt und dort ausgeführt werden
+	\end{enumerate}
+Im Gegensatz zum Bitcoin-Protokoll, welches zwischen den Blöcken nur eine Veränderung des UTXO-Sets aufweist, stellt Ethereum einen globalen State dar, in dem neben den Aufzeichnungen zu den Guthaben der Teilnehmer auch andere beliebige Daten abgespeichert werden können. Damit geht Ethereum über den Einsatz als Geldsystem hinaus.
+Über spezielle Adressen erlaubt das Ethereum-Protokoll das hinterlegen von kompilierten Code direkt auf der Blockchain, welcher über Transaktionen getriggert werden und den State modifizieren kann. 
+\\
+Ethereum übernimmt viele Konzepte, die bereits aus dem Kapitel \emph{Blockchain 1.0} bekannt sind (Keys, Wallets, Mining, etc.). Dieses Kapitel befasst sich mit Neuerungen, die das Ausführen von Smart-Contracts ermöglichen bzw. durch diese ermöglicht werden.
 \section{Theoretische Grundlagen von Ethereum}
+Im Gegensatz zum Bitcoin-Protokoll, in dem das UTXO-Modell genutzt wird, kommt beim Ethereum-Protokoll ein sogenanntes \emph{Account Based Model} zum Einsatz. Jede Adresse auf der Blockchain hat ein Guthaben, auf das Ether, die native Währung auf Ethereum, hinzugefügt bzw. abgehoben werden kann. Eine passende Analogie für die beiden Kontenmodelle wäre das UTXO-Modell als physikalische Geldbörse, aus der für eine Transaktion einzelne Münzen (UTXO) herausgesucht und konsumiert werden müssen, sowie das Girokonto, dessen Guthaben beliebig augmentiert werden kann. Dies hat zur Folge, dass andere Mechanismen zum Lösen des Double-Spending-Problems geben muss.
+
+\subsection{Transaktionen}
+Neben dem Transfer von Guthaben, so wie es bereits von Bitcoin bekannt ist, dienen Transaktionen auf Ethereum dem Zweck, die Ausführung von, auf der Blockchain hinterlegten, Smart-Contracts auszulösen.
+Um diese Funktion erfüllen zu können, unterscheidet sich eine Transaktion auf Ethereum zu deren im Bitcoin-Protokoll:
+\begin{lstlisting}
+	transaction {
+		nonce;
+		recipient;
+		value;
+		data;
+		v;
+		r;
+		s;	
+		gas_price;
+		gas_limit;
+}
+\end{lstlisting}
+\emph{Nonce} ist ein Zähler, der bei Transaktionen auf Ethereum eine andere Bedeutung hat, als beim Mining. In einer Transaktion gibt er an, wie viele bestätigte Transaktionen, inklusive sich selbst, bereits von jener Adresse gesendet wurden. Dies führt dazu, dass das Netzwerk eine Warteschlange, aus den von einer Adresse gesendeten Transaktionen, bilden kann. Da im Account-Based-Modell keine UTXO konsumiert werden, kann das Netzwerk anhand des Zählers eine Priorisierung der unbestätigten Transaktionen festlegen und, sollte das gesamte Guthaben nicht ausreichen, Transaktionen mit niedrigerer Priorität ablehnen.\\
+Der eigentliche Payload einer Transaktion besteht aus \emph{Value} und \emph{Data}, wobei keines dieser Felder zwingend gefüllt sein muss.
+Als Value bezeichnet man die Ether, welche bei einer Transaktion gesendet werden können und je nach Art der Empfängeradresse anders verarbeitet werden. Findet die Transaktion zwischen zwei Teilnehmern des Netzwerkes statt, so werden die Ether der Empfängeradresse zugeschrieben. Handelt es sich dagegen um einen Smart-Contract, so wird dessen Guthaben (Ein Smart-Contract hat eine Adresse und kann dementsprechend Ether halten) erhöht und eine, als \emph{payable} gekennzeichnete, Fallback-Funktion ausgeführt. Bei Fehlen einer solchen Funktion wird ein Fehler geworfen und andernfalls der State des Smart-Contracts angepasst.
+Die Fallback-Funktion nur dann ausgeführt, wenn das Feld Data des Payloads leer ist. In diesem selektiert man die gewünschten Funktionen und mit welchen Parametern diese ausgeführt werden sollen. Die Felder \emph{v, r ,s} sind für die Authentifizierung nötig, werden hier aber nicht weiter erörtert. Im Endeffekt werden Transaktionen wie bekannt mit dem privaten Schlüssel signiert und andere Teilnehmer des Netzwerkes validieren diese mit dem öffentlichen Schlüssel.\\
+
+
+\subsection{Ethereum Virtual Machine}
+\subsection{Die Programmiersprache Solidity}
+\section{Weitere Konzepte}
+\subsection{Tokens}
+\subsection{DAO}
+\subsection{DApps}

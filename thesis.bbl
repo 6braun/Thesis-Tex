@@ -1,11 +1,18 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013}]{buterin_2013}
-Buterin, V. (2013).
+\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_2013}
+Buterin, V. (2013a).
 \newblock Deterministic wallets, their advantages and their understated flaws.
 \newblock
   \url{https://bitcoinmagazine.com/articles/deterministic-wallets-advantages-flaw-1385450276/}.
   Letzter Zugriff am 21.02.2021.
+
+\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013b}]{buterin_whitepaper_2013}
+Buterin, V. (2013b).
+\newblock A next generation smart contract \& decentralized application
+  platform.
+\newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
+  12.4.2021.
 
 \bibitem[\protect\citeauthoryear{Dang}{Dang}{2015}]{dang_2015}
 Dang, Q.~H. (2015).
