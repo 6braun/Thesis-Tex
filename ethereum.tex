@@ -16,7 +16,7 @@ Im Gegensatz zum Bitcoin-Protokoll, in dem das UTXO-Modell genutzt wird, kommt b
 Neben dem Transfer von Guthaben, so wie es bereits von Bitcoin bekannt ist, dienen Transaktionen auf Ethereum dem Zweck, die Ausführung von, auf der Blockchain hinterlegten, Smart-Contracts auszulösen.
 Um diese Funktion erfüllen zu können, unterscheidet sich eine Transaktion auf Ethereum zu deren im Bitcoin-Protokoll:
 \begin{lstlisting}
-	transaction {
+	Transaction {
 		nonce;
 		recipient;
 		value;
@@ -32,11 +32,15 @@ Um diese Funktion erfüllen zu können, unterscheidet sich eine Transaktion auf 
 Der eigentliche Payload einer Transaktion besteht aus \emph{Value} und \emph{Data}, wobei keines dieser Felder zwingend gefüllt sein muss.
 Als Value bezeichnet man die Ether, welche bei einer Transaktion gesendet werden können und je nach Art der Empfängeradresse anders verarbeitet werden. Findet die Transaktion zwischen zwei Teilnehmern des Netzwerkes statt, so werden die Ether der Empfängeradresse zugeschrieben. Handelt es sich dagegen um einen Smart-Contract, so wird dessen Guthaben (Ein Smart-Contract hat eine Adresse und kann dementsprechend Ether halten) erhöht und eine, als \emph{payable} gekennzeichnete, Fallback-Funktion ausgeführt. Bei Fehlen einer solchen Funktion wird ein Fehler geworfen und andernfalls der State des Smart-Contracts angepasst.
 Die Fallback-Funktion nur dann ausgeführt, wenn das Feld Data des Payloads leer ist. In diesem selektiert man die gewünschten Funktionen und mit welchen Parametern diese ausgeführt werden sollen. Die Felder \emph{v, r ,s} sind für die Authentifizierung nötig, werden hier aber nicht weiter erörtert. Im Endeffekt werden Transaktionen wie bekannt mit dem privaten Schlüssel signiert und andere Teilnehmer des Netzwerkes validieren diese mit dem öffentlichen Schlüssel.\\
-
-
+\subsubsection{Neues Konzept: Gas}
+In seinem Paper \cite{turing_1936} stellte Alan Turing einen Entwurf für eine Maschine vor, die aus einem nahezu unendlich langem Streifen aus Papier und einem Kopf besteht. Der Streifen ist in Bereiche unterteilt, die jeweils ein Zeichen, wie z.B. eine Zahl, enthalten und zwischen denen sich der Kopf bewegen kann. Dieser ist in der Lage, das Zeichen des Bereiches, 'auf dem er sich befindet', zu lesen, zu überschreiben, zu löschen oder auch auf dem Streifen zu verschieben. Die Maschine ermöglicht somit, in Abhängigkeit zu den gegebenen Instruktionen, das Berechnen sowie abspeichern beliebiger Sequenzen von Zeichen auf dem Streifen. Eine solche Maschine wird heutzutage als Turing-Maschine bezeichnet.\\
+Im Ethereum-Whitepaper \cite{buterin_whitepaper_2013} wird Ethereum als Blockchain bezeichnet, die eine Programmiersprache verwendet, welche turing-vollständig ist. Michaelson beschreibt in \cite{Michaelson_2020} turing-vollständige Programmiersprachen als solche, die ihre Berechnungen in Form einer Turing-Maschine ausdrücken können. Dafür dürfen sie laut Michaelson weder in ihren genutzten Werten, noch in den darauf ausgeführten Berechnungen beschränkt sein. Konkret heißt das im Fall von Ethereum und der genutzten Programmiersprache, dass beliebig aufwendige Berechnungen, sowie geforderter Speicherbedarf ermöglicht werden müssen.
+Auf einem lokalen Computer kann eine endlos laufende Schleife leicht gestoppt werden, aber im Kontext eines dezentralen Systems würde jene Schleife die Stabilität des gesamten Netzwerkes bedrohen und würde sogar als Angriffsmethode für bösartige Akteure dienen können. Im Endeffekt nutzen die Teilnehmer des Netzwerkes Ressourcen aus dem selben Pool, sodass ein Mechanismus nötig ist, um das Verschwenden dieser begrenzten Ressourcen unattraktiv zu machen.\\
+Die Anweisungen, welche in einem Smart-Contract hinterlegt sind, werden nach Triggern durch eine Transaktion von der \emph{Ethereum Virtual Machine} interpretiert und ausgeführt. Jede der Anweisungen verbraucht jedoch \emph{Gas}, welches als neues Konzept zur Lösung der genannten Probleme aus Touring-Vollständigkeit eingeführt wurde. So bleibt die Programmiersprache zwar touring-vollständig, die Ressourcen, welche Teilnehmer in Anspruch nehmen können, werden jedoch begrenzt. Dies hat zur Folge, dass die Anzahl an Gas, sowie der Preis in Ether, welchen man bereit ist zu zahlen, in einer Transaktion angegeben werden muss. Miner suchen sich anschließend die Transaktionen heraus, welche für sie attraktiv sind, und fügen sie zu ihrem Block hinzu. Übrig gebliebenes Gas wird in Form von Ether wieder zurückerstattet. Zu einer Transaktion gehören demnach die, für den Versand bestimmten, Ether, sowie jene, welche für den Erwerb von Gas bereitgestellt werden müssen.
 \subsection{Ethereum Virtual Machine}
+
 \subsection{Die Programmiersprache Solidity}
 \section{Weitere Konzepte}
-\subsection{Tokens}
 \subsection{DAO}
+\subsection{Tokens}
 \subsection{DApps}

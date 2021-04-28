@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  22 APR 2021 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  28 APR 2021 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,7 +1090,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=18.85002pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 5
-4.
+5.
 
 
 Overfull \vbox (0.72502pt too high) has occurred while \output is active []
@@ -1105,7 +1105,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{18.85002pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 54
+(scrlayer-scrpage)                I'll also increase \footskip on input line 55
 .
 
 [1
@@ -1315,12 +1315,17 @@ unt Ba-sed Mo-del \T1/ptm/m/n/12 zum Ein-satz. Je-de Adres-
 
 
 
-] [25]) [26]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+[25] [26]) [27]
 \openout2 = `digital_advertising.aux'.
 
  (./digital_advertising.tex
 chapter 4.
-) [27
+) [28
 
 
 
@@ -1330,7 +1335,7 @@ chapter 4.
 
  (./zusammenfassung.tex
 chapter 5.
-) [28
+) [29
 
 
 
@@ -1341,7 +1346,7 @@ chapter 5.
  (./appendix.tex
 chapter A.
 
-LaTeX Warning: Reference `lst:soap' on page 29 undefined on input line 11.
+LaTeX Warning: Reference `lst:soap' on page 30 undefined on input line 11.
 
 
 Overfull \hbox (59.3926pt too wide) in paragraph at lines 15--16
@@ -1383,12 +1388,12 @@ Overfull \hbox (59.3926pt too wide) in paragraph at lines 22--23
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[29
+[30
 
 
 
 
-]) [30] (./thesis.bbl
+]) [31] (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\T1/ptm/m/n/12 Buterin, V. (2013a).  De-ter-mi-ni-stic wal-lets, their ad-van
 -ta-ges and
@@ -1400,18 +1405,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 om / articles /
  []
 
-) [31
+
+Underfull \hbox (badness 1484) in paragraph at lines 30--35
+[]\T1/ptm/m/n/12 Michaelson, G. (2020, Feb).  Pro-gram-ming pa-ra-digms, tu-rin
+g com-ple-ten-ess and
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 41--44
+[]\T1/ptm/m/n/12 Turing, A. M. (1936).  On com-pu-ta-ble num-bers with an ap-p-
+li-ca-ti-on to the
+ []
+
+) [32
 
 
 
 
 
-] (./_declaration_de.tex [32
+] (./_declaration_de.tex [33
 
 
 
 
-] [33
+] [34
 
 
 
@@ -1433,13 +1450,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18028 strings out of 480608
- 327129 string characters out of 5905076
+ 18037 strings out of 480608
+ 327298 string characters out of 5905076
  912453 words of memory out of 5000000
- 33281 multiletter control sequences out of 15000+600000
+ 33287 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,22n,115p,10101b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,22n,115p,10101b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -1448,10 +1465,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (39 pages, 310583 bytes).
+Output written on thesis.pdf (40 pages, 314057 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
- 546 compressed objects within 6 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 558 compressed objects within 6 object streams
+ 199 named destinations out of 1000 (max. 500000)
  363 words of extra memory for PDF output out of 10000 (max. 10000000)
 
