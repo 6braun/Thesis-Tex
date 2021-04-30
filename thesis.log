@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  28 APR 2021 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  30 APR 2021 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,7 +1177,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--19
 
 
 
-] [3]
+]
+
+Package natbib Warning: Citation `nakamoto_2008' on page 3 undefined on input l
+ine 29.
+
+[3]
 <images/public_and_private_key.png, id=160, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
@@ -1260,19 +1265,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--248
 
  []
 
+
+Package natbib Warning: Citation `nakamoto_2008' on page 15 undefined on input 
+line 251.
+
 [15]
 Overfull \hbox (0.88474pt too wide) in paragraph at lines 260--264
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
  []
 
-<images/adress_query.png, id=286, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=284, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
 Package pdftex.def Info: images/adress_query.png  used on input line 271.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
 [16]
-<images/chain.png, id=291, 322.20375pt x 101.37875pt>
+<images/chain.png, id=289, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
 Package pdftex.def Info: images/chain.png  used on input line 283.
@@ -1282,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--313
 
  []
 
-<images/merkle.png, id=298, 348.3414pt x 173.2071pt>
+<images/merkle.png, id=296, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
 Package pdftex.def Info: images/merkle.png  used on input line 317.
@@ -1293,7 +1302,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--333
  []
 
 [19 <./images/merkle.png>]
-<images/chains.png, id=324, 654.445pt x 302.12875pt>
+<images/chains.png, id=322, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
 Package pdftex.def Info: images/chains.png  used on input line 361.
@@ -1320,12 +1329,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
-[25] [26]) [27]
+[25] [26]
+<images/evm_simple.png, id=380, 804.00375pt x 412.54124pt>
+File: images/evm_simple.png Graphic file (type png)
+<use images/evm_simple.png>
+Package pdftex.def Info: images/evm_simple.png  used on input line 48.
+(pdftex.def)             Requested size: 426.79134pt x 218.98573pt.
+ [27 <./images/evm_simple.png>] [28] [29]) [30]
 \openout2 = `digital_advertising.aux'.
 
- (./digital_advertising.tex
+
+(./digital_advertising.tex
 chapter 4.
-) [28
+) [31
 
 
 
@@ -1335,7 +1351,7 @@ chapter 4.
 
  (./zusammenfassung.tex
 chapter 5.
-) [29
+) [32
 
 
 
@@ -1345,68 +1361,30 @@ chapter 5.
 
  (./appendix.tex
 chapter A.
-
-LaTeX Warning: Reference `lst:soap' on page 30 undefined on input line 11.
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 15--16
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 16--17
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 17--18
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 18--19
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 19--20
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 20--21
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (59.3926pt too wide) in paragraph at lines 22--23
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[30
+<images/evm_full.png, id=482, 477.28313pt x 619.56468pt>
+File: images/evm_full.png Graphic file (type png)
+<use images/evm_full.png>
+Package pdftex.def Info: images/evm_full.png  used on input line 9.
+(pdftex.def)             Requested size: 426.79134pt x 554.02007pt.
+) [33
 
 
 
 
-]) [31] (./thesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+] [34 <./images/evm_full.png (PNG copy)>] (./thesis.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
 []\T1/ptm/m/n/12 Buterin, V. (2013a).  De-ter-mi-ni-stic wal-lets, their ad-van
 -ta-ges and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
 \T1/ptm/m/n/12 their un-der-stated flaws.  [][]$https : / / bitcoinmagazine . c
 om / articles /
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 30--35
+Underfull \hbox (badness 1484) in paragraph at lines 34--39
 []\T1/ptm/m/n/12 Michaelson, G. (2020, Feb).  Pro-gram-ming pa-ra-digms, tu-rin
 g com-ple-ten-ess and
  []
@@ -1417,46 +1395,45 @@ Underfull \hbox (badness 3148) in paragraph at lines 41--44
 li-ca-ti-on to the
  []
 
-) [32
+) [35
 
 
 
 
 
-] (./_declaration_de.tex [33
+] (./_declaration_de.tex [36
 
 
 
 
-] [34
+] [37
 
 
 
 
 ])
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
- (./thesis.aux (./_titlepage_de.aux)
-(./einleitung.aux) (./bitcoin.aux) (./ethereum.aux) (./digital_advertising.aux)
-(./zusammenfassung.aux) (./appendix.aux))
+(./thesis.aux (./_titlepage_de.aux) (./einleitung.aux) (./bitcoin.aux)
+(./ethereum.aux) (./digital_advertising.aux) (./zusammenfassung.aux)
+(./appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18037 strings out of 480608
- 327298 string characters out of 5905076
- 912453 words of memory out of 5000000
- 33287 multiletter control sequences out of 15000+600000
+ 18110 strings out of 480608
+ 328552 string characters out of 5905076
+ 917453 words of memory out of 5000000
+ 33301 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,22n,115p,10101b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,22n,115p,10101b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -1465,10 +1442,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (40 pages, 314057 bytes).
+Output written on thesis.pdf (43 pages, 534693 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 558 compressed objects within 6 object streams
- 199 named destinations out of 1000 (max. 500000)
- 363 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

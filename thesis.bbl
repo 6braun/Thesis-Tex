@@ -1,5 +1,9 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Antonopoulos}{Antonopoulos}{2018}]{antanopoulos_2018}
+Antonopoulos, A.~M. (2018).
+\newblock {\em Mastering Ethereum\/} (Open Edition. Aufl.).
+
 \bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_2013}
 Buterin, V. (2013a).
 \newblock Deterministic wallets, their advantages and their understated flaws.
@@ -33,13 +37,15 @@ Michaelson, G. (2020, Feb).
 \newblock {\em The Art, Science, and Engineering of Programming\/}~{\em
   4\/}(3).
 
-\bibitem[\protect\citeauthoryear{Nakamoto}{Nakamoto}{2008}]{nakamoto_2008}
-Nakamoto, S. (2008).
-\newblock Bitcoin: A peer-to-peer electronic cash system.
-
 \bibitem[\protect\citeauthoryear{Turing}{Turing}{1936}]{turing_1936}
 Turing, A.~M. (1936).
 \newblock On computable numbers with an application to the
   entscheidungsproblem.
+
+\bibitem[\protect\citeauthoryear{Wood}{Wood}{2014}]{wood_yellowpaper_2014}
+Wood, G. (2014).
+\newblock Ethereum: A secure decentralised generalised transaction ledger.
+\newblock \url{https://ethereum.github.io/yellowpaper/paper.pdf/}. Letzter
+  Zugriff am 20.4.2021.
 
 \end{thebibliography}

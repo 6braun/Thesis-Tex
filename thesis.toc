@@ -38,23 +38,23 @@
 \contentsline {subsection}{\numberline {3.1.1}Transaktionen}{25}{subsection.3.1.1}%
 \contentsline {subsubsection}{Neues Konzept: Gas}{26}{lstnumber.-1.11}%
 \contentsline {subsection}{\numberline {3.1.2}Ethereum Virtual Machine}{27}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Die Programmiersprache Solidity}{27}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Weitere Konzepte}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}DAO}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Tokens}{27}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}DApps}{27}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{28}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Deployment}{28}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{28}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{28}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{29}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{29}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{29}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{30}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{30}{section.A.1}%
-\contentsline {chapter}{Bibliography}{32}{lstnumber.-3.8}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{33}{chapter*.15}%
+\contentsline {subsection}{\numberline {3.1.3}Die Programmiersprache Solidity}{28}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Weitere Konzepte}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}DAO}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Tokens}{30}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}DApps}{30}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Deployment}{31}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{31}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{31}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{32}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{32}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{32}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{33}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{33}{section.A.1}%
+\contentsline {chapter}{Bibliography}{35}{figure.caption.15}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{36}{chapter*.17}%
