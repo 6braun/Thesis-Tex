@@ -8,8 +8,8 @@ Im Jahr 2013 veröffentlichte Vitalik Buterin das Whitepaper \cite{buterin_white
 Im Gegensatz zum Bitcoin-Protokoll, welches zwischen den Blöcken nur eine Veränderung des UTXO-Sets aufweist, stellt Ethereum einen globalen State dar, in dem neben den Aufzeichnungen zu den Guthaben der Teilnehmer auch andere beliebige Daten abgespeichert werden können. Damit geht Ethereum über den Einsatz als Geldsystem hinaus.
 Über spezielle Adressen erlaubt das Ethereum-Protokoll das hinterlegen von kompilierten Code direkt auf der Blockchain, welcher über Transaktionen getriggert werden und den State modifizieren kann. 
 \\
-Ethereum übernimmt viele Konzepte, die bereits aus dem Kapitel \emph{Blockchain 1.0} bekannt sind (Keys, Wallets, Mining, etc.). Dieses Kapitel befasst sich mit Neuerungen, die das Ausführen von Smart-Contracts ermöglichen bzw. durch diese ermöglicht werden.
-\section{Theoretische Grundlagen von Ethereum}
+Ethereum übernimmt viele Konzepte, die bereits aus dem Kapitel \emph{Blockchain 1.0} bekannt sind (Keys, Wallets, Mining, etc.). Dieses Kapitel befasst sich mit Neuerungen, die das Ausführen von Smart-Contracts ermöglichen bzw. durch diese ermöglicht werden. Außerdem werden mögliche Use-Cases für Smart-Contracts beschrieben.
+\section{Neuerungen unter Ethereum}
 Im Gegensatz zum Bitcoin-Protokoll, in dem das UTXO-Modell genutzt wird, kommt beim Ethereum-Protokoll ein sogenanntes \emph{Account Based Model} zum Einsatz. Jede Adresse auf der Blockchain hat ein Guthaben, auf das Ether, die native Währung auf Ethereum, hinzugefügt bzw. abgehoben werden kann. Eine passende Analogie für die beiden Kontenmodelle wäre das UTXO-Modell als physikalische Geldbörse, aus der für eine Transaktion einzelne Münzen (UTXO) herausgesucht und konsumiert werden müssen, sowie das Girokonto, dessen Guthaben beliebig augmentiert werden kann. Dies hat zur Folge, dass andere Mechanismen zum Lösen des Double-Spending-Problems geben muss.
 
 \subsection{Transaktionen}
@@ -54,77 +54,39 @@ Als zusätzliche Inputs für die Verarbeitung von Transaktionen dienen der Smart
 Die EVM führt die Anweisungen nach dem LIFO-Prinzip im Kontext der Umgebungsdaten aus und verbraucht für jede Anweisung eine gewisse Menge Gas, die von der Art jener Operation abhängt. Wenn während der Ausführung keine Fehler auftreten, dann wird der State persistiert und mit der nächsten Transaktion fortgefahren. 
 Wenn allerdings an einer beliebigen Stelle des Stacks ein Fehler auftritt, sei es beispielsweise durch unzureichendes Gas, wird die gesamte Transaktion zurückgesetzt, da Transaktionen atomar sind und nur in ihrer Gesamtheit ausgeführt werden können. Erst wenn ein valider neuer State erreicht ist, gilt der Block selbst als valide und kann mittels Proof-Of-Work gemined werden. Im Anhang unter \ref{6braun:fig:EVM_full} befindet sich eine umfassende Abbildung aus dem Buch \cite{antanopoulos_2018}.
 \subsection{Die Programmiersprache Solidity}
+Der Programmcode, welcher von der EVM interpretiert wird, ist in der Programmiersprache \emph{Solidity}, welche an andere objektorientierten Programmiersprachen wie Java oder Javascript erinnert, geschrieben. Sie bietet bekannte Funktionalitäten wie Kontrollstrukturen, Vererbung, etc. an, wobei man aufgrund der Verwendung von Gas auf die Wirtschaftlichkeit des Codes achten. Anhand des folgenden Codes sollen kurz die Syntax von Solidity dargestellt werden: 
 \begin{lstlisting}
-	// SPDX-License-Identifier: GPL-3.0
-	pragma solidity ^0.8.4;
-	contract SimpleAuction {
-		address payable public beneficiary;
-		uint public auctionEndTime;
-		address public highestBidder;
-		uint public highestBid;
-		
-		mapping(address => uint) pendingReturns;
-		bool ended;
-		event HighestBidIncreased(address bidder, uint amount);
-		event AuctionEnded(address winner, uint amount);
-		error AuctionAlreadyEnded();
-		error BidNotHighEnough(uint highestBid);
-		error AuctionNotYetEnded();
-		error AuctionEndAlreadyCalled();
-
-		constructor(
-		uint _biddingTime,
-		address payable _beneficiary
-		) {
-			beneficiary = _beneficiary;
-			auctionEndTime = block.timestamp + _biddingTime;
-		}
-		
+	// SPDX-License-Identifier: MIT
+	pragma solidity ^0.8.3;
 	
-		function bid() public payable {
-			if (block.timestamp > auctionEndTime)
-			revert AuctionAlreadyEnded();
-		
-			if (msg.value <= highestBid)
-			revert BidNotHighEnough(highestBid);
-			
-			if (highestBid != 0) {
-				
-				pendingReturns[highestBidder] += highestBid;
-			}
-			highestBidder = msg.sender;
-			highestBid = msg.value;
-			emit HighestBidIncreased(msg.sender, msg.value);
+	contract AdvertContract {
+		address owner;
+		struct Ad {
+			uint counter;
+			uint funds;
 		}
-		function withdraw() public returns (bool) {
-			uint amount = pendingReturns[msg.sender];
-			if (amount > 0) {
-				pendingReturns[msg.sender] = 0;
-				if (!payable(msg.sender).send(amount)) {
-					pendingReturns[msg.sender] = amount;
-					return false;
-				}
-			}
-			return true;
-		}
+		mapping(uint => Ad) public ads;
 		
-		function auctionEnd() public {
+		constructor() {
+			owner = msg.sender;
+		}
 	
-			// 1. Conditions
-			if (block.timestamp < auctionEndTime)
-			revert AuctionNotYetEnded();
-			if (ended)
-			revert AuctionEndAlreadyCalled();
-			// 2. Effects
-			ended = true;
-			emit AuctionEnded(highestBidder, highestBid);
-			
-			// 3. Interaction
-			beneficiary.transfer(highestBid);
+		receive() external payable {}
+		function getBalance() public view returns(uint){
+			return address(this).balance;
 		}
-	}
-\end{lstlisting}
-\section{Weitere Konzepte}
-\subsection{DAO}
-\subsection{Tokens}
-\subsection{DApps}
+}
+	\end{lstlisting}
+Zunächst werden die Lizenz, als auch die Version des gewünschten Compilers definiert [Zeile 1-2]. Der Befehl \emph{Contract} lässt sich mit einer Klasse aus anderen Programmiersprachen vergleichen. 
+Es können einfache Felder[5], eigene Datenstrukturen [6-9], als auch sogenannte \emph{mappings} definiert werden [10]. Mappings lassen sich mit Hash-Tabellen vergleichen und über die Notation (uint => Ad) gibt man an, dass über einen uint, welcher für unsigned Integer steht, als Schlüssel auf Objekte des Typs Ad zugegriffen werden kann. 
+Der Contract verfügt über einen Konstruktor, der nur einmal während des Deployments aufgerufen wird. In diesem kann beispielsweise diejenige Adresse festgelegt werden, die als Eigentümer des Contracts gelten soll. 
+Während des Deployments wird eine spezielle Transaktion, welche den kompilierten Code enthält, an die Adresse 0x00... gesendet und von den Minern als Aufforderung für das Hinterlegen des Codes auf der Blockchain interpretieren. 
+Die globale Variable \emph{msg} ermöglicht den Zugriff innerhalb des Contracts auf Informationen der Transaktion, welche diesen triggert [12-14].
+\emph{Receive} stellt eine Fallback-Funktion dar, welche das Verhalten des Contracts für den Fall definiert, dass eine Transaktion mit leerem Feld 'data' diesen aufruft, was einer schlichten Überweisung gleicht [16]. Der Decorator \emph{payable} ist dann nötig, wenn eine, an diese Funktion gerichtete, Transaktion zusätzliche Ether mitschickt, denn anderenfalls wird ein Fehler ausgeworfen. \emph{External} macht, ähnlich wie der Decorator public, die Funktion nach außen hin sichtbar, ist jedoch bei der Verwendung von Gas effizienter. Über den Befehl \emph{function} lassen sich eigene Funktionen definieren für die man gewünschte Parameter, Zugriffsmodifikator angeben muss. Für den Fall, dass die Funktion einen Wert zurückgibt, muss ein Rückgabewert und bei ausschließlich lesendem Zugriff der Befehl \emph{view} angegeben werden[17-19]. 
+\subsection{Mögliche Use-Cases}
+\subsubsection{DAO}
+\cite{buterin_whitepaper_2013} bezeichnet \emph{Decentralized Autonomous Organizations} als dezentrale Organisationen, in denen Parteien mit einer Mehrheit von 67\% des Stimmrechts über die Zukunft der Organisation, welche in Smart-Contracts definiert ist, entscheiden dürfen. Darin ist festgelegt, wer zur Organisation gehört und ob bestimmte Mitglieder von ihr bezahlt werden. Eine 67\% Mehrheit könnte neue Mitglieder aufnehmen, entlassen oder deren Bezahlung anpassen.
+\subsubsection{Tokens}
+Als Token bezeichnet \cite{antanopoulos_2018} die Abstraktion einer bestimmten Sache auf der Blockchain, die man besitzen kann. Dies können wieder Währungen zum Bezahlen innerhalb des Systems sein, als auch physikalische Besitztümer wie Gold oder Immobilien. Token, welche einzigartige physikalische, als auch digitale Gegenstände repräsentieren, werden \emph{Non-fungible Token} genannt und der Vorteil dieser Token ist, dass der Besitz nicht durch eine zentrale Partei wie z.B. einen Staat, sondern durch den Besitz des dazugehörigen Keys definiert wird.
+\subsubsection{DApps}
+Klassische (Web-)Applikation bestehen meist aus den Front-, Backend und Datenbank. Das Vorhaben hinter \emph{Decentralized Applications} ist eine Dezentralisierung von Anwendungen, indem man bestimmte Funktionalitäten über Smart-Contracts oder andere dezentrale Mechanismen bereitstellt. Dies hat den Vorteil, dass man sowohl Transparenz schafft (Die Blockchain ist öffentlich und kann von jedem Akteur eingelesen werden), als auch die Abhängigkeit von Parteien, welche für die Infrastruktur der Anwendung verantwortlich sind, minimiert.
