@@ -44,17 +44,21 @@
 \contentsline {subsubsection}{Tokens}{30}{subsection.3.1.4}%
 \contentsline {subsubsection}{DApps}{30}{subsection.3.1.4}%
 \contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Wie Online Advertising funktioniert}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programmierung eines geeigneten Smart Contracts in Solidity}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Deployment}{31}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Beantwortung der Forschungsfrage}{31}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{31}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{32}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{32}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{32}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{33}{section.A.1}%
-\contentsline {chapter}{Bibliography}{35}{figure.caption.15}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{36}{chapter*.17}%
+\contentsline {section}{\numberline {4.1}Online Advertising}{31}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Display Advertising Heute}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{32}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Programmierung eines PoC}{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Frontend}{33}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Backend}{33}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Smart Contract}{33}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{33}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{33}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{34}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{34}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{35}{section.A.1}%
+\contentsline {chapter}{Bibliography}{37}{figure.caption.16}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{38}{chapter*.18}%

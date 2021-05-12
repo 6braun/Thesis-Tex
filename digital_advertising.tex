@@ -1,7 +1,39 @@
 \chapter{Blockchain im Online Advertising}
-\section{Wie Online Advertising funktioniert}
-\section{Mögliche Verbesserungen mittels Blockchain-Technologie}
-\section{Programmierung eines geeigneten Smart Contracts in Solidity}
-\subsection{Deployment}
+Die bisherigen Kapitel dienen dem Zweck, Lesern ein Verständnis über technische, als auch funktionelle Aspekte der Blockchain-Technologie zu vermitteln. Allerdings ist Informationstechnologie kein Selbstzweck, sondern wird zur Lösung von konkreten Problemen verwendet.
+Im folgenden Kapitel soll diese, im Kontext des \emph{Online Advertisings}, in einen wirtschaftlichen Prozess sinnvoll eingebaut werden. 
+Dafür wird zunächst das Thema Online Advertising näher beschrieben und mögliche Verbesserungen mittels Blockchain-Technologie erörtert. 
+Ausgehend davon wird die Architektur und ihre Komponenten für eine Webanwendung, in die ein Smart-Contract eingebaut ist, vorgestellt. 
+Abschließend wird die Eignung von Blockchain-Technologie auf ihrem derzeitigen Stand für das Online Advertising erörtert und derzeitige Probleme, sowie mögliche Lösungen beschrieben.
+\section{Online Advertising}
+Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das schalten von Werbung attraktiv, sodass im Jahr 2021 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
+Im Paper \cite{bundeskartellamt_2018} des Bundeskartellamts wird Online Advertising als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
+\begin{itemize}
+	\item Search Advertising: Werbeanzeigen werden auf den Oberflächen von Suchmaschinen entweder als Anzeigen seitlich der Suchergebnisse oder als Bestandteil dieser angezeigt
+	\item Mobile Advertising: Auf Mobilgeräte angepasste Anzeigen, die auch Bestandteile von Apps sein können
+	\item Social media Advertising:
+	Nutzer mit einer hohen Reichweite bauen Werbung in ihre Inhalte ein. Diese Nutzer nennt man auch \emph{Influencer}.
+	\item Display Advertising: Inhaber von Internetseiten bieten verfügbaren Platz als Werbeflächen an
+\end{itemize}
+Mit der ersten online-geschalteten Werbeanzeige im Jahr 1994 ist das Display Advertising die älteste Form des Online Advertisings und soll im Folgenden näher thematisiert werden \cite{bundeskartellamt_2018}.
+\subsection{Display Advertising Heute}
+Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen Anbieter, welcher Werbung auf der Internetseite schaltet und werbendem Unternehmen, welches pro Schaltung bezahlt. In der Praxis würde dies allerdings einen hohen Aufwand für beide Parteien bedeuten. Unternehmen müssten einen Vertrag darüber aufsetzen, welche Werbung wie oft geschaltet werden sollte und Anbieter der Werbefläche müssten sich selbst um das Darstellen der Anzeigen, als auch Tracking diverser Metriken, wie z.B. Impressionen oder Klicks, kümmern. Stattdessen nimmt man die Dienste eines sogenannten \emph{Ad-Brokers} in Anspruch, sodass die folgende Konstellation entsteht:
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=\textwidth]{images/online_advertising.png}
+	\caption{Involvierte Parteien in gängigem Display Advertising}
+	\label{6braun:fig:online_advertising}
+\end{figure}\\
+Der Ad-Broker dient als Intermediär zwischen Angebot und Nachfrage, indem dieser einen Marktplatz die werbenden Parteien zur Verfügung stellt. 
+Ein Beispiel hierfür ist Googles \emph{AdSense} welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
+Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbeflächen abrufen, die von AdSense getrackt werden. 
+\subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
+Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch für diese nicht nur Vorteile. Für Anbieter von Werbeflächen entsteht der Nachteil, dass nicht das gesamte Geld des Unternehmens bei ihnen ankommt, weil der Ad-Broker gleichzeitig den Zahlungskanal darstellt. Stattdessen erhalten diese laut \cite{google_adsense_2021} 68\% des Umsatzes, wodurch fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.\\
+Blockchain-Technologie könnte diese Probleme lösen, indem die Rahmenbedingungen für Interaktionen zwischen Anbietern und Unternehmen mittels Smart-Contracts geregelt wird. Da Ethereum das hinterlegen beliebiger Daten ermöglicht, könnte in den Smart-Contracts aufgezeichnet werden, wie oft eine Anzeige geschaltet wurde und welche Kosten dafür aufkommen. Da die Blockchain transparent ist, können Unternehmen jederzeit auf darauf hinterlegte Metriken abrufen. Gleichzeitig kann die Blockchain in ihrer ursprünglichen Funktion als direkter Zahlungskanal zwischen Anbietern und Unternehmen genutzt werden. Als Folge dessen würde der Ad-Broker als Intermediär wegfallen und Vorteile für beide übrigen Parteien würden entstehen.
+\section{Programmierung eines PoC}
+Die Chancen
+\subsection{Frontend}
+\subsection{Backend}
+\subsection{Smart Contract}
+\subsection{Provider und Deployment}
 \section{Beantwortung der Forschungsfrage}
 \section{Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}

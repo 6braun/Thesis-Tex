@@ -1,5 +1,22 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Bundeskartellamt}{bun}{2018}]{bundeskartellamt_2018}
+ (2018).
+\newblock Online advertising.
+
+\bibitem[\protect\citeauthoryear{Google}{goo}{2021}]{google_adsense_2021}
+ (2021).
+\newblock Adsense revenue share.
+\newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
+  Zugriff am 12.5.2021.
+
+\bibitem[\protect\citeauthoryear{Statista}{sta}{2021}]{statista_online_advertisement_revenue_2021}
+ (2021).
+\newblock Online advertising revenue in the united states from 2000 to 2020.
+\newblock
+  \url{https://www.statista.com/statistics/183816/us-online-advertising-revenue-since-2000/}.
+  Letzter Zugriff am 12.5.2021.
+
 \bibitem[\protect\citeauthoryear{Antonopoulos}{Antonopoulos}{2018}]{antanopoulos_2018}
 Antonopoulos, A.~M. (2018).
 \newblock {\em Mastering Ethereum\/} (Open Edition. Aufl.).
@@ -23,6 +40,13 @@ Dang, Q.~H. (2015).
 \newblock {Secure Hash Standard (SHS)}.
 \newblock \url{http://dx.doi.org/10.6028/NIST.FIPS.180-4 /}. Letzter Zugriff am
   14.02.2021.
+
+\bibitem[\protect\citeauthoryear{Johnson}{Johnson}{2021}]{johnson_2021}
+Johnson, J. (2021).
+\newblock Global digital population as of january 2021.
+\newblock
+  \url{https://www.statista.com/statistics/617136/digital-population-worldwide/}.
+  Letzter Zugriff am 12.5.2021.
 
 \bibitem[\protect\citeauthoryear{Mankiw, Taylor}{Mankiw und
   Taylor}{2018}]{mankiw_taylor_2018}
