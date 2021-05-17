@@ -51,19 +51,21 @@
 \contentsline {subsection}{\numberline {4.2.1}Frontend}{34}{subsection.4.2.1}%
 \contentsline {subsubsection}{Konstruktor und Laden von Bildern}{34}{subsection.4.2.1}%
 \contentsline {subsubsection}{Anpassen des Guthabens}{35}{lstnumber.-3.19}%
-\contentsline {subsubsection}{Hochladen eines Bildes}{35}{lstnumber.-4.12}%
-\contentsline {subsection}{\numberline {4.2.2}Backend}{36}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Smart Contract}{36}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{36}{subsection.4.2.4}%
-\contentsline {subsubsection}{Provider}{36}{subsection.4.2.4}%
-\contentsline {subsubsection}{Ganache}{36}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{36}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{37}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{38}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{38}{section.A.1}%
-\contentsline {chapter}{Bibliography}{40}{figure.caption.17}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{41}{chapter*.19}%
+\contentsline {subsubsection}{Ausschnitt : Hochladen eines Bildes}{36}{lstnumber.-4.12}%
+\contentsline {subsection}{\numberline {4.2.2}Backend}{37}{subsection.4.2.2}%
+\contentsline {subsubsection}{Hochladen einer Anzeige}{38}{subsection.4.2.2}%
+\contentsline {subsubsection}{Schalten einer Anzeige}{38}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Smart Contract}{38}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{38}{subsection.4.2.4}%
+\contentsline {subsubsection}{Provider}{38}{subsection.4.2.4}%
+\contentsline {subsubsection}{Ganache}{38}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}{38}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{39}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{40}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{40}{section.A.1}%
+\contentsline {chapter}{Bibliography}{42}{figure.caption.17}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{43}{chapter*.19}%

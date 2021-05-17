@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  15 MAY 2021 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  17 MAY 2021 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,7 +1090,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=18.85002pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
-3.
+5.
 
 
 Overfull \vbox (0.72502pt too high) has occurred while \output is active []
@@ -1105,7 +1105,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{18.85002pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 63
+(scrlayer-scrpage)                I'll also increase \footskip on input line 65
 .
 
 [1
@@ -1385,16 +1385,16 @@ Overfull \hbox (19.97227pt too wide) in paragraph at lines 90--91
  []
 
 [35]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 99--100
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 110--111
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [36]
+[36]) [37] [38]
 \openout2 = `zusammenfassung.aux'.
 
  (./zusammenfassung.tex
 chapter 5.
-) [37
+) [39
 
 
 
@@ -1404,17 +1404,17 @@ chapter 5.
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=529, 477.28313pt x 619.56468pt>
+<images/evm_full.png, id=545, 477.28313pt x 619.56468pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 9.
 (pdftex.def)             Requested size: 426.79134pt x 554.02007pt.
-) [38
+) [40
 
 
 
 
-] [39 <./images/evm_full.png (PNG copy)>] (./thesis.bbl
+] [41 <./images/evm_full.png (PNG copy)>] (./thesis.bbl
 Underfull \hbox (badness 2538) in paragraph at lines 14--19
 []\T1/ptm/m/n/12 (2021).  On-li-ne ad-ver-ti-sing re-ve-nue in the uni-ted stat
 es from 2000 to 2020.
@@ -1450,18 +1450,18 @@ Underfull \hbox (badness 3148) in paragraph at lines 65--68
 li-ca-ti-on to the
  []
 
-) [40
+) [42
 
 
 
 
 
-] (./_declaration_de.tex [41
+] (./_declaration_de.tex [43
 
 
 
 
-] [42
+] [44
 
 
 
@@ -1482,9 +1482,9 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18146 strings out of 480608
- 329451 string characters out of 5905076
- 915453 words of memory out of 5000000
+ 18156 strings out of 480608
+ 329585 string characters out of 5905076
+ 913453 words of memory out of 5000000
  33326 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1497,10 +1497,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (48 pages, 565763 bytes).
+Output written on thesis.pdf (50 pages, 569916 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 686 compressed objects within 7 object streams
- 265 named destinations out of 1000 (max. 500000)
+ 795 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 275 named destinations out of 1000 (max. 500000)
  391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

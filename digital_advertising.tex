@@ -53,7 +53,7 @@ Zur Kommunikation mit der Blockchain wird die Bibliothek \emph{Ethers.js} genutz
 	\item Der ApiService, welcher sich um die Kommunikation mit dem Backend kümmert
 	\item Der BlockchainService, welcher sich um die Kommunikation mit dem Smart-Contract kümmert
 \end{itemize}
-Die Hauptkomponente existiert bereits nach der initialen Generierung und dient als Gerüst für die Anwendung. In Angular können Komponenten nach dem Bausteinprinzip beliebig angeordnet werden, sodass jede Komponente für einen anderen Teil der Anwendung zuständig sein kann. Auch eine hierarchische Anordnung ist möglich, sodass eine Komponente wieder andere enthält. Sogenannte \emph{Services} können durch Deklaration im Konstruktor von Komponenten genutzt werden, dies nennt man \emph{Injecting}. Services sind keine eigenständigen Komponenten, sondern stellen lediglich Funktionalitäten bereit, wie z.B. die Kommunikation mit dem Backend. Einige wichtige Funktionen sollen im Folgenden erläutert werden.
+Die Hauptkomponente existiert bereits nach der initialen Generierung und dient als Gerüst für die Anwendung. In Angular können Komponenten nach dem Bausteinprinzip beliebig angeordnet werden, sodass jede Komponente für einen anderen Teil der Anwendung zuständig sein kann. Auch eine hierarchische Anordnung ist möglich, sodass eine Komponente wieder andere enthält. Sogenannte \emph{Services} können durch Deklaration im Konstruktor von Komponenten genutzt werden, dies nennt man \emph{Injecting}. Services sind keine eigenständigen Komponenten, sondern stellen lediglich Funktionalitäten bereit, wie z.B. die Kommunikation mit dem Backend. Einige wichtige Funktionen der Datei \emph{app.component.ts} sollen im Folgenden erläutert werden.
 \subsubsection{Konstruktor und Laden von Bildern}
 \begin{lstlisting}
 public constructor(private sanitizer: DomSanitizer,
@@ -76,37 +76,61 @@ public getImageFromApi(): void {
 	});
 }
 \end{lstlisting}
-Durch die Deklarationen von Klassen als Parameter des Konstruktors injiziert man diese, sodass Objekte der Klassen im Rumpf und allen anderen Methoden verwendet werden können [siehe Zeile 1-5]. So wird in der Methode \emph{getImageFromApi()} die am Objekt der Klasse ApiService die Methode \emph{getImage()} aufgerufen, die ein \emph{Observable} zurückgibt. Observables kann man sich als Objekte von asynchronen Funktionen vorstellen, über die man mithilfe der Methode \emph{subscribe()} festlegen kann, wie vorgegangen werden soll, sobald die asynchrone Funktion abgeschlossen ist [11]. Anschließend wird das rohe Bild aus der Antwort verarbeitet [12-13] und über einen ternären Operator wird entschieden, an welcher Stelle das geladene Bild eingefügt werden soll[15-17].
+Durch die Deklarationen von Klassen als Parameter des Konstruktors injiziert man diese, sodass Objekte der Klassen im Rumpf und allen anderen Methoden verwendet werden können [siehe Zeile 1-5]. So wird in der Methode \emph{getImageFromApi()} die am Objekt der Klasse ApiService die Methode \emph{getImage()} aufgerufen, die ein \emph{Observable} zurückgibt. Observables kann man sich als Objekte von asynchronen Funktionen vorstellen, über die man mithilfe der Methode \emph{subscribe()} festlegen kann, wie vorgegangen werden soll, sobald die asynchrone Funktion abgeschlossen ist [11]. Anschließend wird das rohe Bild aus der Antwort verarbeitet [12-13] und über einen ternären Operator wird entschieden, an welcher Stelle das geladene Bild eingefügt werden soll [15-17].
 \subsubsection{Anpassen des Guthabens}
 \begin{lstlisting}
 	public augmentAds(): void {
 		const id = parseInt(this.idForFunds, 10);
 		const funds = parseInt(this.fundsToAdd, 10);
 		
-		const dai = ethers.utils.parseEther(this.fundsToAdd);
+		const payment = ethers.utils.parseEther(this.fundsToAdd);
 		const overrides = {
-			value: dai
+			value: payment
 		};
 		this.blockService.augmentAds(id, funds, overrides).then(res => {
 			console.log('Funds Added!');
 		});
 	}
 \end{lstlisting}
-\subsubsection{Hochladen eines Bildes}
+Die Methode \emph{augmentAds()} ist dafür da, das bestehende Guthaben für eine Anzeige zu erhöhen. 
+Dafür geben Nutzer über Inputfelder auf der Seite die Id ihrer Anzeige und die Menge von Guthaben an, die sie aufstocken möchten. 
+In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente verknüpft werden, sodass \emph{idForFunds} und \emph{fundsToAdd} direkt abgerufen werden können [Siehe 2-3]. Die Variable \emph{payment}, welche das Guthaben umgewandelt in Ether repräsentiert, wird initialisiert und als Wert des Felds \emph{value} in der Variable \emph{overrides} verwendet [5-8]. \emph{augmendAds()} der Klasse BlockchainService ruft die gleichnamige Methode des Smart-Contracts auf, die jedoch mit nur zwei Parametern deklariert ist. Mithilfe eines Dritten, wird in diesem Fall das Feld value des Payloads der eigentlichen Transaktion überschrieben, sodass eine Zahlung in Ether, die dem gewünschten Guthaben entspricht, entsteht [9-11]. 
+\subsubsection{Ausschnitt : Hochladen eines Bildes}
 \begin{lstlisting}
+	// Ausschnitt aus der Methode 'onFormSubmit()'
+	
+	const formData = new FormData();
+	formData.append('uploadedImage', 
+					this.fileUploadForm.get('uploadedImage').value);
+	formData.append('etherSend', 
+					this.fileUploadForm.get('etherSend').value);
+	
 	this.blockService.sendMoney(this.fileUploadForm
 	.get('etherSend').value).then((res) => {
 		this.http.post<any>('http://localhost:3000/upload', formData)
 		.subscribe(response => {
 			console.log(response);
-			// An dieser Stelle kann die Response verarbeiten;
+			// An dieser Stelle kann die Response verarbeitet werden;
 		}, error => {
 			console.log(error);
 		});
 	});
 }
 \end{lstlisting}
+Alternativ zum direkten Verknüpfen mit einer Variable können Inputfelder Teil einer \emph{FormGroup} sein. Diese bieten Funktionalitäten, welche für Formulare nützlich sind. 
+So können beispielsweise Validatoren für Felder, die bestimmte Voraussetzungen erfüllen müssen, gesetzt werden.
+Über die Methode \emph{get().value} wird das Inputfeld \emph{etherSend} ausgelesen und als Parameter für die Methode \emph{sendMoney} des Services verwendet [Siehe 9-10]. Diese überschreibt genau wie augmentAds() den Payload Transaktion. Nach dem Senden wird ein Formular, bestehend aus Anzeige und Wert der Transaktion [3-7], an das Backend gesendet, in dem der Payload verarbeitet wird. Sobald eine Antwort aus dem Backend kommt, kann diese verarbeitet werden, indem man beispielsweise die Id der hochgeladenen Anzeige darstellt oder eine Fehlermeldung bei Misslingen anzeigt [11-18].
 \subsection{Backend}
+Das Backend ist für das Verwalten der Anzeigen zuständig und reagiert auf Anfragen aus dem Frontend. Geschrieben ist es in Javascript, wodurch der Vorteil entsteht, dass hier ebenfalls Ethers.js für die Kommunikation mit der Blockchain genutzt werden kann. Allein Javascript ist jedoch für ein Backend nicht ausreichend, denn die Programmiersprache wurde zur Ausführung im Browser entwickelt. \emph{Node.js} löst dieses Problem, indem es eine Laufzeitumgebung zur Ausführung von Javascript bereitstellt, durch die Dateien auf einer Konsole und somit einem Server ausgeführt werden können. Zusätzlich dazu wird das Framework \emph{Express.js} verwendet, um ein lauffähiges Backend, welches auf Anfragen des Frontends reagieren kann, bereitstellen zu können.
+Für die Kommunikation mit dem Frontend stellt es diesem zwei Schnittstellen zur Verfügung: 
+\begin{itemize}
+	\item Eine Schnittstelle zum Hochladen von Anzeigen
+	\item Eine Schnittstelle für das Laden von Anzeigen
+\end{itemize}
+
+\subsubsection{Hochladen einer Anzeige}
+\subsubsection{Schalten einer Anzeige}
+
 \subsection{Smart Contract}
 \subsection{Provider und Deployment}
 \subsubsection{Provider}
