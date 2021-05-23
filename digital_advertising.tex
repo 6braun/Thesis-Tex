@@ -6,16 +6,16 @@ Ausgehend davon wird die Architektur und ihre Komponenten für eine Webanwendung
 Abschließend wird die Eignung von Blockchain-Technologie auf ihrem derzeitigen Stand für das Online Advertising erörtert und derzeitige Probleme, sowie mögliche Lösungen beschrieben.
 \section{Online Advertising}
 Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das Schalten von Werbung attraktiv, sodass im Jahr 2021 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
-Im Paper \cite{bundeskartellamt_2018} des Bundeskartellamts wird Online Advertising als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
+Im Paper \cite{bundeskartellamt_2018} wird Online Advertising als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
 \begin{itemize}
 	\item Search Advertising: Werbeanzeigen werden auf den Oberflächen von Suchmaschinen entweder als Anzeigen seitlich der Suchergebnisse oder als Bestandteil dieser angezeigt
 	\item Mobile Advertising: Auf Mobilgeräte angepasste Anzeigen, die auch Bestandteile von Apps sein können
-	\item Social media Advertising:
-	Nutzer mit einer hohen Reichweite bauen Werbung in ihre Inhalte ein. Diese Nutzer nennt man auch \emph{Influencer}.
+	\item Social Media Advertising:
+	Nutzer mit einer hohen Reichweite bauen Werbung in ihre Inhalte ein. Diese Nutzer nennt man auch \emph{Influencer}
 	\item Display Advertising: Inhaber von Internetseiten bieten verfügbaren Platz als Werbeflächen an
 \end{itemize}
 Mit der ersten online-geschalteten Werbeanzeige im Jahr 1994 ist das Display Advertising die älteste Form des Online Advertisings und soll im Folgenden näher thematisiert werden \cite{bundeskartellamt_2018}.
-\subsection{Display Advertising Heute}
+\subsection{Display Advertising heute}
 Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen Anbieter, welcher Werbung auf der Internetseite schaltet und werbendem Unternehmen, welches pro Schaltung bezahlt. In der Praxis würde dies allerdings einen hohen Aufwand für beide Parteien bedeuten. Unternehmen müssten einen Vertrag darüber aufsetzen, welche Werbung wie oft geschaltet werden sollte und Anbieter der Werbefläche müssten sich selbst um das Darstellen der Anzeigen, als auch Tracking diverser Metriken, wie z.B. Impressionen oder Klicks, kümmern. Stattdessen nimmt man die Dienste eines sogenannten \emph{Ad-Brokers} in Anspruch, sodass die folgende Konstellation entsteht:
 \begin{figure}[htpb]
 	\centering
@@ -24,23 +24,24 @@ Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen An
 	\label{6braun:fig:online_advertising}
 \end{figure}\\
 Der Ad-Broker dient als Intermediär zwischen Angebot und Nachfrage, indem dieser einen Marktplatz für die werbenden Parteien zur Verfügung stellt. 
-Ein Beispiel hierfür ist Googles \emph{AdSense} welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
+Ein Beispiel hierfür ist Googles \emph{AdSense}, welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
 Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbeflächen abrufen, die von AdSense getrackt werden. 
-\subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
 Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch nicht nur Vorteile. 
 Für Anbieter von Werbeflächen entsteht der Nachteil, dass nicht das gesamte Geld des Unternehmens bei ihnen ankommt, weil der Ad-Broker gleichzeitig den Zahlungskanal darstellt. 
-Stattdessen erhalten diese laut \cite{google_adsense_2021} 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.\\
+Stattdessen erhalten diese 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.
+\subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
 Blockchain-Technologie könnte diese Probleme lösen, indem die Rahmenbedingungen für Interaktionen zwischen Anbietern und Unternehmen mittels Smart-Contracts geregelt wird. 
-Da Ethereum das hinterlegen beliebiger Daten ermöglicht, könnte in den Smart-Contracts aufgezeichnet werden, wie oft eine Anzeige geschaltet wurde und welche Kosten dafür aufkommen. 
+Da Ethereum das Hinterlegen beliebiger Daten ermöglicht, könnte in den Smart-Contracts aufgezeichnet werden, wie oft eine Anzeige geschaltet wurde und welche Kosten dafür aufkommen. 
 Aufgrund der Transparenz einer öffentlichen Blockchain können Unternehmen jederzeit auf darauf hinterlegte Metriken abrufen. Gleichzeitig kann die Blockchain in ihrer ursprünglichen Funktion als direkter Zahlungskanal zwischen Anbietern und Unternehmen genutzt werden. Als Folge dessen würde der Ad-Broker als Intermediär wegfallen und Vorteile für beide übrigen Parteien würden entstehen.
-\section{Programmierung eines PoC}
+\section{Programmierung eines Proof-of-Concept}
 Die Chancen, welche Blockchain-Technologie für das Display Advertising bieten könnte, sollen im Folgenden am Beispiel eines \emph{Proof-of-Concept} veranschaulicht werden. 
 Dafür wird eine Webanwendung entwickelt, die beliebigen Inhalt abbildet und an den Seiten Platz zum Schalten von Anzeigen hat. 
-Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, indem Unternehmen direkt auf der Seite eine Anzeige hochladen und eine Art Guthaben erwerben können, die beim Schalten der Anzeige aufgebraucht wird. Die Unternehmen sollen in der Lage sein, die Anzahl der Schaltungen, als auch das übrige Guthaben abrufen und bei Bedarf erhöhen zu können. Die Webanwendung soll den folgenden Aufbau haben:
+Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, indem Unternehmen direkt auf der Seite eine Anzeige hochladen und eine Art Guthaben erwerben können, die beim Schalten der Anzeige aufgebraucht wird. Die Unternehmen sollen in der Lage sein, die Anzahl der Schaltungen, als auch das übrige Guthaben abzurufen und bei Bedarf erhöhen zu können. Die Webanwendung soll den, in Abbildung 4.2. illustrierten Aufbau haben:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/aufbau_PoC.png}
-	\caption{Aufbau der Webanwendung}
+	\caption{Aufbau der Webanwendung\\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:aufbau_poc}
 \end{figure}\\
 Die Anwendung besteht aus einem Front- und Backend, sowie einem Smart-Contract auf dem Ropsten-Testnetz, welches zum Testen von Smart-Contracts unter Ethereum dient. Sowohl Front-, als auch Backend können nicht direkt mit der Blockchain kommunizieren, sondern tun dies über sogenannte \emph{Provider}. In den folgenden Unterkapiteln sollen die einzelnen Komponenten näher erläutert werden.
@@ -50,8 +51,8 @@ Für das Frontend wird \emph{Angular}, welches von Google in Stand gehalten wird
 Zur Kommunikation mit der Blockchain wird die Bibliothek \emph{Ethers.js} genutzt. Sie erlaubt es Entwicklern, Anfragen an eine Blockchain-Node zu schicken, von der Transaktionen anschließend signiert und gesendet werden. Das Frontend lässt sich grob in die folgenden drei Elemente unterteilen:
 \begin{itemize}
 	\item Die Hauptkomponente, bestehend aus HTML-, CSS- und Typescriptdatei
-	\item Der ApiService, welcher sich um die Kommunikation mit dem Backend kümmert
-	\item Der BlockchainService, welcher sich um die Kommunikation mit dem Smart-Contract kümmert
+	\item Der Api-Service, welcher sich um die Kommunikation mit dem Backend kümmert
+	\item Der Blockchain-Service, welcher sich um die Kommunikation mit dem Smart-Contract kümmert
 \end{itemize}
 Die Hauptkomponente existiert bereits nach der initialen Generierung und dient als Gerüst für die Anwendung. In Angular können Komponenten nach dem Bausteinprinzip beliebig angeordnet werden, sodass jede Komponente für einen anderen Teil der Anwendung zuständig sein kann. Auch eine hierarchische Anordnung ist möglich, sodass eine Komponente wieder andere enthält. Sogenannte \emph{Services} können durch Deklaration im Konstruktor von Komponenten genutzt werden, dies nennt man \emph{Injecting}. Services sind keine eigenständigen Komponenten, sondern stellen lediglich Funktionalitäten bereit, wie z.B. die Kommunikation mit dem Backend. Einige wichtige Funktionen der Datei \emph{app.component.ts} sollen im Folgenden erläutert werden.
 \subsubsection{Konstruktor und Laden von Bildern}
@@ -96,7 +97,7 @@ Durch die Deklarationen von Klassen als Parameter des Konstruktors injiziert man
 \end{lstlisting}
 Die Methode \emph{augmentAds()} ist dafür da, das bestehende Guthaben für eine Anzeige zu erhöhen. 
 Dafür geben Nutzer über Inputfelder auf der Seite die Id ihrer Anzeige und die Menge von Guthaben an, die sie aufstocken möchten. 
-In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente verknüpft werden, sodass \emph{idForFunds} und \emph{fundsToAdd} direkt abgerufen werden können [2-3]. Die Variable \emph{payment}, welche das Guthaben umgewandelt in Ether repräsentiert, wird initialisiert und als Wert des Felds \emph{value} in der Variable \emph{overrides} verwendet [5-8]. \emph{augmendAds()} der Klasse BlockchainService ruft die gleichnamige Methode des Smart-Contracts auf, die jedoch mit nur zwei Parametern deklariert ist. Mithilfe eines Dritten, wird in diesem Fall das Feld value im Payload der eigentlichen Transaktion überschrieben, sodass eine Zahlung in Ether, die dem gewünschten Guthaben entspricht, entsteht [9-11]. 
+In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente verknüpft werden, sodass \emph{idForFunds} und \emph{fundsToAdd} direkt abgerufen werden können [2-3]. Die Variable \emph{payment}, welche das Guthaben umgewandelt in Ether repräsentiert, wird initialisiert und als Wert des Feldes \emph{value} in der Variable \emph{overrides} verwendet [5-8]. \emph{augmendAds()} der Klasse BlockchainService ruft die gleichnamige Methode des Smart-Contracts auf, die jedoch mit nur zwei Parametern deklariert ist. Mithilfe eines Dritten, wird in diesem Fall das Feld \emph{value} im Payload der eigentlichen Transaktion überschrieben, sodass eine Zahlung in Ether, die dem gewünschten Guthaben entspricht, entsteht [9-11]. 
 \subsubsection{Ausschnitt : Hochladen einer Anzeige}
 \begin{lstlisting}
 	// Ausschnitt aus der Methode 'onFormSubmit()'
