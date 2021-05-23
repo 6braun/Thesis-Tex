@@ -13,11 +13,11 @@
 \contentsline {subsubsection}{Bitcoin Adressen}{6}{figure.caption.6}%
 \contentsline {subsection}{\numberline {2.3.2}Einschub: SHA-256}{7}{subsection.2.3.2}%
 \contentsline {subsubsection}{Definitionen}{7}{subsection.2.3.2}%
-\contentsline {subsubsection}{Vorbereitung der Nachricht}{9}{lstnumber.2.2.8}%
+\contentsline {subsubsection}{Vorbereitung der Nachricht}{10}{lstnumber.2.2.8}%
 \contentsline {subsubsection}{Aufteilung der Nachricht in Blöcke}{10}{lstnumber.2.2.8}%
 \contentsline {subsubsection}{Algorithmus}{10}{lstnumber.2.2.8}%
 \contentsline {subsection}{\numberline {2.3.3}Wallet}{12}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Transaktionen}{13}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Transaktionen}{14}{subsection.2.3.4}%
 \contentsline {subsubsection}{Transaction Outputs}{14}{subsection.2.3.4}%
 \contentsline {subsubsection}{Transaction Inputs}{15}{figure.caption.9}%
 \contentsline {subsubsection}{Transaktionskosten}{15}{figure.caption.9}%
@@ -28,11 +28,11 @@
 \contentsline {subsubsection}{Datenstruktur}{18}{figure.caption.11}%
 \contentsline {subsubsection}{Merkle-Tree}{19}{lstnumber.2.4.15}%
 \contentsline {subsection}{\numberline {2.3.7}Der Weg der Transaktion in die Blockchain}{19}{subsection.2.3.7}%
-\contentsline {subsubsection}{Miner und ihre Entlohnung}{19}{subsection.2.3.7}%
+\contentsline {subsubsection}{Miner und ihre Entlohnung}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Sammeln von Transaktionen}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Konstruktion des Blocks}{20}{subsection.2.3.7}%
-\contentsline {subsubsection}{Mining}{20}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}Angriff auf das Netzwerk}{22}{subsection.2.3.8}%
+\contentsline {subsubsection}{Mining}{21}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}Angriff auf das Netzwerk}{23}{subsection.2.3.8}%
 \contentsline {chapter}{\numberline {3}Blockchain 2.0}{24}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Neuerungen unter Ethereum}{25}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Transaktionen}{25}{subsection.3.1.1}%
@@ -70,4 +70,4 @@
 \contentsline {chapter}{\numberline {A}Anhang}{44}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Anhang A}{44}{section.A.1}%
 \contentsline {chapter}{Bibliography}{46}{figure.caption.17}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{47}{chapter*.19}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{48}{chapter*.19}%

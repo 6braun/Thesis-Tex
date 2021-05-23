@@ -28,28 +28,30 @@ Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat dr
 TODO
 \section{Notwendigkeit für Blockchain-Technologie}
 \section{Theorie der Blockchain-Technologie am Beispiel von Bitcoin}
-Auch wenn es andere Projekte für dezentrale Währungen wie B-Money und Hashcash gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers  \cite{nakamoto_whitepaper_2008}. Diese Publikation trägt den Titel \emph{Bitcoin: A Peer to peer Electronic Cash System}, wurde von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokolls. Außerdem werden Vermögenswerte nicht durch klassische Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger}, impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
+Auch wenn es andere Projekte für dezentrale Währungen wie B-Money [\cite{dai_1998}] und Hashcash [\cite{back_2002}] gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers  [\cite{nakamoto_whitepaper_2008}]. Diese Publikation trägt den Titel \emph{Bitcoin: A Peer to peer Electronic Cash System}, wurde von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokolls. Außerdem werden Vermögenswerte nicht durch klassische Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger}, impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
 \subsection{Keys und Adressen}
-Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Nazis im zweiten Weltkrieg genutzt wurden. 
+Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Nazis im zweiten Weltkrieg genutzt wurden [\cite{landwehr_2008}: 19]. 
 Mithilfe von Maschinen, den sogenannten \emph{ENIGMA}, verschlüsselten sie wichtige strategische Informationen wie die Aufenthaltsorte von Truppen oder taktische Befehle, die anschließend per Funk überbracht wurden.
 Kryptographische Verfahren folgten zu der Zeit dem Prinzip \emph{Security by Obscurity}, nach dem die Sicherheit eines Verschlüsselungsverfahrens davon abhängig ist, ob die Funktionsweise dieser bekannt ist. 
-Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code im Jahr 1941 vom englischen Mathematiker \emph{Alan Turing} und seinem Team gelöst werden konnte.\\
+Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code durch die Anstrengungen polnischer und später englischer Wissenschaftler um Alan Turing unschädlich gemacht werden konnte [\cite{landwehr_2008}: 18/19].\\
 
-Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt. 
-Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet.
+Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt [vgl. \cite{diffie_hellman_1976}]. 
+Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf [\cite{antanopoulos_2014}] und ziehen, wo es nötig ist, zusätzliche Quellen hinzu.\\
+
 Für Bitcoin wird ein Paar aus Schlüsseln erzeugt. 
 Dieses Paar besteht aus dem privaten Schlüssel (Private Key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
-Aus diesem wird durch die Verwendung von Hashing-Verfahren ein öffentlicher Schlüssel (public key) abgeleitet, mit dem Bitcoins empfangen werden können.
+Aus diesem wird durch die Verwendung von Hashing-Verfahren ein öffentlicher Schlüssel (Public key) abgeleitet, mit dem Bitcoins empfangen werden können.
 Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann.\\
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/public_and_private_key.png}
-	\caption{Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger}
+	\caption{Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. 
+	Quelle: \cite{antanopoulos_2014}}
 	\label{6braun:fig:keys}
 \end{figure}
 \subsubsection{Private Keys}
 Ein privater Schlüssel besteht aus einer Zahl von 256 zufälligen Bits. Er wird zum Signieren von Transaktionen und für den Zugriff auf ein Guthaben benötigt. Ohne privaten Schlüssel verliert man als Besitzer von Bitcoin auch den Zugriff auf das eigene Guthaben.\\
-Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für Zufälligkeit. In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems, kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokol gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$).
+Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für Zufälligkeit. In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems, kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus [vgl. \cite{antanopoulos_2014}: 58]. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokol gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$). Diese Zahl entspricht nach der Ordnung der Gruppe, die in der dort verwendeten elliptischen Kurve entspricht. Nach [\cite{corbellini_2015}] befinden sich alle Punkte der Kurve in dieser Gruppe, weshalb der gewählte private Schlüssel, welcher für die anschließende Generierung eines öffentlichen Schlüssels genutzt wird, nicht außerhalb dieses Bereichs liegen darf.
 
 \subsubsection{Public Keys}
 Um einen öffentlichen Schlüssel aus dem privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
@@ -199,10 +201,11 @@ Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/non_det_wallet.png}
-	\caption{Nicht-deterministische Wallet}
+	\caption{Nicht-deterministische Wallet\\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:non-deterministic_wallet}
 \end{figure}\\
-Die fortgeschrittenste Form einer deterministischen ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem).
+Die fortgeschrittenste Form einer deterministischen ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem) [\cite{antanopoulos_2014}].
 Diese werden in \cite{buterin_2013} als \emph{Master Public Key Property} und \emph{Hierarchy Property} bezeichnet.
 Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man den sogenannten Offsets, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
 $$offset = SHA256(index + masterPubKey)$$
@@ -213,7 +216,8 @@ Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen O
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/bip32_wallet.png}
-	\caption{BIP32-Wallet}
+	\caption{BIP32-Wallet\\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:_wallet}
 \end{figure}
 Anders als bei einer nicht-deterministischen Wallet müssen nicht mehr die Private Keys selbst, sondern lediglich der \emph{Seed} gesichert werden. Dieser ist seit dem BIP39/44 eine kurze Liste von für den Menschen leserlichen Worten. Diese können mithilfe eines speziellen Dictionaries in Hex-Zahlen umgewandelt werden, aus denen schließlich der Master Private Key erzeugt wird.
@@ -225,7 +229,8 @@ Eine Wallet scannt die Blockchain nach allen Outputs, welche mit den Keys des Be
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/UTXO.png}
-	\caption{Transaktionen mit unteilbaren UTXO}
+	\caption{Transaktionen mit unteilbaren UTXO\\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:Transaktionen}
 \end{figure}\\
 Für die gewünschte Transaktion von A nach B werden 20 BTC benötigt, die von der Wallet aus verfügbaren UTXO zusammengefügt werden. 
@@ -274,7 +279,8 @@ Anschließend können sie ihnen bekannte Adressen austauschen, dieser Vorgang wi
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
-	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus}
+	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus\\
+	Quelle: vgl. \cite{antanopoulos_2014}}
 	\label{6braun:fig:adress_query}
 \end{figure}
 
@@ -282,13 +288,15 @@ Ebenso wie sie Adressen miteinander austauschen, werden auch Informationen über
 \subsection{Blockchain}
 Die Blockchain ist die Kerntechnologie des gesamten Protokolls und stellt im Kern eine Datenstruktur mit einer verketteten Liste von Blöcken dar, die wiederum Transaktionen enthalten. 
 Die Verkettung erfolgt dadurch, dass jeder Block einen vorher erzeugten referenziert. 
-Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt.
+Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt. Die folgende Abbildung 2.7. zeigt, wie der zweite Block den Vorgängerblock mithilfe des Hash-Werts referenziert.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/chain.png}
-	\caption{Neuer Block referenziert alten Block}
+	\caption{Neuer Block referenziert alten Block \\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chain}
-\end{figure}
+\end{figure}\\
+
 Der daraus entstehende Vorteil ist, dass ein Angreifer bei Veränderung eines vergangenen Blocks die Hashwerte aller Nachfolger neu berechnen muss. Wieso dies mit sehr hohem Rechenaufwand verbunden ist, wird später näher erläutert.
 
 \subsubsection{Datenstruktur}
@@ -321,7 +329,8 @@ Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/merkle.png}
-	\caption{Ein Merkle-Tree}
+	\caption{Ein Merkle-Tree\\
+	Quelle: \cite{antanopoulos_2014}}
 	\label{6braun:fig:merkle}
 \end{figure}\\
 Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. 
@@ -337,7 +346,7 @@ Eine Tatsache, mit der Miner leben müssen ist, dass ihre Entlohnung mit der Zei
 Alle 210 000 Blöcke wird die Anzahl neuer Bitcoin halbiert, sodass die Gesamtzahl aller, sich im Umlauf befindenden Bitcoin, gegen 21 Millionen konvergiert. 
 Aus diesem Grund wird Bitcoin als \emph{Deflationäre Währung} bezeichnet, die mit der Zeit nicht an Wert verliert, sondern wertvoller wird.
 \subsubsection{Sammeln von Transaktionen}
-Genau wie alle anderen Teilnehmer sammeln Miner die im Netzwerk propagierten Transaktionen und überprüfen diese. Sollten Jene bestimmte Kriterien, wie z.B. eine korrekte Syntax und Korrektheit, nicht erfüllen, werden sie nicht weitergeleitet und verworfen.
+Genau wie alle anderen Teilnehmer sammeln Miner die im Netzwerk propagierten Transaktionen und überprüfen diese. Sollten jene bestimmte Kriterien, wie z.B. eine korrekte Syntax und Korrektheit, nicht erfüllen, werden sie nicht weitergeleitet und verworfen.
 Bei Korrektheit sammeln die Teilnehmer validierte Transaktionen in einem Pool und entfernen sie erst dann, wenn ein neuer und valider Block eine der gesammelten Transaktionen beinhaltet. 
 Während alle anderen Teilnehmer bei Ankunft eines neuen Blocks lediglich die Transaktionen abgleichen und aus dem Pool entfernen, sammeln Miner übrig gebliebene Transaktionen und starten den Versuch, einen eigenen Block herzustellen.
 \subsubsection{Konstruktion des Blocks}
@@ -363,11 +372,12 @@ Während das 'Finden' eines geeigneten Blocks aufwendig ist, müssen andere Teil
 Abgesehen vom Hash muss der Block allerdings noch andere Kriterien erfüllen, wie z.B. richtige Zeitstempel oder eine valide Liste von Transaktionen, inklusive valider Coinbase. 
 Bei Gutschreibung von zu viel neuen Bitcoin wird der gesamte Block invalide, was betrügerisches Verhalten für Miner unattraktiv macht. Der Block wird nur im Netzwerk propagiert, wenn er die Kriterien erfüllt.\\
 
-Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung zeigt:
+Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung 2.9. zeigt:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/chains.png}
-	\caption{Anordnung der Blöcke in einer Kette}
+	\caption{Anordnung der Blöcke in einer Kette\\
+	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chains}
 \end{figure}\\
 Das erste Szenario ist das Erweitern der Mainchain, also der längsten Kette, und ist dann der Fall, wenn der neue Block (hier 202A) den Kopf dieser als Eltern-Block referenziert.
@@ -385,4 +395,4 @@ Um einen bösartigen Angriff auf das dezentrale System ausüben zu können, muss
 Unter normalen Umständen ist Double Spending nicht möglich, doch Angreifer könnten Bitcoin auf eine Handelsbörse überweisen und dort in einer gewünschte Währung auszahlen lassen. Anschließend setzen sie mit einer Sidechain dort an, wo sich das Guthaben noch beim Angreifer befindet, also die UTXO ungenutzt sind, und erweitern diese zur neuen Mainchain.
 Die zweite Möglichkeit des Angriffs besteht darin, dass einzelne Teilnehmer von der Anteilnahme ausgeschlossen werden, indem man beispielsweise ihre Transaktionen nicht in neue Blöcke aufnimmt. Das Gleiche gilt für bestimmte Miner, deren Blöcke man gezielt ablehnen kann.\\
 
-Aufgrund der immensen Rechenleistung, die dafür nötig wäre, wird ein Angriff in tieferen Schichten teurer und wäre , abgesehen von einer staatlich finanzierten Attacke, unwahrscheinlich.
+Aufgrund der immensen Rechenleistung, die dafür nötig wäre, wird ein Angriff in tieferen Schichten teurer und wäre, abgesehen von durch Konzerne oder Staaten finanzierten Attacken, unwahrscheinlich.

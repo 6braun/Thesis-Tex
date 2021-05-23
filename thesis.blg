@@ -10,66 +10,62 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
+I was expecting a `,' or a `}'---line 123 of file thesis.bib
+ : 
+ : title = {b-money},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 139 of file thesis.bib
+ : 
+ : note=
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "nakamoto_2008"
-Warning--no key, author in statista_online_advertisement_revenue_2021
-Warning--to sort, need author or key in statista_online_advertisement_revenue_2021
-Warning--no key, author in bundeskartellamt_2018
-Warning--to sort, need author or key in bundeskartellamt_2018
-Warning--no key, author in google_adsense_2021
-Warning--to sort, need author or key in google_adsense_2021
-Warning--no key, author in bundeskartellamt_2018
-Warning--no key, author in bundeskartellamt_2018
-Warning--no key, author in google_adsense_2021
-Warning--no key, author in google_adsense_2021
-Warning--no key, author in statista_online_advertisement_revenue_2021
-Warning--no key, author in statista_online_advertisement_revenue_2021
-Warning--no key, author in bundeskartellamt_2018
-Warning--no key, author in google_adsense_2021
-Warning--no key, author in statista_online_advertisement_revenue_2021
+Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
 Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 13 entries,
+You've used 19 entries,
             2911 wiz_defined-function locations,
-            688 strings with 7031 characters,
-and the built_in function-call counts, 5992 in all, are:
-= -- 502
-> -- 286
+            710 strings with 7571 characters,
+and the built_in function-call counts, 9292 in all, are:
+= -- 756
+> -- 551
 < -- 0
-+ -- 72
-- -- 108
-* -- 424
-:= -- 1077
-add.period$ -- 35
-call.type$ -- 13
-change.case$ -- 74
-chr.to.int$ -- 12
-cite$ -- 45
-duplicate$ -- 202
-empty$ -- 471
-format.name$ -- 112
-if$ -- 1098
++ -- 136
+- -- 208
+* -- 611
+:= -- 1849
+add.period$ -- 49
+call.type$ -- 19
+change.case$ -- 111
+chr.to.int$ -- 18
+cite$ -- 25
+duplicate$ -- 294
+empty$ -- 630
+format.name$ -- 216
+if$ -- 1626
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 64
-num.names$ -- 98
-pop$ -- 68
+missing$ -- 10
+newline$ -- 90
+num.names$ -- 188
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 228
 quote$ -- 0
-skip$ -- 222
+skip$ -- 334
 stack$ -- 0
-substring$ -- 271
-swap$ -- 62
+substring$ -- 379
+swap$ -- 91
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 236
-warning$ -- 20
-while$ -- 98
+type$ -- 336
+warning$ -- 6
+while$ -- 188
 width$ -- 0
-write$ -- 161
-(There were 21 warnings)
+write$ -- 235
+(There were 2 error messages)

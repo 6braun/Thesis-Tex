@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  23 MAY 2021 04:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  23 MAY 2021 09:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1117,7 +1117,13 @@ Package scrlayer-scrpage Warning: \footheight to low.
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [2] (./thesis.lof)
+ [2] (./thesis.lof
+Overfull \hbox (1.72723pt too wide) in paragraph at lines 10--10
+ [][] [][][]\T1/ptm/m/n/12 Teilnehmer tau-schen nach er-folg-rei-cher Ver-bin-d
+ung Adres-sen aus Quel- 
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -1192,137 +1198,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
-<images/public_and_private_key.png, id=168, 311.7246pt x 75.8835pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+<images/public_and_private_key.png, id=191, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
-46.
+47.
 (pdftex.def)             Requested size: 426.79134pt x 103.8949pt.
+
+Overfull \hbox (5.85347pt too wide) in paragraph at lines 41--52
+\T1/ptm/m/n/12 kön-nen. Au-ÿer-dem kann auf-grund der ma-the-ma-ti-schen Ab-hän
+-gig-keit zwi-schen den Schlüs-
+ []
+
 [4]
-<images/elliptic_graph_cryptography.png, id=173, 580.1675pt x 581.17125pt>
+<images/elliptic_graph_cryptography.png, id=205, 580.1675pt x 581.17125pt>
 File: images/elliptic_graph_cryptography.png Graphic file (type png)
 <use images/elliptic_graph_cryptography.png>
 Package pdftex.def Info: images/elliptic_graph_cryptography.png  used on input 
-line 59.
+line 61.
 (pdftex.def)             Requested size: 298.75262pt x 299.26663pt.
  [5 <./images/public_and_private_key.png>] [6 <./images/elliptic_graph_cryptogr
 aphy.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
-4.
+6.
  (/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 [7] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-4.
+6.
  (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
+ [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
 
-[11]
-<images/non_det_wallet.png, id=262, 321.2pt x 201.75375pt>
+<images/non_det_wallet.png, id=296, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
-Package pdftex.def Info: images/non_det_wallet.png  used on input line 201.
+Package pdftex.def Info: images/non_det_wallet.png  used on input line 203.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
- [12 <./images/non_det_wallet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+[12 <./images/non_det_wallet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
-<images/bip32_wallet.png, id=272, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=309, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
-Package pdftex.def Info: images/bip32_wallet.png  used on input line 215.
+Package pdftex.def Info: images/bip32_wallet.png  used on input line 218.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
 [13 <./images/bip32_wallet.png>]
-<images/UTXO.png, id=279, 603.25375pt x 439.6425pt>
+<images/UTXO.png, id=316, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
-Package pdftex.def Info: images/UTXO.png  used on input line 227.
+Package pdftex.def Info: images/UTXO.png  used on input line 231.
 (pdftex.def)             Requested size: 298.75262pt x 217.72098pt.
  [14 <./images/UTXO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-
-Package natbib Warning: Citation `nakamoto_2008' on page 15 undefined on input 
-line 254.
-
 [15]
-Overfull \hbox (0.88474pt too wide) in paragraph at lines 263--264
+
+Package natbib Warning: Citation `nakamoto_2008' on page 16 undefined on input 
+line 259.
+
+
+Overfull \hbox (0.88474pt too wide) in paragraph at lines 268--269
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-<images/adress_query.png, id=291, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=327, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
-Package pdftex.def Info: images/adress_query.png  used on input line 276.
+Package pdftex.def Info: images/adress_query.png  used on input line 281.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
 [16]
-<images/chain.png, id=296, 322.20375pt x 101.37875pt>
+<images/chain.png, id=334, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
-Package pdftex.def Info: images/chain.png  used on input line 288.
+Package pdftex.def Info: images/chain.png  used on input line 294.
 (pdftex.def)             Requested size: 213.39566pt x 67.1453pt.
- [17 <./images/adress_query.png> <./images/chain.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--299
+
+ []
+
+[17 <./images/adress_query.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--319
+Underfull \hbox (badness 10000) in paragraph at lines 323--327
 
  []
 
-<images/merkle.png, id=303, 348.3414pt x 173.2071pt>
+[18 <./images/chain.png>]
+<images/merkle.png, id=361, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
-Package pdftex.def Info: images/merkle.png  used on input line 323.
+Package pdftex.def Info: images/merkle.png  used on input line 331.
 (pdftex.def)             Requested size: 298.75262pt x 148.5614pt.
-[18] [19 <./images/merkle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 352--361
+ [19 <./images/merkle.png>] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 361--370
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 362--365
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--374
 
  []
 
-<images/chains.png, id=333, 654.445pt x 302.12875pt>
+<images/chains.png, id=373, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
-Package pdftex.def Info: images/chains.png  used on input line 369.
+Package pdftex.def Info: images/chains.png  used on input line 378.
 (pdftex.def)             Requested size: 298.75262pt x 137.92058pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--376
+Underfull \hbox (badness 10000) in paragraph at lines 375--386
 
  []
 
-[21 <./images/chains.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 385--387
+[21] [22 <./images/chains.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
 
  []
 
-[22]) [23]
+) [23]
 \openout2 = `ethereum.aux'.
 
  (./ethereum.tex
@@ -1364,7 +1387,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
  []
 
 [26]
-<images/evm_simple.png, id=387, 804.00375pt x 412.54124pt>
+<images/evm_simple.png, id=428, 804.00375pt x 412.54124pt>
 File: images/evm_simple.png Graphic file (type png)
 <use images/evm_simple.png>
 Package pdftex.def Info: images/evm_simple.png  used on input line 52.
@@ -1385,7 +1408,7 @@ Overfull \hbox (11.46844pt too wide) in paragraph at lines 2--7
 er-bes-se-run-gen mit-tels Blockchain-
  []
 
-<images/online_advertising.png, id=444, 563.10374pt x 81.30376pt>
+<images/online_advertising.png, id=484, 563.10374pt x 81.30376pt>
 File: images/online_advertising.png Graphic file (type png)
 <use images/online_advertising.png>
 Package pdftex.def Info: images/online_advertising.png  used on input line 22.
@@ -1396,7 +1419,7 @@ Package pdftex.def Info: images/online_advertising.png  used on input line 22.
 
 
 ] [32 <./images/online_advertising.png>]
-<images/aufbau_PoC.png, id=461, 563.10374pt x 327.2225pt>
+<images/aufbau_PoC.png, id=502, 563.10374pt x 327.2225pt>
 File: images/aufbau_PoC.png Graphic file (type png)
 <use images/aufbau_PoC.png>
 Package pdftex.def Info: images/aufbau_PoC.png  used on input line 42.
@@ -1442,7 +1465,7 @@ chapter 5.
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=643, 477.28313pt x 619.56468pt>
+<images/evm_full.png, id=684, 477.28313pt x 619.56468pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 9.
@@ -1453,53 +1476,47 @@ Package pdftex.def Info: images/evm_full.png  used on input line 9.
 
 
 ] [45 <./images/evm_full.png (PNG copy)>] (./thesis.bbl
-Underfull \hbox (badness 2538) in paragraph at lines 14--19
-[]\T1/ptm/m/n/12 (2021).  On-li-ne ad-ver-ti-sing re-ve-nue in the uni-ted stat
-es from 2000 to 2020.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--19
-[][]$\T1/ptm/m/n/12 https : / / www . statista . com / statistics / 183816 / us
--[]online-[]advertising-[]revenue-[]since-[]2000/$[][].
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
 []\T1/ptm/m/n/12 Buterin, V. (2013a).  De-ter-mi-ni-stic wal-lets, their ad-van
 -ta-ges and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
 \T1/ptm/m/n/12 their un-der-stated flaws.  [][]$https : / / bitcoinmagazine . c
 om / articles /
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 58--63
+Underfull \hbox (badness 1484) in paragraph at lines 81--86
 []\T1/ptm/m/n/12 Michaelson, G. (2020, Feb).  Pro-gram-ming pa-ra-digms, tu-rin
 g com-ple-ten-ess and
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
+[][]$\T1/ptm/m/n/12 https : / / www . statista . com / statistics / 183816 / us
+-[]online-[]advertising-[]revenue-[]since-[]2000/$[][].
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 99--102
 []\T1/ptm/m/n/12 Turing, A. M. (1936).  On com-pu-ta-ble num-bers with an ap-p-
 li-ca-ti-on to the
  []
 
-) [46
+[46
 
 
 
 
 
-] (./_declaration_de.tex [47
+]) [47] (./_declaration_de.tex [48
 
 
 
 
-] [48
+] [49
 
 
 
@@ -1520,10 +1537,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18240 strings out of 480608
- 330871 string characters out of 5905076
+ 18265 strings out of 480608
+ 331376 string characters out of 5905076
  916453 words of memory out of 5000000
- 33327 multiletter control sequences out of 15000+600000
+ 33345 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,22n,115p,10101b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1535,10 +1552,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (54 pages, 584132 bytes).
+Output written on thesis.pdf (55 pages, 587921 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 807 compressed objects within 9 object streams
- 358 named destinations out of 1000 (max. 500000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 858 compressed objects within 9 object streams
+ 365 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 
