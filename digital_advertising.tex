@@ -5,7 +5,7 @@ Dafür wird zunächst das Thema Online Advertising näher beschrieben und mögli
 Ausgehend davon wird die Architektur und ihre Komponenten für eine Webanwendung, in die ein Smart-Contract eingebaut ist, vorgestellt. 
 Abschließend wird die Eignung von Blockchain-Technologie auf ihrem derzeitigen Stand für das Online Advertising erörtert und derzeitige Probleme, sowie mögliche Lösungen beschrieben.
 \section{Online Advertising}
-Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das schalten von Werbung attraktiv, sodass im Jahr 2021 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
+Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das Schalten von Werbung attraktiv, sodass im Jahr 2021 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
 Im Paper \cite{bundeskartellamt_2018} des Bundeskartellamts wird Online Advertising als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
 \begin{itemize}
 	\item Search Advertising: Werbeanzeigen werden auf den Oberflächen von Suchmaschinen entweder als Anzeigen seitlich der Suchergebnisse oder als Bestandteil dieser angezeigt
@@ -23,19 +23,19 @@ Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen An
 	\caption{Involvierte Parteien in gängigem Display Advertising}
 	\label{6braun:fig:online_advertising}
 \end{figure}\\
-Der Ad-Broker dient als Intermediär zwischen Angebot und Nachfrage, indem dieser einen Marktplatz die werbenden Parteien zur Verfügung stellt. 
+Der Ad-Broker dient als Intermediär zwischen Angebot und Nachfrage, indem dieser einen Marktplatz für die werbenden Parteien zur Verfügung stellt. 
 Ein Beispiel hierfür ist Googles \emph{AdSense} welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
 Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbeflächen abrufen, die von AdSense getrackt werden. 
 \subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
-Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch für diese nicht nur Vorteile. 
+Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch nicht nur Vorteile. 
 Für Anbieter von Werbeflächen entsteht der Nachteil, dass nicht das gesamte Geld des Unternehmens bei ihnen ankommt, weil der Ad-Broker gleichzeitig den Zahlungskanal darstellt. 
-Stattdessen erhalten diese laut \cite{google_adsense_2021} 68\% des Umsatzes, wodurch fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.\\
+Stattdessen erhalten diese laut \cite{google_adsense_2021} 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.\\
 Blockchain-Technologie könnte diese Probleme lösen, indem die Rahmenbedingungen für Interaktionen zwischen Anbietern und Unternehmen mittels Smart-Contracts geregelt wird. 
 Da Ethereum das hinterlegen beliebiger Daten ermöglicht, könnte in den Smart-Contracts aufgezeichnet werden, wie oft eine Anzeige geschaltet wurde und welche Kosten dafür aufkommen. 
-Aufgrund der Transparenz der Blockchain können Unternehmen jederzeit auf darauf hinterlegte Metriken abrufen. Gleichzeitig kann die Blockchain in ihrer ursprünglichen Funktion als direkter Zahlungskanal zwischen Anbietern und Unternehmen genutzt werden. Als Folge dessen würde der Ad-Broker als Intermediär wegfallen und Vorteile für beide übrigen Parteien würden entstehen.
+Aufgrund der Transparenz einer öffentlichen Blockchain können Unternehmen jederzeit auf darauf hinterlegte Metriken abrufen. Gleichzeitig kann die Blockchain in ihrer ursprünglichen Funktion als direkter Zahlungskanal zwischen Anbietern und Unternehmen genutzt werden. Als Folge dessen würde der Ad-Broker als Intermediär wegfallen und Vorteile für beide übrigen Parteien würden entstehen.
 \section{Programmierung eines PoC}
 Die Chancen, welche Blockchain-Technologie für das Display Advertising bieten könnte, sollen im Folgenden am Beispiel eines \emph{Proof-of-Concept} veranschaulicht werden. 
-Dafür wird eine Webanwendung entwickelt, die beliebigen Inhalt abbildet und an den Seiten Platz zum schalten von Anzeigen hat. 
+Dafür wird eine Webanwendung entwickelt, die beliebigen Inhalt abbildet und an den Seiten Platz zum Schalten von Anzeigen hat. 
 Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, indem Unternehmen direkt auf der Seite eine Anzeige hochladen und eine Art Guthaben erwerben können, die beim Schalten der Anzeige aufgebraucht wird. Die Unternehmen sollen in der Lage sein, die Anzahl der Schaltungen, als auch das übrige Guthaben abrufen und bei Bedarf erhöhen zu können. Die Webanwendung soll den folgenden Aufbau haben:
 \begin{figure}[htpb]
 	\centering
@@ -46,7 +46,7 @@ Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, in
 Die Anwendung besteht aus einem Front- und Backend, sowie einem Smart-Contract auf dem Ropsten-Testnetz, welches zum Testen von Smart-Contracts unter Ethereum dient. Sowohl Front-, als auch Backend können nicht direkt mit der Blockchain kommunizieren, sondern tun dies über sogenannte \emph{Provider}. In den folgenden Unterkapiteln sollen die einzelnen Komponenten näher erläutert werden.
 \subsection{Frontend}
 Das Frontend bildet den Teil der Anwendung, welcher im Browser von Nutzern läuft. Es kümmert sich um die Visualisierung und Interaktionen mit den Nutzern der Seite.
-Für das Frontend wird \emph{Angular}, welches von Google in Stand gehalten wird, als Frontend genutzt. Über einen einzigen Befehl \emph{ng new} auf der Kommandozeile lässt sich eine lauffähige Webanwendung generieren, die anschließend nach belieben überarbeitet werden kann. Außerdem wird statt Javascript die Programmiersprache \emph{Typescript} genutzt, welche den Vorteil der Typsicherheit, wie sie beispielsweise aus Java bekannt ist, mitbringt. Ein letzter Vorteil unter vielen ist die Nutzung der Bibliothek \emph{RXJS}, welche eine Alternative zu bekannten Technologien wie Ajax zur Behandlung von asynchronen Funktionen bietet.
+Für das Frontend wird \emph{Angular}, welches von Google in Stand gehalten wird, genutzt. Über einen einzigen Befehl \emph{ng new} auf der Kommandozeile, lässt sich eine lauffähige Webanwendung generieren, die anschließend nach Belieben überarbeitet werden kann. Außerdem wird statt Javascript die Programmiersprache \emph{Typescript} genutzt, welche den Vorteil der Typsicherheit, wie sie beispielsweise aus Java bekannt ist, mitbringt. Ein letzter Vorteil unter vielen ist die Nutzung der Bibliothek \emph{RXJS}, welche eine Alternative zu bekannten Technologien wie Ajax zur Behandlung von asynchronen Funktionen bietet.
 Zur Kommunikation mit der Blockchain wird die Bibliothek \emph{Ethers.js} genutzt. Sie erlaubt es Entwicklern, Anfragen an eine Blockchain-Node zu schicken, von der Transaktionen anschließend signiert und gesendet werden. Das Frontend lässt sich grob in die folgenden drei Elemente unterteilen:
 \begin{itemize}
 	\item Die Hauptkomponente, bestehend aus HTML-, CSS- und Typescriptdatei
@@ -71,8 +71,10 @@ public getImageFromApi(): void {
 		const unsafeImg = URL.createObjectURL(blob);
 		
 		this.upperRight === undefined ?
-		this.upperRight = this.sanitizer.bypassSecurityTrustUrl(unsafeImg) :
-		this.upperLeft = this.sanitizer.bypassSecurityTrustUrl(unsafeImg);
+		this.upperRight = this.sanitizer
+						.bypassSecurityTrustUrl(unsafeImg) :
+		this.upperLeft = this.sanitizer
+		.bypassSecurityTrustUrl(unsafeImg);
 	});
 }
 \end{lstlisting}
@@ -94,8 +96,8 @@ Durch die Deklarationen von Klassen als Parameter des Konstruktors injiziert man
 \end{lstlisting}
 Die Methode \emph{augmentAds()} ist dafür da, das bestehende Guthaben für eine Anzeige zu erhöhen. 
 Dafür geben Nutzer über Inputfelder auf der Seite die Id ihrer Anzeige und die Menge von Guthaben an, die sie aufstocken möchten. 
-In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente verknüpft werden, sodass \emph{idForFunds} und \emph{fundsToAdd} direkt abgerufen werden können [Siehe 2-3]. Die Variable \emph{payment}, welche das Guthaben umgewandelt in Ether repräsentiert, wird initialisiert und als Wert des Felds \emph{value} in der Variable \emph{overrides} verwendet [5-8]. \emph{augmendAds()} der Klasse BlockchainService ruft die gleichnamige Methode des Smart-Contracts auf, die jedoch mit nur zwei Parametern deklariert ist. Mithilfe eines Dritten, wird in diesem Fall das Feld value des Payloads der eigentlichen Transaktion überschrieben, sodass eine Zahlung in Ether, die dem gewünschten Guthaben entspricht, entsteht [9-11]. 
-\subsubsection{Ausschnitt : Hochladen eines Bildes}
+In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente verknüpft werden, sodass \emph{idForFunds} und \emph{fundsToAdd} direkt abgerufen werden können [2-3]. Die Variable \emph{payment}, welche das Guthaben umgewandelt in Ether repräsentiert, wird initialisiert und als Wert des Felds \emph{value} in der Variable \emph{overrides} verwendet [5-8]. \emph{augmendAds()} der Klasse BlockchainService ruft die gleichnamige Methode des Smart-Contracts auf, die jedoch mit nur zwei Parametern deklariert ist. Mithilfe eines Dritten, wird in diesem Fall das Feld value im Payload der eigentlichen Transaktion überschrieben, sodass eine Zahlung in Ether, die dem gewünschten Guthaben entspricht, entsteht [9-11]. 
+\subsubsection{Ausschnitt : Hochladen einer Anzeige}
 \begin{lstlisting}
 	// Ausschnitt aus der Methode 'onFormSubmit()'
 	
@@ -119,21 +121,136 @@ In Angular können Inputfelder direkt mit öffentlichen Variablen der Komponente
 \end{lstlisting}
 Alternativ zum direkten Verknüpfen mit einer Variable können Inputfelder Teil einer \emph{FormGroup} sein. Diese bieten Funktionalitäten, welche für Formulare nützlich sind. 
 So können beispielsweise Validatoren für Felder, die bestimmte Voraussetzungen erfüllen müssen, gesetzt werden.
-Über die Methode \emph{get().value} wird das Inputfeld \emph{etherSend} ausgelesen und als Parameter für die Methode \emph{sendMoney} des Services verwendet [Siehe 9-10]. Diese überschreibt genau wie augmentAds() den Payload Transaktion. Nach dem Senden wird ein Formular, bestehend aus Anzeige und Wert der Transaktion [3-7], an das Backend gesendet, in dem der Payload verarbeitet wird. Sobald eine Antwort aus dem Backend kommt, kann diese verarbeitet werden, indem man beispielsweise die Id der hochgeladenen Anzeige darstellt oder eine Fehlermeldung bei Misslingen anzeigt [11-18].
+Über die Methode \emph{get().value} wird das Inputfeld \emph{etherSend} ausgelesen und als Parameter für die Methode \emph{sendMoney} des Services verwendet [9-10]. Diese überschreibt genau wie augmentAds() den Payload Transaktion. Nach dem Senden wird ein Formular, bestehend aus Anzeige und Wert der Transaktion [3-7], an das Backend gesendet, in dem der Payload verarbeitet wird. Sobald eine Antwort aus dem Backend kommt, kann diese verarbeitet werden, indem man beispielsweise die Id der hochgeladenen Anzeige darstellt oder eine Fehlermeldung bei Misslingen anzeigt [11-18].
 \subsection{Backend}
-Das Backend ist für das Verwalten der Anzeigen zuständig und reagiert auf Anfragen aus dem Frontend. Geschrieben ist es in Javascript, wodurch der Vorteil entsteht, dass hier ebenfalls Ethers.js für die Kommunikation mit der Blockchain genutzt werden kann. Allein Javascript ist jedoch für ein Backend nicht ausreichend, denn die Programmiersprache wurde zur Ausführung im Browser entwickelt. \emph{Node.js} löst dieses Problem, indem es eine Laufzeitumgebung zur Ausführung von Javascript bereitstellt, durch die Dateien auf einer Konsole und somit einem Server ausgeführt werden können. Zusätzlich dazu wird das Framework \emph{Express.js} verwendet, um ein lauffähiges Backend, welches auf Anfragen des Frontends reagieren kann, bereitstellen zu können.
-Für die Kommunikation mit dem Frontend stellt es diesem zwei Schnittstellen zur Verfügung: 
+Das Backend ist für das Verwalten der Anzeigen zuständig und reagiert auf Anfragen aus dem Frontend. Geschrieben ist es in Javascript, wodurch der Vorteil entsteht, dass hier ebenfalls Ethers.js für die Kommunikation mit der Blockchain genutzt werden kann. 
+Allein Javascript ist jedoch für ein Backend nicht ausreichend, denn die Programmiersprache wurde zur Ausführung im Browser entwickelt. \emph{Node.js} löst dieses Problem, indem es eine Laufzeitumgebung zur Ausführung von Javascript bereitstellt, durch die Javascript-Dateien auf einer Konsole und somit einem Server ausgeführt werden können. Zusätzlich dazu wird das Framework \emph{Express.js} verwendet, um ein lauffähiges Backend, welches auf Anfragen des Frontends reagieren kann, bereitstellen zu können. Eingehende Dateien werden mithilfe der Bibliothek \emph{multer} verarbeitet.
+Für die Kommunikation mit dem Frontend werden zwei Schnittstellen zur Verfügung gestellt: 
 \begin{itemize}
 	\item Eine Schnittstelle zum Hochladen von Anzeigen
 	\item Eine Schnittstelle für das Laden von Anzeigen
 \end{itemize}
-
-\subsubsection{Hochladen einer Anzeige}
+Genau wie beim Frontend sollen im Folgenden die wichtigsten Funktionen im Code näher erläutert werden
+\subsubsection{Hochladen einer Anzeige - Erfolg}
+\begin{lstlisting}
+	// wird vorher initialisiert: const app = express();
+	
+	app.post('/upload', upload.single('uploadedImage'), 
+	(req, res) => {
+		const tempPath = req.file.path;
+		const index = getIndex();
+		const originalFilename = req.file.originalname
+					.substring(0, req.file.originalname.indexOf('.'));
+		const filename = originalFilename + index + '.jpg';
+		const targetPath = path.join(__dirname, "./uploads/"
+									 + filename);
+		
+		if (path.extname(req.file.originalname).
+						toLowerCase() === ".jpg") {
+			fs.rename(tempPath, targetPath, err => {
+				if (err) return handleError(err, res);
+				res
+				.status(200)
+				.contentType("text/plain")
+				.end("Your Id is:" + getIndexAsNumber(index).toString());
+			});
+\end{lstlisting}
+Das Objekt \emph{app} ist eine Instanz von Express, für die HTTP-Anfragen unter beliebigen Sub-Adressen definiert werden können. Im Fall des Hochladens wird eine POST-Anfrage unter der Sub-Adresse \emph{/upload} definiert und mithilfe von \emph{upload}, welches eine Instanz von Multer ist, kann auf die Bilddatei des Uploads, die sich unter \emph{uploadedImage} befindet, zugegriffen werden [3]. Anschließend wird der aktuelle Pfad der Datei in der Variable \emph{tempPath} gespeichert und ein neuer Pfad \emph{targetPath}, welcher die Id der Anzeige enthält, berechnet [5-11]. Wenn es sich um eine .png-Datei handelt, wird der aktuelle Pfad durch den berechneten ersetzt und eine Erfolgsmeldung, welche die berechnete Id der Anzeige enthält, als Antwort an das Frontend zurückgegeben.
+\begin{lstlisting}
+			const newAd = {
+				id: getIndexAsNumber(index),
+				// Funds werden von Ether in Gwei umgewandelt
+				funds: parseFloat(req.body['etherSend']) * (10 ** 9)
+			};
+			blockchain.newAd(newAd).then(res => console.log(res))
+			.catch(err => console.log(err));
+			
+		} else {
+			fs.unlink(tempPath, err => {
+				if (err) return handleError(err, res);
+				
+				res
+				.status(403)
+				.contentType("text/plain")
+				.end("Only .jpeg files are allowed!");
+			});
+		}
+	})
+\end{lstlisting}
+Nach dem erfolgreichen Speichern der Anzeige wird ein neuer Eintrag auf der Blockchain unter der neuen Id gesetzt. 
+Dafür wird zunächst ein Objekt namens \emph{newAd} initialisiert, welches die Id als Ganzzahl und das gewünschte Guthaben in \emph{Gwei} enthält. 
+Eine Milliarde Gwei, was abgekürzt Gigawei bedeutet, entsprechen einem Ether und eine Milliarde Wei, die kleinste Einheit von Ether, entsprechen wiederum einem Gwei [1-5]. 
+Bei dem Objekt \emph{blockchain} handelt es sich um eine Sammlung von Funktionen, die aus einer anderen Datei exportiert wurden. Diese Datei ist vergleichbar mit den Services aus dem Frontend. An diesem Objekt wird die Funktion \emph{newAd} aufgerufen und das initialisierte Objekt als Parameter mitgegeben [6-7].
+Falls es sich bei der Datei nicht um eine .png-Datei handelt, wird diese gelöscht [10] und eine Fehlermeldung ausgeworfen [10-17].
 \subsubsection{Schalten einer Anzeige}
-
-\subsection{Smart Contract}
+\begin{lstlisting}
+	app.get('/getImage', (req, res) => {
+		const fileToHost = getRandomFile();
+		if(fileToHost){
+			const filePath = path
+					.join(__dirname, './uploads/' + fileToHost);
+			res.sendFile(filePath);
+			
+			const index = getIndexOfFile(fileToHost)
+			blockchain.showAd(index).then(res => {
+				console.log('Ad Shown');
+			}).catch(err => {
+				console.log('no Funds left');
+			})}
+		else{
+			res.sendStatus(400);
+		}
+	});
+\end{lstlisting}
+Für das Versorgen des Frontends mit Anzeigen wird eine GET-Anfrage unter der Sub-Adresse \emph{/getImage} definiert und da keine Dateien gespeichert werden, ist Multer für diese Funktion nicht notwendig [1]. Mithilfe der Hilfsfunktion \emph{getRandomFile()} wird eine zufällige Anzeige aus dem Ordner, in dem sich alle Uploads befinden, ausgewählt und wenn eine gefunden wurde, diese an das Frontend gesendet [2-6]. Anschließend wird mithilfe einer weiteren Hilfsfunktion der Index als Ganzzahl aus dem Dateinamen extrahiert und als Input für die Funktion \emph{showAd} mitgegeben [8-13]. Sollte keine Datei gefunden worden sein, wird ein Fehler an das Frontend zurückgegeben [15].
+\subsection{Smart-Contract}
+Der Smart-Contract ist dafür zuständig, beliebige Daten auf der Ethereum-Blockchain sowohl abzuspeichern, als auch abrufbar machen zu können.
+Für den Smart-Contract wird, die in Kapitel 3.1.3 vorgestellte Programmiersprache, Solidity verwendet. Im Gegensatz zu den anderen Komponenten bedarf es hier keiner zusätzlichen Bibliotheken und der Code ist auch simpel gehalten, um hohe Kosten durch Gas-Verbrauch zu vermeiden. Die folgenden Funktionen, die alle auf das Mapping \emph{ads} zugreifen, sind jene, die von den anderen Komponenten aufgerufen werden.
+\subsubsection{Anpassen des Guthabens}
+\begin{lstlisting}
+	function augmentAds(uint _id, uint _wei) payable public{
+		ads[_id].funds += _wei;
+	}
+\end{lstlisting}
+Die Funktion \emph{augmentAds()} wird sowohl vom Backend, als auch Frontend in verschiedenen Kontexten aufgerufen. In beiden Fällen wird das Mapping an der Id angepasst, indem man das Guthaben um den gewünschten Betrag \emph{\_wei}, welcher als Parameter mitgegeben wird, erhöht. 
+\subsubsection{Aufrufen einer Anzeige}
+\begin{lstlisting}
+	function showAd(uint _id) public {
+		ads[_id].counter++;
+		ads[_id].funds -= 20000;
+	}
+\end{lstlisting}
+Die Structure \emph{Ad} besteht nicht nur aus \emph{funds}, sondern enthält auch einen Zähler, welcher dann in der Funktion \emph{showAd()} erhöht wird, wenn das Backend dem Frontend eine Anzeige zur Verfügung stellt. Außerdem wird das Guthaben um einen manuell festgelegten Betrag reduziert. Diese Funktion stellt somit den Bereich des Vertrages dar, in dem die Kosten für das Schalten von Anzeigen festgelegt werden.
+\subsubsection{Abrufen der Schaltungen}
+\begin{lstlisting}
+	function getCounter(uint _id) public view returns(uint){
+		return ads[_id].counter;
+	}
+\end{lstlisting}
+Die Funktion \emph{getCounter()} gibt die Anzahl der Schaltungen für einen gegebenen Index wieder. Unternehmen könnten somit selbstständig überprüfen, wie oft ihre Anzeigen geschaltet wurden. Analog dazu könnte auch das übrige Guthaben für die Id abgefragt werden. 
 \subsection{Provider und Deployment}
-\subsubsection{Provider}
-\subsubsection{Ganache}
+Die Architektur der Webanwendung ist mit den bisher beschriebenen Komponenten nicht vollständig lauffähig. In ihrem jetzigen Zustand sind Front- und Backend nicht in der Lage, mit dem Smart-Contract, welcher sich noch nicht auf der Blockchain befindet, zu kommunizieren. Um dies zu korrigieren, sind die bereits genannten Provider notwendig, die sich nach dem Deployment des Smart-Contracts um die Kommunikation mit diesem kümmern.
+\subsubsection{Provider und Signer}
+Alle Funktionsaufrufe des Smart-Contracts werden durch Transaktionen ausgelöst, die von einem Teilnehmer des Netzwerkes, also einer Full-Node, signiert werden müssen. Um eine solche Node nicht selbst betreiben zu müssen, nimmt man die Dienste sogenannter \emph{Provider} in Anspruch, welche das Senden von Transaktionen übernehmen. Das Front- und Backend verwenden zwei verschiedene Provider:
+\begin{itemize}
+	\item \emph{Metamask} im Frontend
+	\item \emph{Infuria} im Backend
+\end{itemize}
+Metamask ist eine Browser-Erweiterung, die unter \emph{Google Chrome} und \emph{Mozilla Firefox} frei erhältlich ist. Bei Metamask handelt es sich um eine Wallet-Software, die, nach Zustimmung des Users, eine Transaktion, welche von einer Webanwendung gefordert wird, signiert.
+Im Gegensatz dazu wird im Backend Infuria als Provider verwendet, denn dort kann nicht mit einem User-Input gearbeitet werden. Stattdessen gibt man als 'Eigentümer des Projekts' dem Provider den private Key und ermächtigt diesen, alle eintreffenden Transaktionen zu signieren. Die Wallet, mit der in beiden Fällen eine Transaktion signiert wird, nennt man \emph{Signer}
+\subsubsection{Truffle}
+Bevor Funktionen eines Smart-Contracts aufgerufen werden können, muss dieser kompiliert und auf die Blockchain migriert werden. Das Framework \emph{Truffle} bietet einem, ähnlich wie Angular, ein Kommandozeilen-Interface, welches beispielsweise mit dem Befehl \emph{truffle init} eine Vorlage für einen neuen Smart-Contract erstellt. Außerdem wird ein Migrationsskript erzeugt, welches nach Belieben angepasst werden kann, um das Kompilieren und Deployment von mehreren Dateien gleichzeitig zu ermöglichen. In der erzeugten Config-Datei ist definiert, welche Netzwerke zur Verfügung stehen und welcher Signer für das Signieren der Deployment-Transaktion verwendet werden soll. Nach der Kompilierung wird eine JSON-Repräsentation des Smart-Contracts erzeugt, die neben der Adresse und anderen Informationen das \emph{Application Binary Interface}, kurz \emph{ABI}, enthält. Dies ist eine Sammlung aller Funktionssignaturen des Smart-Contracts, welches den Rahmen der Interaktion mit diesem definiert.
+Folgendermaßen kann anschließend eine bedienbare Instanz des Smart-Contracts erzeugt werden: 
+\begin{lstlisting}
+	const contract = new ethers.Contract(contractJson.networks['3']
+									.address, ABI, provider)
+	const signedContract = contract.connect(signer);
+\end{lstlisting}
+Es wird mithilfe von ethers eine Instanz der Klasse 'Contract' erzeugt. Der Konstruktor nimmt drei Parameter entgegen:
+\begin{itemize}
+	\item Die Adresse des Smart-Contracts auf dem gewünschten Netzwerk
+	\item Die ABI, welche die Signaturen aller Funktionen enthält
+	\item Den Provider, der sich um die Kommunikation mit der Blockchain kümmert
+\end{itemize}
+Indem man den Contract mit einem Signer, also einer Wallet, verbindet, autorisiert man den Provider dazu, alle anfallenden Kosten für Transaktionen von der Wallet übernehmen zu lassen. Alle, in der ABI definierten, Funktionen sind aufrufbar und schlussendlich ist die gesamte Anwendung lauffähig.
 \section{Beantwortung der Forschungsfrage}
-\section{Blockchain 3.0 - Bestehende Probleme und potenzielle Lösungen}

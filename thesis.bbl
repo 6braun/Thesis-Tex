@@ -61,6 +61,10 @@ Michaelson, G. (2020, Feb).
 \newblock {\em The Art, Science, and Engineering of Programming\/}~{\em
   4\/}(3).
 
+\bibitem[\protect\citeauthoryear{Nakamoto}{Nakamoto}{2008}]{nakamoto_whitepaper_2008}
+Nakamoto, S. (2008).
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+
 \bibitem[\protect\citeauthoryear{Turing}{Turing}{1936}]{turing_1936}
 Turing, A.~M. (1936).
 \newblock On computable numbers with an application to the
