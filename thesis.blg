@@ -10,62 +10,61 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 123 of file thesis.bib
+I was expecting a `,' or a `}'---line 131 of file thesis.bib
  : 
  : title = {b-money},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 139 of file thesis.bib
+I was expecting a `,' or a `}'---line 147 of file thesis.bib
  : 
  : note=
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "nakamoto_2008"
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
 Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 19 entries,
+You've used 20 entries,
             2911 wiz_defined-function locations,
-            710 strings with 7571 characters,
-and the built_in function-call counts, 9292 in all, are:
-= -- 756
-> -- 551
+            714 strings with 7858 characters,
+and the built_in function-call counts, 9770 in all, are:
+= -- 797
+> -- 577
 < -- 0
-+ -- 136
-- -- 208
-* -- 611
-:= -- 1849
-add.period$ -- 49
-call.type$ -- 19
-change.case$ -- 111
-chr.to.int$ -- 18
-cite$ -- 25
-duplicate$ -- 294
-empty$ -- 630
-format.name$ -- 216
-if$ -- 1626
++ -- 144
+- -- 218
+* -- 639
+:= -- 1944
+add.period$ -- 52
+call.type$ -- 20
+change.case$ -- 117
+chr.to.int$ -- 19
+cite$ -- 26
+duplicate$ -- 309
+empty$ -- 662
+format.name$ -- 226
+if$ -- 1709
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 10
-newline$ -- 90
-num.names$ -- 188
-pop$ -- 105
+newline$ -- 95
+num.names$ -- 198
+pop$ -- 109
 preamble$ -- 1
-purify$ -- 228
+purify$ -- 240
 quote$ -- 0
-skip$ -- 334
+skip$ -- 351
 stack$ -- 0
-substring$ -- 379
-swap$ -- 91
+substring$ -- 401
+swap$ -- 96
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 336
+type$ -- 356
 warning$ -- 6
-while$ -- 188
+while$ -- 198
 width$ -- 0
-write$ -- 235
+write$ -- 248
 (There were 2 error messages)

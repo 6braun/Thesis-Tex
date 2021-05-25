@@ -36,17 +36,17 @@ Kryptographische Verfahren folgten zu der Zeit dem Prinzip \emph{Security by Obs
 Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code durch die Anstrengungen polnischer und später englischer Wissenschaftler um Alan Turing unschädlich gemacht werden konnte [\cite{landwehr_2008}: 18/19].\\
 
 Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt [vgl. \cite{diffie_hellman_1976}]. 
-Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf [\cite{antanopoulos_2014}] und ziehen, wo es nötig ist, zusätzliche Quellen hinzu.\\
+Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf \cite{antanopoulos_2014} und ziehen, wo es nötig ist, zusätzliche Quellen hinzu.\\
 
 Für Bitcoin wird ein Paar aus Schlüsseln erzeugt. 
 Dieses Paar besteht aus dem privaten Schlüssel (Private Key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
 Aus diesem wird durch die Verwendung von Hashing-Verfahren ein öffentlicher Schlüssel (Public key) abgeleitet, mit dem Bitcoins empfangen werden können.
-Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann.\\
+Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüsseln eine durch den privaten Schlüssel signierte Transaktion mithilfe des öffentlichen Schlüssels verifiziert werden. Dies geschieht, indem der Absender die Transaktion mit seinem privaten Schlüssel signiert und die Authentizität der Signatur mithilfe des öffentlichen Schlüssels von anderen Akteuren des Netzwerks verifiziert wird. Um Begünstigter einer Transaktion zu sein, muss man eine Adresse besitzen und diese an andere Nutzer des Netzwerks propagieren. Um jene zu erzeugen, wird der öffentliche Schlüssel genutzt, welchen man nicht wieder aus der Adresse rekonstruieren kann. Dies wird in Abbildung 2.1 deutlich:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/public_and_private_key.png}
 	\caption{Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. 
-	Quelle: \cite{antanopoulos_2014}}
+	Quelle: \cite[57]{antanopoulos_2014}}
 	\label{6braun:fig:keys}
 \end{figure}
 \subsubsection{Private Keys}
@@ -55,7 +55,7 @@ Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Q
 
 \subsubsection{Public Keys}
 Um einen öffentlichen Schlüssel aus dem privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
-Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptography} gennant und bedient sich an den Eigenschaften einer Ellipse.
+Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptography} gennant und bedient sich an den Eigenschaften einer Ellipse. Die im Bitcoin-Protokoll verwendete Ellipse trägt den Namen \emph{secp256k1} und hat die, in Abbildung 2.2 vorgestellte, Form:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/elliptic_graph_cryptography.png}
@@ -197,7 +197,7 @@ Eine Wallet ist, im Gegensatz zu einer physikalischen Geldbörse, nicht für das
 Wie das Berechnen des 'Guthabens' geschieht, wird im Unterkapitel \emph{Transaktionen} erläutert.\\
 
 Man unterscheidet zwischen nicht-deterministischen und deterministischen Wallets. Die erste Variante kann man sich als Korb vorstellen, in dem vorher zufällig generierte private Schlüssel in großer Anzahl gelagert sind. Dabei erzeugt ein privater einen öffentlichen Schlüssel, der wiederum eine Adresse erzeugt (siehe Kapitel \emph{Keys und Adressen}).
-Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur ein Mal zu benutzen. Aufgrund der hohen Anzahl angesammelter Keys und der damit verbundenen Datensicherung ist diese Art Wallet heute nicht mehr der Standard.
+Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur ein Mal zu benutzen. Aufgrund der hohen Anzahl angesammelter Keys und der damit verbundenen Datensicherung ist diese Art Wallet heute nicht mehr der Standard. Die potentiell große Anzahl zusammenhangsloser Keys wird in Abbildung 2.3 veranschaulicht:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/non_det_wallet.png}
@@ -212,7 +212,7 @@ $$offset = SHA256(index + masterPubKey)$$
 $$pubKey_{index} = offset + masterPubKey$$ Dies geht analog genauso mit dem Master Private Key. 
 Aufgrund dieser Eigenschaft ist es möglich, den Master Public Key ungeschützt zu lagern und sogar an dritte Parteien herauszugeben, ohne dass diese Zugriff auf das Guthaben erhalten.\\
 
-Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Ein Geschäftsführer könnte so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behält der Geschäftsführer die absolute Kontrolle über alle Schlüssel, da er im Besitz der Master Keys ist. 
+Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Ein Geschäftsführer könnte so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behält der Geschäftsführer die absolute Kontrolle über alle Schlüssel, da er im Besitz der Master Keys ist. Die Abbildung 2.4 zeigt, wie sich eine Organisation die Hierarchieeigenschaft zunutze machen könnte:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/bip32_wallet.png}
@@ -256,7 +256,7 @@ Das Berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wal
 Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Transaktionsgebühren ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionsgebühren angegeben kann, ist auch das versehentliche Angeben von zu hohen Gebühren möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte der Sender vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.
 Zusammenfassend lassen sich Transaktionen als Sammlungen von Inputs und Outputs definieren, deren Differenz die genutzten Transaktionskosten darstellen.
 \subsection{Die verschiedenen Akteure im Netzwerk}
-In \cite{nakamoto_2008} nennt Nakamoto das Propagieren von Transaktionen an alle Knoten als ersten Schritt, der zur Instandhaltung des Netzwerkes erforderlich ist. Dieses Kapitel steigt einen Schritt früher ein und befasst sich mit den verschiedenen Akteuren im dezentralen Netzwerk, ihren Rollen sowie den nötigen Schritten zum Eintritt neuer Teilnehmer.
+\cite{nakamoto_whitepaper_2008} nennt das Propagieren von Transaktionen an alle Knoten als ersten Schritt, der zur Instandhaltung des Netzwerkes erforderlich ist. Dieses Kapitel steigt einen Schritt früher ein und befasst sich mit den verschiedenen Akteuren im dezentralen Netzwerk, ihren Rollen sowie den nötigen Schritten zum Eintritt neuer Teilnehmer.
 \subsubsection{Rollen}
 Trotz fehlender Hierarchien im Netzwerk nehmen die Teilnehmer abhängig von ihren Funktionalitäten verschiedene Rollen ein. Als \emph{Full Node} bezeichnet man Teilnehmer, die alle der folgenden Funktionalitäten erfüllen:
 \begin{itemize}
@@ -288,7 +288,7 @@ Ebenso wie sie Adressen miteinander austauschen, werden auch Informationen über
 \subsection{Blockchain}
 Die Blockchain ist die Kerntechnologie des gesamten Protokolls und stellt im Kern eine Datenstruktur mit einer verketteten Liste von Blöcken dar, die wiederum Transaktionen enthalten. 
 Die Verkettung erfolgt dadurch, dass jeder Block einen vorher erzeugten referenziert. 
-Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt. Die folgende Abbildung 2.7. zeigt, wie der zweite Block den Vorgängerblock mithilfe des Hash-Werts referenziert.
+Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolger verändert und dies wird so für alle folgenden Generationen fortgesetzt. Die folgende Abbildung 2.7 zeigt, wie der zweite Block den Vorgängerblock mithilfe des Hash-Werts referenziert.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/chain.png}
@@ -325,7 +325,7 @@ Dafür folgt man vom Block aus über die Vorgänger der Blockchain, bis man beim
 Anschließend zählt man den Abstand und erhält die Block-Höhe.
 Eine eindeutige Identifikation des Blocks ist hierüber allerdings nicht möglich, denn es kann im Falle von \emph{Forks}, die im Kapitel \emph{Der Weg der Transaktion in die Blockchain} erörtert werden, dazu kommen, dass ein Block von mehreren Blöcken als Parent referenziert wird.\\
 \subsubsection{Merkle-Tree}
-Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter.
+Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter. Die Abbildung 2.8 illustriert die Funktionsweise eines Merkle-Trees:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/merkle.png}
@@ -372,7 +372,7 @@ Während das 'Finden' eines geeigneten Blocks aufwendig ist, müssen andere Teil
 Abgesehen vom Hash muss der Block allerdings noch andere Kriterien erfüllen, wie z.B. richtige Zeitstempel oder eine valide Liste von Transaktionen, inklusive valider Coinbase. 
 Bei Gutschreibung von zu viel neuen Bitcoin wird der gesamte Block invalide, was betrügerisches Verhalten für Miner unattraktiv macht. Der Block wird nur im Netzwerk propagiert, wenn er die Kriterien erfüllt.\\
 
-Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung 2.9. zeigt:
+Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung 2.9 zeigt:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/chains.png}

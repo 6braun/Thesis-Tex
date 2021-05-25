@@ -2,7 +2,7 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. Quelle: \cite {antanopoulos_2014}\relax }}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. Quelle: \cite [57]{antanopoulos_2014}\relax }}{5}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ TODO: Bessere Grafik\relax }}{6}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet Quelle: Eigene Darstellung\relax }}{12}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet Quelle: Eigene Darstellung\relax }}{13}{figure.caption.8}%
@@ -14,8 +14,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Vereinfachung der Ethereum Virtual Machine Quelle: Eigene Darstellung\relax }}{28}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Involvierte Parteien in gängigem Display Advertising\relax }}{32}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau der Webanwendung Quelle: Eigene Darstellung\relax }}{33}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Involvierte Parteien in gängigem Display Advertising Quelle: vgl. \cite [9]{optimity_advisors_2019}\relax }}{32}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau der Webanwendung Quelle: Eigene Darstellung\relax }}{34}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine\relax }}{45}{figure.caption.17}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine\relax }}{46}{figure.caption.17}%

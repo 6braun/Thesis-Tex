@@ -1,12 +1,12 @@
 \chapter{Blockchain im Online Advertising}
 Die bisherigen Kapitel dienen dem Zweck, Lesern ein Verständnis über technische, als auch funktionelle Aspekte der Blockchain-Technologie zu vermitteln. Allerdings ist Informationstechnologie kein Selbstzweck, sondern wird zur Lösung von konkreten Problemen verwendet.
 Im folgenden Kapitel soll diese, im Kontext des \emph{Online Advertisings}, in einen wirtschaftlichen Prozess sinnvoll eingebaut werden. 
-Dafür wird zunächst das Thema Online Advertising näher beschrieben und mögliche Verbesserungen mittels Blockchain-Technologie erörtert. 
+Dafür werden zunächst die Themen Online Advertising und speziell Programmatic Advertising näher beschrieben und mögliche Verbesserungen mittels Blockchain-Technologie erörtert. 
 Ausgehend davon wird die Architektur und ihre Komponenten für eine Webanwendung, in die ein Smart-Contract eingebaut ist, vorgestellt. 
 Abschließend wird die Eignung von Blockchain-Technologie auf ihrem derzeitigen Stand für das Online Advertising erörtert und derzeitige Probleme, sowie mögliche Lösungen beschrieben.
 \section{Online Advertising}
-Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das Schalten von Werbung attraktiv, sodass im Jahr 2021 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
-Im Paper \cite{bundeskartellamt_2018} wird Online Advertising als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
+Laut \cite{johnson_2021} ist das Internet heutzutage fester Bestandteil des Lebens der 4,66 Milliarden Menschen auf der Erde, die es regelmäßig verwenden. Ein solch hoher Traffic macht das Schalten von Werbung attraktiv, sodass im Jahr 2020 laut \cite{statista_online_advertisement_revenue_2021} ein Umsatz von 139,8 Milliarden US-Dollar in den USA erzielt werden konnte. Die verschieden Arten von Werbung werden unter dem Begriff \emph{Online Advertising} gesammelt.
+Im Paper \cite{bundeskartellamt_2018} wird Online Advertising, welches auch als Digital Advertising bezeichnet werden kann, als jegliche Art Werbung, die über das Internet auf mobilen, sowie Desktopanwendungen vermittelt wird, bezeichnet. Darin werden auch die relevante Unterkategorien beschrieben: 
 \begin{itemize}
 	\item Search Advertising: Werbeanzeigen werden auf den Oberflächen von Suchmaschinen entweder als Anzeigen seitlich der Suchergebnisse oder als Bestandteil dieser angezeigt
 	\item Mobile Advertising: Auf Mobilgeräte angepasste Anzeigen, die auch Bestandteile von Apps sein können
@@ -16,19 +16,30 @@ Im Paper \cite{bundeskartellamt_2018} wird Online Advertising als jegliche Art W
 \end{itemize}
 Mit der ersten online-geschalteten Werbeanzeige im Jahr 1994 ist das Display Advertising die älteste Form des Online Advertisings und soll im Folgenden näher thematisiert werden \cite{bundeskartellamt_2018}.
 \subsection{Display Advertising heute}
-Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen Anbieter, welcher Werbung auf der Internetseite schaltet und werbendem Unternehmen, welches pro Schaltung bezahlt. In der Praxis würde dies allerdings einen hohen Aufwand für beide Parteien bedeuten. Unternehmen müssten einen Vertrag darüber aufsetzen, welche Werbung wie oft geschaltet werden sollte und Anbieter der Werbefläche müssten sich selbst um das Darstellen der Anzeigen, als auch Tracking diverser Metriken, wie z.B. Impressionen oder Klicks, kümmern. Stattdessen nimmt man die Dienste eines sogenannten \emph{Ad-Brokers} in Anspruch, sodass die folgende Konstellation entsteht:
+
+
+Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen Anbieter, welcher Werbung auf der Internetseite schaltet und werbendem Unternehmen, welches pro Schaltung bezahlt. In der Praxis würde dies allerdings einen hohen Aufwand für beide Parteien bedeuten. Unternehmen müssten einen Vertrag darüber aufsetzen, welche Werbung wie oft geschaltet werden sollte und Anbieter der Werbefläche müssten sich selbst um das Darstellen der Anzeigen, als auch Tracking diverser Metriken, wie z.B. Impressionen oder Klicks, kümmern.\\
+
+Als Folge dessen entstand das sogenannte \emph{Programmatic Advertising}, welches als 'der Einsatz von Software und Automatisierung zum Kauf und Verkauf von Digital Advertising' bezeichnet wird [\cite[4]{optimity_advisors_2019}]. Dies ermöglicht eine auktionsbasierte Verteilung von Werbeschaltungen, die völlig automatisiert möglichst geeignete Anzeigen während des Ladens einer Webseite zuweist. Dies hat aber auch zur Folge, dass mehr Komponenten in die Logistik der Anzeigenschaltung involviert sind. Es entsteht die folgende Konstellation aus Abbildung 4.1:
+
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=\textwidth]{images/online_advertising.png}
-	\caption{Involvierte Parteien in gängigem Display Advertising}
-	\label{6braun:fig:online_advertising}
-\end{figure}\\
-Der Ad-Broker dient als Intermediär zwischen Angebot und Nachfrage, indem dieser einen Marktplatz für die werbenden Parteien zur Verfügung stellt. 
-Ein Beispiel hierfür ist Googles \emph{AdSense}, welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
-Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbeflächen abrufen, die von AdSense getrackt werden. 
+	\includegraphics[width=\textwidth]{images/programmatic_advertising.png}
+	\caption{Involvierte Parteien in gängigem Display Advertising\\
+	Quelle: vgl. \cite[9]{optimity_advisors_2019}}
+	\label{6braun:fig:programmatic_advertising}
+\end{figure}
+Die \emph{Supply-Side-Plattform} dient als Schnittstelle zwischen der Werbefläche und dem Auktionshaus, der \emph{Ad-Exchange}. Sie kümmert sich darum, dass eine Webseite mit Anzeigen versorgt wird, indem sich dessen Werbefläche beim Auktionshaus registriert. Außerdem analysiert sie eintreffende Besucher leitet gegebenenfalls Daten, die beispielsweise durch Nutzungsverhalten auf der Webseite oder Cookies sammeln, an das Auktionshaus weiter. Auf der Unternehmensseite dient die \emph{Demand-Side-Plattform} als Schnittstelle zum Auktionshaus indem den Unternehmen das zur Verfügung stellen von Anzeigen, sowie das Verfolgen von diversen Metriken ermöglicht. Im Auktionshaus kommt es schließlich zur Verteilung der Anzeigen in Echtzeit, indem verfügbare Werbeflächen und die Daten des Besuchers in diesem veröffentlicht werden. Die Demand-Side-Plattformen geben abhängig von den Daten Gebote ab und die Anzeige der gewinnenden Plattform wird schließlich der Webseite zum Anzeigen zur Verfügung gestellt.\\
+
+In Deutschland entsprach der Anteil von Ausgaben für Programmatic Advertising im Jahr 2017 54\% und im Jahr 2018 70\% der gesamten Ausgaben für Online Advertising [eMarketer (2018) zitiert nach \cite[21]{optimity_advisors_2019}]. Der gesamte Markt für Online Advertising fällt mit 6,6 Milliarden Euro im Jahr 2017 laut \cite{optimity_advisors_2019} im Vergleich zum US-Markt jedoch gering aus.
+
+Ein Beispiel für einen Ad-Broker, der alle Komponenten zwischen den Besitzern der Werbeflächen und werbenden Unternehmen abdeckt, ist Googles \emph{AdSense}, welches Anbieter mit einem Code-Snippets versorgt, die sie lediglich im Quellcode ihrer Internetseite einfügen müssen. Über diese werden Anzeigen direkt auf die Seite geladen, ohne dass die Anbieter sich selbst darum kümmern müssen. Zur Unternehmensseite hin fungiert AdSense als Marktplatz, auf dem Unternehmen Gebote für die, mittels Code-Snippet, bereitgestellten Anzeigeflächen abgeben. 
+Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbeflächen abrufen, die von AdSense getrackt werden. \\
+
 Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch nicht nur Vorteile. 
 Für Anbieter von Werbeflächen entsteht der Nachteil, dass nicht das gesamte Geld des Unternehmens bei ihnen ankommt, weil der Ad-Broker gleichzeitig den Zahlungskanal darstellt. 
-Stattdessen erhalten diese 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker.
+Stattdessen erhalten diese 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht [\cite{google_adsense_2021}]. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker. Außerdem besitzen die vertikal Integrierten Broker wie Google oder Facebook eine hohe Marktmacht und könnten potentiell Mitbewerber durch unvorteilhafte Schaltung von Anzeigen benachteiligen. Ein letzter Wichtiger Punkt ist der fehlende Datenschutz im Programmatic Advertising. Die automatisierte Schaltung von relevanten Anzeigen ist nur deshalb möglich, weil personenbezogene Daten von Nutzern erhoben werden, was eine Verletzung von Datenschutzrichtlinien zur Folge haben könnte.
+
 \subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
 Blockchain-Technologie könnte diese Probleme lösen, indem die Rahmenbedingungen für Interaktionen zwischen Anbietern und Unternehmen mittels Smart-Contracts geregelt wird. 
 Da Ethereum das Hinterlegen beliebiger Daten ermöglicht, könnte in den Smart-Contracts aufgezeichnet werden, wie oft eine Anzeige geschaltet wurde und welche Kosten dafür aufkommen. 
@@ -36,7 +47,7 @@ Aufgrund der Transparenz einer öffentlichen Blockchain können Unternehmen jede
 \section{Programmierung eines Proof-of-Concept}
 Die Chancen, welche Blockchain-Technologie für das Display Advertising bieten könnte, sollen im Folgenden am Beispiel eines \emph{Proof-of-Concept} veranschaulicht werden. 
 Dafür wird eine Webanwendung entwickelt, die beliebigen Inhalt abbildet und an den Seiten Platz zum Schalten von Anzeigen hat. 
-Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, indem Unternehmen direkt auf der Seite eine Anzeige hochladen und eine Art Guthaben erwerben können, die beim Schalten der Anzeige aufgebraucht wird. Die Unternehmen sollen in der Lage sein, die Anzahl der Schaltungen, als auch das übrige Guthaben abzurufen und bei Bedarf erhöhen zu können. Die Webanwendung soll den, in Abbildung 4.2. illustrierten Aufbau haben:
+Zusätzlich dazu sollen die soeben genannten Verbesserungen eingebaut werden, indem Unternehmen direkt auf der Seite eine Anzeige hochladen und eine Art Guthaben erwerben können, die beim Schalten der Anzeige aufgebraucht wird. Die Unternehmen sollen in der Lage sein, die Anzahl der Schaltungen, als auch das übrige Guthaben abzurufen und bei Bedarf erhöhen zu können. Die Webanwendung soll den, in Abbildung 4.2 illustrierten Aufbau haben:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/aufbau_PoC.png}

@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {2.3.6}Blockchain}{17}{subsection.2.3.6}%
 \contentsline {subsubsection}{Datenstruktur}{18}{figure.caption.11}%
 \contentsline {subsubsection}{Merkle-Tree}{19}{lstnumber.2.4.15}%
-\contentsline {subsection}{\numberline {2.3.7}Der Weg der Transaktion in die Blockchain}{19}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.7}Der Weg der Transaktion in die Blockchain}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Miner und ihre Entlohnung}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Sammeln von Transaktionen}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Konstruktion des Blocks}{20}{subsection.2.3.7}%
@@ -46,28 +46,28 @@
 \contentsline {chapter}{\numberline {4}Blockchain im Online Advertising}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Online Advertising}{31}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Display Advertising heute}{32}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{32}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Programmierung eines Proof-of-Concept}{33}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Frontend}{34}{subsection.4.2.1}%
-\contentsline {subsubsection}{Konstruktor und Laden von Bildern}{34}{subsection.4.2.1}%
-\contentsline {subsubsection}{Anpassen des Guthabens}{35}{lstnumber.-3.21}%
-\contentsline {subsubsection}{Ausschnitt : Hochladen einer Anzeige}{36}{lstnumber.-4.12}%
-\contentsline {subsection}{\numberline {4.2.2}Backend}{37}{subsection.4.2.2}%
-\contentsline {subsubsection}{Hochladen einer Anzeige - Erfolg}{37}{subsection.4.2.2}%
-\contentsline {subsubsection}{Schalten einer Anzeige}{39}{lstnumber.-7.19}%
-\contentsline {subsection}{\numberline {4.2.3}Smart-Contract}{40}{subsection.4.2.3}%
-\contentsline {subsubsection}{Anpassen des Guthabens}{40}{subsection.4.2.3}%
-\contentsline {subsubsection}{Aufrufen einer Anzeige}{40}{lstnumber.-9.3}%
+\contentsline {subsection}{\numberline {4.1.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{33}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Programmierung eines Proof-of-Concept}{34}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Frontend}{35}{subsection.4.2.1}%
+\contentsline {subsubsection}{Konstruktor und Laden von Bildern}{35}{subsection.4.2.1}%
+\contentsline {subsubsection}{Anpassen des Guthabens}{36}{lstnumber.-3.21}%
+\contentsline {subsubsection}{Ausschnitt : Hochladen einer Anzeige}{37}{lstnumber.-4.12}%
+\contentsline {subsection}{\numberline {4.2.2}Backend}{38}{subsection.4.2.2}%
+\contentsline {subsubsection}{Hochladen einer Anzeige - Erfolg}{38}{subsection.4.2.2}%
+\contentsline {subsubsection}{Schalten einer Anzeige}{40}{lstnumber.-7.19}%
+\contentsline {subsection}{\numberline {4.2.3}Smart-Contract}{41}{subsection.4.2.3}%
+\contentsline {subsubsection}{Anpassen des Guthabens}{41}{subsection.4.2.3}%
+\contentsline {subsubsection}{Aufrufen einer Anzeige}{41}{lstnumber.-9.3}%
 \contentsline {subsubsection}{Abrufen der Schaltungen}{41}{lstnumber.-10.4}%
-\contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{41}{subsection.4.2.4}%
-\contentsline {subsubsection}{Provider und Signer}{41}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{42}{subsection.4.2.4}%
+\contentsline {subsubsection}{Provider und Signer}{42}{subsection.4.2.4}%
 \contentsline {subsubsection}{Truffle}{42}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{42}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{43}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{43}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{44}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{44}{section.A.1}%
-\contentsline {chapter}{Bibliography}{46}{figure.caption.17}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{48}{chapter*.19}%
+\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{43}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{44}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{44}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{45}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{45}{section.A.1}%
+\contentsline {chapter}{Bibliography}{47}{figure.caption.17}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{49}{chapter*.19}%
