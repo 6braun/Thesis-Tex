@@ -10,11 +10,6 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 131 of file thesis.bib
- : 
- : title = {b-money},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 147 of file thesis.bib
  : 
  : note=
@@ -26,45 +21,45 @@ Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 20 entries,
+You've used 21 entries,
             2911 wiz_defined-function locations,
-            714 strings with 7858 characters,
-and the built_in function-call counts, 9770 in all, are:
-= -- 797
-> -- 577
+            719 strings with 8023 characters,
+and the built_in function-call counts, 10253 in all, are:
+= -- 840
+> -- 603
 < -- 0
-+ -- 144
-- -- 218
-* -- 639
-:= -- 1944
-add.period$ -- 52
-call.type$ -- 20
-change.case$ -- 117
-chr.to.int$ -- 19
-cite$ -- 26
-duplicate$ -- 309
-empty$ -- 662
-format.name$ -- 226
-if$ -- 1709
++ -- 150
+- -- 228
+* -- 667
+:= -- 2041
+add.period$ -- 56
+call.type$ -- 21
+change.case$ -- 123
+chr.to.int$ -- 20
+cite$ -- 27
+duplicate$ -- 324
+empty$ -- 694
+format.name$ -- 236
+if$ -- 1794
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 10
-newline$ -- 95
-num.names$ -- 198
-pop$ -- 109
+newline$ -- 101
+num.names$ -- 208
+pop$ -- 112
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 252
 quote$ -- 0
-skip$ -- 351
+skip$ -- 368
 stack$ -- 0
-substring$ -- 401
-swap$ -- 96
+substring$ -- 421
+swap$ -- 101
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 356
+type$ -- 376
 warning$ -- 6
-while$ -- 198
+while$ -- 208
 width$ -- 0
-write$ -- 248
-(There were 2 error messages)
+write$ -- 263
+(There was 1 error message)

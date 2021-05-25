@@ -58,16 +58,15 @@
 \contentsline {subsection}{\numberline {4.2.3}Smart-Contract}{41}{subsection.4.2.3}%
 \contentsline {subsubsection}{Anpassen des Guthabens}{41}{subsection.4.2.3}%
 \contentsline {subsubsection}{Aufrufen einer Anzeige}{41}{lstnumber.-9.3}%
-\contentsline {subsubsection}{Abrufen der Schaltungen}{41}{lstnumber.-10.4}%
+\contentsline {subsubsection}{Abrufen der Schaltungen}{42}{lstnumber.-10.4}%
 \contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{42}{subsection.4.2.4}%
 \contentsline {subsubsection}{Provider und Signer}{42}{subsection.4.2.4}%
-\contentsline {subsubsection}{Truffle}{42}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Beantwortung der Forschungsfrage}{43}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Kapitel}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion der Ergebnisse}{44}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{44}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{45}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{45}{section.A.1}%
-\contentsline {chapter}{Bibliography}{47}{figure.caption.17}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{49}{chapter*.19}%
+\contentsline {subsubsection}{Truffle}{43}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Schlussteil}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diskussion der Ergebnisse}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Zusammenfassung der Kapitel}{45}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{45}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{46}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Anhang A}{46}{section.A.1}%
+\contentsline {chapter}{Bibliography}{48}{figure.caption.17}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{50}{chapter*.19}%

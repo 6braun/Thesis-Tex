@@ -17,10 +17,9 @@ Im Paper \cite{bundeskartellamt_2018} wird Online Advertising, welches auch als 
 Mit der ersten online-geschalteten Werbeanzeige im Jahr 1994 ist das Display Advertising die älteste Form des Online Advertisings und soll im Folgenden näher thematisiert werden \cite{bundeskartellamt_2018}.
 \subsection{Display Advertising heute}
 
-
 Die einfachste Form des Display Advertisings wäre die Übereinkunft zwischen Anbieter, welcher Werbung auf der Internetseite schaltet und werbendem Unternehmen, welches pro Schaltung bezahlt. In der Praxis würde dies allerdings einen hohen Aufwand für beide Parteien bedeuten. Unternehmen müssten einen Vertrag darüber aufsetzen, welche Werbung wie oft geschaltet werden sollte und Anbieter der Werbefläche müssten sich selbst um das Darstellen der Anzeigen, als auch Tracking diverser Metriken, wie z.B. Impressionen oder Klicks, kümmern.\\
 
-Als Folge dessen entstand das sogenannte \emph{Programmatic Advertising}, welches als 'der Einsatz von Software und Automatisierung zum Kauf und Verkauf von Digital Advertising' bezeichnet wird [\cite[4]{optimity_advisors_2019}]. Dies ermöglicht eine auktionsbasierte Verteilung von Werbeschaltungen, die völlig automatisiert möglichst geeignete Anzeigen während des Ladens einer Webseite zuweist. Dies hat aber auch zur Folge, dass mehr Komponenten in die Logistik der Anzeigenschaltung involviert sind. Es entsteht die folgende Konstellation aus Abbildung 4.1:
+Als Folge dessen entstand das sogenannte \emph{Programmatic Advertising}, welches als '...the use of software and automation to buy and sell digital advertising' bezeichnet wird [\cite[4]{optimity_advisors_2019}]. Dies ermöglicht eine auktionsbasierte Verteilung von Werbeschaltungen, die völlig automatisiert möglichst geeignete Anzeigen während des Ladens einer Webseite zuweist. Dies hat aber auch zur Folge, dass mehr Komponenten in die Logistik der Anzeigenschaltung involviert sind. Es entsteht die folgende Konstellation aus Abbildung 4.1:
 
 \begin{figure}[htpb]
 	\centering
@@ -38,7 +37,7 @@ Zusätzlich dazu können Unternehmen diverse Metriken für erworbene Werbefläch
 
 Auch wenn die Einbeziehung eines Ad-Brokers den vermittelten Parteien Aufwand erspart, entstehen dadurch nicht nur Vorteile. 
 Für Anbieter von Werbeflächen entsteht der Nachteil, dass nicht das gesamte Geld des Unternehmens bei ihnen ankommt, weil der Ad-Broker gleichzeitig den Zahlungskanal darstellt. 
-Stattdessen erhalten diese 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht [\cite{google_adsense_2021}]. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker. Außerdem besitzen die vertikal Integrierten Broker wie Google oder Facebook eine hohe Marktmacht und könnten potentiell Mitbewerber durch unvorteilhafte Schaltung von Anzeigen benachteiligen. Ein letzter Wichtiger Punkt ist der fehlende Datenschutz im Programmatic Advertising. Die automatisierte Schaltung von relevanten Anzeigen ist nur deshalb möglich, weil personenbezogene Daten von Nutzern erhoben werden, was eine Verletzung von Datenschutzrichtlinien zur Folge haben könnte.
+Stattdessen erhalten diese 68\% des Umsatzes, wodurch in diesem Fall fast ein Drittel an den Ad-Broker Google geht [\cite{google_adsense_2021}]. Auf Unternehmensseite entsteht der Nachteil fehlender Transparenz, denn Zugriff auf die getrackten Metriken erhält man nur über den Ad-Broker. Außerdem besitzen die vertikal Integrierten Broker wie Google oder Facebook eine hohe Marktmacht und könnten potentiell Mitbewerber durch unvorteilhafte Schaltung von Anzeigen benachteiligen. Ein letzter Wichtiger Punkt ist der fehlende Datenschutz im Programmatic Advertising. Die automatisierte Schaltung von relevanten Anzeigen ist nur deshalb möglich, weil personenbezogene Daten von Nutzern erhoben werden, was eine Verletzung von Datenschutzrichtlinien zur Folge haben könnte. Diese werden auch über Anwendungsgrenzen hinweg gesammelt und zur Verfügung gestellt, wie es beispielsweise bei Google und Youtube der Fall ist.
 
 \subsection{Mögliche Verbesserungen mittels Blockchain-Technologie}
 Blockchain-Technologie könnte diese Probleme lösen, indem die Rahmenbedingungen für Interaktionen zwischen Anbietern und Unternehmen mittels Smart-Contracts geregelt wird. 
@@ -258,11 +257,11 @@ Folgendermaßen kann anschließend eine bedienbare Instanz des Smart-Contracts e
 									.address, ABI, provider)
 	const signedContract = contract.connect(signer);
 \end{lstlisting}
-Es wird mithilfe von ethers eine Instanz der Klasse 'Contract' erzeugt. Der Konstruktor nimmt drei Parameter entgegen:
+Es wird mithilfe von Ethers.js eine Instanz der Klasse 'Contract' erzeugt. Der Konstruktor nimmt drei Parameter entgegen:
 \begin{itemize}
 	\item Die Adresse des Smart-Contracts auf dem gewünschten Netzwerk
 	\item Die ABI, welche die Signaturen aller Funktionen enthält
 	\item Den Provider, der sich um die Kommunikation mit der Blockchain kümmert
 \end{itemize}
 Indem man den Contract mit einem Signer, also einer Wallet, verbindet, autorisiert man den Provider dazu, alle anfallenden Kosten für Transaktionen von der Wallet übernehmen zu lassen. Alle, in der ABI definierten, Funktionen sind aufrufbar und schlussendlich ist die gesamte Anwendung lauffähig.
-\section{Beantwortung der Forschungsfrage}
+
