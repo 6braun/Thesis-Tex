@@ -21,7 +21,7 @@ Antonopoulos, A.~M. (2018).
 Back, A. (2002).
 \newblock Hashcash - a denial of service counter-measure.
 \newblock \url{http://http://www.hashcash.org/papers/hashcash.pdf}. Letzter
-  Zugriff am 23.5.2021.
+  Zugriff am 23.05.2021.
 
 \bibitem[\protect\citeauthoryear{Bundeskartellamt}{Bundeskartellamt}{2018}]{bundeskartellamt_2018}
 Bundeskartellamt (2018).
@@ -39,7 +39,11 @@ Buterin, V. (2013b).
 \newblock A next generation smart contract \& decentralized application
   platform.
 \newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
-  12.4.2021.
+  12.04.2021.
+
+\bibitem[\protect\citeauthoryear{CoinMarketCap}{CoinMarketCap}{2021}]{coinmarketcap_2021}
+CoinMarketCap (2021).
+\newblock \url{https://coinmarketcap.com/}. Letzter Zugriff am 26.05.2021.
 
 \bibitem[\protect\citeauthoryear{Corbellini}{Corbellini}{2015}]{corbellini_2015}
 Corbellini, A. (2015).
@@ -48,7 +52,8 @@ Corbellini, A. (2015).
 \bibitem[\protect\citeauthoryear{Dai}{Dai}{1998}]{dai_1998}
 Dai, W. (1998).
 \newblock b-money.
-\newblock \url{http://www.weidai.com/bmoney.txt}. Letzter Zugriff am 23.5.2021.
+\newblock \url{http://www.weidai.com/bmoney.txt}. Letzter Zugriff am
+  23.05.2021.
 
 \bibitem[\protect\citeauthoryear{Dang}{Dang}{2015}]{dang_2015}
 Dang, Q.~H. (2015).
@@ -63,22 +68,42 @@ Diffie, W., M.~E. Hellman (1976).
 \newblock \url{https://ee.stanford.edu/~hellman/publications/24.pdf}. Letzter
   Zugriff am 23.05.2021.
 
+\bibitem[\protect\citeauthoryear{Ding, Luo, Xiang, Liu, Wang}{Ding
+  et~al.}{2021}]{ding_2021}
+Ding, Y., D.~Luo, H.~Xiang, W.~Liu, Y.~Wang (2021, Mar).
+\newblock Design and implementation of blockchain-based digital advertising
+  media promotion system.
+\newblock {\em Peer-to-Peer Networking and Applications\/}~{\em 14\/}(2),
+  482--496.
+
 \bibitem[\protect\citeauthoryear{Etherscan}{Etherscan}{2021}]{etherscan_2021}
 Etherscan (2021).
-\newblock \url{https://etherscan.io/gastracker}. Letzter Zugriff am 25.5.2021.
+\newblock \url{https://etherscan.io/gastracker}. Letzter Zugriff am 25.05.2021.
 
 \bibitem[\protect\citeauthoryear{Google}{Google}{2021}]{google_adsense_2021}
 Google (2021).
 \newblock Adsense revenue share.
 \newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
-  Zugriff am 12.5.2021.
+  Zugriff am 12.05.2021.
+
+\bibitem[\protect\citeauthoryear{Handelsblatt}{Handelsblatt}{2021}]{handelsblatt_2021}
+Handelsblatt (2021).
+\newblock Goldman sachs wagt den vorsichtigen einstieg in die krypto-welt.
+\newblock
+  \url{https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/digitalwaehrung-goldman-sachs-wagt-den-vorsichtigen-einstieg-in-die-krypto-welt/27171808.html?ticket=ST-4135548-FhiH0l2uzTYLjLGx6xrM-ap4}.
+  Letzter Zugriff am 26.05.2021.
 
 \bibitem[\protect\citeauthoryear{Johnson}{Johnson}{2021}]{johnson_2021}
 Johnson, J. (2021).
 \newblock Global digital population as of january 2021.
 \newblock
   \url{https://www.statista.com/statistics/617136/digital-population-worldwide/}.
-  Letzter Zugriff am 12.5.2021.
+  Letzter Zugriff am 12.05.2021.
+
+\bibitem[\protect\citeauthoryear{Kiayias, Russel, David, Oliynykov}{Kiayias
+  et~al.}{2019}]{kiayias_2019}
+Kiayias, A., A.~Russel, B.~David, R.~Oliynykov (2019).
+\newblock Ouroboros: A provably secure proof-of-stake blockchain protocol.
 
 \bibitem[\protect\citeauthoryear{Landwehr}{Landwehr}{2008}]{landwehr_2008}
 Landwehr, D. (2008).
@@ -107,7 +132,7 @@ Statista (2021).
 \newblock Online advertising revenue in the united states from 2000 to 2020.
 \newblock
   \url{https://www.statista.com/statistics/183816/us-online-advertising-revenue-since-2000/}.
-  Letzter Zugriff am 12.5.2021.
+  Letzter Zugriff am 12.05.2021.
 
 \bibitem[\protect\citeauthoryear{Turing}{Turing}{1936}]{turing_1936}
 Turing, A.~M. (1936).
@@ -118,6 +143,6 @@ Turing, A.~M. (1936).
 Wood, G. (2014).
 \newblock Ethereum: A secure decentralised generalised transaction ledger.
 \newblock \url{https://ethereum.github.io/yellowpaper/paper.pdf/}. Letzter
-  Zugriff am 20.4.2021.
+  Zugriff am 20.04.2021.
 
 \end{thebibliography}

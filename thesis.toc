@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funktionsweise von Geld}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Notwendigkeit für Blockchain-Technologie}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Vorzüge der Blockchain-Technologie}{3}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Theorie der Blockchain-Technologie am Beispiel von Bitcoin}{3}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Keys und Adressen}{4}{subsection.2.3.1}%
 \contentsline {subsubsection}{Private Keys}{5}{figure.caption.5}%
@@ -64,9 +64,8 @@
 \contentsline {subsubsection}{Truffle}{43}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Schlussteil}{44}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Diskussion der Ergebnisse}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Zusammenfassung der Kapitel}{45}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Ausblick}{45}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anhang}{46}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Anhang A}{46}{section.A.1}%
-\contentsline {chapter}{Bibliography}{48}{figure.caption.17}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{50}{chapter*.19}%
+\contentsline {section}{\numberline {5.2}Zusammenfassung}{45}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ausblick}{46}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anhang}{48}{appendix.A}%
+\contentsline {chapter}{Bibliography}{49}{figure.caption.17}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{51}{chapter*.19}%
