@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  26 MAY 2021 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  28 MAY 2021 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,35 +813,35 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 )
 Class scrbook Info: longtable captions redefined on input line 48.
  (./thesis.aux
-(./_titlepage_de.aux) (./einleitung.aux) (./bitcoin.aux) (./ethereum.aux)
-(./digital_advertising.aux) (./zusammenfassung.aux) (./appendix.aux))
+(./_titlepage_de.aux) (./abstract.aux) (./einleitung.aux) (./bitcoin.aux)
+(./ethereum.aux) (./digital_advertising.aux) (./zusammenfassung.aux)
+(./appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 55
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 56
 .
-
-(/app/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/app/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-Package scrbase Info: activating english \contentsname on input line 55.
-Package scrbase Info: activating english \listfigurename on input line 55.
-Package scrbase Info: activating english \listtablename on input line 55.
+Package scrbase Info: activating english \contentsname on input line 56.
+Package scrbase Info: activating english \listfigurename on input line 56.
+Package scrbase Info: activating english \listtablename on input line 56.
 
 (/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -903,7 +903,7 @@ e
 
 \big@size=\dimen193
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring ON on input line 55.
+Package hyperref Info: Link coloring ON on input line 56.
 (/app/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -915,9 +915,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -930,7 +930,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 55.
+(scrbook)           before \begin{document} on input line 56.
 
 (/app/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1044,42 +1044,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--90
 
  []
 
-[0]) (./thesis.toc
+[0])
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex)
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 3.
+ 65.
  (/app/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 3.
+ 65.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 3.
+ 65.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 3.
+ 65.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
+5.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1090,7 +1093,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=18.85002pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
-7.
+5.
 
 
 Overfull \vbox (0.72502pt too high) has occurred while \output is active []
@@ -1105,11 +1108,14 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{18.85002pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 67
+(scrlayer-scrpage)                I'll also increase \footskip on input line 65
 .
 
 [1
 
+
+
+] (./thesis.toc [2
 
 
 
@@ -1117,7 +1123,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [2] (./thesis.lof
+ [3] (./thesis.lof
 Overfull \hbox (1.72723pt too wide) in paragraph at lines 10--10
  [][] [][][]\T1/ptm/m/n/12 Teilnehmer tau-schen nach er-folg-rei-cher Ver-bin-d
 ung Adres-sen aus Quel- 
@@ -1127,7 +1133,7 @@ ung Adres-sen aus Quel-
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [3
+ [4
 
 
 ] (./thesis.lot)
@@ -1137,10 +1143,10 @@ ung Adres-sen aus Quel-
 \@nomenclaturefile=\write7
 \openout7 = `thesis.nlo'.
 
-Package nomencl Info: Writing nomenclature file thesis.nlo on input line 77.
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 78.
 
 No file thesis.nls.
-[4
+[5
 
 
 ]
@@ -1193,154 +1199,168 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
-<images/public_and_private_key.png, id=198, 311.7246pt x 75.8835pt>
+[4]
+<images/public_and_private_key.png, id=219, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
-47.
+52.
 (pdftex.def)             Requested size: 426.79134pt x 103.8949pt.
 
-Overfull \hbox (5.85347pt too wide) in paragraph at lines 41--52
+Overfull \hbox (5.85347pt too wide) in paragraph at lines 46--57
 \T1/ptm/m/n/12 kön-nen. Au-ÿer-dem kann auf-grund der ma-the-ma-ti-schen Ab-hän
 -gig-keit zwi-schen den Schlüs-
  []
 
-[4]
-<images/elliptic_graph_cryptography.png, id=212, 580.1675pt x 581.17125pt>
-File: images/elliptic_graph_cryptography.png Graphic file (type png)
-<use images/elliptic_graph_cryptography.png>
-Package pdftex.def Info: images/elliptic_graph_cryptography.png  used on input 
-line 61.
-(pdftex.def)             Requested size: 298.75262pt x 299.26663pt.
- [5 <./images/public_and_private_key.png>] [6 <./images/elliptic_graph_cryptogr
-aphy.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 7
-6.
- (/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-[7] [8]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-6.
- (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [9]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
- [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 194--198
+[5 <./images/public_and_private_key.png>]
+<images/elliptic_curve_cryptography.png, id=231, 216.81pt x 217.5327pt>
+File: images/elliptic_curve_cryptography.png Graphic file (type png)
+<use images/elliptic_curve_cryptography.png>
+Package pdftex.def Info: images/elliptic_curve_cryptography.png  used on input 
+line 66.
+(pdftex.def)             Requested size: 298.75262pt x 299.78716pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--70
 
  []
 
-<images/non_det_wallet.png, id=303, 321.2pt x 201.75375pt>
+[6 <./images/elliptic_curve_cryptography.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+2.
+
+(/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [7] [8]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
+2.
+
+(/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [9] [10]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
+
+ []
+
+<images/non_det_wallet.png, id=320, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
-Package pdftex.def Info: images/non_det_wallet.png  used on input line 203.
+Package pdftex.def Info: images/non_det_wallet.png  used on input line 209.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
-[12 <./images/non_det_wallet.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<images/bip32_wallet.png, id=315, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=331, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
-Package pdftex.def Info: images/bip32_wallet.png  used on input line 218.
+Package pdftex.def Info: images/bip32_wallet.png  used on input line 224.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
-[13 <./images/bip32_wallet.png>]
-<images/UTXO.png, id=325, 603.25375pt x 439.6425pt>
+[13 <./images/non_det_wallet.png>]
+<images/UTXO.png, id=338, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
-Package pdftex.def Info: images/UTXO.png  used on input line 231.
+Package pdftex.def Info: images/UTXO.png  used on input line 237.
 (pdftex.def)             Requested size: 298.75262pt x 217.72098pt.
- [14 <./images/UTXO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+ [14 <./images/bip32_wallet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[15]
-Overfull \hbox (0.88474pt too wide) in paragraph at lines 268--269
+[15 <./images/UTXO.png>] [16]
+Overfull \hbox (0.88474pt too wide) in paragraph at lines 274--275
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-<images/adress_query.png, id=338, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=356, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
-Package pdftex.def Info: images/adress_query.png  used on input line 281.
+Package pdftex.def Info: images/adress_query.png  used on input line 287.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
-[16]
-<images/chain.png, id=345, 322.20375pt x 101.37875pt>
+<images/chain.png, id=359, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
-Package pdftex.def Info: images/chain.png  used on input line 294.
+Package pdftex.def Info: images/chain.png  used on input line 300.
 (pdftex.def)             Requested size: 213.39566pt x 67.1453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--299
+Underfull \hbox (badness 10000) in paragraph at lines 295--305
 
  []
 
-[17 <./images/adress_query.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+[17] [18 <./images/adress_query.png> <./images/chain.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
-[18 <./images/chain.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 323--327
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
 
  []
 
-<images/merkle.png, id=372, 348.3414pt x 173.2071pt>
+<images/merkle.png, id=373, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
-Package pdftex.def Info: images/merkle.png  used on input line 331.
+Package pdftex.def Info: images/merkle.png  used on input line 337.
 (pdftex.def)             Requested size: 298.75262pt x 148.5614pt.
-[19 <./images/merkle.png>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 361--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+[19] [20 <./images/merkle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 367--376
 
  []
 
 [21]
-<images/chains.png, id=388, 654.445pt x 302.12875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 377--380
+
+ []
+
+<images/chains.png, id=403, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
-Package pdftex.def Info: images/chains.png  used on input line 378.
+Package pdftex.def Info: images/chains.png  used on input line 384.
 (pdftex.def)             Requested size: 298.75262pt x 137.92058pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--386
+Underfull \hbox (badness 10000) in paragraph at lines 381--392
 
  []
 
 [22 <./images/chains.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
 
  []
 
-) [23]
+[23]) [24]
 \openout2 = `ethereum.aux'.
 
  (./ethereum.tex
@@ -1361,7 +1381,7 @@ Overfull \hbox (0.82468pt too wide) in paragraph at lines 15--16
 unt Ba-sed Mo-del \T1/ptm/m/n/12 zum Ein-satz. Je-de Adres-
  []
 
-[24
+[25
 
 
 
@@ -1371,7 +1391,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
@@ -1381,8 +1401,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-[26]
-<images/evm_simple.png, id=439, 804.00375pt x 412.54124pt>
+[27]
+<images/evm_simple.png, id=457, 804.00375pt x 412.54124pt>
 File: images/evm_simple.png Graphic file (type png)
 <use images/evm_simple.png>
 Package pdftex.def Info: images/evm_simple.png  used on input line 52.
@@ -1392,7 +1412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--57
 
  []
 
-[27] [28 <./images/evm_simple.png>] [29]) [30]
+[28] [29 <./images/evm_simple.png>] [30]) [31]
 \openout2 = `digital_advertising.aux'.
 
  (./digital_advertising.tex
@@ -1403,59 +1423,59 @@ Overfull \hbox (28.13672pt too wide) in paragraph at lines 2--7
  Eig-nung von Blockchain-Technologie
  []
 
-[31
+[32
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<images/programmatic_advertising.png, id=505, 723.70375pt x 61.22874pt>
+<images/programmatic_advertising.png, id=524, 723.70375pt x 61.22874pt>
 File: images/programmatic_advertising.png Graphic file (type png)
 <use images/programmatic_advertising.png>
 Package pdftex.def Info: images/programmatic_advertising.png  used on input lin
-e 26.
+e 25.
 (pdftex.def)             Requested size: 426.79134pt x 36.10875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-[32 <./images/programmatic_advertising.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+[33 <./images/programmatic_advertising.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-[33]
-<images/aufbau_PoC.png, id=526, 563.10374pt x 327.2225pt>
+[34]
+<images/aufbau_PoC.png, id=544, 563.10374pt x 327.2225pt>
 File: images/aufbau_PoC.png Graphic file (type png)
 <use images/aufbau_PoC.png>
-Package pdftex.def Info: images/aufbau_PoC.png  used on input line 52.
+Package pdftex.def Info: images/aufbau_PoC.png  used on input line 51.
 (pdftex.def)             Requested size: 426.79134pt x 248.01263pt.
- [34 <./images/aufbau_PoC.png>] [35]
-Overfull \hbox (19.97227pt too wide) in paragraph at lines 103--104
+ [35 <./images/aufbau_PoC.png>] [36]
+Overfull \hbox (19.97227pt too wide) in paragraph at lines 102--103
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[36]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 123--124
+[37]
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 122--123
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37] [38]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 166--167
+[38] [39]
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 165--166
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39] [40] [41] [42]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 256--257
+[40] [41] [42] [43]
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 255--256
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [43]
+) [44]
 \openout2 = `zusammenfassung.aux'.
 
  (./zusammenfassung.tex
@@ -1470,7 +1490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
-[44
+[45
 
 
 
@@ -1495,22 +1515,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[45]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[46]) [47]
+[47]) [48]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=737, 347.8596pt x 478.4274pt>
+<images/evm_full.png, id=756, 347.8596pt x 478.4274pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 6.
 (pdftex.def)             Requested size: 341.43436pt x 469.60757pt.
-) [48
+) [49
 
 
 
@@ -1563,7 +1583,7 @@ Underfull \hbox (badness 5475) in paragraph at lines 90--95
 ]ap4$[][]. Letz-ter Zu-griff
  []
 
-[49
+[50
 
 
 
@@ -1576,23 +1596,23 @@ g com-ple-ten-ess and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 138--143
 [][]$\T1/ptm/m/n/12 https : / / www . statista . com / statistics / 183816 / us
 -[]online-[]advertising-[]revenue-[]since-[]2000/$[][].
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 138--141
+Underfull \hbox (badness 3148) in paragraph at lines 145--148
 []\T1/ptm/m/n/12 Turing, A. M. (1936).  On com-pu-ta-ble num-bers with an ap-p-
 li-ca-ti-on to the
  []
 
-) [50] (./_declaration_de.tex [51
+) [51] (./_declaration_de.tex [52
 
 
 
 
-] [52
+] [53
 
 
 
@@ -1601,8 +1621,8 @@ li-ca-ti-on to the
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (./thesis.aux (./_titlepage_de.aux)
-(./einleitung.aux) (./bitcoin.aux) (./ethereum.aux) (./digital_advertising.aux)
-(./zusammenfassung.aux) (./appendix.aux))
+(./abstract.aux) (./einleitung.aux) (./bitcoin.aux) (./ethereum.aux)
+(./digital_advertising.aux) (./zusammenfassung.aux) (./appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1610,13 +1630,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 18290 strings out of 480608
- 331969 string characters out of 5905076
- 917453 words of memory out of 5000000
- 33362 multiletter control sequences out of 15000+600000
+ 18312 strings out of 480608
+ 332286 string characters out of 5905076
+ 916453 words of memory out of 5000000
+ 33372 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,22n,115p,10101b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,21n,115p,10101b,1986s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -1625,10 +1645,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (58 pages, 667002 bytes).
+Output written on thesis.pdf (60 pages, 709568 bytes).
 PDF statistics:
- 1017 PDF objects out of 1200 (max. 8388607)
- 913 compressed objects within 10 object streams
- 373 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1043 PDF objects out of 1200 (max. 8388607)
+ 937 compressed objects within 10 object streams
+ 378 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

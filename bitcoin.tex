@@ -1,7 +1,7 @@
 \chapter{Blockchain 1.0 - Wie Bitcoin funktioniert}
 Mit Fortschritt im Bereich Kryptographie begann auch das Interesse von Forschern an digitalen Währungen. 
 Das Problem dieser frühen Projekte bestand jedoch darin, dass sie einen sogenannten \emph{Central Point of Failure}, also eine zentralisierte Schwachstelle besaßen. 
-Beispielsweise könnten die Konten von Nutzern zwar kryptografisch gesichert, jedoch von zentralen Stellen wie Banken verwaltet werden müssen.
+Beispielsweise könnten die Konten von Nutzern zwar kryptografisch gesichert sein, jedoch von zentralen Stellen wie Banken verwaltet werden müssen.
 Ein wichtiges Problem, welches es mithilfe eines neuartigen Geldsystems zu lösen gilt, ist das sogenannte \emph{Double Spending Problem}. Es muss durch gewisse Mechanismen verhindert werden, dass bösartige Akteure die selben Geldwerte für mehrere Transaktionen verwenden. Bei physischem Geld, also Geldscheinen, Münzen, etc. verhindern komplexe Drucktechniken die Verbreitung von Falschgeld und dadurch dass ein Geldschein nur einmal existieren kann, ist dieser nur für eine Transaktion zu verwenden.
 Versucht man nun diese Geldwerte gänzlich digital zu verwalten, so liegt die Verantwortung für eine korrekte Beobachtung und Verwaltung bei einer zentralen Stelle wie einer Bank. Diese könnte als Angriffsstelle für Antagonisten dienen und stellt somit eine Gefahr für das System dar.
 Dieses Kapitel beschäftigt sich mit der traditionellen Funktionsweise von Geld und wie mithilfe eines dezentralen Systems ein zentraler Fehlerpunkt vermieden werden kann. 
@@ -19,14 +19,19 @@ Papiergeld hingegen bietet abseits des Tauschgeschäftes keinen Nutzen für den 
 Eine weitere wichtige Rolle im Finanzsystem nehmen Zentralbanken ein. Sie überwachen das Bankensystem und steuern über eine geeignete Geldpolitik das Geldangebot auf dem Markt.
 Durch das Drucken von Geld und den anschließenden Kauf von Wertpapieren können sie das Geldangebot erhöhen. Um es wiederum zu verringern, verkaufen sie Wertpapiere und nehmen das erhaltene Geld aus dem Umlauf.\\
 
-Eine Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat drei technische Anforderungen zu erfüllen:
+\section{Dezentralisierung mittels Blockchain-Technologie}
+So wie die Einflussnahme von Zentralbanken auf das Bankensystem Stabilität bringen kann, ist ein gegenteiliger Effekt ebenfalls möglich. Ein Beispiel dafür ist die Zentralbank des Landes Venezuela, dessen drastisches Erhöhen ihres Geldangebots zu einer Inflationsrate von 65 374\% im Jahr 2018 führte \cite{statista_inflation_2021}. Auch im Kontext kleinerer Banken, bei denen Menschen normalerweise ihr Geld lagern, zeichnen sich mögliche Probleme auf, denn diese haben die Verfügungsmacht über Guthaben ihrer Kunden. Sie sind in der Lage Konten einzufrieren oder auch Kosten für Überweisungen zu erheben und haben zu jedem Zeitpunkt Einblick in die Konten ihrer Kunden, inklusive getätigter Überweisungen. Durch das Abwickeln der Transaktionen stellen Banken sicher, dass ein Konsens im Finanzsystem herrscht.\\
+
+Blockchain-Technologie hingegen ermöglicht es, in einem dezentralen System einen Konsens zu schaffen. Diese Innovation kann dafür verwendet werden, um digitale Zahlungsmittel ohne zentrale Verwaltungsstelle wie Zentralbanken zu entwickeln.\\
+
+Eine digitale Währung, die zum Verwalten und Versenden von monetärem Wert dient, hat laut \cite{antanopoulos_2014} drei technische Anforderungen zu erfüllen:
 \begin{enumerate}
 	\item Sicherstellung des Wertes, also die Authentizität
 	\item Garantie dafür, dass die selbe Währung nicht mehr als einmal verwendet werden kann (Double Spending)
 	\item Zugang zur Währung nur für befugten Besitzer
 \end{enumerate}
-TODO
-\section{Vorzüge der Blockchain-Technologie}
+
+Im folgenden Unterkapitel werden die technische Umsetzung dieser Anforderungen am Beispiel von Bitcoin untersucht.
 \section{Theorie der Blockchain-Technologie am Beispiel von Bitcoin}
 Auch wenn es andere Projekte für dezentrale Währungen wie B-Money [\cite{dai_1998}] und Hashcash [\cite{back_2002}] gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers  [\cite{nakamoto_whitepaper_2008}]. Diese Publikation trägt den Titel \emph{Bitcoin: A Peer to peer Electronic Cash System}, wurde von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzern des Bitcoin-Protokolls. Außerdem werden Vermögenswerte nicht durch klassische Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger}, impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteure und jeder Akteur im Netzwerk hat Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang für Nutzer, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteure im Netzwerk zu einem gemeinsamen Konsens kommen.
 \subsection{Keys und Adressen}
@@ -36,7 +41,7 @@ Kryptographische Verfahren folgten zu der Zeit dem Prinzip \emph{Security by Obs
 Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code durch die Anstrengungen polnischer und später englischer Wissenschaftler um Alan Turing unschädlich gemacht werden konnte [\cite{landwehr_2008}: 18/19].\\
 
 Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt [vgl. \cite{diffie_hellman_1976}]. 
-Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf \cite{antanopoulos_2014} und ziehen, wo es nötig ist, zusätzliche Quellen hinzu.\\
+Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf \cite{antanopoulos_2014} und ziehen, wo es nötig ist, zusätzliche Literatur hinzu.\\
 
 Für Bitcoin wird ein Paar aus Schlüsseln erzeugt. 
 Dieses Paar besteht aus dem privaten Schlüssel (Private Key), welcher nur dem Besitzer bekannt ist und zum Signieren von Transaktionen nötig ist.
@@ -58,11 +63,12 @@ Um einen öffentlichen Schlüssel aus dem privaten generieren zu können, benöt
 Das vom Bitcoin-Protokol verwendete Verfahren wird \emph{Elliptic Curve Cryptography} gennant und bedient sich an den Eigenschaften einer Ellipse. Die im Bitcoin-Protokoll verwendete Ellipse trägt den Namen \emph{secp256k1} und hat die, in Abbildung 2.2 vorgestellte, Form:
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.7\textwidth]{images/elliptic_graph_cryptography.png}
-	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\TODO: Bessere Grafik}
+	\includegraphics[width=0.7\textwidth]{images/elliptic_curve_cryptography.png}
+	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\Quelle: \cite[64]{antanopoulos_2014}}
 	\label{6braun:fig:ellipse}
-\end{figure}
-Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt, auf der Ellipse und multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse und erhält somit 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
+\end{figure}\\
+
+Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt \emph{G}, auf der Ellipse und multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse und erhält somit 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
 
 \subsubsection{Bitcoin Adressen}
 Eine Adresse ist ein aus dem öffentlichen Schlüssel generierter String aus Buchstaben und Zahlen, der den Besitzer des Schlüssels zu einem potentiellen Empfänger einer Transaktion macht. Beim diesem muss es sich allerdings nicht zwangsläufig um eine Person handeln, denn auch Organisationen, geschriebene Skripte, etc. kommen als \emph{abstrakter} Empfänger in Frage.
@@ -91,7 +97,7 @@ Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operatio
 		\\\midrule
 		Rotation Right  & Verschiebung der Bits um n Stellen nach rechts. Bei Overflow werden Bits wieder vorne angefügt. Beispiel: $$ROTR_1(011) = 101$$
 		\\\midrule
-		Shift Right  & Ähnlich wie die Rotation, nur dass Bits an letzter Stelle wegfallen und eine Nullen vorne angefügt werden. Beispiel: $$SHR_1(011) = 001$$
+		Shift Right  & Ähnlich wie die Rotation, nur dass n Bits an letzter Stelle wegfallen und stattdessen Nullen vorne angefügt werden. Beispiel: $$SHR_1(011) = 001$$
 		\\\midrule
 		Choice  & Nimmt drei Zahlen gleicher Länge entgegen und entscheidet anhand der Bits des ersten Parameters, welches Bit der jeweils anderen Parameter übernommen werden soll. $$Ch(x,y,z) = (x \land y)\oplus(\lnot x \land z)$$
 		Beispiel: $Ch(110,001,101) = 001$
@@ -112,7 +118,7 @@ Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operatio
 \end{longtable}
 Außerdem müssen noch zwei Listen mit Konstanten definiert werden. Die Liste K beinhaltet die ersten 32 Bit der Nachkommastellen der Kubikwurzeln der ersten 64 Primzahlen.
 H die ersten 32 Bit der Nachkommastellen der Quadratwurzeln der ersten 8 Primzahlen. 
-Die genauen Werte haben keine sonderliche Bedeutung, sondern lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine absichtlich platzierte Schwachstelle im Algorithmus.
+Die genauen Werte haben keine sonderliche Bedeutung, lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine absichtlich platzierte Schwachstelle im Algorithmus.
 \begin{lstlisting}[caption={Liste K von Konstanten},captionpos=b]
 	428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 
 	ab1c5ed5 d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 
@@ -205,7 +211,7 @@ Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur 
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:non-deterministic_wallet}
 \end{figure}\\
-Die fortgeschrittenste Form einer deterministischen ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem) [\cite{antanopoulos_2014}].
+Die fortgeschrittenste Form eines deterministischen Beispiels ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem) [\cite{antanopoulos_2014}].
 Diese werden in \cite{buterin_2013} als \emph{Master Public Key Property} und \emph{Hierarchy Property} bezeichnet.
 Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man den sogenannten Offsets, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
 $$offset = SHA256(index + masterPubKey)$$
@@ -356,7 +362,7 @@ Einen neuen Block zu erstellen ist für Miner aus zwei Gründen attraktiv:
 \item Sie dürfen die sogenannte \emph{Coinbase Transaction} selbst an den Anfang der gelisteten Transaktionen einfügen
 \end{itemize}
 Das besondere an dieser Transaktion ist, dass sie keine UTXO konsumiert, sondern dem Empfänger neu-generierte Bitcoin ausstellt. Sie augmentiert also nicht das UTXO-Set, sondern erweitert es durch neue Outputs.
-Nachdem Miner eine Liste von Transaktionen inklusive Coinbase angelegt haben, konstruieren sie den Block Header bestehend aus Version, Hash des Vorgängerblocks, Wurzel aus dem Merkle-Tree, Zeitstempel, sowie Target und Nonce, die beim Mining eine Rolle spielen, erstellen.
+Nachdem Miner eine Liste von Transaktionen inklusive Coinbase angelegt haben, konstruieren sie den Block Header bestehend aus Version, Hash des Vorgängerblocks, Wurzel aus dem Merkle-Tree, Zeitstempel, sowie Target und Nonce, die beim Mining eine Rolle spielen.
 \subsubsection{Mining}
 Das Bitcoin-Protokoll ist so konzipiert, dass neue Blöcke in Intervallen von ca. 10 Minuten hinzugefügt werden. 
 Um dem Anstieg an Rechenleistung vorzubeugen (man denke an Moore's Law), besitzt das Protokoll die Variable 'Target' als einen eingebauten Schwierigkeitsregler, der je nach Bedarf angepasst werden kann.
@@ -376,7 +382,7 @@ Nachdem ein Teilnehmer des Netzwerkes einen neuen Block validiert hat, muss er d
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/chains.png}
-	\caption{Anordnung der Blöcke in einer Kette\\
+	\caption{Mögliche Szenarien für einen neuen Block\\
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chains}
 \end{figure}\\
@@ -384,7 +390,9 @@ Das erste Szenario ist das Erweitern der Mainchain, also der längsten Kette, un
 Die zweite Möglichkeit besteht darin, dass der neue Block an einem inneren Block ansetzt und es dadurch zu einer Verzweigung, also einer neuen Sidechain kommt (hier 201B). Auch wenn dies im ersten Moment unnötig wirkt, werden die Sidechains angesammelt und bei jedem neuen Block mit der Mainchain verglichen, sodass sie, falls mehr Blöcke in diesen enthalten sind, zur neuen Mainchain werden.
 Die dritte und letzte Möglichkeit für neue Blöcke (abgesehen von invaliden Blöcken, die verworfen werden) sind sogenannte \emph{Orphans}, also verwaiste Blöcke. Diese referenzieren einen Eltern-Block, der unbekannt ist, weshalb sie bis zur Veröffentlichung dessen in einem Pool gehalten werden. Dies kann dann der Fall sein, wenn Eltern- und Kind-Block in kurzer Zeit hintereinander gefunden werden und als Folge dessen bei manchen Teilnehmern in umgekehrter Reihenfolge ankommen. Auch wenn es in Folge des Minings zu Verzweigungen kommt, finden die Teilnehmer im Netzwerk immer einen gemeinsamen Konsens, indem sie der längsten Validen Kette, die am meisten Proof-of-Work 'angesammelt' hat, folgen. Miner konzentrieren sich dann darauf, für diese Kette neue Blöcke zu finden.\\
 
-Wenn zwei Miner, die man auch als Kontrahenten in einem Wettkampf sehen kann, in relativ kurzer Zeit jeweils einen neuen Block finden, kann es zu einem sogenannten \emph{Fork} kommen. Beide propagieren ihren gefundenen Block als neuen Kopf der längsten Chain und nehmen den Block des Gegners in einer Sidechain auf. Abhängig davon, welchen Block sie zuerst erhalten, folgen die anderen Teilnehmer dem Sender des ersten Blocks und geben ihm ihr Stimmrecht. Selbst bei einer gleichmäßigen Verteilung des Stimmrechts findet sich nach weiteren Generationen schließlich die Wahre Mainchain, da das gleichzeitigen Blöcken relativ selten ist.
+Wenn zwei Miner, die man auch als Kontrahenten in einem Wettkampf sehen kann, in relativ kurzer Zeit jeweils einen neuen Block finden, kann es zu einem sogenannten \emph{Fork} kommen. 
+Beide propagieren ihren gefundenen Block als neuen Kopf der längsten Chain und nehmen den Block des Gegners in einer Sidechain auf. Abhängig davon, welchen Block sie zuerst erhalten, folgen die anderen Teilnehmer dem Sender des ersten Blocks und geben ihm ihr Stimmrecht. 
+Selbst bei einer gleichmäßigen Verteilung des Stimmrechts findet sich nach weiteren Generationen schließlich die wahre Mainchain, da gleichzeitig entdeckte Blöcke relativ selten ist.
 Eine zweite Möglichkeit für Forks sind sogenannte \emph{Hard Forks}, bei denen man eine Sidechain in dem Wissen weiterführt, dass sie nie zur Mainchain wird. Dies kann beispielsweise der Fall sein, wenn eine Gruppe von Teilnehmern nicht mit der Funktionsweise des Protokolls zufrieden sind und eine erweiterte Blockgröße fordern, um mehr Transaktionen zuzulassen. Man schreibt also ein neues Protokoll, welches eine Sidechain fortführt und von den daran interessierten Nutzern genutzt wird. Dies war der Hintergrund zur Entstehung von \emph{Bitcoin Cash}.
 \subsection{Angriff auf das Netzwerk}
 Um einen bösartigen Angriff auf das dezentrale System ausüben zu können, muss man 51\% der dem Netzwerk zur Verfügung stehenden Rechenleistung besitzen. Ist dieser Umstand gegeben, haben Angreifer folgende Optionen:
