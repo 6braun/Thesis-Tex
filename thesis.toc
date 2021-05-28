@@ -5,8 +5,6 @@
 \contentsline {chapter}{Abbildungsverzeichnis}{iv}{chapter*.3}%
 \contentsline {chapter}{Tabellenverzeichnis}{v}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Problemstellung}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Struktur der Arbeit}{1}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funktionsweise von Geld}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Dezentralisierung mittels Blockchain-Technologie}{3}{section.2.2}%

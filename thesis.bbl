@@ -134,6 +134,13 @@ O'Neill, A. (2021).
   \url{https://www.statista.com/statistics/371895/inflation-rate-in-venezuela/}.
   Letzter Zugriff am 27.05.2021.
 
+\bibitem[\protect\citeauthoryear{Statista}{Statista}{2020}]{statista_internetnutzung_2020}
+Statista (2020).
+\newblock Statistiken zur internetnutzung in deutschland.
+\newblock
+  \url{https://de.statista.com/themen/2033/internetnutzung-in-deutschland/}.
+  Letzter Zugriff am 28.05.2021.
+
 \bibitem[\protect\citeauthoryear{Statista}{Statista}{2021}]{statista_online_advertisement_revenue_2021}
 Statista (2021).
 \newblock Online advertising revenue in the united states from 2000 to 2020.
@@ -141,10 +148,24 @@ Statista (2021).
   \url{https://www.statista.com/statistics/183816/us-online-advertising-revenue-since-2000/}.
   Letzter Zugriff am 12.05.2021.
 
+\bibitem[\protect\citeauthoryear{Tagesspiegel}{Tagesspiegel}{2016}]{tagesspiegel_2016}
+Tagesspiegel, D. (2016).
+\newblock "der gebildete mensch sagt nur persil".
+\newblock
+  \url{https://www.tagesspiegel.de/gesellschaft/medien/60-jahre-tv-werbung-der-gebildete-mensch-sagt-nur-persil/14784486.html}.
+  Letzter Zugriff am 28.05.2021.
+
 \bibitem[\protect\citeauthoryear{Turing}{Turing}{1936}]{turing_1936}
 Turing, A.~M. (1936).
 \newblock On computable numbers with an application to the
   entscheidungsproblem.
+
+\bibitem[\protect\citeauthoryear{Weidenbach}{Weidenbach}{2020}]{statista_werbung_2020}
+Weidenbach, B. (2020).
+\newblock Statistiken zum thema werbung.
+\newblock
+  \url{https://de.statista.com/themen/93/werbung/#dossierSummary__chapter1}.
+  Letzter Zugriff am 28.05.2021.
 
 \bibitem[\protect\citeauthoryear{Wood}{Wood}{2014}]{wood_yellowpaper_2014}
 Wood, G. (2014).
