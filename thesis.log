@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  29 MAY 2021 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  29 MAY 2021 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,30 +818,30 @@ Class scrbook Info: longtable captions redefined on input line 48.
 (./appendix.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 56
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 55
 .
  (/app/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-Package scrbase Info: activating english \contentsname on input line 56.
-Package scrbase Info: activating english \listfigurename on input line 56.
-Package scrbase Info: activating english \listtablename on input line 56.
+Package scrbase Info: activating english \contentsname on input line 55.
+Package scrbase Info: activating english \listfigurename on input line 55.
+Package scrbase Info: activating english \listtablename on input line 55.
 
 (/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -903,7 +903,7 @@ e
 
 \big@size=\dimen193
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 55.
 (/app/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -915,9 +915,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -930,7 +930,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 56.
+(scrbook)           before \begin{document} on input line 55.
 
 (/app/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1049,40 +1049,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--90
 
  (./abstract.tex)
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 65.
+ 64.
  (/app/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 65.
+ 64.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 65.
+ 64.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 65.
+ 64.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
-5.
+4.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1093,7 +1093,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=18.85002pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
-5.
+4.
 
 
 Overfull \vbox (0.72502pt too high) has occurred while \output is active []
@@ -1108,7 +1108,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                e.g., using
 (scrlayer-scrpage)                  \setlength{\footheight}{18.85002pt}
 (scrlayer-scrpage)                in your preamble.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 65
+(scrlayer-scrpage)                I'll also increase \footskip on input line 64
 .
 
 [1
@@ -1123,13 +1123,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [3] (./thesis.lof
-Overfull \hbox (1.72723pt too wide) in paragraph at lines 10--10
- [][] [][][]\T1/ptm/m/n/12 Teilnehmer tau-schen nach er-folg-rei-cher Ver-bin-d
-ung Adres-sen aus Quel- 
- []
-
-)
+ [3] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -1143,7 +1137,7 @@ ung Adres-sen aus Quel-
 \@nomenclaturefile=\write7
 \openout7 = `thesis.nlo'.
 
-Package nomencl Info: Writing nomenclature file thesis.nlo on input line 78.
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 77.
 
 No file thesis.nls.
 [5
@@ -1260,20 +1254,16 @@ File: images/elliptic_curve_cryptography.png Graphic file (type png)
 Package pdftex.def Info: images/elliptic_curve_cryptography.png  used on input 
 line 66.
 (pdftex.def)             Requested size: 298.75262pt x 299.78716pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--70
-
- []
-
-[6]
+ [6 <./images/elliptic_curve_cryptography.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
 2.
  (/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [7 <./images/elliptic_curve_cryptography.png>] [8]
+) [7] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
 2.
- (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+(/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9] [10]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -1287,7 +1277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
-<images/non_det_wallet.png, id=328, 321.2pt x 201.75375pt>
+<images/non_det_wallet.png, id=329, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
 Package pdftex.def Info: images/non_det_wallet.png  used on input line 209.
@@ -1297,23 +1287,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-[13 <./images/non_det_wallet.png>]
-<images/bip32_wallet.png, id=346, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=340, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
 Package pdftex.def Info: images/bip32_wallet.png  used on input line 224.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
+[13 <./images/non_det_wallet.png>]
 <images/UTXO.png, id=347, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
 Package pdftex.def Info: images/UTXO.png  used on input line 237.
 (pdftex.def)             Requested size: 298.75262pt x 217.72098pt.
- [14 <./images/bip32_wallet.png>] [15 <./images/UTXO.png>]
+ [14 <./images/bip32_wallet.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[16]
+[15 <./images/UTXO.png>] [16]
 Overfull \hbox (0.88474pt too wide) in paragraph at lines 274--275
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
@@ -1327,56 +1317,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 <images/adress_query.png, id=365, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
-Package pdftex.def Info: images/adress_query.png  used on input line 287.
+Package pdftex.def Info: images/adress_query.png  used on input line 286.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
-[17]
-<images/chain.png, id=372, 322.20375pt x 101.37875pt>
+[17 <./images/adress_query.png>]
+<images/chain.png, id=373, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
-Package pdftex.def Info: images/chain.png  used on input line 300.
+Package pdftex.def Info: images/chain.png  used on input line 301.
 (pdftex.def)             Requested size: 213.39566pt x 67.1453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--305
-
- []
-
-[18 <./images/adress_query.png> <./images/chain.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 296--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--333
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
+
+ []
+
+[18 <./images/chain.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--334
 
  []
 
 <images/merkle.png, id=380, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
-Package pdftex.def Info: images/merkle.png  used on input line 337.
-(pdftex.def)             Requested size: 298.75262pt x 148.5614pt.
+Package pdftex.def Info: images/merkle.png  used on input line 340.
+(pdftex.def)             Requested size: 426.79134pt x 212.23209pt.
 [19] [20 <./images/merkle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 367--376
+Underfull \hbox (badness 10000) in paragraph at lines 368--377
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 377--380
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
 
  []
 
 <images/chains.png, id=412, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
-Package pdftex.def Info: images/chains.png  used on input line 384.
-(pdftex.def)             Requested size: 298.75262pt x 137.92058pt.
+Package pdftex.def Info: images/chains.png  used on input line 385.
+(pdftex.def)             Requested size: 384.10959pt x 177.32777pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--392
+Underfull \hbox (badness 10000) in paragraph at lines 382--393
 
  []
 
-[22] [23 <./images/chains.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+[22 <./images/chains.png>] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
@@ -1421,34 +1416,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-[27]
-<images/evm_simple.png, id=466, 804.00375pt x 412.54124pt>
+[27] [28]
+<images/evm_simple.png, id=470, 824.07875pt x 412.54124pt>
 File: images/evm_simple.png Graphic file (type png)
 <use images/evm_simple.png>
 Package pdftex.def Info: images/evm_simple.png  used on input line 52.
-(pdftex.def)             Requested size: 426.79134pt x 218.98573pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--57
-
- []
-
-[28] [29 <./images/evm_simple.png>] [30]) [31]
+(pdftex.def)             Requested size: 426.79134pt x 213.65399pt.
+ [29 <./images/evm_simple.png>] [30]) [31] [32]
 \openout2 = `digital_advertising.aux'.
 
- (./digital_advertising.tex
+
+(./digital_advertising.tex
 chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[32
+[33
 
 
 
 
 ]
-<images/programmatic_advertising.png, id=533, 723.70375pt x 61.22874pt>
+<images/programmatic_advertising.png, id=537, 723.70375pt x 61.22874pt>
 File: images/programmatic_advertising.png Graphic file (type png)
 <use images/programmatic_advertising.png>
 Package pdftex.def Info: images/programmatic_advertising.png  used on input lin
@@ -1459,93 +1450,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[33 <./images/programmatic_advertising.png>]
+[34 <./images/programmatic_advertising.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[34]
-<images/aufbau_PoC.png, id=554, 563.10374pt x 327.2225pt>
+[35]
+<images/aufbau_PoC.png, id=558, 563.10374pt x 327.2225pt>
 File: images/aufbau_PoC.png Graphic file (type png)
 <use images/aufbau_PoC.png>
 Package pdftex.def Info: images/aufbau_PoC.png  used on input line 50.
 (pdftex.def)             Requested size: 426.79134pt x 248.01263pt.
- [35 <./images/aufbau_PoC.png>] [36]
+ [36 <./images/aufbau_PoC.png>] [37]
 Overfull \hbox (19.97227pt too wide) in paragraph at lines 101--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37]
+[38]
 Overfull \hbox (0.26212pt too wide) in paragraph at lines 121--122
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[38] [39]
+[39] [40]
 Overfull \hbox (0.26212pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[40] [41] [42] [43]
+[41] [42] [43] [44]
 Overfull \hbox (0.26212pt too wide) in paragraph at lines 254--255
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [44]
+) [45]
 \openout2 = `zusammenfassung.aux'.
 
  (./zusammenfassung.tex
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[45
+[46
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--20
+Underfull \hbox (badness 10000) in paragraph at lines 13--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-[47]) [48]
+[48]) [49]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=767, 347.8596pt x 478.4274pt>
+<images/evm_full.png, id=771, 347.8596pt x 478.4274pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 6.
 (pdftex.def)             Requested size: 341.43436pt x 469.60757pt.
-) [49
+) [50
 
 
 
@@ -1598,7 +1589,7 @@ Underfull \hbox (badness 5475) in paragraph at lines 90--95
 ]ap4$[][]. Letz-ter Zu-griff
  []
 
-[50
+[51
 
 
 
@@ -1628,36 +1619,36 @@ Underfull \hbox (badness 3148) in paragraph at lines 159--162
 li-ca-ti-on to the
  []
 
-) [51] (./_declaration_de.tex [52
+) [52] (./_declaration_de.tex [53
 
 
 
 
-] [53
+] [54
 
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./thesis.aux (./_titlepage_de.aux)
 (./abstract.aux) (./einleitung.aux) (./bitcoin.aux) (./ethereum.aux)
 (./digital_advertising.aux) (./zusammenfassung.aux) (./appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 18324 strings out of 480608
- 332664 string characters out of 5905076
+ 18325 strings out of 480608
+ 332671 string characters out of 5905076
  915649 words of memory out of 5000000
  33383 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,21n,115p,10101b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,21n,115p,10101b,1982s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -1666,10 +1657,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (60 pages, 713062 bytes).
+Output written on thesis.pdf (61 pages, 721066 bytes).
 PDF statistics:
- 1056 PDF objects out of 1200 (max. 8388607)
- 950 compressed objects within 10 object streams
- 379 named destinations out of 1000 (max. 500000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 954 compressed objects within 10 object streams
+ 380 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

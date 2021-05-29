@@ -55,7 +55,7 @@ Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüssel
 	\label{6braun:fig:keys}
 \end{figure}
 \subsubsection{Private Keys}
-Ein privater Schlüssel besteht aus einer Zahl von 256 zufälligen Bits. Er wird zum Signieren von Transaktionen und für den Zugriff auf ein Guthaben benötigt. Ohne privaten Schlüssel verliert man als Besitzer:in von Bitcoin auch den Zugriff auf das eigene Guthaben.\\
+Ein privater Schlüssel besteht aus einer Zahl von 256 zufälligen Bits. Er wird zum Signieren von Transaktionen und für den Zugriff auf ein Guthaben benötigt. Ohne privaten Schlüssel verliert man als Besitzer:in von Bitcoin auch den Zugriff auf das eigene Guthaben.
 Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Quelle für Zufälligkeit. In anderen Worten: Die Wahl der zufälligen Zahl darf nicht vorhersehbar sein. Dazu verwendet die Bitcoin-Software den Random Number Generator des verwendeten Betriebssystems, kombiniert mit einem menschlichen Input, wie dem Bewegen der Maus [vgl. \cite{antanopoulos_2014}: 58]. Mithilfe des Generators erzeugt man einen zufälligen String, welcher \emph{mehr} als 256 Bits hat. Diesen lässt man anschließend durch den SHA256 Hash-Algorithmus laufen und prüft, ob die resultierende Zahl kleiner ist, als die vom Bitcoin-Protokoll gewählte Konstante \emph{n} ($n = 1.1578 * 10^{77}$). Diese Zahl entspricht nach \cite{corbellini_2015} der Ordnung der Gruppe, die in der dort verwendeten elliptischen Kurve entspricht. Nach [\cite{corbellini_2015}] befinden sich alle Punkte der Kurve in dieser Gruppe, weshalb der gewählte private Schlüssel, welcher für die anschließende Generierung eines öffentlichen Schlüssels genutzt wird, nicht außerhalb dieses Bereichs liegen darf.
 
 \subsubsection{Public Keys}
@@ -66,7 +66,7 @@ Das vom Bitcoin-Protokoll verwendete Verfahren wird \emph{Elliptic Curve Cryptog
 	\includegraphics[width=0.7\textwidth]{images/elliptic_curve_cryptography.png}
 	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\Quelle: \cite[64]{antanopoulos_2014}}
 	\label{6braun:fig:ellipse}
-\end{figure}\\
+\end{figure}
 
 Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt \emph{G}, auf der Ellipse und multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse und erhält somit 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
 
@@ -280,21 +280,22 @@ Stattdessen lässt sie Transaktionen von einer dritten Partei prüfen und könnt
 \subsubsection{Bootstrapping neuer Teilnehmer:innen}
 Nach dem Hochfahren müssen Teilnehmende zunächst mindestens einen andere Knoten im Netzwerk finden. Dabei stehen ihnen sogenannte \emph{DNS Seeds} zur Verfügung, die nichts anderes sind als Server, die auf Abfrage Adressen von stabil laufenden Teilnehmer:innen, die im Bitcoin-Klienten enthalten sind, zurückgeben.
 Alternativ kann ein neuer Knoten auch eine manuelle Verbindung zu anderen Teilnehmer:innen eingehen, wenn ihm jene Adresse bekannt ist.
-Sobald andere Teilnehmende gefunden wurden, wird über TCP ein \emph{Handshake} ausgeführt: neue Teilnehmer:innen senden Informationen, wie die Version des Bitcoin-Klienten an gefundene Teilnehmer:innen und gehen bei Validität der Informationen eine Verbindung mit diesen ein.
-Anschließend können sie bekannte Adressen austauschen, dieser Vorgang wird in Abbildung 2.6 veranschaulicht:
+Sobald andere Teilnehmende gefunden wurden, wird über TCP ein \emph{Handshake} ausgeführt, wie in Abbildung 2.6 veranschaulicht: 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
-	\caption{Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus\\
-	Quelle: vgl. \cite{antanopoulos_2014}}
+	\caption{Austausch von Adressen nach erfolgreicher Verbindung\\
+		Quelle: vgl. \cite{antanopoulos_2014}}
 	\label{6braun:fig:adress_query}
 \end{figure}
-
+\newpage
+Neue Teilnehmer:innen senden Informationen, wie die Version des Bitcoin-Klienten an gefundene Teilnehmer:innen und gehen bei Validität der Informationen eine Verbindung mit diesen ein.
+Anschließend können sie bekannte Adressen austauschen.
 Ebenso wie sie Adressen miteinander austauschen, werden auch Informationen über den Zustand der Blockchain ausgetauscht. Sollten neuen Teilnehmer:innen Blöcke fehlen, versuchen sie diese von den neuen Nachbar:innen anzufordern, um die eigene Blockchain synchronisieren zu können. Dabei wird der Aufwand auf die verschiedenen Nachbar:innen aufgeteilt, um einzelne Teilnehmer:innen nicht zu überlasten. Es ist dasselbe Prinzip, wie beim schon länger praktizierten File-Sharing.
 \subsection{Blockchain}
 Die Blockchain ist die Kerntechnologie des gesamten Protokolls und stellt im Kern eine Datenstruktur mit einer verketteten Liste von Blöcken dar, die wiederum Transaktionen enthalten. 
 Die Verkettung erfolgt dadurch, dass jeder Block einen vorher erzeugten referenziert. 
-Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolgers verändert und dies wird so für alle folgenden Generationen fortgesetzt. Die folgende Abbildung 2.7 zeigt, wie der zweite Block den Vorgängerblock mithilfe des Hash-Werts referenziert.
+Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit dem dieser eindeutig identifizierbar ist. Dadurch wird der Hashwert des Nachfolgers verändert und dies wird so für alle folgenden Generationen fortgesetzt. Die folgende Abbildung 2.7 zeigt, wie der zweite Block den Vorgängerblock mithilfe des Hash-Werts referenziert:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/chain.png}
@@ -304,7 +305,7 @@ Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit
 \end{figure}\\
 
 Der daraus entstehende Vorteil ist, dass ein Angreifer:innen bei Veränderung eines vergangenen Blocks die Hashwerte aller Nachfolger neu berechnen muss. Wieso dies mit sehr hohem Rechenaufwand verbunden ist, wird später näher erläutert.
-
+\\
 \subsubsection{Datenstruktur}
 Die Datenstruktur des Blocks besteht aus mehr Komponenten als dem Vorgänger-Hash und den Transaktionen:
 \begin{lstlisting}[mathescape, caption={Datenstruktur des Blocks},captionpos=b]
@@ -331,16 +332,16 @@ Dafür folgt man vom Block aus über die Vorgänger der Blockchain, bis man beim
 Anschließend zählt man den Abstand und erhält die Block-Höhe.
 Eine eindeutige Identifikation des Blocks ist hierüber allerdings nicht möglich, denn es kann im Falle von \emph{Forks}, die im Kapitel \emph{Der Weg der Transaktion in die Blockchain} erörtert werden, dazu kommen, dass ein Block von mehreren Blöcken als Parent referenziert wird.\\
 \subsubsection{Merkle-Tree}
-Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter. Die Abbildung 2.8 illustriert die Funktionsweise eines Merkle-Trees:
+Ein Merkle-Tree ist eine binäre Baumstruktur, bestehend aus den Hashwerten der Transaktionen des Blocks als Blätter. 
+Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. 
+Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minimale Änderung an den Transaktionen die Wurzel, und somit den gesamten Block-Hash völlig verändern. Die Abbildung 2.8 illustriert nochmal die Funktionsweise eines Merkle-Trees:
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.7\textwidth]{images/merkle.png}
+	\includegraphics[width=\textwidth]{images/merkle.png}
 	\caption{Ein Merkle-Tree\\
-	Quelle: \cite{antanopoulos_2014}}
+		Quelle: \cite{antanopoulos_2014}}
 	\label{6braun:fig:merkle}
 \end{figure}\\
-Auf jeder Ebene werden die Knoten paarweise gehasht, sodass man als Ergebnis die Wurzel als Identität aller Transaktionen im Block erhält. 
-Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minimale Änderung an den Transaktionen die Wurzel, und somit den gesamten Block-Hash völlig verändern. 
 Zu beachten ist noch, dass bei einer ungeraden Zahl von Transaktionen die letzte Transaktion in der Liste doppelt im Merkle-Tree aufgeführt wird, um das paarweise Hashing zu ermöglichen.
 \subsection{Der Weg der Transaktion in die Blockchain}
 Als Folge der dezentralen Struktur des Bitcoin-Netzwerkes ist ein Mechanismus nötig, der Transaktionen ohne ein zentrales Clearinghaus validiert und freigibt. An dieser Stelle kommt das \emph{Mining} ins Spiel, über das zwar neue Bitcoin in Umlauf kommen, aber vor allem ein gemeinsamer Konsens im ganzen Netzwerk erreicht wird.
@@ -378,10 +379,10 @@ Während das 'Finden' eines geeigneten Blocks aufwendig ist, müssen andere Teil
 Abgesehen vom Hash muss der Block allerdings noch andere Kriterien erfüllen, wie z.B. richtige Zeitstempel oder eine valide Liste von Transaktionen, inklusive valider Coinbase. 
 Bei Gutschreibung von zu viel neuen Bitcoin wird der gesamte Block invalide, was betrügerisches Verhalten für Miner unattraktiv macht. Der Block wird nur im Netzwerk propagiert, wenn er die Kriterien erfüllt.\\
 
-Nachdem Teilnehmer:innen des Netzwerkes einen neuen Block validiert haben, müssen sie diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarios, wie die folgende Abbildung 2.9 zeigt:
+Nachdem Teilnehmer:innen des Netzwerkes einen neuen Block validiert haben, müssen sie diesen zu seiner persönlichen Blockchain hinzufügen. Für den neuen Block gibt es drei Szenarien, wie die folgende Abbildung 2.9 zeigt:
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.7\textwidth]{images/chains.png}
+	\includegraphics[width=0.9\textwidth]{images/chains.png}
 	\caption{Mögliche Szenarien für einen neuen Block\\
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chains}

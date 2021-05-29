@@ -3,19 +3,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. Quelle: \cite [57]{antanopoulos_2014}\relax }}{5}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ Quelle: \cite [64]{antanopoulos_2014}\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ Quelle: \cite [64]{antanopoulos_2014}\relax }}{6}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet Quelle: Eigene Darstellung\relax }}{13}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet Quelle: Eigene Darstellung\relax }}{14}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Transaktionen mit unteilbaren UTXO Quelle: Eigene Darstellung\relax }}{15}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Teilnehmer tauschen nach erfolgreicher Verbindung Adressen aus Quelle: vgl. \cite {antanopoulos_2014}\relax }}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Austausch von Adressen nach erfolgreicher Verbindung Quelle: vgl. \cite {antanopoulos_2014}\relax }}{17}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Neuer Block referenziert den alten Block Quelle: Eigene Darstellung\relax }}{18}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Ein Merkle-Tree Quelle: \cite {antanopoulos_2014}\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Mögliche Szenarien für einen neuen Block Quelle: Eigene Darstellung\relax }}{23}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Mögliche Szenarien für einen neuen Block Quelle: Eigene Darstellung\relax }}{22}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Vereinfachung der Ethereum Virtual Machine Quelle: Eigene Darstellung\relax }}{29}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Involvierte Parteien in gängigem Display Advertising Quelle: vgl. \cite [9]{optimity_advisors_2019}\relax }}{33}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau der Webanwendung Quelle: Eigene Darstellung\relax }}{35}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Involvierte Parteien in gängigem Display Advertising Quelle: vgl. \cite [9]{optimity_advisors_2019}\relax }}{34}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau der Webanwendung Quelle: Eigene Darstellung\relax }}{36}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine Quelle: \cite {antanopoulos_2014}\relax }}{49}{figure.caption.17}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine Quelle: \cite {antanopoulos_2014}\relax }}{50}{figure.caption.17}%
