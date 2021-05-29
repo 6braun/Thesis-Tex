@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  28 MAY 2021 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  29 MAY 2021 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,14 +1253,8 @@ File: images/public_and_private_key.png Graphic file (type png)
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
 52.
 (pdftex.def)             Requested size: 426.79134pt x 103.8949pt.
-
-Overfull \hbox (5.85347pt too wide) in paragraph at lines 46--57
-\T1/ptm/m/n/12 kön-nen. Au-ÿer-dem kann auf-grund der ma-the-ma-ti-schen Ab-hän
--gig-keit zwi-schen den Schlüs-
- []
-
-[5 <./images/public_and_private_key.png>]
-<images/elliptic_curve_cryptography.png, id=238, 216.81pt x 217.5327pt>
+ [5 <./images/public_and_private_key.png>]
+<images/elliptic_curve_cryptography.png, id=240, 216.81pt x 217.5327pt>
 File: images/elliptic_curve_cryptography.png Graphic file (type png)
 <use images/elliptic_curve_cryptography.png>
 Package pdftex.def Info: images/elliptic_curve_cryptography.png  used on input 
@@ -1271,17 +1265,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--70
 
  []
 
-[6 <./images/elliptic_curve_cryptography.png>]
+[6]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
 2.
-
-(/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+ (/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [7] [8]
+) [7 <./images/elliptic_curve_cryptography.png>] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
 2.
-
-(/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+ (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9] [10]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -1295,7 +1287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
-<images/non_det_wallet.png, id=327, 321.2pt x 201.75375pt>
+<images/non_det_wallet.png, id=328, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
 Package pdftex.def Info: images/non_det_wallet.png  used on input line 209.
@@ -1305,23 +1297,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<images/bip32_wallet.png, id=338, 713.66624pt x 452.69125pt>
+[13 <./images/non_det_wallet.png>]
+<images/bip32_wallet.png, id=346, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
 Package pdftex.def Info: images/bip32_wallet.png  used on input line 224.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
-[13 <./images/non_det_wallet.png>]
-<images/UTXO.png, id=345, 603.25375pt x 439.6425pt>
+<images/UTXO.png, id=347, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
 Package pdftex.def Info: images/UTXO.png  used on input line 237.
 (pdftex.def)             Requested size: 298.75262pt x 217.72098pt.
- [14 <./images/bip32_wallet.png>]
+ [14 <./images/bip32_wallet.png>] [15 <./images/UTXO.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[15 <./images/UTXO.png>] [16]
+[16]
 Overfull \hbox (0.88474pt too wide) in paragraph at lines 274--275
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
@@ -1332,12 +1324,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-<images/adress_query.png, id=363, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=365, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
 Package pdftex.def Info: images/adress_query.png  used on input line 287.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
-<images/chain.png, id=366, 322.20375pt x 101.37875pt>
+[17]
+<images/chain.png, id=372, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
 Package pdftex.def Info: images/chain.png  used on input line 300.
@@ -1347,7 +1340,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--305
 
  []
 
-[17] [18 <./images/adress_query.png> <./images/chain.png>]
+[18 <./images/adress_query.png> <./images/chain.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
@@ -1372,7 +1365,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--380
 
  []
 
-<images/chains.png, id=410, 654.445pt x 302.12875pt>
+<images/chains.png, id=412, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
 Package pdftex.def Info: images/chains.png  used on input line 384.
@@ -1382,12 +1375,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--392
 
  []
 
-[22 <./images/chains.png>]
+[22] [23 <./images/chains.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 403--405
 
  []
 
-[23]) [24]
+) [24]
 \openout2 = `ethereum.aux'.
 
  (./ethereum.tex
@@ -1429,7 +1422,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
  []
 
 [27]
-<images/evm_simple.png, id=464, 804.00375pt x 412.54124pt>
+<images/evm_simple.png, id=466, 804.00375pt x 412.54124pt>
 File: images/evm_simple.png Graphic file (type png)
 <use images/evm_simple.png>
 Package pdftex.def Info: images/evm_simple.png  used on input line 52.
@@ -1445,9 +1438,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--57
  (./digital_advertising.tex
 chapter 4.
 
-Overfull \hbox (28.13672pt too wide) in paragraph at lines 2--7
-\T1/ptm/m/n/12 Contract ein-ge-baut ist, vor-ge-stellt. Ab-schlie-ÿend wird die
- Eig-nung von Blockchain-Technologie
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
  []
 
 [32
@@ -1456,49 +1448,45 @@ Overfull \hbox (28.13672pt too wide) in paragraph at lines 2--7
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-<images/programmatic_advertising.png, id=531, 723.70375pt x 61.22874pt>
+<images/programmatic_advertising.png, id=533, 723.70375pt x 61.22874pt>
 File: images/programmatic_advertising.png Graphic file (type png)
 <use images/programmatic_advertising.png>
 Package pdftex.def Info: images/programmatic_advertising.png  used on input lin
-e 25.
+e 24.
 (pdftex.def)             Requested size: 426.79134pt x 36.10875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 [33 <./images/programmatic_advertising.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 [34]
-<images/aufbau_PoC.png, id=551, 563.10374pt x 327.2225pt>
+<images/aufbau_PoC.png, id=554, 563.10374pt x 327.2225pt>
 File: images/aufbau_PoC.png Graphic file (type png)
 <use images/aufbau_PoC.png>
-Package pdftex.def Info: images/aufbau_PoC.png  used on input line 51.
+Package pdftex.def Info: images/aufbau_PoC.png  used on input line 50.
 (pdftex.def)             Requested size: 426.79134pt x 248.01263pt.
  [35 <./images/aufbau_PoC.png>] [36]
-Overfull \hbox (19.97227pt too wide) in paragraph at lines 102--103
+Overfull \hbox (19.97227pt too wide) in paragraph at lines 101--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [37]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 122--123
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 121--122
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [38] [39]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 165--166
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 164--165
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [40] [41] [42] [43]
-Overfull \hbox (0.26212pt too wide) in paragraph at lines 255--256
+Overfull \hbox (0.26212pt too wide) in paragraph at lines 254--255
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1537,12 +1525,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
-
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[46]
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -1552,7 +1540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=763, 347.8596pt x 478.4274pt>
+<images/evm_full.png, id=767, 347.8596pt x 478.4274pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 6.
@@ -1665,11 +1653,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
 Here is how much of TeX's memory you used:
  18324 strings out of 480608
  332664 string characters out of 5905076
- 917453 words of memory out of 5000000
+ 915649 words of memory out of 5000000
  33383 multiletter control sequences out of 15000+600000
  589489 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,21n,115p,10101b,1986s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,21n,115p,10101b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -1678,10 +1666,10 @@ nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (60 pages, 713018 bytes).
+Output written on thesis.pdf (60 pages, 713062 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 946 compressed objects within 10 object streams
+ 1056 PDF objects out of 1200 (max. 8388607)
+ 950 compressed objects within 10 object streams
  379 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

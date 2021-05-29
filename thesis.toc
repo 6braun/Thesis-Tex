@@ -1,7 +1,6 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
 \contentsline {subsubsection}{Abstract}{i}{figure.caption.1}%
-\contentsline {subsubsection}{Stichwörter}{i}{figure.caption.1}%
 \contentsline {chapter}{Abbildungsverzeichnis}{iv}{chapter*.3}%
 \contentsline {chapter}{Tabellenverzeichnis}{v}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
@@ -12,23 +11,23 @@
 \contentsline {subsection}{\numberline {2.3.1}Keys und Adressen}{4}{subsection.2.3.1}%
 \contentsline {subsubsection}{Private Keys}{5}{figure.caption.5}%
 \contentsline {subsubsection}{Public Keys}{6}{figure.caption.5}%
-\contentsline {subsubsection}{Bitcoin Adressen}{7}{figure.caption.6}%
+\contentsline {subsubsection}{Bitcoin Adressen}{6}{figure.caption.6}%
 \contentsline {subsection}{\numberline {2.3.2}Einschub: SHA-256}{7}{subsection.2.3.2}%
 \contentsline {subsubsection}{Definitionen}{8}{subsection.2.3.2}%
 \contentsline {subsubsection}{Vorbereitung der Nachricht}{10}{lstnumber.2.2.8}%
-\contentsline {subsubsection}{Aufteilung der Nachricht in Blöcke}{10}{lstnumber.2.2.8}%
+\contentsline {subsubsection}{Aufteilung der Nachricht in Blöcke}{11}{lstnumber.2.2.8}%
 \contentsline {subsubsection}{Algorithmus}{11}{lstnumber.2.2.8}%
 \contentsline {subsection}{\numberline {2.3.3}Wallet}{12}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Transaktionen}{14}{subsection.2.3.4}%
-\contentsline {subsubsection}{Transaction Outputs}{14}{subsection.2.3.4}%
+\contentsline {subsubsection}{Transaction Outputs}{15}{subsection.2.3.4}%
 \contentsline {subsubsection}{Transaction Inputs}{15}{figure.caption.9}%
 \contentsline {subsubsection}{Transaktionskosten}{16}{figure.caption.9}%
-\contentsline {subsection}{\numberline {2.3.5}Die verschiedenen Akteure im Netzwerk}{16}{subsection.2.3.5}%
-\contentsline {subsubsection}{Rollen}{16}{subsection.2.3.5}%
-\contentsline {subsubsection}{Bootstrapping neuen Teilnehmers}{17}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Blockchain}{17}{subsection.2.3.6}%
-\contentsline {subsubsection}{Datenstruktur}{18}{figure.caption.11}%
-\contentsline {subsubsection}{Merkle-Tree}{19}{lstnumber.2.4.15}%
+\contentsline {subsection}{\numberline {2.3.5}Die verschiedenen Akteur:innen im Netzwerk}{16}{subsection.2.3.5}%
+\contentsline {subsubsection}{Rollen}{17}{subsection.2.3.5}%
+\contentsline {subsubsection}{Bootstrapping neuer Teilnehmer:innen}{17}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Blockchain}{18}{subsection.2.3.6}%
+\contentsline {subsubsection}{Datenstruktur}{19}{figure.caption.11}%
+\contentsline {subsubsection}{Merkle-Tree}{20}{lstnumber.2.4.15}%
 \contentsline {subsection}{\numberline {2.3.7}Der Weg der Transaktion in die Blockchain}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Miner und ihre Entlohnung}{20}{subsection.2.3.7}%
 \contentsline {subsubsection}{Sammeln von Transaktionen}{21}{subsection.2.3.7}%
@@ -57,13 +56,13 @@
 \contentsline {subsection}{\numberline {4.2.2}Backend}{39}{subsection.4.2.2}%
 \contentsline {subsubsection}{Hochladen einer Anzeige - Erfolg}{39}{subsection.4.2.2}%
 \contentsline {subsubsection}{Schalten einer Anzeige}{41}{lstnumber.-7.19}%
-\contentsline {subsection}{\numberline {4.2.3}Smart-Contract}{42}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Smart Contract}{42}{subsection.4.2.3}%
 \contentsline {subsubsection}{Anpassen des Guthabens}{42}{subsection.4.2.3}%
 \contentsline {subsubsection}{Aufrufen einer Anzeige}{42}{lstnumber.-9.3}%
-\contentsline {subsubsection}{Abrufen der Schaltungen}{43}{lstnumber.-10.4}%
+\contentsline {subsubsection}{Abrufen der Schaltungen}{42}{lstnumber.-10.4}%
 \contentsline {subsection}{\numberline {4.2.4}Provider und Deployment}{43}{subsection.4.2.4}%
 \contentsline {subsubsection}{Provider und Signer}{43}{subsection.4.2.4}%
-\contentsline {subsubsection}{Truffle}{44}{subsection.4.2.4}%
+\contentsline {subsubsection}{Truffle}{43}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Schlussteil}{45}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Diskussion der Ergebnisse}{45}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Zusammenfassung}{46}{section.5.2}%
