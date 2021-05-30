@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  29 MAY 2021 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  31 MAY 2021 01:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1241,14 +1241,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
  []
 
 [4]
-<images/public_and_private_key.png, id=226, 311.7246pt x 75.8835pt>
+<images/public_and_private_key.png, id=225, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
 52.
 (pdftex.def)             Requested size: 426.79134pt x 103.8949pt.
  [5 <./images/public_and_private_key.png>]
-<images/elliptic_curve_cryptography.png, id=240, 216.81pt x 217.5327pt>
+<images/elliptic_curve_cryptography.png, id=239, 216.81pt x 217.5327pt>
 File: images/elliptic_curve_cryptography.png Graphic file (type png)
 <use images/elliptic_curve_cryptography.png>
 Package pdftex.def Info: images/elliptic_curve_cryptography.png  used on input 
@@ -1277,17 +1277,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
-<images/non_det_wallet.png, id=329, 321.2pt x 201.75375pt>
+<images/non_det_wallet.png, id=328, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
 Package pdftex.def Info: images/non_det_wallet.png  used on input line 209.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
 [12]
+LaTeX Info: Symbol \textasciiacute not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 218.
+
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<images/bip32_wallet.png, id=340, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=339, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
 Package pdftex.def Info: images/bip32_wallet.png  used on input line 224.
@@ -1642,25 +1646,27 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 18325 strings out of 480608
- 332671 string characters out of 5905076
+ 18328 strings out of 480608
+ 332710 string characters out of 5905076
  915649 words of memory out of 5000000
- 33383 multiletter control sequences out of 15000+600000
- 589489 words of font info for 118 fonts, out of 8000000 for 9000
+ 33385 multiletter control sequences out of 15000+600000
+ 589826 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,21n,115p,10101b,1982s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
-/app/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dis
-t/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/time
-s/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
-xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (61 pages, 721066 bytes).
+{/app/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/app/texl
+ive/texmf-dist/fonts/enc/dvips/base/8r.enc}</app/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></app/t
+exlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></app/texlive/texmf-dist/f
+onts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/symbol/
+usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></app/texliv
+e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (61 pages, 722830 bytes).
 PDF statistics:
- 1061 PDF objects out of 1200 (max. 8388607)
- 954 compressed objects within 10 object streams
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 957 compressed objects within 10 object streams
  380 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

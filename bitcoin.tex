@@ -11,7 +11,7 @@ Es erlaubt den Parteien einem Tauschgeschäft, bei dem beide Seiten mit dem Gut 
 Damit ein Handelsgut als Geld angesehen werden kann, muss es drei Funktionen erfüllen können.
 Fundamental ist, dass das Handelsgut generell als Tausch- bzw. Zahlungsmittel akzeptiert wird. Theoretisch könnte man versuchen, sein Abendessen mit dem eigenen Fahrrad zu bezahlen, doch kommt man in der Praxis mit dieser Strategie nicht weit.
 Des Weiteren muss das Tauschgeschäft als Recheneinheit fungieren können. Dies ist notwendig, da anhand dessen die relativen Preise anderer Waren in der Marktwirtschaft ermittelt werden müssen.
-Zuletzt muss sichergestellt sein, dass das Handelsgut wie bereits erwähnt in Zukunft auch seine Kaufkraft behält. Eine Person, die es als Zahlungsmittel akzeptiert, muss sich darauf verlassen können, dass es auch für zukünftige Geschäfte verwendet werden kann.\\
+Zuletzt muss sichergestellt sein, dass das Handelsgut in Zukunft auch seine Kaufkraft behält. Eine Person, die es als Zahlungsmittel akzeptiert, muss sich darauf verlassen können, dass es auch für zukünftige Geschäfte verwendet werden kann.\\
 
 Bei den Geldformen unterscheidet man zwischen Warengeld und Rechengeld. Diese unterscheiden sich in ihrem intrinsischen Wert, also darin, ob sie auch außerhalb von Tauschgeschäften einen Nutzen finden. Ein Beispiel für Warengeld ist Gold, welches neben Tauschgeschäften auch industriell verarbeitet werden kann.
 Papiergeld hingegen bietet abseits des Tauschgeschäftes keinen Nutzen für Besitzer:innen. Um trotzdem den Wert des Geldes gewährleisten zu können, wird es von Seiten des Staats als universelles Zahlungsmittel in der jeweiligen Marktwirtschaft bestimmt.\\
@@ -35,10 +35,10 @@ Im folgenden Unterkapitel werden die technische Umsetzung dieser Anforderungen a
 \section{Theorie der Blockchain-Technologie am Beispiel von Bitcoin}
 Auch wenn es andere Projekte für dezentrale Währungen wie B-Money [\cite{dai_1998}] und Hashcash [\cite{back_2002}] gab, begann der Aufschwung digitaler Währungen im Jahr 2008 mit der Veröffentlichung des Bitcoin-Whitepapers  [\cite{nakamoto_whitepaper_2008}]. Diese Publikation trägt den Titel \emph{Bitcoin: A Peer to peer Electronic Cash System}, wurde von einer bis heute unbekannten Person, unter dem Namen \emph{Satoshi Nakamoto} veröffentlicht und kombinierte Technologien ihrer Vorgänger:innen. Statt einer zentralen Verwaltungsstelle handelt es sich bei Bitcoin um ein dezentrales Peer-to-peer Netzwerk zwischen den Nutzer:innen des Bitcoin-Protokolls. Außerdem werden Vermögenswerte nicht durch klassische Münzen auf einem Konto repräsentiert, sondern durch vergangene Transaktionen in einem dezentralen und öffentlichen Transaktionsbuch, dem sogenannten \emph{Ledger}, impliziert. Aufgrund dieser Eigenschaften besteht keine zentrale Angriffsfläche für bösartige Akteur:innen und alle Teilnehmer:innen im Netzwerk haben Kenntnis über alle Transaktionen. Die folgenden Untersektionen beschäftigen sich mit der Verwaltung und dem Zugang, die Funktionsweise von Transaktionen sowie die Art und Weise, wie die verschiedenen Akteur:innen im Netzwerk zu einem gemeinsamen Konsens kommen.
 \subsection{Keys und Adressen}
-Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Nazis im zweiten Weltkrieg genutzt wurden [\cite{landwehr_2008}: 19]. 
+Als Kryptographie bezeichnet man Verfahren zur Verschlüsselung von Informationen, die schon von den Deutschen im zweiten Weltkrieg genutzt wurden [\cite{landwehr_2008}: 19]. 
 Mithilfe von Maschinen, den sogenannten \emph{ENIGMA}, verschlüsselten sie wichtige strategische Informationen wie die Aufenthaltsorte von Truppen oder taktische Befehle, die anschließend per Funk überbracht wurden.
 Kryptographische Verfahren folgten zu der Zeit dem Prinzip \emph{Security by Obscurity}, nach dem die Sicherheit eines Verschlüsselungsverfahrens davon abhängig ist, ob die Funktionsweise dieser bekannt ist. 
-Dies hatte zur Folge, dass im Falle der Nazis, deren ENIGMA-Code durch die Anstrengungen polnischer und später englischer Wissenschaftler um Alan Turing unschädlich gemacht werden konnte [\cite{landwehr_2008}: 18/19].\\
+Dies hatte zur Folge, dass im Falle der Deutschen, deren ENIGMA-Code durch die Anstrengungen polnischer und später englischer Wissenschaftler um Alan Turing unschädlich gemacht werden konnte [\cite{landwehr_2008}: 18/19].\\
 
 Im Jahr 1976 stellten \emph{Diffie} und \emph{Hellman} die bis dahin unbekannte asymmetrische Verschlüsselung vor, bei der jede Partei ein Schlüsselpaar, bestehend aus privatem und öffentlichem Schlüssel, besitzt [vgl. \cite{diffie_hellman_1976}]. 
 Derartige Verfahren sind heutzutage der Standard und werden auch im Bitcoin-System verwendet. Das restliche, sowie folgende Kapitel beziehen sich auf \cite{antanopoulos_2014} und ziehen, wo es nötig ist, zusätzliche Literatur hinzu.\\
@@ -187,7 +187,7 @@ Im folgenden soll der Algorithmus anhand eines Pseudo-Codes erläutert werden. Z
 Es wird zu Beginn ein leerer String initialisiert, der am Ende das Ergebnis des Algorithmus darstellt [siehe Zeile 1 im Code].
 Anschließend wird die erste Schleife gestartet, die für jeden der N 512-Bit-Blöcke durchlaufen wird. Zu Beginn jedes Schleifendurchlaufs wird eine leere Liste \emph{w} initialisiert, die während des Durchlaufs gefüllt wird [2-3].
 Für das Füllen der Liste wird eine weitere Schleife initialisiert, die von 0 bis 63 läuft und in den ersten 16 Durchgängen lediglich die 16 Wörter aus M[i] in die bisher leere Liste w einfügt [4-6].
-Ab Schleifendurchgang 16 werden die übrigen Einträge mithilfe der vorher definierten Funktionen berechnet, sodass man am Ende eine Liste mit 64 Einträgen hat [7-9].
+Ab Schleifendurchgang 16 werden die übrigen Einträge mithilfe der vorher definierten Funktionen berechnet, sodass man am Ende eine Liste mit 64 Einträgen erhält [7-9].
 Anschließend werden die sogenannten Arbeitsvariablen a bis h mithilfe der vorher definierten H0-H7 initialisiert [10-14].
 Die folgende Schleife ist die, in der die eigentliche Kompression stattfindet. Sie läuft erneut von 0 bis 63 [15].
 Mithilfe der vorher Definierten Funktionen und der Arbeitsvariablen werden die temporären Variablen T1 und T2 ermittelt. 
@@ -213,9 +213,9 @@ Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur 
 \end{figure}\\
 Die fortgeschrittenste Form eines deterministischen Beispiels ist die sogenannte BIP32-Wallet, welche zwei nützliche Eigenschaften aufweisen kann (BIP steht für \emph{Bitcoin Improvement Proposal} und bezeichnet eine nachträgliche Ergänzung zum Bitcoin-Ökosystem) [\cite{antanopoulos_2014}].
 Diese werden in \cite{buterin_2013} als \emph{Master Public Key Property} und \emph{Hierarchy Property} bezeichnet.
-Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man den sogenannten Offsets, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
+Die Master Public Key Property beschreibt die Möglichkeit, aus einem Master Private einen Master Public Key zu generieren, der wiederum alle öffentlichen Schlüssel und deren Adressen erzeugen kann. Dazu berechnet man das sogenannte Offset, indem man den gewünschten Index und den Master Public Key addiert und das Ergebnis als Input für eine Hashfunktion verwendet. Anschließend addiert man Offset und Master Public Key und erhält den öffentlichen Schlüssel am Index.
 $$offset = SHA256(index + masterPubKey)$$
-$$pubKey_{index} = offset + masterPubKey$$ Dies geht analog genauso mit dem Master Private Key. 
+$$pubKey_{index} = offset + masterPubKey$$ Dies funktioniert´ analog genauso mit dem Master Private Key. 
 Aufgrund dieser Eigenschaft ist es möglich, den Master Public Key ungeschützt zu lagern und sogar an dritte Parteien herauszugeben, ohne dass diese Zugriff auf das Guthaben erhalten.\\
 
 Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen Organisationszweigen interessant. Geschäftsführer:innen könnten so den unterschiedlichen Geschäftszweigen seines Unternehmens Schlüsselpaare zuweisen, wodurch diese die Verfügungsgewalt über das eigene und Guthaben von Unterstellen erhalten. Gleichzeitig behalten Geschäftsführer:innen die absolute Kontrolle über alle Schlüssel, da sie im Besitz der Master Keys sind. Die Abbildung 2.4 zeigt, wie sich eine Organisation die Hierarchieeigenschaft zunutze machen könnte:
@@ -242,7 +242,7 @@ Eine Wallet scannt die Blockchain nach allen Outputs, welche mit den Keys von Be
 Für die gewünschte Transaktion von A nach B werden 20 BTC benötigt, die von der Wallet aus verfügbaren UTXO zusammengefügt werden. 
 Für das optimale Zusammensammeln von Outputs ist die Wallet zuständig.
 C hat für die gewünschte Transaktion von 1 BTC nur 3 BTC zur Verfügung, weshalb diese in ihrer Gesamtheit aufgebraucht werden müssen.
-Die übrigen 2 BTC gehen jedoch nicht verloren, sondern landen lediglich wieder als Wechselgeld bei C. 
+Die übrigen 2 BTC gehen jedoch nicht verloren, sondern landen wieder als Wechselgeld bei C. 
 Die gewünschte Transaktion hat also 2 Outputs.
 Jeder Output besteht aus 2 Komponenten: Der Anzahl von BTC und einem sogenannten \emph{Locking Script}, welches nur mithilfe des assoziierten private Keys gelöst werden kann.
 
@@ -256,10 +256,10 @@ Das Gegenstück zu den Outputs sind Inputs, über welche die benötigten UTXO f�
 \end{itemize}
 Sowohl Input, als auch Output werden serialisiert und als Byte-Streams im Netzwerk propagiert.\\
 \subsubsection{Transaktionskosten}
-Abhängig von der Auslastung des Netzwerkes wird eine dadurch bestimmte Menge an Transaktionsgebühren nötig, die sowohl als Anreiz für Bitcoin-Miner, als auch Abschreckungsmechanismus gegen Angriffe durch hochfrequentes Senden von kleinen Transaktionen dienen.
+Abhängig von der Auslastung des Netzwerkes wird eine dadurch bestimmte Menge an Transaktionskosten nötig, die sowohl als Anreiz für Bitcoin-Miner, als auch Abschreckungsmechanismus gegen Angriffe durch hochfrequentes Senden von kleinen Transaktionen dienen.
 Diese sind zwar kein Muss, jedoch bevorzugen die Miner Transaktionen mit höheren Transaktionskosten. 
-Das Berechnen von optimalen Transaktionsgebühren wird normalerweise von der Wallet ausgeführt, jedoch können auch manuelle Transaktionen erstellt werden, die ohne Transaktionskosten langsamer oder gar nicht vom Netzwerk verarbeitet werden.
-Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Transaktionsgebühren ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionsgebühren angegeben kann, ist auch das versehentliche Angeben von zu hohen Gebühren möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte C vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.
+Die optimalen Kosten werden normalerweise von der Wallet berechnet, können aber auch durch manuell angegeben werden. Transaktionen mit niedrigen oder keinen Transaktionskosten werden allerdings langsamer oder gar nicht vom Netzwerk verarbeitet.
+Bei einer manuellen Transaktion müssen sowohl Inputs, als auch Outputs definiert werden und die Kosten ergeben sich implizit aus der Differenz jener Komponenten. So wie man keine Transaktionskosten angeben kann, ist auch das versehentliche Angeben von zu hohen Kosten möglich. Man betrachte erneut die Abbildung \ref{6braun:fig:Transaktionen}, in der C 3 BTC an D sendet. Die Transaktion hat 2 Outputs, 1 BTC an D und 2 BTC zurück an C. Sollte C vergessen den 2. Output, welcher das Wechselgeld darstellt, zu definieren, dann werden die gesamten 2 BTC als Transaktionsgebühren für die Transaktion genutzt.
 Zusammenfassend lassen sich Transaktionen als Sammlungen von Inputs und Outputs definieren, deren Differenz die genutzten Transaktionskosten darstellen.
 \subsection{Die verschiedenen Akteur:innen im Netzwerk}
 \cite{nakamoto_whitepaper_2008} nennt das Propagieren von Transaktionen an alle Knoten als ersten Schritt, der zur Instandhaltung des Netzwerkes erforderlich ist. Dieses Kapitel steigt einen Schritt früher ein und befasst sich mit den verschiedenen Akteur:innen im dezentralen Netzwerk, ihren Rollen sowie den nötigen Schritten zum Eintritt neuer Teilnehmer:innen.
