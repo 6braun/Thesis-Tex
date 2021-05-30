@@ -370,7 +370,7 @@ Um dem Anstieg an Rechenleistung vorzubeugen (man denke an Moore's Law), besitzt
 Beim Target handelt es sich lediglich um eine Zahl, für die ein darunter liegender Wert durch wiederholtes Hashing des Block Headers, der sich ebenfalls serialisieren lässt, von den Minern gefunden werden muss. 
 Falls der Miner keinen geeigneten Hash findet, bedient er sich an der Variable 'Nonce' die als Zählvariable dient und erhöht diese wiederholt, bis es zum Erfolg kommt.
 Alle 2016 Blocks wird die gesamte verstrichene Zeit mit der angestrebten Zeit von $2016 * 10 Min$ verglichen und abhängig davon das Target entweder einfacher oder schwerer gemacht. 
-Konkret bedeutet dies, den Wert anzupassen, um die Anzahl möglicher darunterliegender Hashwerte entweder zu reduzieren oder vergrößern.
+Konkret bedeutet dies, den Wert anzupassen, um die Anzahl möglicher darunterliegender Hashwerte entweder zu reduzieren oder zu vergrößern.
 Dieses Verfahren funktioniert, weil ein Hashalgorithmus schon bei einem minimal veränderten Input einen gänzlich anderen Output zurückgibt. 
 Gleichzeitig macht es die Fertigung eines Blocks im Voraus unmöglich, da der Hashwert des Vorgängerblocks im neuen Block Header enthalten ist. 
 Im wesentlichen besteht das Verfahren also aus dem Konstruieren eines Blocks inklusive Block Header, dessen Hashwert, welcher das Target erfüllt, als 'Proof-of-Work' bezeichnet wird.\\
