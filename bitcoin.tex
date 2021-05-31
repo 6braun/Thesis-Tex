@@ -118,7 +118,8 @@ Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operatio
 Außerdem müssen noch zwei Listen mit Konstanten definiert werden. Die Liste K beinhaltet die ersten 32 Bit der Nachkommastellen der Kubikwurzeln der ersten 64 Primzahlen.
 H die ersten 32 Bit der Nachkommastellen der Quadratwurzeln der ersten 8 Primzahlen. 
 Die genauen Werte haben keine sonderliche Bedeutung, lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine absichtlich platzierte Schwachstelle im Algorithmus.
-\begin{lstlisting}[caption={Liste K von Konstanten},captionpos=b]
+\begin{lstlisting}[caption={Liste K von Konstanten\\
+	Quelle: \cite{dang_2015}},captionpos=b]
 	428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 
 	ab1c5ed5 d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 
 	9bdc06a7 c19bf174 e49b69c1 efbe4786 0fc19dc6 240ca1cc 2de92c6f 
@@ -130,7 +131,8 @@ Die genauen Werte haben keine sonderliche Bedeutung, lediglich die scheinbare Zu
 	748f82ee 78a5636f 84c87814 8cc70208 90befffa a4506ceb bef9a3f7 
 	c67178f2
 \end{lstlisting}
-\begin{lstlisting}[caption={Liste H mit den Arbeitsvariablen H0 - H7},captionpos=b]
+\begin{lstlisting}[caption={Liste H mit den Arbeitsvariablen H0 - H7\\
+	Quelle: \cite{dang_2015}},captionpos=b]
 	H0 = 6a09e667
 	H1 = bb67ae85
 	H2 = 3c6ef372

@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {lstlisting}{\numberline {2.1}Liste K von Konstanten}{10}{lstlisting.2.1}%
-\contentsline {lstlisting}{\numberline {2.2}Liste H mit den Arbeitsvariablen H0 - H7}{10}{lstlisting.2.2}%
+\contentsline {lstlisting}{\numberline {2.1}Liste K von Konstanten\\ Quelle: \cite {dang_2015}}{10}{lstlisting.2.1}%
+\contentsline {lstlisting}{\numberline {2.2}Liste H mit den Arbeitsvariablen H0 - H7\\ Quelle: \cite {dang_2015}}{10}{lstlisting.2.2}%
 \contentsline {lstlisting}{\numberline {2.3}Pseudocode zu SHA256}{11}{lstlisting.2.3}%
 \contentsline {lstlisting}{\numberline {2.4}Datenstruktur des Blocks}{19}{lstlisting.2.4}%
 \addvspace {10\p@ }

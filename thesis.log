@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  31 MAY 2021 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  31 MAY 2021 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,14 +1271,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
  []
 
 [4]
-<images/public_and_private_key.png, id=264, 311.7246pt x 75.8835pt>
+<images/public_and_private_key.png, id=271, 311.7246pt x 75.8835pt>
 File: images/public_and_private_key.png Graphic file (type png)
 <use images/public_and_private_key.png>
 Package pdftex.def Info: images/public_and_private_key.png  used on input line 
 52.
 (pdftex.def)             Requested size: 426.79134pt x 103.8949pt.
  [5 <./images/public_and_private_key.png>]
-<images/elliptic_curve_cryptography.png, id=281, 216.81pt x 217.5327pt>
+<images/elliptic_curve_cryptography.png, id=288, 216.81pt x 217.5327pt>
 File: images/elliptic_curve_cryptography.png Graphic file (type png)
 <use images/elliptic_curve_cryptography.png>
 Package pdftex.def Info: images/elliptic_curve_cryptography.png  used on input 
@@ -1303,117 +1303,118 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
  [7] [8]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 12
-1.
+2.
 
 (/app/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [9] [10]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
 
  []
 
-<images/non_det_wallet.png, id=377, 321.2pt x 201.75375pt>
+[12]
+<images/non_det_wallet.png, id=392, 321.2pt x 201.75375pt>
 File: images/non_det_wallet.png Graphic file (type png)
 <use images/non_det_wallet.png>
-Package pdftex.def Info: images/non_det_wallet.png  used on input line 208.
+Package pdftex.def Info: images/non_det_wallet.png  used on input line 210.
 (pdftex.def)             Requested size: 298.75262pt x 187.65982pt.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+ [13 <./images/non_det_wallet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
-[13 <./images/non_det_wallet.png>]
-<images/bip32_wallet.png, id=394, 713.66624pt x 452.69125pt>
+<images/bip32_wallet.png, id=404, 713.66624pt x 452.69125pt>
 File: images/bip32_wallet.png Graphic file (type png)
 <use images/bip32_wallet.png>
-Package pdftex.def Info: images/bip32_wallet.png  used on input line 223.
+Package pdftex.def Info: images/bip32_wallet.png  used on input line 225.
 (pdftex.def)             Requested size: 298.75262pt x 189.50044pt.
-<images/UTXO.png, id=397, 603.25375pt x 439.6425pt>
+[14 <./images/bip32_wallet.png>]
+<images/UTXO.png, id=412, 603.25375pt x 439.6425pt>
 File: images/UTXO.png Graphic file (type png)
 <use images/UTXO.png>
-Package pdftex.def Info: images/UTXO.png  used on input line 236.
+Package pdftex.def Info: images/UTXO.png  used on input line 238.
 (pdftex.def)             Requested size: 298.75262pt x 217.72098pt.
- [14 <./images/bip32_wallet.png>] [15 <./images/UTXO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+ [15 <./images/UTXO.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 [16]
-Overfull \hbox (0.88474pt too wide) in paragraph at lines 273--274
+Overfull \hbox (0.88474pt too wide) in paragraph at lines 275--276
 \T1/ptm/m/n/12 Diese kön-nen selbst-stän-dig Trans-ak-tio-nen prü-fen, si-gnie-
 ren und am Konsens-Algorithmus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-<images/adress_query.png, id=425, 302.12875pt x 345.29pt>
+<images/adress_query.png, id=435, 302.12875pt x 345.29pt>
 File: images/adress_query.png Graphic file (type png)
 <use images/adress_query.png>
-Package pdftex.def Info: images/adress_query.png  used on input line 285.
+Package pdftex.def Info: images/adress_query.png  used on input line 287.
 (pdftex.def)             Requested size: 213.39566pt x 243.88257pt.
 [17]
-<images/chain.png, id=434, 322.20375pt x 101.37875pt>
+<images/chain.png, id=444, 322.20375pt x 101.37875pt>
 File: images/chain.png Graphic file (type png)
 <use images/chain.png>
-Package pdftex.def Info: images/chain.png  used on input line 300.
+Package pdftex.def Info: images/chain.png  used on input line 302.
 (pdftex.def)             Requested size: 213.39566pt x 67.1453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--305
+Underfull \hbox (badness 10000) in paragraph at lines 297--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
 [18 <./images/adress_query.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--333
+Underfull \hbox (badness 10000) in paragraph at lines 331--335
 
  []
 
 [19 <./images/chain.png>]
-<images/merkle.png, id=462, 348.3414pt x 173.2071pt>
+<images/merkle.png, id=472, 348.3414pt x 173.2071pt>
 File: images/merkle.png Graphic file (type png)
 <use images/merkle.png>
-Package pdftex.def Info: images/merkle.png  used on input line 339.
+Package pdftex.def Info: images/merkle.png  used on input line 341.
 (pdftex.def)             Requested size: 426.79134pt x 212.23209pt.
  [20 <./images/merkle.png>] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 367--376
+Underfull \hbox (badness 10000) in paragraph at lines 369--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--380
+Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
  []
 
 [22]
-<images/chains.png, id=490, 654.445pt x 302.12875pt>
+<images/chains.png, id=500, 654.445pt x 302.12875pt>
 File: images/chains.png Graphic file (type png)
 <use images/chains.png>
-Package pdftex.def Info: images/chains.png  used on input line 384.
+Package pdftex.def Info: images/chains.png  used on input line 386.
 (pdftex.def)             Requested size: 384.10959pt x 177.32777pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--392
+Underfull \hbox (badness 10000) in paragraph at lines 383--394
 
  []
 
 [23 <./images/chains.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 
  []
 
@@ -1453,7 +1454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
  []
 
 [28] [29]
-<images/evm_simple.png, id=560, 824.07875pt x 412.54124pt>
+<images/evm_simple.png, id=570, 824.07875pt x 412.54124pt>
 File: images/evm_simple.png Graphic file (type png)
 <use images/evm_simple.png>
 Package pdftex.def Info: images/evm_simple.png  used on input line 52.
@@ -1475,7 +1476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
 
 ]
-<images/programmatic_advertising.png, id=626, 723.70375pt x 61.22874pt>
+<images/programmatic_advertising.png, id=636, 723.70375pt x 61.22874pt>
 File: images/programmatic_advertising.png Graphic file (type png)
 <use images/programmatic_advertising.png>
 Package pdftex.def Info: images/programmatic_advertising.png  used on input lin
@@ -1492,7 +1493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--35
  []
 
 [36]
-<images/aufbau_PoC.png, id=656, 563.10374pt x 327.2225pt>
+<images/aufbau_PoC.png, id=666, 563.10374pt x 327.2225pt>
 File: images/aufbau_PoC.png Graphic file (type png)
 <use images/aufbau_PoC.png>
 Package pdftex.def Info: images/aufbau_PoC.png  used on input line 50.
@@ -1567,7 +1568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  (./appendix.tex
 chapter A.
-<images/evm_full.png, id=864, 347.8596pt x 478.4274pt>
+<images/evm_full.png, id=874, 347.8596pt x 478.4274pt>
 File: images/evm_full.png Graphic file (type png)
 <use images/evm_full.png>
 Package pdftex.def Info: images/evm_full.png  used on input line 6.
@@ -1691,7 +1692,7 @@ Here is how much of TeX's memory you used:
  33440 multiletter control sequences out of 15000+600000
  602813 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,21n,115p,10101b,1987s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,22n,115p,10101b,1990s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1706,10 +1707,10 @@ pp/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/
 fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (65 pages, 729792 bytes).
+Output written on thesis.pdf (65 pages, 730137 bytes).
 PDF statistics:
- 1168 PDF objects out of 1200 (max. 8388607)
- 1056 compressed objects within 11 object streams
+ 1178 PDF objects out of 1200 (max. 8388607)
+ 1066 compressed objects within 11 object streams
  395 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

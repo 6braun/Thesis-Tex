@@ -22,9 +22,9 @@
 \contentsline {subsection}{\numberline {2.3.3}Wallet}{12}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Transaktionen}{14}{subsection.2.3.4}%
 \contentsline {subsubsection}{Transaction Outputs}{15}{subsection.2.3.4}%
-\contentsline {subsubsection}{Transaction Inputs}{15}{figure.caption.10}%
+\contentsline {subsubsection}{Transaction Inputs}{16}{figure.caption.10}%
 \contentsline {subsubsection}{Transaktionskosten}{16}{figure.caption.10}%
-\contentsline {subsection}{\numberline {2.3.5}Die verschiedenen Akteur:innen im Netzwerk}{16}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.5}Die verschiedenen Akteur:innen im Netzwerk}{17}{subsection.2.3.5}%
 \contentsline {subsubsection}{Rollen}{17}{subsection.2.3.5}%
 \contentsline {subsubsection}{Bootstrapping neuer Teilnehmer:innen}{17}{subsection.2.3.5}%
 \contentsline {subsection}{\numberline {2.3.6}Blockchain}{18}{subsection.2.3.6}%
