@@ -41,6 +41,11 @@ Buterin, V. (2013b).
 \newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
   12.04.2021.
 
+\bibitem[\protect\citeauthoryear{Cash}{Cash}{2021}]{bitcoin_cash_2021}
+Cash, B. (2021).
+\newblock Die geschichte von bitcoin cash.
+\newblock \url{https://bitcoincash.org/#about}. Letzter Zugriff am 31.05.2021.
+
 \bibitem[\protect\citeauthoryear{CoinMarketCap}{CoinMarketCap}{2021}]{coinmarketcap_2021}
 CoinMarketCap (2021).
 \newblock \url{https://coinmarketcap.com/}. Letzter Zugriff am 26.05.2021.
@@ -86,6 +91,11 @@ Google (2021).
 \newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
   Zugriff am 12.05.2021.
 
+\bibitem[\protect\citeauthoryear{Goorha}{Goorha}{2019}]{goorha_2019}
+Goorha, P. (2019, 01).
+\newblock Bitcoinomics 101: Principles of bitcoin's supply, demand \& price.
+\newblock {\em SSRN Electronic Journal\/}.
+
 \bibitem[\protect\citeauthoryear{Handelsblatt}{Handelsblatt}{2021}]{handelsblatt_2021}
 Handelsblatt (2021).
 \newblock Goldman sachs wagt den vorsichtigen einstieg in die krypto-welt.
@@ -99,6 +109,12 @@ Johnson, J. (2021).
 \newblock
   \url{https://www.statista.com/statistics/617136/digital-population-worldwide/}.
   Letzter Zugriff am 12.05.2021.
+
+\bibitem[\protect\citeauthoryear{Khairuddin, Sas}{Khairuddin und
+  Sas}{2019}]{khairuddin_sas_2019}
+Khairuddin, I., C.~Sas (2019, 05).
+\newblock An exploration of bitcoin mining practices: Miners' trust challenges
+  and motivations.
 
 \bibitem[\protect\citeauthoryear{Kiayias, Russel, David, Oliynykov}{Kiayias
   et~al.}{2019}]{kiayias_2019}
@@ -133,6 +149,12 @@ O'Neill, A. (2021).
 \newblock
   \url{https://www.statista.com/statistics/371895/inflation-rate-in-venezuela/}.
   Letzter Zugriff am 27.05.2021.
+
+\bibitem[\protect\citeauthoryear{Paar, Pelzl}{Paar und
+  Pelzl}{2010}]{paar_pelzl_2010}
+Paar, C., J.~Pelzl (2010).
+\newblock {\em {Understanding Cryptography}\/} (1. Aufl.).
+\newblock Springer, Heidelberg.
 
 \bibitem[\protect\citeauthoryear{Statista}{Statista}{2020}]{statista_internetnutzung_2020}
 Statista (2020).

@@ -12,57 +12,60 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 121 of file thesis.bib
-I was expecting a `,' or a `}'---line 192 of file thesis.bib
+--line 148 of file thesis.bib
+I was expecting a `,' or a `}'---line 219 of file thesis.bib
  : 
  : note=
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
+Warning--no number and no volume in goorha_2019
+Warning--page numbers missing in goorha_2019
+Warning--empty booktitle in khairuddin_sas_2019
 Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 29 entries,
+You've used 33 entries,
             2911 wiz_defined-function locations,
-            753 strings with 9603 characters,
-and the built_in function-call counts, 14864 in all, are:
-= -- 1214
-> -- 942
+            772 strings with 10077 characters,
+and the built_in function-call counts, 17179 in all, are:
+= -- 1401
+> -- 1108
 < -- 1
-+ -- 240
-- -- 342
-* -- 1005
-:= -- 2922
-add.period$ -- 78
-call.type$ -- 29
-change.case$ -- 177
-chr.to.int$ -- 28
-cite$ -- 35
-duplicate$ -- 456
-empty$ -- 969
-format.name$ -- 358
-if$ -- 2634
++ -- 286
+- -- 402
+* -- 1176
+:= -- 3360
+add.period$ -- 89
+call.type$ -- 33
+change.case$ -- 202
+chr.to.int$ -- 32
+cite$ -- 42
+duplicate$ -- 526
+empty$ -- 1115
+format.name$ -- 426
+if$ -- 3053
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 11
-newline$ -- 139
-num.names$ -- 288
-pop$ -- 163
+missing$ -- 15
+newline$ -- 158
+num.names$ -- 328
+pop$ -- 199
 preamble$ -- 1
-purify$ -- 355
+purify$ -- 405
 quote$ -- 0
-skip$ -- 527
+skip$ -- 607
 stack$ -- 0
-substring$ -- 609
-swap$ -- 151
+substring$ -- 691
+swap$ -- 169
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 536
-warning$ -- 6
-while$ -- 282
+type$ -- 606
+warning$ -- 9
+while$ -- 322
 width$ -- 0
-write$ -- 363
+write$ -- 414
 (There was 1 error message)
