@@ -41,6 +41,12 @@ Buterin, V. (2013b).
 \newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
   12.04.2021.
 
+\bibitem[\protect\citeauthoryear{Béres, Seres, Benczúr,
+  Quintyne-Collins}{Béres et~al.}{2020}]{beres_2020}
+Béres, F., I.~Seres, A.~Benczúr, M.~Quintyne-Collins (2020, 05).
+\newblock Blockchain is watching you: Profiling and deanonymizing ethereum
+  users.
+
 \bibitem[\protect\citeauthoryear{Cash}{Cash}{2021}]{bitcoin_cash_2021}
 Cash, B. (2021).
 \newblock Die geschichte von bitcoin cash.
@@ -81,15 +87,32 @@ Ding, Y., D.~Luo, H.~Xiang, W.~Liu, Y.~Wang (2021, Mar).
 \newblock {\em Peer-to-Peer Networking and Applications\/}~{\em 14\/}(2),
   482--496.
 
+\bibitem[\protect\citeauthoryear{Ethereum}{Ethereum}{2021}]{solidity_2021}
+Ethereum (2021).
+\newblock Solidity.
+\newblock \url{https://docs.soliditylang.org/en/v0.8.4/}. Letzter Zugriff am
+  31.05.2021.
+
 \bibitem[\protect\citeauthoryear{Etherscan}{Etherscan}{2021}]{etherscan_2021}
 Etherscan (2021).
 \newblock \url{https://etherscan.io/gastracker}. Letzter Zugriff am 25.05.2021.
 
-\bibitem[\protect\citeauthoryear{Google}{Google}{2021}]{google_adsense_2021}
-Google (2021).
+\bibitem[\protect\citeauthoryear{Google}{Google}{2021a}]{adsense_revenue_2021}
+Google (2021a).
 \newblock Adsense revenue share.
 \newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
   Zugriff am 12.05.2021.
+
+\bibitem[\protect\citeauthoryear{Google}{Google}{2021b}]{google_ads_2021}
+Google (2021b).
+\newblock Google ads.
+\newblock \url{https://ads.google.com/home/}. Letzter Zugriff am 31.05.2021.
+
+\bibitem[\protect\citeauthoryear{Google}{Google}{2021c}]{google_adsense_2021}
+Google (2021c).
+\newblock Google adsense.
+\newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
+  Zugriff am 31.05.2021.
 
 \bibitem[\protect\citeauthoryear{Goorha}{Goorha}{2019}]{goorha_2019}
 Goorha, P. (2019, 01).

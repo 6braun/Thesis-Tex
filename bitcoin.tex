@@ -60,18 +60,18 @@ Um einen privaten Schlüssel generieren zu können, benötigt man eine sichere Q
 
 \subsubsection{Public Keys}
 Um einen öffentlichen Schlüssel aus dem privaten generieren zu können, benötigt man ein kryptografisches Verfahren, welches eine Rekonstruktion des Privaten aus dem öffentlichen Schlüssel nicht zulässt.
-Das vom Bitcoin-Protokoll verwendete Verfahren wird \emph{Elliptic Curve Cryptography} genannt und bedient sich an den Eigenschaften einer Ellipse. Die im Bitcoin-Protokoll verwendete Ellipse trägt den Namen \emph{secp256k1} \cite[60]{antanopoulos_2014} und hat die, in Abbildung 2.2 vorgestellte, Form:
+Das vom Bitcoin-Protokoll verwendete Verfahren wird \emph{Elliptic Curve Cryptography} genannt und bedient sich an den Eigenschaften einer Ellipse. Die im Bitcoin-Protokoll verwendete Ellipse trägt den Namen \emph{secp256k1} \cite[S. 60]{antanopoulos_2014} und hat die, in Abbildung 2.2 vorgestellte, Form:
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/elliptic_curve_cryptography.png}
-	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\Quelle: \cite[64]{antanopoulos_2014}}
+	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\Quelle: \cite[S. 64]{antanopoulos_2014}}
 	\label{6braun:fig:ellipse}
 \end{figure}
 
 Um einen öffentlichen Schlüssel zu generieren, wählt man einen Punkt, den sogenannten Generatorpunkt \emph{G}, auf der Ellipse und multipliziert diesen mit dem vorher generierten privaten Schlüssel. Eine Multiplikation kann auch als Addition einer Zahl mit derselben betrachtet werden. Um den Punkt G auf der Ellipse mit sich selbst zu addieren, zieht man an diesem die Tangente und berechnet den Schnittpunkt von Ellipse und der gezogenen Tangente. Anschließend spiegelt man den Punkt an der x-Achse und erhält somit 2G. Diese Addition führt man so oft aus, wie der 256 Bit lange private Schlüssel groß ist, sodass man am Ende einen Punkt (x,y) erhält, welcher als öffentlicher Schlüssel genutzt werden kann. Diesen generierten Schlüssel kann man veröffentlichen, denn aus ihm lässt sich nicht schließen, mit welchem Faktor der Generatorpunkt multipliziert wurde.
 
 \subsubsection{Bitcoin Adressen}
-Eine Adresse ist ein aus dem öffentlichen Schlüssel generierter String aus Buchstaben und Zahlen, der Besitzer:innen des Schlüssels zu potentiellen Empfänger:innen einer Transaktion macht. Bei diesem muss es sich allerdings nicht zwangsläufig um eine Person handeln, denn auch Organisationen, geschriebene Skripte, etc. kommen als \emph{abstrakte} Empfänger:innen in Frage \cite[65]{antanopoulos_2014}.
+Eine Adresse ist ein aus dem öffentlichen Schlüssel generierter String aus Buchstaben und Zahlen, der Besitzer:innen des Schlüssels zu potentiellen Empfänger:innen einer Transaktion macht. Bei diesem muss es sich allerdings nicht zwangsläufig um eine Person handeln, denn auch Organisationen, geschriebene Skripte, etc. kommen als \emph{abstrakte} Empfänger:innen in Frage \cite[S. 65]{antanopoulos_2014}.
 So wie der öffentliche aus dem privaten Schlüssel erzeugt wird, wird die Bitcoin Adresse aus dem öffentlichen Schlüssel mithilfe von Hashing-Algorithmen erzeugt. 
 Die verwendeten Algorithmen, welche nacheinander auf den öffentlichen Schlüssel angewendet werden, heißen SHA-256 und RIPEMD160.
 Da Verschlüsselungsalgorithmen einen Grundbaustein für Blockchain-Technologie darstellen, wird ihre Funktionsweise im Folgenden beispielhaft anhand des SHA-256-Algorithmus erläutert. 
@@ -284,7 +284,7 @@ Sobald andere Teilnehmende gefunden wurden, wird über TCP ein \emph{Handshake} 
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
 	\caption{Austausch von Adressen nach erfolgreicher Verbindung\\
-		Quelle: vgl. \cite[177]{antanopoulos_2014}}
+		Quelle: vgl. \cite[S. 177]{antanopoulos_2014}}
 	\label{6braun:fig:adress_query}
 \end{figure}
 \newpage

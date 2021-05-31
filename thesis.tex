@@ -46,9 +46,12 @@
 \usepackage{settings}
 \usepackage{longtable}
 \usepackage{float}
+\usepackage{listings}
 
 
 
+\renewcommand{\lstlistingname}{Programmcode}
+\renewcommand{\lstlistlistingname}{\lstlistingname}
 
 % ************ DOCUMENT BEGINS
 
@@ -61,6 +64,7 @@
     \include{_titlepage_de}
 
     \frontmatter  % ROMAN NUMBERING              
+    \include{vorwort}
     \include{abstract}
 
 	
@@ -72,7 +76,10 @@
     \listoftables
     \addcontentsline{toc}{chapter}{\listtablename}
     
+	\lstlistoflistings
+	\addcontentsline{toc}{chapter}{\lstlistingname}
 
+	
     % LIST OF ABBREVIATIONS
     \makenomenclature
     \printnomenclature[9em]

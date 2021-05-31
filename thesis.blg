@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2020' - Flatpak')
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: _titlepage_de.aux
+A level-1 auxiliary file: vorwort.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: einleitung.aux
 A level-1 auxiliary file: bitcoin.aux
@@ -12,14 +13,17 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 148 of file thesis.bib
-I was expecting a `,' or a `}'---line 219 of file thesis.bib
+--line 189 of file thesis.bib
+I was expecting a `,' or a `}'---line 260 of file thesis.bib
  : 
  : note=
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
+Warning--no journal in beres_2020
+Warning--no number and no volume in beres_2020
+Warning--page numbers missing in beres_2020
 Warning--no number and no volume in goorha_2019
 Warning--page numbers missing in goorha_2019
 Warning--empty booktitle in khairuddin_sas_2019
@@ -27,45 +31,45 @@ Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 33 entries,
+You've used 37 entries,
             2911 wiz_defined-function locations,
-            772 strings with 10077 characters,
-and the built_in function-call counts, 17179 in all, are:
-= -- 1401
-> -- 1108
+            786 strings with 10574 characters,
+and the built_in function-call counts, 19238 in all, are:
+= -- 1569
+> -- 1259
 < -- 1
-+ -- 286
-- -- 402
-* -- 1176
-:= -- 3360
-add.period$ -- 89
-call.type$ -- 33
-change.case$ -- 202
-chr.to.int$ -- 32
-cite$ -- 42
-duplicate$ -- 526
-empty$ -- 1115
-format.name$ -- 426
-if$ -- 3053
-int.to.chr$ -- 2
++ -- 328
+- -- 452
+* -- 1327
+:= -- 3761
+add.period$ -- 100
+call.type$ -- 37
+change.case$ -- 229
+chr.to.int$ -- 34
+cite$ -- 49
+duplicate$ -- 582
+empty$ -- 1237
+format.name$ -- 480
+if$ -- 3423
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 158
-num.names$ -- 328
-pop$ -- 199
+missing$ -- 16
+newline$ -- 177
+num.names$ -- 364
+pop$ -- 223
 preamble$ -- 1
-purify$ -- 405
+purify$ -- 452
 quote$ -- 0
-skip$ -- 607
+skip$ -- 673
 stack$ -- 0
-substring$ -- 691
-swap$ -- 169
+substring$ -- 765
+swap$ -- 186
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 606
-warning$ -- 9
-while$ -- 322
+type$ -- 678
+warning$ -- 12
+while$ -- 354
 width$ -- 0
-write$ -- 414
+write$ -- 464
 (There was 1 error message)
