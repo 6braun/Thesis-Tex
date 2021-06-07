@@ -20,7 +20,7 @@ Eine weitere wichtige Rolle im Finanzsystem nehmen Zentralbanken ein. Sie überw
 Durch das Drucken von Geld und den anschließenden Kauf von Wertpapieren können sie das Geldangebot erhöhen. Um es wiederum zu verringern, verkaufen sie Wertpapiere und nehmen das erhaltene Geld aus dem Umlauf.\\
 
 \section{Dezentralisierung mittels Blockchain-Technologie}
-So wie die Einflussnahme von Zentralbanken auf das Bankensystem Stabilität bringen kann, ist ein gegenteiliger Effekt ebenfalls möglich. Ein Beispiel dafür ist die Zentralbank des Landes Venezuela, dessen drastisches Erhöhen ihres Geldangebots zu einer Inflationsrate von 65 374\% im Jahr 2018 führte \cite[]{statista_inflation_2021}. Auch im Kontext kleinerer Banken, bei denen Menschen normalerweise ihr Geld lagern, zeichnen sich mögliche Probleme auf, denn diese haben die Verfügungsmacht über Guthaben ihrer Kundschaft. Sie sind in der Lage Konten einzufrieren oder auch Kosten für Überweisungen zu erheben und haben zu jedem Zeitpunkt Einblick in die Konten, inklusive getätigter Überweisungen. Durch das Abwickeln der Transaktionen stellen Banken sicher, dass ein Konsens im Finanzsystem herrscht.\\
+So wie die Einflussnahme von Zentralbanken auf das Bankensystem Stabilität bringen kann, ist ein gegenteiliger Effekt ebenfalls möglich. Ein Beispiel dafür ist die Zentralbank des Landes Venezuela, deren drastisches Erhöhen ihres Geldangebots zu einer Inflationsrate von 65 374\% im Jahr 2018 führte \cite[]{statista_inflation_2021}. Auch im Kontext kleinerer Banken, bei denen Menschen normalerweise ihr Geld lagern, zeichnen sich mögliche Probleme auf, denn diese haben die Verfügungsmacht über Guthaben ihrer Kundschaft. Sie sind in der Lage Konten einzufrieren oder auch Kosten für Überweisungen zu erheben und haben zu jedem Zeitpunkt Einblick in die Konten, inklusive getätigter Überweisungen. Durch das Abwickeln der Transaktionen stellen Banken sicher, dass ein Konsens im Finanzsystem herrscht.\\
 
 Blockchain-Technologie hingegen ermöglicht es, in einem dezentralen System einen Konsens zu schaffen. Diese Innovation kann dafür verwendet werden, um digitale Zahlungsmittel ohne zentrale Verwaltungsstelle wie Zentralbanken zu entwickeln.\\
 
@@ -50,7 +50,7 @@ Außerdem kann aufgrund der mathematischen Abhängigkeit zwischen den Schlüssel
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/public_and_private_key.png}
-	\caption{Generierung der Schlüssel bzw. Adressen aus dem jeweiligen Vorgänger. 
+	\caption{Generierung der Schlüssel bzw. Adressen aus jeweiligem Vorgänger.\\
 	Quelle: \cite[S. 57]{antanopoulos_2014}}
 	\label{6braun:fig:keys}
 \end{figure}
@@ -64,7 +64,7 @@ Das vom Bitcoin-Protokoll verwendete Verfahren wird \emph{Elliptic Curve Cryptog
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/elliptic_curve_cryptography.png}
-	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$ \\Quelle: \cite[S. 64]{antanopoulos_2014}}
+	\caption{Die von Bitcoin verwendete Ellipse mit der Funktion $y^{2} = x^{3} + 7$. \\Quelle: \cite[S. 64]{antanopoulos_2014}}
 	\label{6braun:fig:ellipse}
 \end{figure}
 
@@ -118,7 +118,7 @@ Bevor der Algorithmus erläutert werden kann, ist es notwendig folgende Operatio
 Außerdem müssen noch zwei Listen mit Konstanten definiert werden. Die Liste K beinhaltet die ersten 32 Bit der Nachkommastellen der Kubikwurzeln der ersten 64 Primzahlen.
 H die ersten 32 Bit der Nachkommastellen der Quadratwurzeln der ersten 8 Primzahlen. 
 Die genauen Werte haben keine sonderliche Bedeutung, lediglich die scheinbare Zufälligkeit ist von Relevanz. Indem man diese berechenbaren Zahlen nimmt, minimiert sich die Wahrscheinlichkeit für eine absichtlich platzierte Schwachstelle im Algorithmus.
-\begin{lstlisting}[caption={Liste K von Konstanten\\
+\begin{lstlisting}[caption={Liste K von Konstanten.
 	Quelle: \cite{dang_2015}},captionpos=b]
 	428a2f98 71374491 b5c0fbcf e9b5dba5 3956c25b 59f111f1 923f82a4 
 	ab1c5ed5 d807aa98 12835b01 243185be 550c7dc3 72be5d74 80deb1fe 
@@ -131,7 +131,7 @@ Die genauen Werte haben keine sonderliche Bedeutung, lediglich die scheinbare Zu
 	748f82ee 78a5636f 84c87814 8cc70208 90befffa a4506ceb bef9a3f7 
 	c67178f2
 \end{lstlisting}
-\begin{lstlisting}[caption={Liste H mit den Arbeitsvariablen H0 - H7\\
+\begin{lstlisting}[caption={Liste mit den Arbeitsvariablen H0 - H7.
 	Quelle: \cite{dang_2015}},captionpos=b]
 	H0 = 6a09e667
 	H1 = bb67ae85
@@ -208,7 +208,7 @@ Um die eigene Pseudonymität zu schützen, ist es empfehlenswert, einen Key nur 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/non_det_wallet.png}
-	\caption{Nicht-deterministische Wallet\\
+	\caption{Nicht-deterministische Wallet.
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:non-deterministic_wallet}
 \end{figure}\\
@@ -223,7 +223,7 @@ Die Hierarchieeigenschaft wird im Kontext einer Organisation mit verschiedenen O
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/bip32_wallet.png}
-	\caption{BIP32-Wallet\\
+	\caption{BIP32-Wallet.
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:_wallet}
 \end{figure}\\
@@ -236,7 +236,7 @@ Eine Wallet scannt die Blockchain nach allen Outputs, welche mit den Keys von Be
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\textwidth]{images/UTXO.png}
-	\caption{Transaktionen mit unteilbaren UTXO\\
+	\caption{Transaktionen mit unteilbaren UTXO.
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:Transaktionen}
 \end{figure}\\
@@ -285,7 +285,7 @@ Sobald andere Teilnehmende gefunden wurden, wird über TCP ein \emph{Handshake} 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/adress_query.png}
-	\caption{Austausch von Adressen nach erfolgreicher Verbindung\\
+	\caption{Austausch von Adressen nach erfolgreicher Verbindung.\\
 		Quelle: vgl. \cite[S. 177]{antanopoulos_2014}}
 	\label{6braun:fig:adress_query}
 \end{figure}
@@ -300,7 +300,7 @@ Genauer gesagt enthält der neue Block den SHA256-Hash des Vorgängerblocks, mit
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/chain.png}
-	\caption{Neuer Block referenziert den alten Block \\
+	\caption{Neuer Block referenziert den alten Block.
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chain}
 \end{figure}\\
@@ -339,7 +339,7 @@ Aufgrund einer grundlegenden Eigenschaft von Hash-Funktionen, würde eine minima
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=\textwidth]{images/merkle.png}
-	\caption{Ein Merkle-Tree\\
+	\caption{Ein Merkle-Tree.
 		Quelle: \cite[S. 201]{antanopoulos_2014}}
 	\label{6braun:fig:merkle}
 \end{figure}\\
@@ -384,7 +384,7 @@ Nachdem Teilnehmer:innen des Netzwerkes einen neuen Block validiert haben, müss
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.9\textwidth]{images/chains.png}
-	\caption{Mögliche Szenarien für einen neuen Block\\
+	\caption{Mögliche Szenarien für einen neuen Block.
 	Quelle: Eigene Darstellung}
 	\label{6braun:fig:chains}
 \end{figure}\\

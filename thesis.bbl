@@ -2,8 +2,8 @@
 
 \bibitem[\protect\citeauthoryear{Advisors}{Advisors}{2019}]{optimity_advisors_2019}
 Advisors, O. (2019).
-\newblock An overview of the programmatic advertising ecosystem: Opportunities
-  and challenges.
+\newblock {An overview of the Programmatic Advertising Ecosystem: Opportunities
+  and Challenges}.
 \newblock
   \url{https://platformobservatory.eu/app/uploads/2019/10/An-overview-of-the-Programmatic-Advertising-Ecosystem-Opportunities-and-Challenges.pdf}.
   Letzter Zugriff am 25.05.2021.
@@ -27,29 +27,30 @@ Back, A. (2002).
 Bundeskartellamt (2018).
 \newblock Online advertising.
 
-\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_2013}
+\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_whitepaper_2013}
 Buterin, V. (2013a).
-\newblock Deterministic wallets, their advantages and their understated flaws.
+\newblock {A NEXT GENERATION SMART CONTRACT \& DECENTRALIZED APPLICATION
+  PLATFORM}.
+\newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
+  12.04.2021.
+
+\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013b}]{buterin_2013}
+Buterin, V. (2013b).
+\newblock {Deterministic Wallets, Their Advantages And Their Understated
+  Flaws}.
 \newblock
   \url{https://bitcoinmagazine.com/articles/deterministic-wallets-advantages-flaw-1385450276/}.
   Letzter Zugriff am 21.02.2021.
 
-\bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013b}]{buterin_whitepaper_2013}
-Buterin, V. (2013b).
-\newblock A next generation smart contract \& decentralized application
-  platform.
-\newblock \url{https://ethereum.org/en/whitepaper/}. Letzter Zugriff am
-  12.04.2021.
-
 \bibitem[\protect\citeauthoryear{Béres, Seres, Benczúr,
   Quintyne-Collins}{Béres et~al.}{2020}]{beres_2020}
 Béres, F., I.~Seres, A.~Benczúr, M.~Quintyne-Collins (2020, 05).
-\newblock Blockchain is watching you: Profiling and deanonymizing ethereum
-  users.
+\newblock {Blockchain is Watching You: Profiling and Deanonymizing Ethereum
+  Users}.
 
 \bibitem[\protect\citeauthoryear{Cash}{Cash}{2021}]{bitcoin_cash_2021}
 Cash, B. (2021).
-\newblock Die geschichte von bitcoin cash.
+\newblock {Die Geschichte von Bitcoin Cash}.
 \newblock \url{https://bitcoincash.org/#about}. Letzter Zugriff am 31.05.2021.
 
 \bibitem[\protect\citeauthoryear{CoinMarketCap}{CoinMarketCap}{2021}]{coinmarketcap_2021}
@@ -75,7 +76,7 @@ Dang, Q.~H. (2015).
 \bibitem[\protect\citeauthoryear{Diffie, Hellman}{Diffie und
   Hellman}{1976}]{diffie_hellman_1976}
 Diffie, W., M.~E. Hellman (1976).
-\newblock New directions in cryptography.
+\newblock {New Directions in Cryptography}.
 \newblock \url{https://ee.stanford.edu/~hellman/publications/24.pdf}. Letzter
   Zugriff am 23.05.2021.
 
@@ -105,23 +106,23 @@ Google (2021a).
 
 \bibitem[\protect\citeauthoryear{Google}{Google}{2021b}]{google_ads_2021}
 Google (2021b).
-\newblock Google ads.
+\newblock {Google Ads}.
 \newblock \url{https://ads.google.com/home/}. Letzter Zugriff am 31.05.2021.
 
 \bibitem[\protect\citeauthoryear{Google}{Google}{2021c}]{google_adsense_2021}
 Google (2021c).
-\newblock Google adsense.
+\newblock {Google AdSense}.
 \newblock \url{https://support.google.com/adsense/answer/180195?hl=en}. Letzter
   Zugriff am 31.05.2021.
 
 \bibitem[\protect\citeauthoryear{Goorha}{Goorha}{2019}]{goorha_2019}
 Goorha, P. (2019, 01).
-\newblock Bitcoinomics 101: Principles of bitcoin's supply, demand \& price.
+\newblock {Bitcoinomics 101: Principles of Bitcoin's Supply, Demand \& Price}.
 \newblock {\em SSRN Electronic Journal\/}.
 
 \bibitem[\protect\citeauthoryear{Handelsblatt}{Handelsblatt}{2021}]{handelsblatt_2021}
 Handelsblatt (2021).
-\newblock Goldman sachs wagt den vorsichtigen einstieg in die krypto-welt.
+\newblock {Goldman Sachs wagt den vorsichtigen Einstieg in die Krypto-Welt}.
 \newblock
   \url{https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/digitalwaehrung-goldman-sachs-wagt-den-vorsichtigen-einstieg-in-die-krypto-welt/27171808.html?ticket=ST-4135548-FhiH0l2uzTYLjLGx6xrM-ap4}.
   Letzter Zugriff am 26.05.2021.
@@ -136,13 +137,13 @@ Johnson, J. (2021).
 \bibitem[\protect\citeauthoryear{Khairuddin, Sas}{Khairuddin und
   Sas}{2019}]{khairuddin_sas_2019}
 Khairuddin, I., C.~Sas (2019, 05).
-\newblock An exploration of bitcoin mining practices: Miners' trust challenges
-  and motivations.
+\newblock {An Exploration of Bitcoin Mining Practices: Miners' Trust Challenges
+  and Motivations}.
 
 \bibitem[\protect\citeauthoryear{Kiayias, Russel, David, Oliynykov}{Kiayias
   et~al.}{2019}]{kiayias_2019}
 Kiayias, A., A.~Russel, B.~David, R.~Oliynykov (2019).
-\newblock Ouroboros: A provably secure proof-of-stake blockchain protocol.
+\newblock {Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol}.
 
 \bibitem[\protect\citeauthoryear{Landwehr}{Landwehr}{2008}]{landwehr_2008}
 Landwehr, D. (2008).
@@ -168,7 +169,7 @@ Nakamoto, S. (2008).
 
 \bibitem[\protect\citeauthoryear{O'Neill}{O'Neill}{2021}]{statista_inflation_2021}
 O'Neill, A. (2021).
-\newblock Venezuela: Inflation rate from 1985 to 2022.
+\newblock {Venezuela: Inflation rate from 1985 to 2022}.
 \newblock
   \url{https://www.statista.com/statistics/371895/inflation-rate-in-venezuela/}.
   Letzter Zugriff am 27.05.2021.
@@ -207,7 +208,7 @@ Turing, A.~M. (1936).
 
 \bibitem[\protect\citeauthoryear{Weidenbach}{Weidenbach}{2020}]{statista_werbung_2020}
 Weidenbach, B. (2020).
-\newblock Statistiken zum thema werbung.
+\newblock {Statistiken zum Thema Werbung}.
 \newblock
   \url{https://de.statista.com/themen/93/werbung/#dossierSummary__chapter1}.
   Letzter Zugriff am 28.05.2021.

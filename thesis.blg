@@ -2,8 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2020' - Flatpak')
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: _titlepage_de.aux
-A level-1 auxiliary file: vorwort.aux
-A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: einleitung.aux
 A level-1 auxiliary file: bitcoin.aux
 A level-1 auxiliary file: ethereum.aux
@@ -13,8 +11,8 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 189 of file thesis.bib
-I was expecting a `,' or a `}'---line 260 of file thesis.bib
+--line 172 of file thesis.bib
+I was expecting a `,' or a `}'---line 243 of file thesis.bib
  : 
  : note=
 (Error may have been on previous line)
@@ -33,12 +31,12 @@ Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
 You've used 37 entries,
             2911 wiz_defined-function locations,
-            786 strings with 10574 characters,
-and the built_in function-call counts, 19238 in all, are:
+            784 strings with 10579 characters,
+and the built_in function-call counts, 19226 in all, are:
 = -- 1569
 > -- 1259
 < -- 1
-+ -- 328
++ -- 322
 - -- 452
 * -- 1327
 := -- 3761
@@ -62,7 +60,7 @@ purify$ -- 452
 quote$ -- 0
 skip$ -- 673
 stack$ -- 0
-substring$ -- 765
+substring$ -- 759
 swap$ -- 186
 text.length$ -- 1
 text.prefix$ -- 0
