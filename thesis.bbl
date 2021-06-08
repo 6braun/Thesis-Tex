@@ -180,6 +180,14 @@ Paar, C., J.~Pelzl (2010).
 \newblock {\em {Understanding Cryptography}\/} (1. Aufl.).
 \newblock Springer, Heidelberg.
 
+\bibitem[\protect\citeauthoryear{Palatinus, Rusnak, Voisine, Bowe}{Palatinus
+  et~al.}{2013}]{bip_2013}
+Palatinus, M., P.~Rusnak, A.~Voisine, S.~Bowe (2013).
+\newblock {Mnemonic code for generating deterministic keys}.
+\newblock
+  \url{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#Generating_the_mnemonic}.
+  Letzter Zugriff am 08.06.2021.
+
 \bibitem[\protect\citeauthoryear{Statista}{Statista}{2020}]{statista_internetnutzung_2020}
 Statista (2020).
 \newblock Statistiken zur internetnutzung in deutschland.

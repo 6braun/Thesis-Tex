@@ -11,8 +11,8 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 172 of file thesis.bib
-I was expecting a `,' or a `}'---line 243 of file thesis.bib
+--line 179 of file thesis.bib
+I was expecting a `,' or a `}'---line 250 of file thesis.bib
  : 
  : note=
 (Error may have been on previous line)
@@ -29,45 +29,45 @@ Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 37 entries,
+You've used 38 entries,
             2911 wiz_defined-function locations,
-            784 strings with 10579 characters,
-and the built_in function-call counts, 19226 in all, are:
-= -- 1569
-> -- 1259
+            788 strings with 10827 characters,
+and the built_in function-call counts, 19979 in all, are:
+= -- 1624
+> -- 1342
 < -- 1
-+ -- 322
-- -- 452
-* -- 1327
-:= -- 3761
-add.period$ -- 100
-call.type$ -- 37
-change.case$ -- 229
-chr.to.int$ -- 34
-cite$ -- 49
-duplicate$ -- 582
-empty$ -- 1237
-format.name$ -- 480
-if$ -- 3423
++ -- 346
+- -- 476
+* -- 1395
+:= -- 3902
+add.period$ -- 103
+call.type$ -- 38
+change.case$ -- 238
+chr.to.int$ -- 35
+cite$ -- 50
+duplicate$ -- 597
+empty$ -- 1269
+format.name$ -- 508
+if$ -- 3563
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 16
-newline$ -- 177
-num.names$ -- 364
-pop$ -- 223
+newline$ -- 182
+num.names$ -- 374
+pop$ -- 235
 preamble$ -- 1
-purify$ -- 452
+purify$ -- 467
 quote$ -- 0
-skip$ -- 673
+skip$ -- 695
 stack$ -- 0
-substring$ -- 759
-swap$ -- 186
+substring$ -- 779
+swap$ -- 191
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 678
+type$ -- 698
 warning$ -- 12
-while$ -- 354
+while$ -- 360
 width$ -- 0
-write$ -- 464
+write$ -- 477
 (There was 1 error message)
