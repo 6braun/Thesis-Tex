@@ -11,21 +11,14 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 172 of file thesis.bib
-I was expecting a `,' or a `}'---line 369 of file thesis.bib
- :  
- :  isbn = {978-3-319-25023-6},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 431 of file thesis.bib
+--line 173 of file thesis.bib
+I was expecting a `,' or a `}'---line 398 of file thesis.bib
  :  isbn={978-3-030-04091-8}
  :                          "
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "pärssinen_2018"
 Warning--empty booktitle in alaimo_2018
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
-Warning--empty publisher in busch
 Warning--no journal in beres_2020
 Warning--no number and no volume in beres_2020
 Warning--page numbers missing in beres_2020
@@ -40,43 +33,43 @@ Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
 You've used 44 entries,
             2911 wiz_defined-function locations,
-            824 strings with 12651 characters,
-and the built_in function-call counts, 24510 in all, are:
-= -- 2000
+            827 strings with 12771 characters,
+and the built_in function-call counts, 24532 in all, are:
+= -- 2007
 > -- 1683
 < -- 4
-+ -- 442
++ -- 440
 - -- 582
-* -- 1756
-:= -- 4688
-add.period$ -- 124
+* -- 1757
+:= -- 4695
+add.period$ -- 126
 call.type$ -- 44
-change.case$ -- 282
+change.case$ -- 284
 chr.to.int$ -- 41
-cite$ -- 60
-duplicate$ -- 735
-empty$ -- 1536
+cite$ -- 59
+duplicate$ -- 734
+empty$ -- 1537
 format.name$ -- 630
-if$ -- 4456
+if$ -- 4464
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 22
-newline$ -- 215
+newline$ -- 217
 num.names$ -- 434
-pop$ -- 289
+pop$ -- 284
 preamble$ -- 1
 purify$ -- 548
 quote$ -- 0
 skip$ -- 867
 stack$ -- 0
-substring$ -- 1009
-swap$ -- 253
+substring$ -- 1007
+swap$ -- 252
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 808
-warning$ -- 16
+warning$ -- 15
 while$ -- 414
 width$ -- 0
-write$ -- 563
-(There were 2 error messages)
+write$ -- 568
+(There was 1 error message)

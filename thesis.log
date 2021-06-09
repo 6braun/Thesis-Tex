@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  9 JUN 2021 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020' - Flatpak') (preloaded format=pdflatex 2021.1.26)  10 JUN 2021 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1569,8 +1569,8 @@ m-[]Opportunities-[]and-[]Challenges .
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 36--41
-[]\T1/ptm/m/n/12 Bundeskartellamt (2018).  On-li-ne ad-ver-ti-sing.  [][]$https
+Underfull \hbox (badness 4391) in paragraph at lines 36--41
+[]\T1/ptm/m/n/12 Bundeskartellamt (2018).  On-li-ne Ad-ver-ti-sing.  [][]$https
  : / / www . bundeskartellamt .
  []
 
@@ -1610,19 +1610,19 @@ om / articles /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
-[]\T1/ptm/m/n/12 Corbellini, A. (2015).  El-lip-tic cur-ve cryp-to-gra-phy: fi-
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
+[]\T1/ptm/m/n/12 Corbellini, A. (2015).  El-lip-tic Cur-ve Cryp-to-gra-phy: fi-
 ni-te fields
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 \T1/ptm/m/n/12 and dis-crete lo-ga-rithms.  [][]$https : / / andrea . corbellin
 i . name / 2015 / 05 / 23 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 \T1/ptm/m/n/12 elliptic-[]curve-[]cryptography-[]^^\nite-[]^^\elds-[]and-[]disc
 rete-[]logarithms/$[][]. Letz-ter Zu-griff
  []
@@ -1634,57 +1634,51 @@ rete-[]logarithms/$[][]. Letz-ter Zu-griff
 
 
 ]
-Underfull \hbox (badness 1281) in paragraph at lines 106--111
+Underfull \hbox (badness 1281) in paragraph at lines 108--113
 \T1/ptm/m/n/12 of blockchain-based di-gi-tal ad-ver-ti-sing me-dia pro-mo-ti-on
  sys-tem.  \T1/ptm/m/it/12 Peer-to-Peer
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 113--119
+Underfull \hbox (badness 3039) in paragraph at lines 115--121
 []\T1/ptm/m/n/12 D'Onfro, J. (2017).  Goo-gle and Fa-ce-book ex-tend their lead
  in on-li-ne ads,
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 113--119
+Underfull \hbox (badness 1102) in paragraph at lines 115--121
 \T1/ptm/m/n/12 and that's re-a-son for in-ves-tors to be cau-tious.  [][]$https
  : / / www . cnbc . com / 2017 / 12 /
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 153--158
+Underfull \hbox (badness 3724) in paragraph at lines 156--161
 []\T1/ptm/m/n/12 Handelsblatt (2021).  Gold-man Sachs wagt den vor-sich-ti-gen 
 Ein-stieg in die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--158
+Underfull \hbox (badness 10000) in paragraph at lines 156--161
 \T1/ptm/m/n/12 digitalwaehrung-[]goldman-[]sachs-[]wagt-[]den-[]vorsichtigen-[]
 einstieg-[]in-[]die-[]krypto-[]welt /
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 153--158
+Underfull \hbox (badness 5475) in paragraph at lines 156--161
 \T1/ptm/m/n/12 27171808 . html ? ticket = ST-[]4135548-[]FhiH0l2uzTYLjLGx6xrM-[
 ]ap4$[][]. Letz-ter Zu-griff
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 248--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 [][]$\T1/ptm/m/n/12 https : / / www . statista . com / statistics / 183816 / us
 -[]online-[]advertising-[]revenue-[]since-[]2000/$[][].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--260
+Underfull \hbox (badness 10000) in paragraph at lines 258--263
 \T1/ptm/m/n/12 de / gesellschaft / medien / 60-[]jahre-[]tv-[]werbung-[]der-[]g
 ebildete-[]mensch-[]sagt-[]nur-[]persil /
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 262--265
-[]\T1/ptm/m/n/12 Turing, A. M. (1936).  On com-pu-ta-ble num-bers with an ap-p-
-li-ca-ti-on to the
  []
 
 [54]) [55] (./_declaration_de.tex [56
@@ -1731,10 +1725,10 @@ pp/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/
 fonts/type1/urw/symbol/usyr.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (63 pages, 732647 bytes).
+Output written on thesis.pdf (63 pages, 732850 bytes).
 PDF statistics:
- 1202 PDF objects out of 1440 (max. 8388607)
- 1092 compressed objects within 11 object streams
+ 1203 PDF objects out of 1440 (max. 8388607)
+ 1093 compressed objects within 11 object streams
  400 named destinations out of 1000 (max. 500000)
  383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

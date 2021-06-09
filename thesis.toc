@@ -68,5 +68,5 @@
 \contentsline {section}{\numberline {5.2}Zusammenfassung}{48}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Ausblick}{49}{section.5.3}%
 \contentsline {chapter}{\numberline {A}Anhang}{51}{appendix.A}%
-\contentsline {chapter}{Literaturverzeichnis}{52}{figure.caption.18}%
+\contentsline {chapter}{Bibliography}{52}{figure.caption.18}%
 \contentsline {chapter}{Eidesstattliche Versicherung}{56}{chapter*.20}%
