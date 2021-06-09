@@ -11,63 +11,72 @@ A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
 Warning--entry type for "kiayias_2019" isn't style-file defined
---line 179 of file thesis.bib
-I was expecting a `,' or a `}'---line 250 of file thesis.bib
- : 
- : note=
+--line 172 of file thesis.bib
+I was expecting a `,' or a `}'---line 369 of file thesis.bib
+ :  
+ :  isbn = {978-3-319-25023-6},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 431 of file thesis.bib
+ :  isbn={978-3-030-04091-8}
+ :                          "
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "pärssinen_2018"
+Warning--empty booktitle in alaimo_2018
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
+Warning--empty publisher in busch
 Warning--no journal in beres_2020
 Warning--no number and no volume in beres_2020
 Warning--page numbers missing in beres_2020
 Warning--no number and no volume in goorha_2019
 Warning--page numbers missing in goorha_2019
+Warning--no number and no volume in campbell_2018
+Warning--page numbers missing in campbell_2018
 Warning--empty booktitle in khairuddin_sas_2019
 Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
-You've used 38 entries,
+You've used 44 entries,
             2911 wiz_defined-function locations,
-            788 strings with 10827 characters,
-and the built_in function-call counts, 19979 in all, are:
-= -- 1624
-> -- 1342
-< -- 1
-+ -- 346
-- -- 476
-* -- 1395
-:= -- 3902
-add.period$ -- 103
-call.type$ -- 38
-change.case$ -- 238
-chr.to.int$ -- 35
-cite$ -- 50
-duplicate$ -- 597
-empty$ -- 1269
-format.name$ -- 508
-if$ -- 3563
+            824 strings with 12651 characters,
+and the built_in function-call counts, 24510 in all, are:
+= -- 2000
+> -- 1683
+< -- 4
++ -- 442
+- -- 582
+* -- 1756
+:= -- 4688
+add.period$ -- 124
+call.type$ -- 44
+change.case$ -- 282
+chr.to.int$ -- 41
+cite$ -- 60
+duplicate$ -- 735
+empty$ -- 1536
+format.name$ -- 630
+if$ -- 4456
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 182
-num.names$ -- 374
-pop$ -- 235
+missing$ -- 22
+newline$ -- 215
+num.names$ -- 434
+pop$ -- 289
 preamble$ -- 1
-purify$ -- 467
+purify$ -- 548
 quote$ -- 0
-skip$ -- 695
+skip$ -- 867
 stack$ -- 0
-substring$ -- 779
-swap$ -- 191
-text.length$ -- 1
+substring$ -- 1009
+swap$ -- 253
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 698
-warning$ -- 12
-while$ -- 360
+type$ -- 808
+warning$ -- 16
+while$ -- 414
 width$ -- 0
-write$ -- 477
-(There was 1 error message)
+write$ -- 563
+(There were 2 error messages)

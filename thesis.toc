@@ -2,7 +2,7 @@
 \babel@toc {ngerman}{}
 \contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.3}%
 \contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.4}%
-\contentsline {chapter}{Programmcode}{v}{chapter*.5}%
+\contentsline {chapter}{Codeverzeichnis}{v}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Blockchain 1.0 - Wie Bitcoin funktioniert}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Funktionsweise von Geld}{2}{section.2.1}%
@@ -50,11 +50,11 @@
 \contentsline {subsection}{\numberline {4.1.2}Mögliche Verbesserungen mittels Blockchain-Technologie}{35}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Programmierung eines Proof-of-Concept}{36}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Frontend}{37}{subsection.4.2.1}%
-\contentsline {subsubsection}{Konstruktor und Laden von Bildern}{37}{subsection.4.2.1}%
+\contentsline {subsubsection}{Konstruktor und Laden von Bildern}{38}{subsection.4.2.1}%
 \contentsline {subsubsection}{Anpassen des Guthabens}{38}{lstnumber.4.1.21}%
 \contentsline {subsubsection}{Ausschnitt : Hochladen einer Anzeige}{39}{lstnumber.4.2.12}%
 \contentsline {subsection}{\numberline {4.2.2}Backend}{40}{subsection.4.2.2}%
-\contentsline {subsubsection}{Hochladen einer Anzeige - Erfolg}{40}{subsection.4.2.2}%
+\contentsline {subsubsection}{Hochladen einer Anzeige - Erfolg}{41}{subsection.4.2.2}%
 \contentsline {subsubsection}{Schalten einer Anzeige}{42}{lstnumber.4.5.19}%
 \contentsline {subsection}{\numberline {4.2.3}Smart Contract}{43}{subsection.4.2.3}%
 \contentsline {subsubsection}{Anpassen des Guthabens}{43}{subsection.4.2.3}%
@@ -68,5 +68,5 @@
 \contentsline {section}{\numberline {5.2}Zusammenfassung}{48}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Ausblick}{49}{section.5.3}%
 \contentsline {chapter}{\numberline {A}Anhang}{51}{appendix.A}%
-\contentsline {chapter}{Bibliography}{52}{figure.caption.18}%
-\contentsline {chapter}{Eidesstattliche Versicherung}{55}{chapter*.20}%
+\contentsline {chapter}{Literaturverzeichnis}{52}{figure.caption.18}%
+\contentsline {chapter}{Eidesstattliche Versicherung}{56}{chapter*.20}%

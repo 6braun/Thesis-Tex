@@ -8,10 +8,10 @@
 \contentsline {lstlisting}{\numberline {3.1}Struktur einer Transaktion in Ethereum.}{26}{lstlisting.3.1}%
 \contentsline {lstlisting}{\numberline {3.2}Beispielcode für Solidity}{30}{lstlisting.3.2}%
 \addvspace {10\p@ }
-\contentsline {lstlisting}{\numberline {4.1}Konstruktor und Laden von Bildern im Frontend}{37}{lstlisting.4.1}%
+\contentsline {lstlisting}{\numberline {4.1}Konstruktor und Laden von Bildern im Frontend}{38}{lstlisting.4.1}%
 \contentsline {lstlisting}{\numberline {4.2}Anpassen des Guthabens im Frontend}{38}{lstlisting.4.2}%
 \contentsline {lstlisting}{\numberline {4.3}Hochladen einer Anzeige im Frontend}{39}{lstlisting.4.3}%
-\contentsline {lstlisting}{\numberline {4.4}Hochladen auf das Backend bei Erfolg}{40}{lstlisting.4.4}%
+\contentsline {lstlisting}{\numberline {4.4}Hochladen auf das Backend bei Erfolg}{41}{lstlisting.4.4}%
 \contentsline {lstlisting}{\numberline {4.5}Setzen neuer Anzeige im Backend oder bei Fehler zurücksetzen}{41}{lstlisting.4.5}%
 \contentsline {lstlisting}{\numberline {4.6}Schalten einer Anzeige im Backend}{42}{lstlisting.4.6}%
 \contentsline {lstlisting}{\numberline {4.7}Anpassen des Guthabens im Smart Contract}{43}{lstlisting.4.7}%

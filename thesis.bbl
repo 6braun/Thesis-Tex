@@ -8,6 +8,15 @@ Advisors, O. (2019).
   \url{https://platformobservatory.eu/app/uploads/2019/10/An-overview-of-the-Programmatic-Advertising-Ecosystem-Opportunities-and-Challenges.pdf}.
   Letzter Zugriff am 25.05.2021.
 
+\bibitem[\protect\citeauthoryear{Alaimo, Kallinikos}{Alaimo und
+  Kallinikos}{2018}]{alaimo_2018}
+Alaimo, C., J.~Kallinikos (2018).
+\newblock Objects, metrics and practices: An inquiry into the programmatic
+  advertising ecosystem", booktitle="living with monsters? social implications
+  of algorithmic phenomena, hybrid agency, and the performativity of
+  technology.
+\newblock Springer International Publishing, Cham,  S.110--S.123.
+
 \bibitem[\protect\citeauthoryear{Antonopoulos}{Antonopoulos}{2014}]{antanopoulos_2014}
 Antonopoulos, A.~M. (2014).
 \newblock {\em Mastering Bitcoin: Unlocking Digital Crypto-Currencies\/} (Open
@@ -26,6 +35,15 @@ Back, A. (2002).
 \bibitem[\protect\citeauthoryear{Bundeskartellamt}{Bundeskartellamt}{2018}]{bundeskartellamt_2018}
 Bundeskartellamt (2018).
 \newblock Online advertising.
+\newblock
+  \url{https://www.bundeskartellamt.de/SharedDocs/Publikation/EN/Schriftenreihe_Digitales_III.pdf?__blob=publicationFile&v=5}.
+  Letzter Zugriff am 09.06.2021.
+
+\bibitem[\protect\citeauthoryear{Busch}{Busch}{2015}]{busch}
+Busch, O. (2015).
+\newblock {\em Programmatic Advertising: The Successful Transformation to
+  Automated, Data-Driven Marketing in Real-Time}.
+\newblock Schweiz.
 
 \bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_whitepaper_2013}
 Buterin, V. (2013a).
@@ -60,6 +78,9 @@ CoinMarketCap (2021).
 \bibitem[\protect\citeauthoryear{Corbellini}{Corbellini}{2015}]{corbellini_2015}
 Corbellini, A. (2015).
 \newblock Elliptic curve cryptography: finite fields and discrete logarithms.
+\newblock
+  \url{https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/}.
+  Letzter Zugriff am 23.05.2021.
 
 \bibitem[\protect\citeauthoryear{Dai}{Dai}{1998}]{dai_1998}
 Dai, W. (1998).
@@ -87,6 +108,14 @@ Ding, Y., D.~Luo, H.~Xiang, W.~Liu, Y.~Wang (2021, Mar).
   media promotion system.
 \newblock {\em Peer-to-Peer Networking and Applications\/}~{\em 14\/}(2),
   482--496.
+
+\bibitem[\protect\citeauthoryear{D'Onfro}{D'Onfro}{2017}]{cnbc_2017}
+D'Onfro, J. (2017).
+\newblock {Google and Facebook extend their lead in online ads, and that’s
+  reason for investors to be cautious}.
+\newblock
+  \url{https://www.cnbc.com/2017/12/20/google-facebook-digital-ad-marketshare-growth-pivotal.html}.
+  Letzter Zugriff am 09.06.2021.
 
 \bibitem[\protect\citeauthoryear{Ethereum}{Ethereum}{2021}]{solidity_2021}
 Ethereum (2021).
@@ -127,6 +156,12 @@ Handelsblatt (2021).
   \url{https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/digitalwaehrung-goldman-sachs-wagt-den-vorsichtigen-einstieg-in-die-krypto-welt/27171808.html?ticket=ST-4135548-FhiH0l2uzTYLjLGx6xrM-ap4}.
   Letzter Zugriff am 26.05.2021.
 
+\bibitem[\protect\citeauthoryear{Harvey, Moorman, Toledo}{Harvey
+  et~al.}{2018}]{campbell_2018}
+Harvey, C., C.~Moorman, M.~Toledo (2018, 01).
+\newblock {How Blockchain Will Change Marketing As We Know It}.
+\newblock {\em SSRN Electronic Journal\/}.
+
 \bibitem[\protect\citeauthoryear{Johnson}{Johnson}{2021}]{johnson_2021}
 Johnson, J. (2021).
 \newblock Global digital population as of january 2021.
@@ -158,14 +193,15 @@ Mankiw, N.~G., M.~P. Taylor (2018).
 
 \bibitem[\protect\citeauthoryear{Michaelson}{Michaelson}{2020}]{Michaelson_2020}
 Michaelson, G. (2020, Feb).
-\newblock Programming paradigms, turing completeness and computational
-  thinking.
+\newblock {Programming Paradigms, Turing Completeness and Computational
+  Thinking}.
 \newblock {\em The Art, Science, and Engineering of Programming\/}~{\em
   4\/}(3).
 
 \bibitem[\protect\citeauthoryear{Nakamoto}{Nakamoto}{2008}]{nakamoto_whitepaper_2008}
 Nakamoto, S. (2008).
 \newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}. Letzter Zugriff am 09.06.2021.
 
 \bibitem[\protect\citeauthoryear{O'Neill}{O'Neill}{2021}]{statista_inflation_2021}
 O'Neill, A. (2021).
@@ -187,6 +223,19 @@ Palatinus, M., P.~Rusnak, A.~Voisine, S.~Bowe (2013).
 \newblock
   \url{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#Generating_the_mnemonic}.
   Letzter Zugriff am 08.06.2021.
+
+\bibitem[\protect\citeauthoryear{Palos-Sanchez, Saura,
+  Martin-Velicia}{Palos-Sanchez et~al.}{2019}]{palossanchez_2019}
+Palos-Sanchez, P., J.~R. Saura, F.~Martin-Velicia (2019).
+\newblock A study of the effects of programmatic advertising on users' concerns
+  about privacy overtime.
+\newblock {\em Journal of Business Research\/}~{\em 96},  61--72.
+
+\bibitem[\protect\citeauthoryear{Pärssinen, Kotila, Cuevas~Rumin, Phansalkar,
+  Manner}{Pärssinen et~al.}{2018}]{paerssinen_2018}
+Pärssinen, M., M.~Kotila, R.~Cuevas~Rumin, A.~Phansalkar, J.~Manner (2018).
+\newblock {Is Blockchain Ready to Revolutionize Online Advertising?}
+\newblock {\em IEEE Access\/}~{\em 6},  54884--54899.
 
 \bibitem[\protect\citeauthoryear{Statista}{Statista}{2020}]{statista_internetnutzung_2020}
 Statista (2020).
