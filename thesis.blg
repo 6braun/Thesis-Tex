@@ -10,66 +10,61 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: appendix.aux
 The style file: chicagog.bst
 Database file #1: thesis.bib
-Warning--entry type for "kiayias_2019" isn't style-file defined
---line 173 of file thesis.bib
-I was expecting a `,' or a `}'---line 398 of file thesis.bib
- :  isbn={978-3-030-04091-8}
- :                          "
-I'm skipping whatever remains of this entry
-Warning--empty booktitle in alaimo_2018
 Warning--empty publisher in antanopoulos_2014
 Warning--empty publisher in antanopoulos_2018
 Warning--no journal in beres_2020
 Warning--no number and no volume in beres_2020
 Warning--page numbers missing in beres_2020
+Warning--page numbers missing in diffie_hellman_1976
 Warning--no number and no volume in goorha_2019
 Warning--page numbers missing in goorha_2019
 Warning--no number and no volume in campbell_2018
 Warning--page numbers missing in campbell_2018
-Warning--empty booktitle in khairuddin_sas_2019
+Warning--no number and no volume in khairuddin_sas_2019
+Warning--page numbers missing in khairuddin_sas_2019
 Warning--page numbers missing in Michaelson_2020
 Warning--no journal in wood_yellowpaper_2014
 Warning--no number and no volume in wood_yellowpaper_2014
 Warning--page numbers missing in wood_yellowpaper_2014
 You've used 44 entries,
             2911 wiz_defined-function locations,
-            826 strings with 12768 characters,
-and the built_in function-call counts, 24532 in all, are:
-= -- 2007
+            836 strings with 13332 characters,
+and the built_in function-call counts, 24412 in all, are:
+= -- 2005
 > -- 1683
-< -- 4
+< -- 3
 + -- 440
 - -- 582
-* -- 1757
-:= -- 4695
-add.period$ -- 126
+* -- 1746
+:= -- 4704
+add.period$ -- 140
 call.type$ -- 44
 change.case$ -- 284
 chr.to.int$ -- 41
-cite$ -- 59
-duplicate$ -- 734
-empty$ -- 1537
+cite$ -- 60
+duplicate$ -- 718
+empty$ -- 1518
 format.name$ -- 630
-if$ -- 4464
+if$ -- 4427
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 217
+missing$ -- 23
+newline$ -- 230
 num.names$ -- 434
-pop$ -- 284
+pop$ -- 263
 preamble$ -- 1
 purify$ -- 548
 quote$ -- 0
-skip$ -- 867
+skip$ -- 846
 stack$ -- 0
-substring$ -- 1007
-swap$ -- 252
-text.length$ -- 4
+substring$ -- 963
+swap$ -- 242
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 808
-warning$ -- 15
-while$ -- 414
+warning$ -- 16
+while$ -- 412
 width$ -- 0
-write$ -- 568
-(There was 1 error message)
+write$ -- 594
+(There were 16 warnings)

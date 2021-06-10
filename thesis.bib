@@ -17,23 +17,21 @@ edition={7}
 	edition={1}
 }
 
-@inproceedings{khairuddin_sas_2019,
+@article{khairuddin_sas_2019,
 	author = {Khairuddin, Irni and Sas, Corina},
 	year = {2019},
-	month = {05},
-	pages = {},
+	journal = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},
 	title = {{An Exploration of Bitcoin Mining Practices: Miners' Trust Challenges and Motivations}},
-	doi = {10.1145/3290605.3300859}
+	note = {\url{https://doi.org/10.1145/3290605.3300859}}
 }
 
 @article{goorha_2019,
 	author = {Goorha, Prateek},
 	year = {2019},
-	month = {01},
-	pages = {},
 	title = {{Bitcoinomics 101: Principles of Bitcoin's Supply, Demand \& Price}},
 	journal = {SSRN Electronic Journal},
-	doi = {10.2139/ssrn.3473279}
+	publisher={Elsevier BV},
+	note = {\url{https://doi.org/10.2139/ssrn.3473279}}
 }
 
 
@@ -43,19 +41,23 @@ author={Quynh H. Dang},
 publisher = {Federal Inf. Process. Stds. (NIST FIPS), National Institute of Standards and Technology, Gaithersburg, MD},
 note={\url{http://dx.doi.org/10.6028/NIST.FIPS.180-4
 }. Letzter Zugriff am 14.02.2021},
-year={2015}
+year={2015},
 }
 
-@misc{diffie_hellman_1976,
+@article{diffie_hellman_1976,
 title = {{New Directions in Cryptography}},
+volume={22},
+number={6},
 author = {Diffie, Whitfield and Hellman, Martin E.},
 year = {1976},
-note={\url{https://ee.stanford.edu/~hellman/publications/24.pdf}. Letzter Zugriff am 23.05.2021}
+journal={{IEEE Transactions on Information Theory}}, 
+publisher={{Institute of Electrical and Electronics Engineers (IEEE)}},
+note={\url{https://doi.org/10.1109/tit.1976.1055638}}
 }
 
 @misc{optimity_advisors_2019,
 author = {Optimity Advisors},
-year = 2019,
+year = {2019},
 note={\url{https://platformobservatory.eu/app/uploads/2019/10/An-overview-of-the-Programmatic-Advertising-Ecosystem-Opportunities-and-Challenges.pdf}. Letzter Zugriff am 25.05.2021},
 title = {{An overview of the Programmatic
 Advertising Ecosystem:
@@ -77,14 +79,6 @@ note =
 {\url{https://bitcoincash.org/#about}. Letzter Zugriff am 31.05.2021}
 }
 
-@book{stokes_2018,
-	author = {Stokes, Rob},
-	title = {{eMarketing: The Essential Guide to Marketing in a Digital World - 6th Edition}},
-	year = {2018},
-	edition = {6},
-	publisher = {Red \& Yellow},
-	isbn = {9780620565158},
-}
 
 
 @misc{google_adsense_2021,
@@ -107,9 +101,12 @@ note =
 @article{beres_2020,
 	author = {Béres, Ferenc and Seres, István and Benczúr, András and Quintyne-Collins, Mikerah},
 	year = {2020},
-	month = {05},
-	pages = {},
-	title = {{Blockchain is Watching You: Profiling and Deanonymizing Ethereum Users}}
+	title = {{Blockchain is Watching You: Profiling and Deanonymizing Ethereum Users}},
+	eprint={2005.14051},
+	archivePrefix={arXiv},
+	primaryClass={cs.CR},
+	note = 
+	{\url{https://arxiv.org/abs/2005.14051?context=cs.CR}. Letzter Zugriff am 10.06.2021}
 }
 
 @misc{solidity_2021,
@@ -170,14 +167,16 @@ year = {2013},
 note = 
 {\url{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki#Generating_the_mnemonic}. Letzter Zugriff am 08.06.2021}}
 
-@paper{kiayias_2019,
+@misc{kiayias_2019,
 author = {Kiayias, Aggelos 
 and Russel, Alexander
 and David, Bernardo
 and Oliynykov, Roman},
 title = {{Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol}},
 abstract = {We present “Ouroboros”, the first blockchain protocol based on proof of stake with rigorous security guarantees. We establish security properties for the protocol comparable to those achieved by the bitcoin blockchain protocol. As the protocol provides a “proof of stake” blockchain discipline, it offers qualitative efficiency advantages over blockchains based on proof of physical resources (e.g., proof of work). We also present a novel reward mechanism for incentivizing Proof of Stake protocols and we prove that, given this mechanism, honest behavior is an approximate Nash equilibrium, thus neutralizing attacks such as selfish mining. We also present initial evidence of the practicality of our protocol in real world settings by providing experimental results on transaction confirmation and processing.},
-year = {2019}}
+year = {2019},
+note = {\url{https://iohk.io/en/research/library/papers/ouroborosa-provably-secure-proof-of-stake-blockchain-protocol/}. Letzter Zugriff am 10.06.2021}}
+
 
 @misc{handelsblatt_2021,
 note = {\url{https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/digitalwaehrung-goldman-sachs-wagt-den-vorsichtigen-einstieg-in-die-krypto-welt/27171808.html?ticket=ST-4135548-FhiH0l2uzTYLjLGx6xrM-ap4}. Letzter Zugriff am 26.05.2021},
@@ -193,7 +192,7 @@ note =
 {\url{https://www.bundeskartellamt.de/SharedDocs/Publikation/EN/Schriftenreihe_Digitales_III.pdf?__blob=publicationFile&v=5}. Letzter Zugriff am 09.06.2021}
 }
 
-@Article{ding_2021,
+@article{ding_2021,
 	author={Ding, Yong
 	and Luo, Decun
 	and Xiang, Hengkui
@@ -202,15 +201,13 @@ note =
 	title={{Design and implementation of blockchain-based digital advertising media promotion system}},
 	journal={Peer-to-Peer Networking and Applications},
 	year={2021},
-	month={Mar},
 	day={01},
 	volume={14},
 	number={2},
 	pages={482-496},
 	abstract={In recent years, the rapid development of the Internet digital advertising (IDA) market has brought many issues. Low-quality advertisements (ADs) have caused significant troubles for Internet users, and the ``AD fraud'' has plunged the IDA ecosystem into a crisis of trust. The blockchain's trusted computing model provides new ideas for solving the above problems. In this paper, we designed and implemented a blockchain-based digital advertising media system (B2DAM), where the Hyperledger is used as the implementation platform. Our B2DAM system integrates distributed ledger, multi-chain, smart contracts, and consensus mechanisms to ensure decentralization and multi-party maintenance of immutable data. We implemented business logic in smart contracts and Hyperledger SDK. The experiments show the transaction throughput can reach 550 tps and the system can meet the application requirements.},
 	issn={1936-6450},
-	doi={10.1007/s12083-020-00984-5},
-	url={https://doi.org/10.1007/s12083-020-00984-5}
+	note = {\url{https://doi.org/10.1007/s12083-020-00984-5}}
 }
 
 
@@ -320,13 +317,12 @@ edition = {Open Edition}
 	volume={4},
 	ISSN={2473-7321},
 	url={http://dx.doi.org/10.22152/programming-journal.org/2020/4/4},
-	DOI={10.22152/programming-journal.org/2020/4/4},
+	note = {\url{https://doi.org/10.22152/programming-journal.org/2020/4/4}},
 	number={3},
 	journal={The Art, Science, and Engineering of Programming},
 	publisher={Aspect-Oriented Software Association (AOSA)},
 	author={Michaelson, Greg},
-	year={2020},
-	month={Feb}
+	year={2020}
 }
 
 @article{paerssinen_2018,
@@ -337,16 +333,14 @@ edition = {Open Edition}
 	volume={6},
 	number={},
 	pages={54884-54899},
-	doi={10.1109/ACCESS.2018.2872694}}
+	note = {\url{https://doi.org/10.1109/ACCESS.2018.2872694}}}
 
 @article{campbell_2018,
 	author = {Harvey, Campbell and Moorman, Christine and Toledo, Marcos},
 	year = {2018},
-	month = {01},
-	pages = {},
 	title = {{How Blockchain Will Change Marketing As We Know It}},
 	journal = {SSRN Electronic Journal},
-	doi = {10.2139/ssrn.3257511}
+	note = {\url{https://doi.org/10.2139/ssrn.3257511}}
 }
 
 @misc{cnbc_2017,
@@ -360,8 +354,8 @@ note = {\url{https://www.cnbc.com/2017/12/20/google-facebook-digital-ad-marketsh
 	title = {{Programmatic Advertising: The Successful Transformation to Automated, Data-Driven Marketing in Real-Time}},
 	year = {2015},
 	address = {Schweiz},
-	isbn = {978-3-319-25023-6},
-	publisher = {Springer Publishing Company, Incorporated},
+	note = {\url{https://doi.org/10.1007/978-3-319-25023-6}},
+	publisher = {Springer International Publishing},
 	edition = {1},
 	abstract = {This fundamental guide on programmatic advertising explains in detail how automated, data-driven advertising really works in practice and how the right adoption leads to acompetitive advantage for advertisers, agencies and media. The new way of planning,steering and measuring marketing may still appear complex and threatening but promisingat once to most decision makers. This collaborative compendium combines proven experienceand best practice in 22 articles written by 45 renowned experts from all aroundthe globe. Among them Dr. Florian Heinemann/Project-A, Peter Wrtenberger/Axel-Springer, Deirdre McGlashan/MediaCom, Dr. Marc Grether/Xaxis, Michael Lamb/MediaMath, Carolin Owen/IPG, Stefan Bardega/Zenith, Arun Kumar/Cadreon, Dr. Ralf Strauss/Marketingverband, Jonathan Becher/SAP and many more great minds.}
 }
@@ -373,7 +367,7 @@ note = {\url{https://www.cnbc.com/2017/12/20/google-facebook-digital-ad-marketsh
 	pages = {61-72},
 	year = {2019},
 	issn = {0148-2963},
-	doi = {https://doi.org/10.1016/j.jbusres.2018.10.059},
+	note = {\url{https://doi.org/10.1016/j.jbusres.2018.10.059}},
 	url = {https://www.sciencedirect.com/science/article/pii/S014829631830540X},
 	author = {Pedro Palos-Sanchez and Jose Ramon Saura and Felix Martin-Velicia},
 	keywords = {Programmatic advertising, Perceived usefulness, Privacy concern, Longitudinal analysis, Multigroup analysis, PLS-SEM},
@@ -383,19 +377,13 @@ note = {\url{https://www.cnbc.com/2017/12/20/google-facebook-digital-ad-marketsh
 @InProceedings{alaimo_2018,
 	author={Alaimo, Cristina
 	and Kallinikos, Jannis},
-	editor= {Schultze, Ulrike
-	and Aanestad, Margunn
-	and M{\"a}hring, Magnus
-	and {\O}sterlund, Carsten
-	and Riemer, Kai},
-	title= {{Objects, Metrics and Practices: An Inquiry into the Programmatic Advertising Ecosystem",
-	booktitle="Living with Monsters? Social Implications of Algorithmic Phenomena, Hybrid Agency, and the Performativity of Technology}},
+	title= {{Objects, Metrics and Practices: An Inquiry into the Programmatic Advertising Ecosystem}},
+	booktitle={IFIP Advances in Information and Communication Technology},
 	year={2018},
-	publisher={Springer International Publishing},
+	publisher={Springer},
 	address={Cham},
-	pages={S.110-S.123},
 	abstract= {Programmatic advertising is a large scale, real-time bidding process, whereby ads are automatically assigned to available spaces across types of media and geographic regions upon an individual user's browser request. The large-scale automation of programmatic advertising requires the establishment of standards and the development of technologies to govern the behavior of market participants (sellers, buyers, intermediaries). We present evidence on the rules of programmatic exchange and on the role played by a specific class of digital objects. We focus in particular on the metrics to which these objects are linked and how they define what is exchanged and the parameters of these exchanges. We furthermore demonstrate that the metrics and the technological complexes associated with them are constituted by the institutional field of digital advertising and its complex technological infrastructure. Rather than being simply means to monitor a pre-existing reality `out there' (such as user or audience behavior) these metrics and techniques bring forward their own reality and heavily impact upon and shape the objects and processes of digital advertising.},
-	isbn={978-3-030-04091-8}"
+	note={\url{https://doi.org/10.1007/978-3-030-04091-8_9}}
 }
 
 

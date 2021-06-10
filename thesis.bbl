@@ -12,10 +12,10 @@ Advisors, O. (2019).
   Kallinikos}{2018}]{alaimo_2018}
 Alaimo, C., J.~Kallinikos (2018).
 \newblock {Objects, Metrics and Practices: An Inquiry into the Programmatic
-  Advertising Ecosystem", booktitle="Living with Monsters? Social Implications
-  of Algorithmic Phenomena, Hybrid Agency, and the Performativity of
-  Technology}.
-\newblock Springer International Publishing, Cham,  S.110--S.123.
+  Advertising Ecosystem}.
+\newblock In {\em IFIP Advances in Information and Communication Technology}.
+  Springer, Cham.
+\newblock \url{https://doi.org/10.1007/978-3-030-04091-8_9}.
 
 \bibitem[\protect\citeauthoryear{Antonopoulos}{Antonopoulos}{2014}]{antanopoulos_2014}
 Antonopoulos, A.~M. (2014).
@@ -43,7 +43,8 @@ Bundeskartellamt (2018).
 Busch, O. (2015).
 \newblock {\em {Programmatic Advertising: The Successful Transformation to
   Automated, Data-Driven Marketing in Real-Time}\/} (1. Aufl.).
-\newblock Springer Publishing Company, Incorporated, Schweiz.
+\newblock Springer International Publishing, Schweiz.
+\newblock \url{https://doi.org/10.1007/978-3-319-25023-6}.
 
 \bibitem[\protect\citeauthoryear{Buterin}{Buterin}{2013a}]{buterin_whitepaper_2013}
 Buterin, V. (2013a).
@@ -62,9 +63,11 @@ Buterin, V. (2013b).
 
 \bibitem[\protect\citeauthoryear{Béres, Seres, Benczúr,
   Quintyne-Collins}{Béres et~al.}{2020}]{beres_2020}
-Béres, F., I.~Seres, A.~Benczúr, M.~Quintyne-Collins (2020, 05).
+Béres, F., I.~Seres, A.~Benczúr, M.~Quintyne-Collins (2020).
 \newblock {Blockchain is Watching You: Profiling and Deanonymizing Ethereum
   Users}.
+\newblock \url{https://arxiv.org/abs/2005.14051?context=cs.CR}. Letzter Zugriff
+  am 10.06.2021.
 
 \bibitem[\protect\citeauthoryear{Cash}{Cash}{2021}]{bitcoin_cash_2021}
 Cash, B. (2021).
@@ -100,16 +103,17 @@ Dang, Q.~H. (2015).
   Hellman}{1976}]{diffie_hellman_1976}
 Diffie, W., M.~E. Hellman (1976).
 \newblock {New Directions in Cryptography}.
-\newblock \url{https://ee.stanford.edu/~hellman/publications/24.pdf}. Letzter
-  Zugriff am 23.05.2021.
+\newblock {\em {IEEE Transactions on Information Theory}\/}~{\em 22\/}(6).
+\newblock \url{https://doi.org/10.1109/tit.1976.1055638}.
 
 \bibitem[\protect\citeauthoryear{Ding, Luo, Xiang, Liu, Wang}{Ding
   et~al.}{2021}]{ding_2021}
-Ding, Y., D.~Luo, H.~Xiang, W.~Liu, Y.~Wang (2021, Mar).
+Ding, Y., D.~Luo, H.~Xiang, W.~Liu, Y.~Wang (2021).
 \newblock {Design and implementation of blockchain-based digital advertising
   media promotion system}.
 \newblock {\em Peer-to-Peer Networking and Applications\/}~{\em 14\/}(2),
   482--496.
+\newblock \url{https://doi.org/10.1007/s12083-020-00984-5}.
 
 \bibitem[\protect\citeauthoryear{D'Onfro}{D'Onfro}{2017}]{cnbc_2017}
 D'Onfro, J. (2017).
@@ -148,9 +152,10 @@ Google (2021c).
   Zugriff am 31.05.2021.
 
 \bibitem[\protect\citeauthoryear{Goorha}{Goorha}{2019}]{goorha_2019}
-Goorha, P. (2019, 01).
+Goorha, P. (2019).
 \newblock {Bitcoinomics 101: Principles of Bitcoin's Supply, Demand \& Price}.
 \newblock {\em SSRN Electronic Journal\/}.
+\newblock \url{https://doi.org/10.2139/ssrn.3473279}.
 
 \bibitem[\protect\citeauthoryear{Handelsblatt}{Handelsblatt}{2021}]{handelsblatt_2021}
 Handelsblatt (2021).
@@ -161,9 +166,10 @@ Handelsblatt (2021).
 
 \bibitem[\protect\citeauthoryear{Harvey, Moorman, Toledo}{Harvey
   et~al.}{2018}]{campbell_2018}
-Harvey, C., C.~Moorman, M.~Toledo (2018, 01).
+Harvey, C., C.~Moorman, M.~Toledo (2018).
 \newblock {How Blockchain Will Change Marketing As We Know It}.
 \newblock {\em SSRN Electronic Journal\/}.
+\newblock \url{https://doi.org/10.2139/ssrn.3257511}.
 
 \bibitem[\protect\citeauthoryear{Johnson}{Johnson}{2021}]{johnson_2021}
 Johnson, J. (2021).
@@ -174,14 +180,20 @@ Johnson, J. (2021).
 
 \bibitem[\protect\citeauthoryear{Khairuddin, Sas}{Khairuddin und
   Sas}{2019}]{khairuddin_sas_2019}
-Khairuddin, I., C.~Sas (2019, 05).
+Khairuddin, I., C.~Sas (2019).
 \newblock {An Exploration of Bitcoin Mining Practices: Miners' Trust Challenges
   and Motivations}.
+\newblock {\em Proceedings of the 2019 CHI Conference on Human Factors in
+  Computing Systems\/}.
+\newblock \url{https://doi.org/10.1145/3290605.3300859}.
 
 \bibitem[\protect\citeauthoryear{Kiayias, Russel, David, Oliynykov}{Kiayias
   et~al.}{2019}]{kiayias_2019}
 Kiayias, A., A.~Russel, B.~David, R.~Oliynykov (2019).
 \newblock {Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol}.
+\newblock
+  \url{https://iohk.io/en/research/library/papers/ouroborosa-provably-secure-proof-of-stake-blockchain-protocol/}.
+  Letzter Zugriff am 10.06.2021.
 
 \bibitem[\protect\citeauthoryear{Landwehr}{Landwehr}{2008}]{landwehr_2008}
 Landwehr, D. (2008).
@@ -195,11 +207,12 @@ Mankiw, N.~G., M.~P. Taylor (2018).
 \newblock Sch{"a}ffer-Poeschel Verlag Stuttgart, Stuttgart.
 
 \bibitem[\protect\citeauthoryear{Michaelson}{Michaelson}{2020}]{Michaelson_2020}
-Michaelson, G. (2020, Feb).
+Michaelson, G. (2020).
 \newblock {Programming Paradigms, Turing Completeness and Computational
   Thinking}.
 \newblock {\em The Art, Science, and Engineering of Programming\/}~{\em
   4\/}(3).
+\newblock \url{https://doi.org/10.22152/programming-journal.org/2020/4/4}.
 
 \bibitem[\protect\citeauthoryear{Nakamoto}{Nakamoto}{2008}]{nakamoto_whitepaper_2008}
 Nakamoto, S. (2008).
@@ -233,12 +246,14 @@ Palos-Sanchez, P., J.~R. Saura, F.~Martin-Velicia (2019).
 \newblock {A study of the effects of programmatic advertising on users'
   concerns about privacy overtime}.
 \newblock {\em Journal of Business Research\/}~{\em 96},  61--72.
+\newblock \url{https://doi.org/10.1016/j.jbusres.2018.10.059}.
 
 \bibitem[\protect\citeauthoryear{Pärssinen, Kotila, Cuevas~Rumin, Phansalkar,
   Manner}{Pärssinen et~al.}{2018}]{paerssinen_2018}
 Pärssinen, M., M.~Kotila, R.~Cuevas~Rumin, A.~Phansalkar, J.~Manner (2018).
 \newblock {Is Blockchain Ready to Revolutionize Online Advertising?}
 \newblock {\em IEEE Access\/}~{\em 6},  54884--54899.
+\newblock \url{https://doi.org/10.1109/ACCESS.2018.2872694}.
 
 \bibitem[\protect\citeauthoryear{Statista}{Statista}{2020}]{statista_internetnutzung_2020}
 Statista (2020).

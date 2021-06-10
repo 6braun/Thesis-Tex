@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Nicht-deterministische Wallet. Quelle: Eigene Darstellung\relax }}{13}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BIP32-Wallet. Quelle: Eigene Darstellung\relax }}{14}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Transaktionen mit unteilbaren UTXO. Quelle: Eigene Darstellung\relax }}{15}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Austausch von Adressen nach erfolgreicher Verbindung. Quelle: vgl. \cite [S. 177]{antanopoulos_2014}\relax }}{18}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Austausch von Adressen nach erfolgreicher Verbindung. In Anlehnung an: \cite [S. 177]{antanopoulos_2014}\relax }}{18}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Neuer Block referenziert den alten Block. Quelle: Eigene Darstellung\relax }}{19}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Ein Merkle-Tree. Quelle: \cite [S. 201]{antanopoulos_2014}\relax }}{20}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Mögliche Szenarien für einen neuen Block. Quelle: Eigene Darstellung\relax }}{23}{figure.caption.14}%
@@ -18,4 +18,4 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau der Webanwendung. Quelle: Eigene Darstellung\relax }}{36}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine Quelle: \cite {antanopoulos_2014}\relax }}{51}{figure.caption.18}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ausführliche Darstellung der Ethereum Virtual Machine Quelle: \cite [S. 414]{antanopoulos_2018}\relax }}{51}{figure.caption.18}%
